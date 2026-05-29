@@ -27,8 +27,8 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 30px rgba(0,0,0,0.5
 .nav-links a:hover::after{width:100%}
 .nav-cta{background:var(--teal)!important;color:var(--white)!important;padding:0.45rem 1.1rem!important;border-radius:3px!important}
 .nav-cta::after{display:none!important}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
-.hamburger span{display:block;width:24px;height:2px;background:white;transition:all 0.3s}
+.hamburger{display:none;flex-direction:column;gap:6px;cursor:pointer;padding:8px;z-index:1001;position:relative}
+.hamburger span{display:block;width:26px;height:3px;background:white;transition:all 0.3s;border-radius:2px}
 
 /* HERO */
 #home{position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;overflow:hidden;background:#071222}
@@ -280,9 +280,10 @@ footer a{color:var(--teal);text-decoration:none}
 .reveal.visible{opacity:1;transform:translateY(0)}
 
 @media(max-width:900px){
+  nav{background:rgba(10,22,40,0.96)!important;backdrop-filter:blur(10px)}
   .about-grid,.contact-grid{grid-template-columns:1fr}
   .footer-inner{grid-template-columns:1fr}
-  .nav-links{display:none;flex-direction:column;position:absolute;top:72px;left:0;width:100%;background:var(--navy);padding:1rem 2rem 2rem;gap:1rem}
+  .nav-links{display:none;flex-direction:column;position:absolute;top:72px;left:0;width:100%;background:var(--navy);padding:1rem 2rem 2rem;gap:1rem;z-index:999}
   .nav-links.open{display:flex}
   .hamburger{display:flex}
   .stats-inner{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
@@ -323,8 +324,11 @@ footer a{color:var(--teal);text-decoration:none}
   .product-card-img::before{animation:none!important;display:none}
   .logo-wrap::before{animation:none!important;display:none}
   .hero-logo-big::before,.hero-logo-big::after{animation:none!important;display:none}
-  #cursor-glow,#cursor-dot,#cursor-ring{display:none!important}
+  #cursor-glow,#cursor-dot,#cursor-ring{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important}
   #particles-canvas{display:none!important}
+  .section-label{animation:none!important}
+  .dept-badge{animation:none!important}
+  .wa-float{animation:waPulse 2.5s infinite!important}
 }
 
 /* ============================
