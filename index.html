@@ -149,16 +149,16 @@ section{padding:5rem 2rem}
 #certifications .section-title{color:white}
 #certifications .section-label{color:var(--teal)}
 #certifications .section-lead{color:rgba(255,255,255,0.6)}
-.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.25rem;margin-top:2rem}
-.cert-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:8px;overflow:hidden;transition:transform 0.35s cubic-bezier(0.23,1,0.32,1),box-shadow 0.35s,border-color 0.35s,background 0.35s;position:relative}
+.cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2rem}
+.cert-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:8px;overflow:hidden;transition:transform 0.35s cubic-bezier(0.23,1,0.32,1),box-shadow 0.35s,border-color 0.35s,background 0.35s;position:relative;display:flex;flex-direction:column}
 .cert-card:hover{transform:translateY(-7px) scale(1.02);box-shadow:0 20px 50px rgba(0,0,0,0.4);border-color:rgba(0,180,166,0.35);background:rgba(255,255,255,0.07)}
 .cert-card-img{height:200px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#fff;position:relative;padding:1.25rem}
 .cert-card-img img{width:100%;height:100%;object-fit:contain;transition:transform 0.4s;opacity:1}
 .cert-card:hover .cert-card-img img{transform:scale(1.03)}
-.cert-card-body{padding:1.2rem}
+.cert-card-body{padding:1.2rem;flex:1;display:flex;flex-direction:column}
 .cert-card h4{font-family:'Barlow Condensed',sans-serif;font-size:0.95rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--teal);margin-bottom:0.3rem}
-.cert-card p{font-size:0.78rem;color:rgba(255,255,255,0.55);line-height:1.5}
-.cert-tag{display:inline-block;margin-top:0.6rem;background:rgba(0,180,166,0.15);border:1px solid rgba(0,180,166,0.25);color:var(--teal);font-size:0.67rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.18rem 0.5rem;border-radius:2px}
+.cert-card p{font-size:0.78rem;color:rgba(255,255,255,0.55);line-height:1.5;flex:1}
+.cert-tag{display:inline-block;margin-top:0.8rem;background:rgba(0,180,166,0.15);border:1px solid rgba(0,180,166,0.25);color:var(--teal);font-size:0.67rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.18rem 0.5rem;border-radius:2px;align-self:flex-start}
 .cert-mandatory .cert-tag{background:rgba(212,168,67,0.12);border-color:rgba(212,168,67,0.25);color:var(--gold)}
 .cert-mandatory h4{color:var(--gold)}
 .cert-mandatory{border-color:rgba(212,168,67,0.3)}
@@ -290,7 +290,7 @@ footer a{color:var(--teal);text-decoration:none}
   .clients-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
   .clients-header{flex-direction:column}
   .products-grid{grid-template-columns:repeat(2,1fr)}
-  .cert-grid{grid-template-columns:repeat(2,1fr)}
+  .cert-grid{grid-template-columns:repeat(2,1fr)!important}
   .sys-grid{grid-template-columns:repeat(2,1fr)}
   .blog-grid{grid-template-columns:1fr}
   section{padding:3.5rem 1.25rem}
@@ -1521,12 +1521,13 @@ body.light-theme #contact .section-lead { color: rgba(255,255,255,0.65) !importa
     <div class="cert-grid">
       <div class="cert-card tilt-card" data-aos="zoom-in"><div class="cert-card-img"><img src="images/WhatsApp Image 2026-05-30 at 06.08.03.jpeg" alt="ISO 9001:2015" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>ISO 9001:2015</h4><p>Certified Quality Management System — global standard for consistent product quality, customer satisfaction, and continuous process improvement across all operations.</p><div class="cert-tag">Quality</div></div></div>
       <div class="cert-card tilt-card" data-aos="zoom-in" data-aos-delay="100"><div class="cert-card-img"><img src="images/WhatsApp Image 2026-05-30 at 06.08.05.jpeg" alt="ISO 45001" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>ISO 45001 Certified</h4><p>Occupational Health &amp; Safety Management System — ensuring safe and healthy working environments for all staff across our production facilities and client sites.</p><div class="cert-tag">Safety</div></div></div>
-      <div class="cert-card tilt-card" data-aos="zoom-in" data-aos-delay="200"><div class="cert-card-img"><img src="images/WhatsApp Image 2026-05-30 at 06.08.04.jpeg" alt="IPO Pakistan" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>IPO Pakistan</h4><p>Registered with the Intellectual Property Organization of Pakistan — our formulations, trademarks, and chemical innovations are fully protected under national IP law.</p><div class="cert-tag">Registered</div></div></div>
+      <div class="cert-card tilt-card" data-aos="zoom-in" data-aos-delay="200"><div class="cert-card-img"><img src="images/WhatsApp Image 2026-05-30 at 06.08.04 (1).jpeg" alt="IPO Pakistan" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>IPO Pakistan</h4><p>Registered with the Intellectual Property Organization of Pakistan — our formulations, trademarks, and chemical innovations are fully protected under national IP law.</p><div class="cert-tag">Registered</div></div></div>
     </div>
-    <div class="cert-section-header" data-aos="fade-up" style="margin-top:2.5rem"><h3>Our Principals</h3></div>
+    <div class="cert-section-header" data-aos="fade-up" style="margin-top:2.5rem"><h3>Registrations &amp; Principals</h3></div>
     <div class="cert-grid">
-      <div class="cert-card tilt-card" data-aos="zoom-in"><div class="cert-card-img" style="background:#fff"><img src="images/WhatsApp Image 2026-05-30 at 06.08.02.jpeg" alt="CONAIR Group" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>CONAIR Group</h4><p>Authorised agent for CONAIR — world-leading manufacturer of precision industrial air humidification, yarn conditioning, and climate control systems for textile mills.</p><div class="cert-tag">Principal</div></div></div>
-      <div class="cert-card tilt-card" data-aos="zoom-in" data-aos-delay="100"><div class="cert-card-img" style="background:#fff"><img src="images/WhatsApp Image 2026-05-30 at 06.08.04 (1).jpeg" alt="Luwa Nederman Group" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>Luwa — Nederman Group</h4><p>Authorised Pakistani agent for Luwa Air Engineering (Nederman Group) — global leader in industrial air handling, humidification, and dust extraction systems for the textile sector.</p><div class="cert-tag">Principal</div></div></div>
+      <div class="cert-card tilt-card" data-aos="zoom-in"><div class="cert-card-img"><img src="images/NTN.png" alt="FBR / Sales Tax Registration" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>FBR / Sales Tax Reg.</h4><p>Federal Board of Revenue — National Tax Number (NTN) and Sales Tax Registration, mandatory for all commercial entities operating in Pakistan's chemical and industrial sector.</p><div class="cert-tag">Registration</div></div></div>
+      <div class="cert-card tilt-card" data-aos="zoom-in" data-aos-delay="100"><div class="cert-card-img"><img src="images/WhatsApp Image 2026-05-30 at 06.08.02.jpeg" alt="CONAIR Group" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>CONAIR Group</h4><p>Authorised agent for CONAIR — world-leading manufacturer of precision industrial air humidification, yarn conditioning, and climate control systems for textile mills.</p><div class="cert-tag">Principal</div></div></div>
+      <div class="cert-card tilt-card" data-aos="zoom-in" data-aos-delay="200"><div class="cert-card-img"><img src="images/WhatsApp Image 2026-05-30 at 06.08.04.jpeg" alt="Luwa Nederman Group" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>Luwa — Nederman Group</h4><p>Authorised Pakistani agent for Luwa Air Engineering (Nederman Group) — global leader in industrial air handling, humidification, and dust extraction systems for the textile sector.</p><div class="cert-tag">Principal</div></div></div>
     </div>
   </div>
 </section>
@@ -2513,7 +2514,8 @@ const TypingEngine = {
   const subSelectors = [
     '.about-info h3', '.about-card-main h4',
     '.sample-box h3', '.clients-cta h4',
-    '.cert-section-header h3', '.director-name', '.director-creds',
+    '.cert-section-header h3', '.cert-card h4',
+    '.director-name', '.director-creds',
     '.footer-col h5'
   ];
   document.querySelectorAll(subSelectors.join(',')).forEach(el => {
