@@ -1497,6 +1497,12 @@ body.light-theme #contact .section-lead { color: rgba(255,255,255,0.65) !importa
     <div class="clients-carousel" id="clientsCarousel" data-aos="fade-up">
       <div class="clients-track" id="clientCarouselTrack"></div>
     </div>
+    <div class="clients-carousel" id="clientsCarousel2" data-aos="fade-up" data-aos-delay="80" style="margin-top:0.75rem">
+      <div class="clients-track" id="clientCarouselTrack2"></div>
+    </div>
+    <div class="clients-carousel" id="clientsCarousel3" data-aos="fade-up" data-aos-delay="160" style="margin-top:0.75rem">
+      <div class="clients-track" id="clientCarouselTrack3"></div>
+    </div>
     <div class="clients-cta" data-aos="fade-up" data-aos-delay="100">
       <h4>Are you a client? Let us add your company.</h4>
       <p>We serve 500+ companies across Pakistan. Contact us to have your organisation listed in our beneficiaries directory.</p>
@@ -1933,6 +1939,84 @@ function sendWA(){
       card.insertBefore(wrap, card.firstChild);
     });
   } catch(e){console.warn('Client carousel error:',e)}
+})();
+
+// Client carousel rows 2 & 3 (new images)
+(function(){
+  try {
+    const newImages1 = [
+      'WhatsApp Image 2026-05-30 at 04.12.08 (1)_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.12.08_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.12.09 (1)_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.12.09_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.12.10 (1)_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.12.10_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.12.11 (1)_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.12.11_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.12.12_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.12.15 (1)_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.12.15 (2)_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.12.15_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.12.17 (1)_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.12.17 (2)_11zon (1).jpeg',
+      'WhatsApp Image 2026-05-30 at 04.12.17_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.12.18 (1)_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.12.18_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.12.19 (1)_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.12.19 (2)_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.12.19_11zon.jpeg'
+    ];
+    const newImages2 = [
+      'WhatsApp Image 2026-05-30 at 04.12.20_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.17.13_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.17.16_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.17.18 (1)_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.17.18 (2)_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.17.18_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.17.19_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.17.20 (1)_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.17.20_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.17.22_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.17.23 (1)_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.17.23 (2)_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.17.23_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 04.17.24_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 05.34.51 (1)_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 05.34.51_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 05.34.52_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 05.34.53 (1)_11zon.jpeg',
+      'WhatsApp Image 2026-05-30 at 05.34.53_11zon.jpeg'
+    ];
+
+    function mkItem(src, alt) {
+      const d = document.createElement('div');
+      d.className = 'client-logo-item';
+      const i = document.createElement('img');
+      i.src = encodeURI(src); i.alt = alt; i.loading = 'lazy'; i.decoding = 'async';
+      d.appendChild(i); return d;
+    }
+
+    const track2 = document.getElementById('clientCarouselTrack2');
+    const track3 = document.getElementById('clientCarouselTrack3');
+    if (!track2 || !track3) return;
+
+    newImages1.forEach((n,i) => { track2.appendChild(mkItem('images/'+n,'Client '+i)); });
+    newImages1.forEach((n,i) => { track2.appendChild(mkItem('images/'+n,'Client dup '+i)); });
+    newImages2.forEach((n,i) => { track3.appendChild(mkItem('images/'+n,'Client '+i)); });
+    newImages2.forEach((n,i) => { track3.appendChild(mkItem('images/'+n,'Client dup '+i)); });
+
+    let tw2=0, off2=0, tw3=0, off3=0;
+    function calc2(){ const f=track2.querySelector('.client-logo-item'); if(!f)return; tw2=(f.offsetWidth+(parseFloat(getComputedStyle(track2).gap)||0))*newImages1.length; }
+    function calc3(){ const f=track3.querySelector('.client-logo-item'); if(!f)return; tw3=(f.offsetWidth+(parseFloat(getComputedStyle(track3).gap)||0))*newImages2.length; }
+
+    function step2(){ off2+=0.4; if(off2>=tw2)off2-=tw2; track2.style.transform='translateX(-'+off2+'px)'; requestAnimationFrame(step2); }
+    function step3(){ off3+=0.3; if(off3>=tw3)off3-=tw3; track3.style.transform='translateX(-'+(tw3-off3)+'px)'; requestAnimationFrame(step3); }
+
+    calc2(); calc3();
+    window.addEventListener('resize', ()=>{ calc2(); calc3(); });
+    requestAnimationFrame(step2);
+    requestAnimationFrame(step3);
+  } catch(e){ console.warn('Carousel rows 2/3 error:',e); }
 })();
 
 // =============================================
