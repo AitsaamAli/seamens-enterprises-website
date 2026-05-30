@@ -152,8 +152,8 @@ section{padding:5rem 2rem}
 .cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.25rem;margin-top:2rem}
 .cert-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:8px;overflow:hidden;transition:transform 0.35s cubic-bezier(0.23,1,0.32,1),box-shadow 0.35s,border-color 0.35s,background 0.35s;position:relative}
 .cert-card:hover{transform:translateY(-7px) scale(1.02);box-shadow:0 20px 50px rgba(0,0,0,0.4);border-color:rgba(0,180,166,0.35);background:rgba(255,255,255,0.07)}
-.cert-card-img{height:200px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.08);position:relative;padding:0.75rem}
-.cert-card-img img{width:100%;height:100%;object-fit:contain;transition:transform 0.4s;opacity:1}
+.cert-card-img{height:200px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.08);position:relative;padding:0}
+.cert-card-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.4s;opacity:1}
 .cert-card:hover .cert-card-img img{transform:scale(1.03)}
 .cert-card-body{padding:1.2rem}
 .cert-card h4{font-family:'Barlow Condensed',sans-serif;font-size:0.95rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--teal);margin-bottom:0.3rem}
@@ -197,9 +197,9 @@ section{padding:5rem 2rem}
 .about-info h3{font-family:'Playfair Display',serif;font-size:2rem;color:var(--navy);margin-bottom:1rem}
 .about-info p{color:var(--muted);line-height:1.8;margin-bottom:1rem}
 .director-block{background:white;border-radius:6px;padding:1.25rem;border:1px solid rgba(0,0,0,0.07);margin-top:1.5rem}
+.director-role{font-family:'Barlow Condensed',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--teal);border:1px solid rgba(0,180,166,0.35);display:inline-block;padding:0.15rem 0.6rem;border-radius:2px;margin-bottom:0.5rem}
 .director-name{font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--navy)}
 .director-creds{font-size:0.82rem;color:var(--teal);font-weight:500;margin:0.25rem 0}
-.director-addr{font-size:0.8rem;color:var(--muted);line-height:1.6;margin-top:0.5rem}
 
 /* BLOG */
 #blog{background:var(--white);padding:5rem 2rem}
@@ -662,10 +662,10 @@ body:hover #cursor-dot { opacity: 1; }
   display: none;
 }
 .cert-card-img img {
-  width: auto;
-  max-width: 90%;
+  width: 100%;
+  max-width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
   opacity: 1;
 }
@@ -1515,21 +1515,21 @@ body.light-theme #contact .section-lead { color: rgba(255,255,255,0.65) !importa
 <section id="certifications">
   <div class="section-inner">
     <div class="section-label" data-aos="fade-up">Quality &amp; Compliance</div>
-    <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Certifications for<br>Chemical Manufacturing</h2>
+    <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Our Certifications</h2>
     <p class="section-lead" data-aos="fade-up" data-aos-delay="200">For a chemical manufacturing company in Pakistan, the following certifications are legally required and industry-recommended to ensure product quality, safety, environmental compliance, and market access.</p>
-    <div class="cert-section-header" data-aos="fade-up"><h3>Certifications</h3></div>
+    <div class="cert-section-header" data-aos="fade-up"><h3>Our Certifications</h3></div>
     <div class="cert-grid">
-      <div class="cert-card cert-mandatory" data-aos="zoom-in"><div class="cert-card-img"><img src="images/DRAP%20Registration.jpg" alt="DRAP Registration" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>DRAP Registration</h4><p>Drug Regulatory Authority of Pakistan — mandatory for any chemical contacting pharmaceutical or food applications.</p><div class="cert-tag">Mandatory</div></div></div>
-      <div class="cert-card cert-mandatory" data-aos="zoom-in" data-aos-delay="80"><div class="cert-card-img"><img src="images/NEQS%20Compliance.jpg" alt="NEQS Compliance" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>NEQS Compliance</h4><p>National Environmental Quality Standards — required for chemical effluent discharge under PEPA 1997.</p><div class="cert-tag">Mandatory</div></div></div>
-      <div class="cert-card cert-mandatory" data-aos="zoom-in" data-aos-delay="160"><div class="cert-card-img"><img src="images/SECP%20Registration.jpg" alt="SECP Registration" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>SECP Registration</h4><p>Securities &amp; Exchange Commission of Pakistan — company incorporation and legal business registration.</p><div class="cert-tag">Mandatory</div></div></div>
-      <div class="cert-card cert-mandatory" data-aos="zoom-in" data-aos-delay="240"><div class="cert-card-img"><img src="images/PCSIR%20Approval.jpg" alt="PCSIR Approval" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>PCSIR Approval</h4><p>Pakistan Council of Scientific &amp; Industrial Research — product testing and approval for chemical formulations.</p><div class="cert-tag">Mandatory</div></div></div>
-      <div class="cert-card cert-mandatory" data-aos="zoom-in" data-aos-delay="320"><div class="cert-card-img"><img src="images/NTN.png" alt="NTN / Sales Tax Reg." loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>NTN / Sales Tax Reg.</h4><p>FBR National Tax Number and sales tax registration — mandatory for all commercial chemical entities.</p><div class="cert-tag">Mandatory</div></div></div>
+      <div class="cert-card cert-mandatory" data-aos="zoom-in"><div class="cert-card-img"><img src="images/WhatsApp Image 2026-05-30 at 04.12.08 (1)_11zon.jpeg" alt="DRAP Registration" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>DRAP Registration</h4><p>Drug Regulatory Authority of Pakistan — mandatory for any chemical contacting pharmaceutical or food applications.</p><div class="cert-tag">Mandatory</div></div></div>
+      <div class="cert-card cert-mandatory" data-aos="zoom-in" data-aos-delay="80"><div class="cert-card-img"><img src="images/WhatsApp Image 2026-05-30 at 04.12.08_11zon.jpeg" alt="NEQS Compliance" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>NEQS Compliance</h4><p>National Environmental Quality Standards — required for chemical effluent discharge under PEPA 1997.</p><div class="cert-tag">Mandatory</div></div></div>
+      <div class="cert-card cert-mandatory" data-aos="zoom-in" data-aos-delay="160"><div class="cert-card-img"><img src="images/WhatsApp Image 2026-05-30 at 04.12.09 (1)_11zon.jpeg" alt="SECP Registration" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>SECP Registration</h4><p>Securities &amp; Exchange Commission of Pakistan — company incorporation and legal business registration.</p><div class="cert-tag">Mandatory</div></div></div>
+      <div class="cert-card cert-mandatory" data-aos="zoom-in" data-aos-delay="240"><div class="cert-card-img"><img src="images/WhatsApp Image 2026-05-30 at 04.12.09_11zon.jpeg" alt="PCSIR Approval" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>PCSIR Approval</h4><p>Pakistan Council of Scientific &amp; Industrial Research — product testing and approval for chemical formulations.</p><div class="cert-tag">Mandatory</div></div></div>
+      <div class="cert-card cert-mandatory" data-aos="zoom-in" data-aos-delay="320"><div class="cert-card-img"><img src="images/WhatsApp Image 2026-05-30 at 04.12.10 (1)_11zon.jpeg" alt="NTN / Sales Tax Reg." loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>NTN / Sales Tax Reg.</h4><p>FBR National Tax Number and sales tax registration — mandatory for all commercial chemical entities.</p><div class="cert-tag">Mandatory</div></div></div>
       <div class="cert-divider" data-aos="fade-up"><h3>Quality Management Certifications</h3></div>
-      <div class="cert-card tilt-card" data-aos="zoom-in"><div class="cert-card-img"><img src="images/ISO%209001.webp" alt="ISO 9001:2015" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>ISO 9001:2015</h4><p>Quality Management System — global baseline for consistent product quality and customer satisfaction.</p><div class="cert-tag">Quality</div></div></div>
-      <div class="cert-card tilt-card" data-aos="zoom-in" data-aos-delay="80"><div class="cert-card-img"><img src="images/ISO%209001.webp" alt="ISO 14001:2018" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>ISO 14001:2018</h4><p>Environmental Management System — commitment to environmental responsibility in chemical manufacturing.</p><div class="cert-tag">Environmental</div></div></div>
-      <div class="cert-card tilt-card" data-aos="zoom-in" data-aos-delay="160"><div class="cert-card-img"><img src="images/ISO%2045001%20OHSAS.webp" alt="ISO 45001 / OHSAS" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>ISO 45001 / OHSAS</h4><p>Occupational Health &amp; Safety — ensuring safe working environments across all facilities.</p><div class="cert-tag">Safety</div></div></div>
-      <div class="cert-card tilt-card" data-aos="zoom-in" data-aos-delay="240"><div class="cert-card-img"><img src="images/GMP%20Certification_.webp" alt="GMP Certification" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>GMP Certification</h4><p>Good Manufacturing Practices — required for chemicals used in pharmaceutical, food and cosmetic applications.</p><div class="cert-tag">Manufacturing</div></div></div>
-      <div class="cert-card tilt-card" data-aos="zoom-in" data-aos-delay="320"><div class="cert-card-img"><img src="images/PSQCA%20Standards.jpg" alt="PSQCA Standards" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>PSQCA Standards</h4><p>Pakistan Standards &amp; Quality Control Authority — product conformity to national standards for chemical products.</p><div class="cert-tag">Standards</div></div></div>
+      <div class="cert-card tilt-card" data-aos="zoom-in"><div class="cert-card-img"><img src="images/WhatsApp Image 2026-05-30 at 04.12.10_11zon.jpeg" alt="ISO 9001:2015" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>ISO 9001:2015</h4><p>Quality Management System — global baseline for consistent product quality and customer satisfaction.</p><div class="cert-tag">Quality</div></div></div>
+      <div class="cert-card tilt-card" data-aos="zoom-in" data-aos-delay="80"><div class="cert-card-img"><img src="images/WhatsApp Image 2026-05-30 at 04.12.11 (1)_11zon.jpeg" alt="ISO 14001:2018" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>ISO 14001:2018</h4><p>Environmental Management System — commitment to environmental responsibility in chemical manufacturing.</p><div class="cert-tag">Environmental</div></div></div>
+      <div class="cert-card tilt-card" data-aos="zoom-in" data-aos-delay="160"><div class="cert-card-img"><img src="images/WhatsApp Image 2026-05-30 at 04.12.11_11zon.jpeg" alt="ISO 45001 / OHSAS" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>ISO 45001 / OHSAS</h4><p>Occupational Health &amp; Safety — ensuring safe working environments across all facilities.</p><div class="cert-tag">Safety</div></div></div>
+      <div class="cert-card tilt-card" data-aos="zoom-in" data-aos-delay="240"><div class="cert-card-img"><img src="images/WhatsApp Image 2026-05-30 at 04.12.12_11zon.jpeg" alt="GMP Certification" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>GMP Certification</h4><p>Good Manufacturing Practices — required for chemicals used in pharmaceutical, food and cosmetic applications.</p><div class="cert-tag">Manufacturing</div></div></div>
+      <div class="cert-card tilt-card" data-aos="zoom-in" data-aos-delay="320"><div class="cert-card-img"><img src="images/WhatsApp Image 2026-05-30 at 04.12.15 (1)_11zon.jpeg" alt="PSQCA Standards" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>PSQCA Standards</h4><p>Pakistan Standards &amp; Quality Control Authority — product conformity to national standards for chemical products.</p><div class="cert-tag">Standards</div></div></div>
     </div>
   </div>
 </section>
@@ -1596,9 +1596,9 @@ body.light-theme #contact .section-lead { color: rgba(255,255,255,0.65) !importa
         <p style="color:var(--muted);line-height:1.8;margin-bottom:1rem">Seamens Enterprises was founded on the principle that Pakistani industry deserves world-class chemical and engineering solutions delivered with local expertise and personal service.</p>
         <p style="color:var(--muted);line-height:1.8;margin-bottom:1rem">We work directly with textile mills, industrial plants, and process industries to supply the chemicals, machinery, and technical support they need to operate efficiently, sustainably, and cost-effectively.</p>
         <div class="director-block">
+          <div class="director-role">Director</div>
           <div class="director-name">Mian Mehmood Ahmed</div>
           <div class="director-creds">BSc. Chemical | Old Formanite · FC Chartered University Lahore</div>
-          <div class="director-addr">📍 Plot No. 51, Street No. 1, Awal Khair Stop, Al-Saeed Chowk,<br>Main Sharqpur Road, Lahore</div>
         </div>
       </div>
     </div>
