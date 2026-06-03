@@ -301,7 +301,7 @@ footer a{color:var(--teal);text-decoration:none}
   .about-grid{gap:2rem}
   .contact-grid{gap:1.75rem}
   .footer-inner{grid-template-columns:1fr 1fr}
-  .nav-links{display:none;flex-direction:column;position:absolute;top:72px;left:0;width:100%;background:var(--navy);padding:1rem 2rem 2rem;gap:1rem;z-index:999}
+  .nav-links{display:none;flex-direction:column;position:absolute;top:72px;left:0;width:100%;background:var(--navy);padding:1rem 2rem 2rem;gap:1rem;z-index:999;box-shadow:0 8px 24px rgba(0,0,0,0.3)}
   .nav-links.open{display:flex}
   .hamburger{display:flex}
   .stats-inner{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
@@ -309,7 +309,7 @@ footer a{color:var(--teal);text-decoration:none}
   .clients-header{flex-direction:column}
   .products-grid{grid-template-columns:repeat(3,1fr)}
   .cert-grid{grid-template-columns:repeat(2,1fr)!important}
-  .sys-grid{grid-template-columns:repeat(3,1fr)}
+  .sys-grid{grid-template-columns:repeat(2,1fr)}
   .blog-grid{grid-template-columns:1fr}
   section{padding:3rem 1.25rem}
   .sample-box{padding:2rem 1.75rem;gap:1rem}
@@ -329,6 +329,8 @@ footer a{color:var(--teal);text-decoration:none}
   .aux-grid{grid-template-columns:1fr 1fr}
   .footer-inner{grid-template-columns:1fr}
   .product-card-img,.sys-card-img,.cert-card-img{height:160px}
+  .logo-img{height:42px}
+  .hero-logo-img{height:80px}
   .hero-h1{font-size:1.35rem}
   .hero-sub{font-size:0.88rem}
   section{padding:2.25rem 0.9rem}
@@ -378,6 +380,8 @@ footer a{color:var(--teal);text-decoration:none}
   section{padding:2rem 0.75rem}
   .section-title{font-size:1.4rem}
   .hero-h1{font-size:1.2rem}
+  .hero-logo-img{height:65px}
+  .logo-img{height:38px}
   .cert-grid{grid-template-columns:1fr!important}
   .aux-grid{grid-template-columns:1fr}
   .stats-inner{grid-template-columns:1fr 1fr}
@@ -386,6 +390,10 @@ footer a{color:var(--teal);text-decoration:none}
   .dept-badge{min-width:calc(50% - 0.25rem)}
   .footer-inner{grid-template-columns:1fr}
   .clients-cta{padding:1rem 0.85rem}
+  .btn-primary,.btn-outline{max-width:100%;padding:0.75rem 1rem}
+  .map-container iframe{height:220px}
+  .founder-stats{flex-direction:column;gap:0.5rem}
+  .client-logo-item{flex:0 0 110px;min-width:110px;height:80px}
 }
 @media(prefers-reduced-motion:reduce){
   *{animation-duration:0.01ms!important;transition-duration:0.01ms!important}
@@ -1309,6 +1317,40 @@ body.light-theme #certifications .section-title,
 body.light-theme #contact .section-title { color: #fff !important; }
 body.light-theme #certifications .section-lead,
 body.light-theme #contact .section-lead { color: rgba(255,255,255,0.65) !important; }
+
+/* ── Contact form ── */
+body.light-theme .contact-form{background:#fff!important;border-color:rgba(0,0,0,0.1)!important}
+body.light-theme .form-group label{color:#3a4d66!important}
+body.light-theme .form-group input,
+body.light-theme .form-group textarea,
+body.light-theme .form-group select{background:#f4f6f9!important;border-color:rgba(0,0,0,0.15)!important;color:#1a2332!important}
+body.light-theme .form-group input::placeholder,
+body.light-theme .form-group textarea::placeholder{color:#8a9ab0!important}
+body.light-theme .form-group input:focus,
+body.light-theme .form-group textarea:focus,
+body.light-theme .form-group select:focus{border-color:var(--teal)!important;background:#fff!important}
+body.light-theme .form-group select option{background:#fff!important;color:#1a2332!important}
+
+/* ── Blog modal ── */
+body.light-theme .blog-modal{background:#fff!important;color:#1a2332!important}
+body.light-theme .blog-modal h2,
+body.light-theme .blog-modal h3{color:#0a1628!important}
+body.light-theme .blog-modal p,
+body.light-theme .blog-modal li{color:#4a5a72!important}
+body.light-theme .blog-modal .modal-meta{color:#5a6a7e!important;border-color:rgba(0,0,0,0.08)!important}
+body.light-theme .blog-modal-close{background:#eef1f7!important;color:#0a1628!important}
+body.light-theme .blog-modal-close:hover{background:#dde3ed!important}
+
+/* ── Nav dropdown on mobile ── */
+body.light-theme .nav-links{background:#fff!important}
+body.light-theme .nav-links a{color:#1a2332!important}
+body.light-theme .nav-links a:hover{color:var(--teal)!important}
+
+/* ── Hero section text ── */
+body.light-theme .hero-sub{color:rgba(255,255,255,0.85)!important}
+
+/* ── Scroll indicator ── */
+body.light-theme .scroll-dot{background:var(--teal)!important}
 
 </style>
 </head>
