@@ -19,7 +19,10 @@ nav{position:fixed;top:0;left:0;width:100%;z-index:1000;transition:background 0.
 nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 30px rgba(0,0,0,0.5);backdrop-filter:blur(12px)}
 .nav-inner{max-width:1300px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:72px}
 .logo-wrap{display:flex;align-items:center;text-decoration:none}
-.logo-img{height:52px;width:auto;object-fit:contain;filter:drop-shadow(0 2px 8px rgba(0,0,0,0.5))}
+.logo-img-wrap{display:flex;align-items:center}
+.logo-img{height:54px;width:auto;object-fit:contain;filter:drop-shadow(0 2px 10px rgba(0,180,166,0.45))}
+.hero-logo-img{height:115px;width:auto;filter:drop-shadow(0 4px 24px rgba(0,180,166,0.65)) brightness(1.05)}
+.footer-logo-img{height:46px;width:auto;opacity:0.9;margin-bottom:0.5rem;filter:drop-shadow(0 2px 8px rgba(0,180,166,0.3))}
 .nav-links{display:flex;gap:1.5rem;list-style:none}
 .nav-links a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:0.82rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;transition:color 0.2s;position:relative}
 .nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1.5px;background:var(--teal);transition:width 0.3s}
@@ -76,7 +79,7 @@ section{padding:5rem 2rem}
 .tab-icon{width:24px;height:24px;flex-shrink:0;object-fit:contain;border-radius:4px}
 .tab-pane{display:none;margin-top:2.5rem}
 .tab-pane.active{display:block}
-.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.25rem}
 .product-card{background:white;border-radius:8px;overflow:hidden;border:1px solid rgba(0,0,0,0.07);transition:transform 0.35s cubic-bezier(0.23,1,0.32,1),box-shadow 0.35s;position:relative}
 .product-card:hover{transform:translateY(-7px);box-shadow:0 20px 50px rgba(0,0,0,0.13)}
 .product-card-img{height:200px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#f0f2f5}
@@ -92,7 +95,7 @@ section{padding:5rem 2rem}
 .product-items li::before{content:'—';position:absolute;left:0;color:var(--teal)}
 .card-hover-tag{position:absolute;top:1rem;right:1rem;background:var(--teal);color:white;font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:0.25rem 0.6rem;border-radius:2px;opacity:0;transform:translateY(-6px);transition:opacity 0.3s,transform 0.3s;z-index:2}
 .product-card:hover .card-hover-tag{opacity:1;transform:translateY(0)}
-.aux-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+.aux-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:1rem;margin-top:1rem}
 .aux-card{background:var(--navy);border-radius:8px;padding:1.4rem;color:white;position:relative;overflow:hidden;transition:transform 0.35s cubic-bezier(0.23,1,0.32,1),box-shadow 0.35s}
 .aux-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--teal)}
 .aux-card:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(0,0,0,0.25)}
@@ -100,7 +103,7 @@ section{padding:5rem 2rem}
 .aux-card h4{font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;letter-spacing:0.06em;color:var(--teal);margin-bottom:0.4rem;text-transform:uppercase}
 .aux-card p{font-size:0.82rem;color:rgba(255,255,255,0.6);line-height:1.5}
 .aux-badge{display:inline-block;background:rgba(0,180,166,0.15);color:var(--teal);font-size:0.72rem;font-weight:600;padding:0.2rem 0.5rem;border-radius:2px;margin-top:0.5rem;text-transform:uppercase;letter-spacing:0.05em;border:1px solid rgba(0,180,166,0.25)}
-.sys-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:1rem}
+.sys-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.5rem;margin-top:1rem}
 .sys-card{background:white;border-radius:8px;border:1px solid rgba(0,0,0,0.08);overflow:hidden;transition:transform 0.35s cubic-bezier(0.23,1,0.32,1),box-shadow 0.35s,border-color 0.3s}
 .sys-card:hover{transform:translateY(-6px);box-shadow:0 18px 45px rgba(0,0,0,0.12);border-color:rgba(0,180,166,0.3)}
 .sys-card-img{height:200px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#f0f2f5}
@@ -205,6 +208,14 @@ section{padding:5rem 2rem}
 .director-role{font-family:'Barlow Condensed',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--teal);border:1px solid rgba(0,180,166,0.35);display:inline-block;padding:0.15rem 0.6rem;border-radius:2px;margin-bottom:0.5rem}
 .director-name{font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--navy)}
 .director-creds{font-size:0.82rem;color:var(--teal);font-weight:500;margin:0.25rem 0}
+.founder-lineage{font-size:0.8rem;color:var(--muted);margin:0.1rem 0 0.3rem}
+.founder-stats{display:flex;gap:0.75rem;margin:0.75rem 0}
+.founder-stat{flex:1;background:var(--light);border-radius:4px;padding:0.5rem 0.6rem;text-align:center}
+.founder-stat-num{display:block;font-family:'Barlow Condensed',sans-serif;font-size:1.35rem;font-weight:700;color:var(--teal);line-height:1}
+.founder-stat-label{display:block;font-size:0.68rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-top:0.2rem}
+.founder-bio{font-size:0.83rem;color:var(--muted);line-height:1.75;margin:0.5rem 0 0.75rem}
+.founder-tags{display:flex;flex-wrap:wrap;gap:0.4rem}
+.founder-tags span{font-size:0.7rem;font-weight:600;letter-spacing:0.05em;color:var(--teal);background:rgba(0,180,166,0.07);border:1px solid rgba(0,180,166,0.25);border-radius:3px;padding:0.15rem 0.5rem}
 
 /* BLOG */
 #blog{background:var(--white);padding:5rem 2rem}
@@ -296,9 +307,9 @@ footer a{color:var(--teal);text-decoration:none}
   .stats-inner{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
   .clients-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
   .clients-header{flex-direction:column}
-  .products-grid{grid-template-columns:repeat(2,1fr)}
+  .products-grid{grid-template-columns:repeat(3,1fr)}
   .cert-grid{grid-template-columns:repeat(2,1fr)!important}
-  .sys-grid{grid-template-columns:repeat(2,1fr)}
+  .sys-grid{grid-template-columns:repeat(3,1fr)}
   .blog-grid{grid-template-columns:1fr}
   section{padding:3rem 1.25rem}
   .sample-box{padding:2rem 1.75rem;gap:1rem}
@@ -1259,6 +1270,9 @@ body.light-theme .products-tabs { border-bottom-color: rgba(0,0,0,0.12) !importa
 /* About section */
 body.light-theme .about-info p { color: #4a5a72 !important; }
 body.light-theme .director-addr { color: #5a6a7e !important; }
+body.light-theme .founder-lineage,
+body.light-theme .founder-bio { color: #4a5a72 !important; }
+body.light-theme .founder-stat { background: #f0f4f8 !important; }
 body.light-theme .director-name { color: #0a1628 !important; }
 body.light-theme .director-block { background: #fff !important; border-color: rgba(0,0,0,0.09) !important; }
 body.light-theme .ac-text { color: rgba(255,255,255,0.9) !important; }
@@ -1272,9 +1286,8 @@ body.light-theme .footer-col h5 { color: #fff !important; }
 body.light-theme .filter-btn { color: #3a4d66 !important; border-color: rgba(0,0,0,0.15) !important; }
 body.light-theme .filter-btn:hover, body.light-theme .filter-btn.active { color: #fff !important; }
 
-/* Logo text in light mode nav */
-body.light-theme .logo-text-ent { color: rgba(10,22,40,0.5) !important; }
-body.light-theme .logo-divider { background: linear-gradient(90deg, rgba(0,180,166,0.7), rgba(0,180,166,0.15)) !important; }
+/* Logo in light mode nav */
+body.light-theme .logo-img { filter: drop-shadow(0 2px 6px rgba(0,0,0,0.15)); }
 
 /* Map section titles stay white */
 body.light-theme #map-section .section-title { color: #fff !important; }
@@ -1311,12 +1324,8 @@ body.light-theme #contact .section-lead { color: rgba(255,255,255,0.65) !importa
 <nav id="navbar">
   <div class="nav-inner">
     <a class="logo-wrap" href="#home">
-      <div class="logo-text-wrap" id="navLogoText">
-        <div class="logo-name-row">
-          <span class="logo-text-sea">SEA</span><span class="logo-text-mens">MENS</span>
-        </div>
-        <div class="logo-divider"></div>
-        <span class="logo-text-ent">ENTERPRISES</span>
+      <div class="logo-img-wrap">
+        <img src="images/seamens-logo-transparent.png" class="logo-img" alt="Seamens Enterprises" draggable="false">
       </div>
     </a>
     <ul class="nav-links" id="navLinks">
@@ -1350,10 +1359,7 @@ body.light-theme #contact .section-lead { color: rgba(255,255,255,0.65) !importa
   <div class="hero-overlay2"></div>
   <div class="hero-content">
     <div class="hero-logo-big" id="heroLogo">
-      <div class="hero-logo-text" id="heroLogoText">
-        <div class="hlt-top"><span class="hlt-sea">SEA</span><span class="hlt-mens">MENS</span></div>
-        <div class="hlt-bot">ENTERPRISES</div>
-      </div>
+      <img src="images/seamens-logo-transparent.png" class="hero-logo-img" alt="Seamens Enterprises" draggable="false">
     </div>
     <div class="hero-tag" id="heroTag">Industrial Chemical Technologies &middot; Since 2008</div>
     <h1 class="hero-h1" id="heroH1"><span id="typeLine1"></span><br><em id="typeLine2"></em></h1>
@@ -1406,14 +1412,14 @@ body.light-theme #contact .section-lead { color: rgba(255,255,255,0.65) !importa
           
           <div class="product-card-top"></div>
           <div class="product-card-img"><img src="images/Dyeing%20Auxiliaries.jpg" alt="Dyeing Auxiliaries" loading="lazy" decoding="async"></div>
-          <div class="product-card-body"><div class="product-icon">🎨</div><h3>Dyeing Auxiliaries</h3><p>Levelling, dispersing and fixing agents for reactive, disperse, acid and vat dyeing processes.</p><ul class="product-items"><li>Levelling &amp; dispersing agents</li><li>Dye fixing &amp; aftertreatment</li><li>Sequestering &amp; chelating agents</li><li>Anti-migration agents</li></ul></div>
+          <div class="product-card-body"><div class="product-icon">🎨</div><h3>Dyeing Auxiliaries</h3><p>Levelling, dispersing and fixing agents for reactive, disperse and vat dyeing processes.</p><ul class="product-items"><li>Levelling &amp; dispersing agents</li><li>Dye fixing &amp; aftertreatment</li><li>Sequestering &amp; chelating agents</li><li>Anti-migration agents</li></ul></div>
         </div>
         <div class="product-card tilt-card" data-aos="fade-up" data-aos-delay="200">
           <div class="card-hover-tag">Finishing</div>
           
           <div class="product-card-top"></div>
           <div class="product-card-img"><img src="images/Softeners%20%26%20Finishing.jpg" alt="Softeners & Finishing" loading="lazy" decoding="async"></div>
-          <div class="product-card-body"><div class="product-icon">✨</div><h3>Softeners &amp; Finishing</h3><p>High-performance softeners and functional finishes delivering premium hand-feel and drapability.</p><ul class="product-items"><li>EcoShort-GS-777 &amp; EcoSoftener D-11</li><li>Silicone macro &amp; micro emulsions</li><li>Hydrophilic &amp; cationic softeners</li><li>EcoAcryllic-ACL-55 binder</li></ul></div>
+          <div class="product-card-body"><div class="product-icon">✨</div><h3>Softeners &amp; Finishing</h3><p>High-performance softeners and functional finishes delivering premium hand-feel and drapability.</p><ul class="product-items"><li>EcoShort-GS-777 &amp; EcoSoftener D-11</li><li>Silicone macro &amp; micro emulsions</li><li>Hydrophilic &amp; cationic softeners</li><li>EcoAcryllic-ACL-55</li></ul></div>
         </div>
         <div class="product-card tilt-card" data-aos="fade-up" data-aos-delay="300">
           <div class="card-hover-tag">Pre-treatment</div>
@@ -1424,7 +1430,7 @@ body.light-theme #contact .section-lead { color: rgba(255,255,255,0.65) !importa
         </div>
         <div class="product-card tilt-card" data-aos="fade-up" data-aos-delay="400">
           <div class="card-hover-tag">Specialty</div>
-          
+
           <div class="product-card-top"></div>
           <div class="product-card-img"><img src="images/Specialty%20Finishes.jpg" alt="Specialty Finishes" loading="lazy" decoding="async"></div>
           <div class="product-card-body"><div class="product-icon">🛡</div><h3>Specialty Finishes</h3><p>Value-added functional finishes for technical and high-end fashion applications.</p><ul class="product-items"><li>EcoFlame-FR Pro flame retardant</li><li>Water repellent (DWR) finishes</li><li>Anti-bacterial / Anti-microbial</li><li>UV protection finishes</li></ul></div>
@@ -1437,11 +1443,20 @@ body.light-theme #contact .section-lead { color: rgba(255,255,255,0.65) !importa
           <div class="aux-card tilt-card" data-aos="zoom-in"><div class="aux-num">01</div><h4>EcoSize-CXW-111</h4><p>White Gumullar Powder — Made in Germany. Premium sizing agent for warp yarn.</p><div class="aux-badge">Sizing</div></div>
           <div class="aux-card tilt-card" data-aos="zoom-in" data-aos-delay="60"><div class="aux-num">02</div><h4>EcoShort-GS-777</h4><p>White Thick Paste. High-performance shortening agent for improved fabric handle.</p><div class="aux-badge">Finishing</div></div>
           <div class="aux-card tilt-card" data-aos="zoom-in" data-aos-delay="120"><div class="aux-num">03</div><h4>EcoSoftener D-11</h4><p>White Thick Paste. Superior hand-feel and drapability softener.</p><div class="aux-badge">Finishing</div></div>
-          <div class="aux-card tilt-card" data-aos="zoom-in" data-aos-delay="180"><div class="aux-num">04</div><h4>EcoAcryllic-ACL-55</h4><p>Acrylic binder for textile coating with excellent adhesion properties.</p><div class="aux-badge">Coating</div></div>
+          <div class="aux-card tilt-card" data-aos="zoom-in" data-aos-delay="180"><div class="aux-num">04</div><h4>EcoAcryllic-ACL-55</h4><p>Acrylic coating agent for textile applications with excellent adhesion properties.</p><div class="aux-badge">Coating</div></div>
           <div class="aux-card tilt-card" data-aos="zoom-in" data-aos-delay="240"><div class="aux-num">05</div><h4>Eco-Weight Enhancer WKL-121</h4><p>Weight enhancement and improved fabric body for finishing applications.</p><div class="aux-badge">Finishing</div></div>
           <div class="aux-card tilt-card" data-aos="zoom-in" data-aos-delay="300"><div class="aux-num">06</div><h4>EcoDye-LEV Series</h4><p>Levelling &amp; dispersing agents for reactive and disperse dye processes.</p><div class="aux-badge">Dyeing</div></div>
           <div class="aux-card tilt-card" data-aos="zoom-in" data-aos-delay="360"><div class="aux-num">07</div><h4>EcoScour-SCA-30</h4><p>Heavy-duty scouring &amp; wetting agent for greige fabric preparation.</p><div class="aux-badge">Pre-treatment</div></div>
           <div class="aux-card tilt-card" data-aos="zoom-in" data-aos-delay="420"><div class="aux-num">08</div><h4>EcoFlame-FR Pro</h4><p>Durable flame retardant finish for cotton, blends and technical textiles.</p><div class="aux-badge">Specialty</div></div>
+          <div class="aux-card tilt-card" data-aos="zoom-in" data-aos-delay="480"><div class="aux-num">09</div><h4>EcoStab-HS</h4><p>Hydrogen peroxide stabilizer for controlled, uniform bleaching. Prevents fabric damage during scouring &amp; pre-treatment.</p><div class="aux-badge">Pre-Treatment</div></div>
+          <div class="aux-card tilt-card" data-aos="zoom-in" data-aos-delay="540"><div class="aux-num">10</div><h4>EcoDesize-EZ</h4><p>Enzymatic desizing agent for fast, effective removal of starch and synthetic sizes from woven fabrics.</p><div class="aux-badge">Pre-Treatment</div></div>
+          <div class="aux-card tilt-card" data-aos="zoom-in" data-aos-delay="600"><div class="aux-num">11</div><h4>EcoWet+Det</h4><p>Combined high-performance wetting and detergent agent for thorough fabric preparation and deep scouring.</p><div class="aux-badge">Pre-Treatment</div></div>
+          <div class="aux-card tilt-card" data-aos="zoom-in" data-aos-delay="660"><div class="aux-num">12</div><h4>EcoLevel-LV</h4><p>Levelling and migration agent ensuring uniform dye uptake in reactive and direct dyeing processes.</p><div class="aux-badge">Dyeing</div></div>
+          <div class="aux-card tilt-card" data-aos="zoom-in" data-aos-delay="720"><div class="aux-num">13</div><h4>EcoPVA-GS</h4><p>Polyvinyl alcohol-based sizing glue providing strong, flexible yarn coating with excellent film-forming adhesion.</p><div class="aux-badge">Sizing</div></div>
+          <div class="aux-card tilt-card" data-aos="zoom-in" data-aos-delay="780"><div class="aux-num">14</div><h4>EcoShield-WP</h4><p>Durable water repellent finish delivering long-lasting waterproof protection for technical and outdoor fabrics.</p><div class="aux-badge">Specialty</div></div>
+          <div class="aux-card tilt-card" data-aos="zoom-in" data-aos-delay="840"><div class="aux-num">15</div><h4>EcoGuard-FP</h4><p>Fire proof chemical treatment offering durable flame-resistant protection for cotton, blends and industrial textiles.</p><div class="aux-badge">Specialty</div></div>
+          <div class="aux-card tilt-card" data-aos="zoom-in" data-aos-delay="900"><div class="aux-num">16</div><h4>EcoSil-SS</h4><p>Amino-functional silicone softener delivering ultra-smooth, silky hand-feel for premium fabric finishing.</p><div class="aux-badge">Finishing</div></div>
+          <div class="aux-card tilt-card" data-aos="zoom-in" data-aos-delay="960"><div class="aux-num">17</div><h4>EcoFix-FB</h4><p>Formaldehyde-based fixer for enhanced wash fastness of reactive and direct dyes on cellulosic fibres.</p><div class="aux-badge">Dyeing</div></div>
         </div>
       </div>
     </div>
@@ -1465,7 +1480,7 @@ body.light-theme #contact .section-lead { color: rgba(255,255,255,0.65) !importa
         <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="100"><div class="sys-card-img"><img src="images/Cooling%20Tower%20Water%20Treatment.jpg" alt="Cooling Tower Water Treatment" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Cooling Tower Water Treatment</h4><p>Chemical treatment programmes to prevent scale, corrosion, microbiological fouling and Legionella.</p><ul><li>Corrosion &amp; scale inhibitors</li><li>Biocides (oxidising &amp; non-oxidising)</li><li>Dispersants &amp; anti-foulants</li></ul></div></div>
         <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="200"><div class="sys-card-img"><img src="images/Industrial%20Chiller%20Systems.jpg" alt="Industrial Chiller Systems" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Industrial Chiller Systems</h4><p>Air-cooled and water-cooled industrial chillers for process cooling in textile, pharmaceutical, food &amp; beverage.</p><ul><li>Screw chillers (50–2000 TR)</li><li>Centrifugal chillers</li><li>Cold storage system design</li></ul></div></div>
         <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="300"><div class="sys-card-img"><img src="images/Reverse%20Osmosis%20(RO)%20Plants.jpg" alt="Reverse Osmosis (RO) Plants" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Reverse Osmosis (RO) Plants</h4><p>Industrial-grade RO systems for process water purification and boiler feed water compliance.</p><ul><li>Single &amp; double-pass RO systems</li><li>Ultra-filtration pre-treatment</li><li>Zero Liquid Discharge (ZLD) systems</li></ul></div></div>
-        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="400"><div class="sys-card-img"><img src="images/RO%20%26%20Membrane%20Chemicals.jpg" alt="RO & Membrane Chemicals" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>RO &amp; Membrane Chemicals</h4><p>Antiscalant, biocide and CIP cleaning formulations to maximise RO membrane life.</p><ul><li>Antiscalants for CaCO₃, CaSO₄, SiO₂</li><li>Membrane biocides (non-oxidising)</li><li>Acid &amp; alkaline CIP cleaners</li></ul></div></div>
+        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="400"><div class="sys-card-img"><img src="images/RO%20%26%20Membrane%20Chemicals.jpg" alt="RO & Membrane Chemicals" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>RO &amp; Membrane Chemicals</h4><p>Antiscalant, biocide and CIP cleaning formulations to maximise RO membrane life.</p><ul><li>Antiscalants for CaCO₃, CaSO₄, SiO₂</li><li>Membrane biocides (non-oxidising)</li><li>Alkaline CIP cleaners</li></ul></div></div>
         <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="500"><div class="sys-card-img"><img src="images/Erection%20%26%20Commissioning.jpg" alt="Erection & Commissioning" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Erection &amp; Commissioning</h4><p>End-to-end project management for cooling tower, chiller and RO plant installations.</p><ul><li>Turnkey project execution</li><li>Pipework &amp; instrumentation</li><li>Performance testing &amp; validation</li></ul></div></div>
       </div>
     </div>
@@ -1505,12 +1520,12 @@ body.light-theme #contact .section-lead { color: rgba(255,255,255,0.65) !importa
             <tr><td>02</td><td><strong>Cooling Tower Descaler</strong></td><td>Organic-based descaling of cooling tower fill and heat exchangers</td><td><span class="cat-badge">Utilities</span></td><td>Liquid</td></tr>
             <tr><td>03</td><td><strong>Heavy Duty Degreaser</strong></td><td>Industrial degreasing of machinery, floors, engine parts</td><td><span class="cat-badge">Maintenance</span></td><td>Liquid / Spray</td></tr>
             <tr><td>04</td><td><strong>Alkaline CIP Cleaner</strong></td><td>Clean-in-place washing for food, pharma and process vessels</td><td><span class="cat-badge">Process</span></td><td>Powder / Liquid</td></tr>
-            <tr><td>06</td><td><strong>RO Membrane Cleaner</strong></td><td>Alkaline and acid cleaning of RO and UF membranes</td><td><span class="cat-badge">Water Treatment</span></td><td>Powder</td></tr>
+            <tr><td>06</td><td><strong>RO Membrane Cleaner</strong></td><td>Alkaline cleaning of RO and UF membranes</td><td><span class="cat-badge">Water Treatment</span></td><td>Powder</td></tr>
             <tr><td>07</td><td><strong>Floor &amp; Surface Cleaner</strong></td><td>Heavy-duty floor cleaning in production and factory areas</td><td><span class="cat-badge">Housekeeping</span></td><td>Liquid</td></tr>
             <tr><td>08</td><td><strong>Disinfectant / Sanitiser</strong></td><td>Surface sanitation in food, medical and clean room areas</td><td><span class="cat-badge">Hygiene</span></td><td>Liquid / Foam</td></tr>
             <tr><td>09</td><td><strong>Washroom Cleaner &amp; Descaler</strong></td><td>Toilet, urinal and washroom deep cleaning</td><td><span class="cat-badge">Facilities</span></td><td>Gel / Liquid</td></tr>
             <tr><td>10</td><td><strong>Glass &amp; Surface Cleaner</strong></td><td>Streak-free cleaning of glass, mirrors and smooth surfaces</td><td><span class="cat-badge">Housekeeping</span></td><td>Spray</td></tr>
-            <tr><td>11</td><td><strong>Metal Passivator</strong></td><td>Corrosion inhibition after acid treatment of metal surfaces</td><td><span class="cat-badge">Engineering</span></td><td>Liquid</td></tr>
+            <tr><td>11</td><td><strong>Metal Passivator</strong></td><td>Corrosion inhibition after treatment of metal surfaces</td><td><span class="cat-badge">Engineering</span></td><td>Liquid</td></tr>
             <tr><td>12</td><td><strong>Textile Machine Cleaner</strong></td><td>Removal of oil, size and fibre build-up from textile machinery</td><td><span class="cat-badge">Textile</span></td><td>Liquid</td></tr>
             <tr><td>13</td><td><strong>Grease &amp; Oil Remover</strong></td><td>Emulsification of grease deposits on mechanical parts</td><td><span class="cat-badge">Maintenance</span></td><td>Liquid</td></tr>
             <tr><td>14</td><td><strong>Drain &amp; Pipe Unclogger</strong></td><td>Chemical drain clearing for industrial and commercial lines</td><td><span class="cat-badge">Facilities</span></td><td>Granule / Liquid</td></tr>
@@ -1641,13 +1656,12 @@ body.light-theme #contact .section-lead { color: rgba(255,255,255,0.65) !importa
   <div class="section-inner">
     <div class="about-grid">
       <div data-aos="fade-right">
-        <div class="about-card-main"><h4>About Seamens Enterprises</h4><p>"A specialist industrial solutions company dedicated to delivering value-added chemical and engineering services for critical market applications. Operating across major cities with over 15 years of collective experience — serving textiles, sugar, cement, oil &amp; gas, IPPs, and beyond."</p></div>
-        <div class="about-card-accent"><div class="ac-num">15+</div><div class="ac-text">Years of collective<br>industry experience</div></div>
+        <div class="about-card-main"><h4>About Seamens Enterprises</h4><p>"A specialist industrial solutions company dedicated to delivering value-added chemical and engineering services for critical market applications. Operating across major cities with over 25 years of collective experience — serving textiles, sugar, cement, oil &amp; gas, IPPs, and beyond."</p></div>
+        <div class="about-card-accent"><div class="ac-num">25+</div><div class="ac-text">Years of collective<br>industry experience</div></div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-top:0.75rem">
           <div style="background:white;border-radius:6px;padding:1rem;border:1px solid rgba(0,0,0,0.07);text-align:center"><div style="font-family:'Barlow Condensed',sans-serif;font-size:1.6rem;font-weight:700;color:var(--teal)">Lahore</div><div style="font-size:0.78rem;color:var(--muted);margin-top:0.2rem">Head Office &amp; Factory</div></div>
           <div style="background:white;border-radius:6px;padding:1rem;border:1px solid rgba(0,0,0,0.07);text-align:center"><div style="font-family:'Barlow Condensed',sans-serif;font-size:1.6rem;font-weight:700;color:var(--teal)">PK-Wide</div><div style="font-size:0.78rem;color:var(--muted);margin-top:0.2rem">National Coverage</div></div>
         </div>
-        <div style="margin-top:0.75rem;border-radius:8px;overflow:hidden"></div>
       </div>
       <div data-aos="fade-left">
         <div class="section-label">Who We Are</div>
@@ -1656,9 +1670,21 @@ body.light-theme #contact .section-lead { color: rgba(255,255,255,0.65) !importa
         <p style="color:var(--muted);line-height:1.8;margin-bottom:1rem">Seamens Enterprises was founded on the principle that Pakistani industry deserves world-class chemical and engineering solutions delivered with local expertise and personal service.</p>
         <p style="color:var(--muted);line-height:1.8;margin-bottom:1rem">We work directly with textile mills, industrial plants, and process industries to supply the chemicals, machinery, and technical support they need to operate efficiently, sustainably, and cost-effectively.</p>
         <div class="director-block">
-          <div class="director-role">Director</div>
+          <div class="director-role">Founder</div>
           <div class="director-name">Mian Mehmood Ahmed</div>
+          <div class="founder-lineage">S/O Mian Manzoor Ahmed</div>
           <div class="director-creds">BSc. Chemical | Old Formanite · FC Chartered University Lahore</div>
+          <div class="founder-stats">
+            <div class="founder-stat"><span class="founder-stat-num">25</span><span class="founder-stat-label">Years Experience</span></div>
+            <div class="founder-stat"><span class="founder-stat-num">1997</span><span class="founder-stat-label">Est. Since</span></div>
+          </div>
+          <p class="founder-bio">A visionary industrial leader and inventor of water-safe technology in Pakistan, Mian Mehmood Ahmed founded Seamens Enterprises on the cornerstones of integrity, professionalism, and technical excellence. His unwavering commitment to quality has earned the company prestigious international certifications, upheld global standards, and driven the adoption of the latest technologies — delivering consistent, superior value to clients across Pakistan's industrial sector.</p>
+          <div class="founder-tags">
+            <span>Water-Safe Tech Inventor</span>
+            <span>Internationally Certified</span>
+            <span>International Standards</span>
+            <span>Latest Technology</span>
+          </div>
         </div>
       </div>
     </div>
@@ -1672,7 +1698,7 @@ body.light-theme #contact .section-lead { color: rgba(255,255,255,0.65) !importa
     <h2 class="section-title" style="color:white" data-aos="fade-up" data-aos-delay="100">Our Location</h2>
     <p style="color:rgba(255,255,255,0.6);margin-bottom:0;font-size:0.95rem" data-aos="fade-up" data-aos-delay="150">Plot No. 51, Street No. 1, Awal Khair Stop, Al-Saeed Chowk, Main Sharqpur Road, Lahore, Pakistan</p>
     <div class="map-container" data-aos="zoom-in" data-aos-delay="250">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3399.2!2d74.2519!3d31.5674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919041b0a673f47%3A0x123456789abcdef!2sMain%20Sharaqpur%20Road%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2spk!4v1716000000000!5m2!1sen!2spk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3398.0!2d74.2448922!3d31.6052915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39191da3245c7b97%3A0x121f4cf720bd595c!2sNaain+Sukh%2C+Lahore%2C+Punjab%2C+Pakistan!5e0!3m2!1sen!2spk!4v1717000000000!5m2!1sen!2spk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 </section>
@@ -1704,10 +1730,7 @@ body.light-theme #contact .section-lead { color: rgba(255,255,255,0.65) !importa
 <footer>
   <div class="footer-inner">
     <div class="footer-col">
-      <div class="footer-logo-text" id="footerLogoText">
-        <span class="flt-sea">SEA</span><span class="flt-mens">MENS</span>
-        <span class="flt-ent"> ENTERPRISES</span>
-      </div>
+      <img src="images/seamens-logo-transparent.png" class="footer-logo-img" alt="Seamens Enterprises" draggable="false">
       <p>Industrial Chemical Technologies<br>Since 2008 · Lahore, Pakistan</p>
       <a href="https://wa.me/923054444125" target="_blank">WhatsApp: +92-305-4444125</a>
       <a href="tel:+923026686354">Tel: +92-302-6686354</a>
