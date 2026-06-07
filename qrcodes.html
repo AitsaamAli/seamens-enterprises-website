@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seamens Enterprises — QR Codes</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',sans-serif;background:#0a1628;color:white;padding:2rem}
+  h1{text-align:center;font-size:1.6rem;color:#00b4a6;margin-bottom:0.3rem;letter-spacing:0.05em}
+  .sub{text-align:center;color:rgba(255,255,255,0.4);font-size:0.85rem;margin-bottom:2.5rem}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.5rem;max-width:1100px;margin:0 auto}
+  .card{background:#0f1f3a;border:1px solid rgba(0,180,166,0.2);border-radius:10px;padding:1.5rem;text-align:center;display:flex;flex-direction:column;align-items:center;gap:0.75rem}
+  .card-label{font-size:0.72rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#00b4a6}
+  .qr-wrap{background:white;border-radius:6px;padding:10px;display:inline-block}
+  .card-url{font-size:0.65rem;color:rgba(255,255,255,0.35);word-break:break-all;margin-top:0.2rem}
+  .section-divider{text-align:center;color:rgba(0,180,166,0.5);font-size:0.75rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;margin:2rem 0 1rem;border-top:1px solid rgba(0,180,166,0.15);padding-top:1.5rem;max-width:1100px;margin-left:auto;margin-right:auto}
+  @media print{body{background:white;color:black}.card{border-color:#ccc;background:#f9f9f9}.card-label{color:#007a73}.card-url{color:#666}h1{color:#007a73}.sub{color:#999}.section-divider{color:#007a73;border-color:#ccc}}
+</style>
+</head>
+<body>
+
+<h1>Seamens Enterprises</h1>
+<p class="sub">www.seamensenterprises.com — QR Code Directory</p>
+
+<div class="section-divider">Website Sections</div>
+<div class="grid" id="sections"></div>
+
+<div class="section-divider">Contact</div>
+<div class="grid" id="contact"></div>
+
+<script>
+const sections = [
+  { label: 'Home',           url: 'https://www.seamensenterprises.com/#home' },
+  { label: 'Products',       url: 'https://www.seamensenterprises.com/#products' },
+  { label: 'Clients',        url: 'https://www.seamensenterprises.com/#clients' },
+  { label: 'Certifications', url: 'https://www.seamensenterprises.com/#certifications' },
+  { label: 'Samples',        url: 'https://www.seamensenterprises.com/#samples' },
+  { label: 'Blog',           url: 'https://www.seamensenterprises.com/#blog' },
+  { label: 'About Us',       url: 'https://www.seamensenterprises.com/#about' },
+  { label: 'Contact',        url: 'https://www.seamensenterprises.com/#contact' },
+];
+
+const contactItems = [
+  { label: 'WhatsApp',  url: 'https://wa.me/923054444125' },
+  { label: 'Phone 1',   url: 'tel:+923054444125' },
+  { label: 'Phone 2',   url: 'tel:+923026686354' },
+  { label: 'Email — Info',  url: 'mailto:info@seamensenterprises.com' },
+  { label: 'Email — Sales', url: 'mailto:sales@seamensenterprises.com' },
+  { label: 'Request Sample', url: 'https://wa.me/923054444125?text=I%20would%20like%20to%20request%20a%20sample' },
+];
+
+function makeCards(items, containerId) {
+  const container = document.getElementById(containerId);
+  items.forEach(item => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <div class="card-label">${item.label}</div>
+      <div class="qr-wrap" id="qr-${containerId}-${item.label.replace(/\s+/g,'')}"></div>
+      <div class="card-url">${item.url}</div>
+    `;
+    container.appendChild(card);
+    new QRCode(document.getElementById(`qr-${containerId}-${item.label.replace(/\s+/g,'')}`), {
+      text: item.url,
+      width: 160,
+      height: 160,
+      colorDark: '#0a1628',
+      colorLight: '#ffffff',
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  });
+}
+
+makeCards(sections, 'sections');
+makeCards(contactItems, 'contact');
+</script>
+</body>
+</html>
