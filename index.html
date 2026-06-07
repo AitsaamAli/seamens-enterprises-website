@@ -1581,13 +1581,6 @@ body.light-theme .scroll-dot{background:var(--teal)!important}
       <img src="images/seamens-logo-transparent.png" class="hero-logo-img" alt="Seamens Enterprises" draggable="false">
     </div>
     <div class="hero-tag" id="heroTag">Industrial Chemical Technologies &middot; Since 1997</div>
-    <div class="hero-3p" data-aos="fade-up" data-aos-delay="200">
-      <div class="hero-3p-item"><span class="hero-3p-letter">P</span><span class="hero-3p-word">Passion</span></div>
-      <span class="hero-3p-sep">·</span>
-      <div class="hero-3p-item"><span class="hero-3p-letter">P</span><span class="hero-3p-word">Perfection</span></div>
-      <span class="hero-3p-sep">·</span>
-      <div class="hero-3p-item"><span class="hero-3p-letter">P</span><span class="hero-3p-word">Precision</span></div>
-    </div>
     <h1 class="hero-h1" id="heroH1"><span id="typeLine1"></span><br><em id="typeLine2"></em></h1>
     <p class="hero-sub" id="heroSub">Delivering engineered water treatment systems, textile auxiliaries, industrial machinery, cleaning chemicals and precision engineering solutions across Pakistan.</p>
     <div class="hero-btns" id="heroBtns">
@@ -2552,7 +2545,7 @@ document.addEventListener('click', e => {
   const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%';
   const target = document.getElementById('heroH1');
   if(!target) return;
-  const original = '3P Principles.';
+  const original = '3P Principals.';
   let interval = null;
   
   target.addEventListener('mouseenter', () => {
@@ -2723,10 +2716,9 @@ window.addEventListener('load', () => {
   // Small delay to let GSAP hero animations play first
   setTimeout(() => {
     // Line 1: "3P Principles.."
-    TypeWriter('typeLine1', 'Industrial Chemical Solutions.', 65, () => {
-      // Then line 2: "Do Perfectly."
+    TypeWriter('typeLine1', '3P Principals.', 65, () => {
       setTimeout(() => {
-        TypeWriter('typeLine2', 'Lahore, Pakistan · Since 1997.', 80, null, 'var(--gold)');
+        TypeWriter('typeLine2', 'Passion · Perfection · Precision.', 80, null, 'var(--gold)');
       }, 300);
     });
   }, 1200);
