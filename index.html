@@ -210,6 +210,11 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 30px rgba(0,0,0,0.5
 .hero-logo-big{margin:0 auto 1.5rem;display:flex;justify-content:center}
 .hero-logo-big img{height:100px;filter:drop-shadow(0 4px 24px rgba(0,180,166,0.6)) brightness(1.05)}
 .hero-tag{display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:var(--teal);border:1px solid rgba(0,180,166,0.4);padding:0.35rem 1rem;border-radius:2px;margin-bottom:1.5rem}
+.hero-3p{display:flex;align-items:center;justify-content:center;gap:0.6rem;margin:1.4rem 0 0.6rem;flex-wrap:wrap}
+.hero-3p-item{display:flex;flex-direction:column;align-items:center;gap:0.18rem}
+.hero-3p-letter{font-family:'Barlow Condensed',sans-serif;font-size:2.2rem;font-weight:900;line-height:1;color:var(--teal);text-shadow:0 0 24px rgba(0,180,166,0.5)}
+.hero-3p-word{font-family:'Barlow',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.55)}
+.hero-3p-sep{font-family:'Barlow Condensed',sans-serif;font-size:1.5rem;color:rgba(0,180,166,0.35);font-weight:300;align-self:flex-start;margin-top:0.25rem}
 .hero-h1{font-family:'Playfair Display',serif;font-size:clamp(1.5rem, 3.5vw, 2.8rem);font-weight:900;color:var(--white);line-height:1.1;margin-bottom:1rem}
 .hero-h1 em{color:var(--teal);font-style:normal}
 .hero-sub{font-size:1.05rem;color:rgba(255,255,255,0.7);font-weight:300;max-width:640px;margin:0 auto 2.5rem;line-height:1.7}
@@ -1007,6 +1012,11 @@ body:hover #cursor-dot { opacity: 1; }
   0%,100% { box-shadow: 0 0 0 rgba(0,180,166,0); border-color: rgba(0,180,166,0.4); }
   50% { box-shadow: 0 0 20px rgba(0,180,166,0.4); border-color: rgba(0,180,166,0.8); }
 }
+@media(max-width:480px){
+  .hero-3p-letter{font-size:1.7rem}
+  .hero-3p-word{font-size:0.55rem}
+  .hero-3p{gap:0.4rem;margin:1rem 0 0.4rem}
+}
 
 /* ============================
    AUX CARD SHIMMER
@@ -1571,6 +1581,13 @@ body.light-theme .scroll-dot{background:var(--teal)!important}
       <img src="images/seamens-logo-transparent.png" class="hero-logo-img" alt="Seamens Enterprises" draggable="false">
     </div>
     <div class="hero-tag" id="heroTag">Industrial Chemical Technologies &middot; Since 1997</div>
+    <div class="hero-3p" data-aos="fade-up" data-aos-delay="200">
+      <div class="hero-3p-item"><span class="hero-3p-letter">P</span><span class="hero-3p-word">Passion</span></div>
+      <span class="hero-3p-sep">·</span>
+      <div class="hero-3p-item"><span class="hero-3p-letter">P</span><span class="hero-3p-word">Perfection</span></div>
+      <span class="hero-3p-sep">·</span>
+      <div class="hero-3p-item"><span class="hero-3p-letter">P</span><span class="hero-3p-word">Precision</span></div>
+    </div>
     <h1 class="hero-h1" id="heroH1"><span id="typeLine1"></span><br><em id="typeLine2"></em></h1>
     <p class="hero-sub" id="heroSub">Delivering engineered water treatment systems, textile auxiliaries, industrial machinery, cleaning chemicals and precision engineering solutions across Pakistan.</p>
     <div class="hero-btns" id="heroBtns">
