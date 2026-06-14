@@ -392,12 +392,9 @@ section{padding:5rem 2rem}
 /* BLOG */
 #blog{background:var(--white);padding:5rem 2rem}
 .blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:3rem}
-.blog-card{background:white;border:1px solid rgba(0,0,0,0.08);border-radius:10px;overflow:hidden;transition:transform 0.35s cubic-bezier(0.23,1,0.32,1),box-shadow 0.35s;cursor:pointer}
+.blog-card{background:white;border:1px solid rgba(0,0,0,0.08);border-top:3px solid var(--teal);border-radius:10px;overflow:hidden;transition:transform 0.35s cubic-bezier(0.23,1,0.32,1),box-shadow 0.35s;cursor:pointer}
 .blog-card:hover{transform:translateY(-8px);box-shadow:0 24px 60px rgba(0,0,0,0.12)}
-.blog-card-img{height:200px;overflow:hidden;position:relative}
-.blog-card-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s}
-.blog-card:hover .blog-card-img img{transform:scale(1.07)}
-.blog-cat{position:absolute;top:1rem;left:1rem;background:var(--teal);color:white;font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:0.25rem 0.6rem;border-radius:2px;z-index:1}
+.blog-cat{display:inline-block;background:var(--teal);color:white;font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:0.25rem 0.6rem;border-radius:2px;margin-bottom:0.75rem}
 .blog-card-body{padding:1.5rem}
 .blog-date{font-size:0.78rem;color:var(--teal);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.5rem}
 .blog-card-body h3{font-family:'Playfair Display',serif;font-size:1.12rem;font-weight:700;color:var(--navy);line-height:1.35;margin-bottom:0.6rem}
@@ -870,30 +867,6 @@ body:hover #cursor-dot { opacity: 1; }
   object-fit: cover;
 }
 
-/* ============================
-   BLOG CARD IMG (no image)
-   ============================ */
-.blog-card-img {
-  height: 180px !important;
-  background: linear-gradient(135deg, var(--navy), #0d2a4a) !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-.blog-card-img::before {
-  content: '';
-  position: absolute;
-  width: 150px; height: 150px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(0,180,166,0.2), transparent 70%);
-  animation: blogGlow 3s ease-in-out infinite;
-}
-@keyframes blogGlow {
-  0%,100% { transform: scale(0.8) translate(-20px,-10px); opacity: 0.5; }
-  50% { transform: scale(1.2) translate(20px,10px); opacity: 1; }
-}
 
 /* ============================
    CERT CARD image area
@@ -1855,24 +1828,19 @@ body.light-theme .scroll-dot{background:var(--teal)!important}
     <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Technical Knowledge<br>&amp; Industry Updates</h2>
     <div class="blog-grid">
       <a class="blog-card tilt-card" data-aos="fade-up" href="/blog/textile-auxiliaries.html" style="text-decoration:none;display:block;color:inherit">
-        <div class="blog-card-img"><div class="blog-cat">Textile Auxiliaries</div></div>
-        <div class="blog-card-body"><div class="blog-date">June 2025</div><h3>Textile Auxiliary Chemicals — Complete ECO-Series Product Guide for Pakistani Mills</h3><p>All 17 ECO-Series products — sizing agents, pre-treatment, dyeing auxiliaries, softeners, and specialty finishes — with full technical specifications and applications.</p><span class="blog-read-more">Read More →</span></div>
+        <div class="blog-card-body"><div class="blog-cat">Textile Auxiliaries</div><div class="blog-date">June 2025</div><h3>Textile Auxiliary Chemicals — Complete ECO-Series Product Guide for Pakistani Mills</h3><p>All 17 ECO-Series products — sizing agents, pre-treatment, dyeing auxiliaries, softeners, and specialty finishes — with full technical specifications and applications.</p><span class="blog-read-more">Read More →</span></div>
       </a>
       <a class="blog-card tilt-card" data-aos="fade-up" data-aos-delay="100" href="/blog/boiler-humidification.html" style="text-decoration:none;display:block;color:inherit">
-        <div class="blog-card-img"><div class="blog-cat">Boilers &amp; Humidification</div></div>
-        <div class="blog-card-body"><div class="blog-date">June 2025</div><h3>Boiler Water Treatment & Industrial Humidification — Complete Technical Guide for Pakistan</h3><p>Scale inhibitors, oxygen scavengers, pH conditioners, and CONAIR/LUWA humidification systems — protecting your most critical industrial utilities.</p><span class="blog-read-more">Read More →</span></div>
+        <div class="blog-card-body"><div class="blog-cat">Boilers &amp; Humidification</div><div class="blog-date">June 2025</div><h3>Boiler Water Treatment & Industrial Humidification — Complete Technical Guide for Pakistan</h3><p>Scale inhibitors, oxygen scavengers, pH conditioners, and CONAIR/LUWA humidification systems — protecting your most critical industrial utilities.</p><span class="blog-read-more">Read More →</span></div>
       </a>
       <a class="blog-card tilt-card" data-aos="fade-up" data-aos-delay="200" href="/blog/cooling-chiller-ro.html" style="text-decoration:none;display:block;color:inherit">
-        <div class="blog-card-img"><div class="blog-cat">Cooling / Chillers / RO</div></div>
-        <div class="blog-card-body"><div class="blog-date">June 2025</div><h3>Cooling Tower, Chiller & RO Plant Water Treatment in Pakistan — Complete Guide</h3><p>Water Safe 1020, FC-70/90 biocides, RO antiscalants, membrane chemicals, and ZLD systems — comprehensive cooling and purification solutions.</p><span class="blog-read-more">Read More →</span></div>
+        <div class="blog-card-body"><div class="blog-cat">Cooling / Chillers / RO</div><div class="blog-date">June 2025</div><h3>Cooling Tower, Chiller & RO Plant Water Treatment in Pakistan — Complete Guide</h3><p>Water Safe 1020, FC-70/90 biocides, RO antiscalants, membrane chemicals, and ZLD systems — comprehensive cooling and purification solutions.</p><span class="blog-read-more">Read More →</span></div>
       </a>
       <a class="blog-card tilt-card" data-aos="fade-up" data-aos-delay="300" href="/blog/parts-machinery.html" style="text-decoration:none;display:block;color:inherit">
-        <div class="blog-card-img"><div class="blog-cat">Parts &amp; Machinery</div></div>
-        <div class="blog-card-body"><div class="blog-date">June 2025</div><h3>Industrial Plant Erection, Machinery Parts & Maintenance Services in Pakistan</h3><p>Turnkey plant erection, textile machinery spare parts, annual maintenance contracts, and custom fabrication — complete engineering services by Seamens.</p><span class="blog-read-more">Read More →</span></div>
+        <div class="blog-card-body"><div class="blog-cat">Parts &amp; Machinery</div><div class="blog-date">June 2025</div><h3>Industrial Plant Erection, Machinery Parts & Maintenance Services in Pakistan</h3><p>Turnkey plant erection, textile machinery spare parts, annual maintenance contracts, and custom fabrication — complete engineering services by Seamens.</p><span class="blog-read-more">Read More →</span></div>
       </a>
       <a class="blog-card tilt-card" data-aos="fade-up" data-aos-delay="400" href="/blog/industrial-cleaning.html" style="text-decoration:none;display:block;color:inherit">
-        <div class="blog-card-img"><div class="blog-cat">Cleaning Chemicals</div></div>
-        <div class="blog-card-body"><div class="blog-date">June 2025</div><h3>Industrial Cleaning Chemicals Pakistan — All 15 Products: Degreasers, CIP, Descalers & More</h3><p>Heavy duty degreasers, acid descalers, CIP cleaners, disinfectants, drain openers, and housekeeping chemicals — complete product guide for Pakistani industry.</p><span class="blog-read-more">Read More →</span></div>
+        <div class="blog-card-body"><div class="blog-cat">Cleaning Chemicals</div><div class="blog-date">June 2025</div><h3>Industrial Cleaning Chemicals Pakistan — All 15 Products: Degreasers, CIP, Descalers & More</h3><p>Heavy duty degreasers, acid descalers, CIP cleaners, disinfectants, drain openers, and housekeeping chemicals — complete product guide for Pakistani industry.</p><span class="blog-read-more">Read More →</span></div>
       </a>
     </div>
   </div>
