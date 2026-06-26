@@ -40,6 +40,16 @@
       "source": "/home",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/blog/eco-series.html",
+      "destination": "/blog/textile-auxiliaries.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/water-safe-technology.html",
+      "destination": "/blog/boiler-humidification.html",
+      "permanent": true
     }
   ],
   "trailingSlash": false
