@@ -36,31 +36,33 @@
     }
   ],
   "redirects": [
-    {
-      "source": "/home",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/index.html",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/eco-series.html",
-      "destination": "/blog/textile-auxiliaries.html",
-      "permanent": true
-    },
-    {
-      "source": "/blog/water-safe-technology.html",
-      "destination": "/blog/boiler-humidification.html",
-      "permanent": true
-    }
+    { "source": "/home", "destination": "/", "permanent": true },
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/blog/index.html", "destination": "/blog/", "permanent": true },
+    { "source": "/blog/eco-series.html", "destination": "/blog/textile-auxiliaries.html", "permanent": true },
+    { "source": "/blog/water-safe-technology.html", "destination": "/blog/boiler-humidification.html", "permanent": true },
+    { "source": "/blog/shopping-mall-cleaning-chemicals.html", "destination": "/shopping-mall-cleaning-chemicals", "permanent": true },
+    { "source": "/blog/hotel-cleaning-chemicals.html", "destination": "/hotel-cleaning-chemicals", "permanent": true },
+    { "source": "/blog/hospital-disinfectants-pakistan.html", "destination": "/hospital-disinfectants-pakistan", "permanent": true },
+    { "source": "/blog/washroom-hygiene-chemicals.html", "destination": "/washroom-hygiene-chemicals", "permanent": true },
+    { "source": "/blog/heavy-duty-degreasers-pakistan.html", "destination": "/heavy-duty-degreasers-pakistan", "permanent": true },
+    { "source": "/blog/boiler-descaler-chemicals.html", "destination": "/boiler-descaler-chemicals", "permanent": true },
+    { "source": "/blog/ro-antiscalant-chemicals.html", "destination": "/ro-antiscalant-chemicals", "permanent": true },
+    { "source": "/blog/cooling-tower-biocide.html", "destination": "/cooling-tower-biocide", "permanent": true },
+    { "source": "/blog/warp-sizing-chemicals.html", "destination": "/warp-sizing-chemicals", "permanent": true },
+    { "source": "/blog/textile-softeners-finishers.html", "destination": "/textile-softeners-finishers", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/shopping-mall-cleaning-chemicals", "destination": "/blog/shopping-mall-cleaning-chemicals.html" },
+    { "source": "/hotel-cleaning-chemicals", "destination": "/blog/hotel-cleaning-chemicals.html" },
+    { "source": "/hospital-disinfectants-pakistan", "destination": "/blog/hospital-disinfectants-pakistan.html" },
+    { "source": "/washroom-hygiene-chemicals", "destination": "/blog/washroom-hygiene-chemicals.html" },
+    { "source": "/heavy-duty-degreasers-pakistan", "destination": "/blog/heavy-duty-degreasers-pakistan.html" },
+    { "source": "/boiler-descaler-chemicals", "destination": "/blog/boiler-descaler-chemicals.html" },
+    { "source": "/ro-antiscalant-chemicals", "destination": "/blog/ro-antiscalant-chemicals.html" },
+    { "source": "/cooling-tower-biocide", "destination": "/blog/cooling-tower-biocide.html" },
+    { "source": "/warp-sizing-chemicals", "destination": "/blog/warp-sizing-chemicals.html" },
+    { "source": "/textile-softeners-finishers", "destination": "/blog/textile-softeners-finishers.html" }
   ],
   "trailingSlash": false
 }
