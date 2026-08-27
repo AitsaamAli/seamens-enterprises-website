@@ -3,66 +3,561 @@
     {
       "source": "/images/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/(.*)\\.js",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/(.*)\\.css",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/index.html",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
       ]
     },
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "X-XSS-Protection", "value": "1; mode=block" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
       ]
     }
   ],
   "redirects": [
-    { "source": "/home", "destination": "/", "permanent": true },
-    { "source": "/index.html", "destination": "/", "permanent": true },
-    { "source": "/blog/index.html", "destination": "/blog/", "permanent": true },
-    { "source": "/blog/eco-series.html", "destination": "/blog/textile-auxiliaries.html", "permanent": true },
-    { "source": "/blog/water-safe-technology.html", "destination": "/blog/boiler-humidification.html", "permanent": true },
-    { "source": "/blog/shopping-mall-cleaning-chemicals.html", "destination": "/shopping-mall-cleaning-chemicals", "permanent": true },
-    { "source": "/blog/hotel-cleaning-chemicals.html", "destination": "/hotel-cleaning-chemicals", "permanent": true },
-    { "source": "/blog/hospital-disinfectants-pakistan.html", "destination": "/hospital-disinfectants-pakistan", "permanent": true },
-    { "source": "/blog/washroom-hygiene-chemicals.html", "destination": "/washroom-hygiene-chemicals", "permanent": true },
-    { "source": "/blog/heavy-duty-degreasers-pakistan.html", "destination": "/heavy-duty-degreasers-pakistan", "permanent": true },
-    { "source": "/blog/boiler-descaler-chemicals.html", "destination": "/boiler-descaler-chemicals", "permanent": true },
-    { "source": "/blog/ro-antiscalant-chemicals.html", "destination": "/ro-antiscalant-chemicals", "permanent": true },
-    { "source": "/blog/cooling-tower-biocide.html", "destination": "/cooling-tower-biocide", "permanent": true },
-    { "source": "/blog/warp-sizing-chemicals.html", "destination": "/warp-sizing-chemicals", "permanent": true },
-    { "source": "/blog/textile-softeners-finishers.html", "destination": "/textile-softeners-finishers", "permanent": true }
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/index.html",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/eco-series.html",
+      "destination": "/blog/textile-auxiliaries.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/water-safe-technology.html",
+      "destination": "/blog/boiler-humidification.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/shopping-mall-cleaning-chemicals.html",
+      "destination": "/shopping-mall-cleaning-chemicals",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hotel-cleaning-chemicals.html",
+      "destination": "/hotel-cleaning-chemicals",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hospital-disinfectants-pakistan.html",
+      "destination": "/hospital-disinfectants-pakistan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/washroom-hygiene-chemicals.html",
+      "destination": "/washroom-hygiene-chemicals",
+      "permanent": true
+    },
+    {
+      "source": "/blog/heavy-duty-degreasers-pakistan.html",
+      "destination": "/heavy-duty-degreasers-pakistan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/boiler-descaler-chemicals.html",
+      "destination": "/boiler-descaler-chemicals",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ro-antiscalant-chemicals.html",
+      "destination": "/ro-antiscalant-chemicals",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cooling-tower-biocide.html",
+      "destination": "/cooling-tower-biocide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/warp-sizing-chemicals.html",
+      "destination": "/warp-sizing-chemicals",
+      "permanent": true
+    },
+    {
+      "source": "/blog/textile-softeners-finishers.html",
+      "destination": "/textile-softeners-finishers",
+      "permanent": true
+    },
+    {
+      "source": "/blog/24-7-technical-support-water-treatment.html",
+      "destination": "/24-7-technical-support-water-treatment",
+      "permanent": true
+    },
+    {
+      "source": "/blog/alkaline-vs-acid-cip-cleaner.html",
+      "destination": "/alkaline-vs-acid-cip-cleaner",
+      "permanent": true
+    },
+    {
+      "source": "/blog/amc-vs-pay-as-you-go-maintenance.html",
+      "destination": "/amc-vs-pay-as-you-go-maintenance",
+      "permanent": true
+    },
+    {
+      "source": "/blog/anti-bacterial-textile-finish-hospital-linen.html",
+      "destination": "/anti-bacterial-textile-finish-hospital-linen",
+      "permanent": true
+    },
+    {
+      "source": "/blog/boiler-blowdown-calculator-pakistan.html",
+      "destination": "/boiler-blowdown-calculator-pakistan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/boiler-erection-checklist-pakistan.html",
+      "destination": "/boiler-erection-checklist-pakistan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chemical-dilution-ratio-chart.html",
+      "destination": "/chemical-dilution-ratio-chart",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chemical-supplier-trial-period-process.html",
+      "destination": "/chemical-supplier-trial-period-process",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chiller-descaling-without-shutdown.html",
+      "destination": "/chiller-descaling-without-shutdown",
+      "permanent": true
+    },
+    {
+      "source": "/blog/conair-vs-luwa-humidification-system.html",
+      "destination": "/conair-vs-luwa-humidification-system",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cooling-tower-makeup-water-calculation.html",
+      "destination": "/cooling-tower-makeup-water-calculation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/custom-fabrication-textile-mills.html",
+      "destination": "/custom-fabrication-textile-mills",
+      "permanent": true
+    },
+    {
+      "source": "/blog/dwr-water-repellent-finish-cost-pakistan.html",
+      "destination": "/dwr-water-repellent-finish-cost-pakistan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ecosize-cxw-111-modified-starch-sizing.html",
+      "destination": "/ecosize-cxw-111-modified-starch-sizing",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ecosoftener-vs-silicone-softener.html",
+      "destination": "/ecosoftener-vs-silicone-softener",
+      "permanent": true
+    },
+    {
+      "source": "/blog/enzymatic-vs-caustic-drain-cleaner.html",
+      "destination": "/enzymatic-vs-caustic-drain-cleaner",
+      "permanent": true
+    },
+    {
+      "source": "/blog/enzyme-vs-acid-desizing-pakistan.html",
+      "destination": "/enzyme-vs-acid-desizing-pakistan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/fake-chemical-supplier-red-flags-pakistan.html",
+      "destination": "/fake-chemical-supplier-red-flags-pakistan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/fire-tube-vs-water-tube-boiler-treatment.html",
+      "destination": "/fire-tube-vs-water-tube-boiler-treatment",
+      "permanent": true
+    },
+    {
+      "source": "/blog/fix-uneven-dye-uptake-levelling-agent.html",
+      "destination": "/fix-uneven-dye-uptake-levelling-agent",
+      "permanent": true
+    },
+    {
+      "source": "/blog/flame-retardant-textile-finishing-standards.html",
+      "destination": "/flame-retardant-textile-finishing-standards",
+      "permanent": true
+    },
+    {
+      "source": "/blog/food-grade-degreaser-meaning-pakistan.html",
+      "destination": "/food-grade-degreaser-meaning-pakistan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/formaldehyde-free-dye-fixing-agents.html",
+      "destination": "/formaldehyde-free-dye-fixing-agents",
+      "permanent": true
+    },
+    {
+      "source": "/blog/genuine-vs-compatible-spare-parts-textile.html",
+      "destination": "/genuine-vs-compatible-spare-parts-textile",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-choose-water-treatment-supplier-pakistan.html",
+      "destination": "/how-to-choose-water-treatment-supplier-pakistan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hydrazine-vs-sodium-sulphite-scavenger.html",
+      "destination": "/hydrazine-vs-sodium-sulphite-scavenger",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hydrogen-peroxide-stabilizer-bleaching.html",
+      "destination": "/hydrogen-peroxide-stabilizer-bleaching",
+      "permanent": true
+    },
+    {
+      "source": "/blog/iso-9001-chemical-supplier-checklist.html",
+      "destination": "/iso-9001-chemical-supplier-checklist",
+      "permanent": true
+    },
+    {
+      "source": "/blog/legionella-control-cooling-tower-pakistan.html",
+      "destination": "/legionella-control-cooling-tower-pakistan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/local-vs-imported-industrial-chemicals-pakistan.html",
+      "destination": "/local-vs-imported-industrial-chemicals-pakistan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/marble-floor-cleaner-without-etching.html",
+      "destination": "/marble-floor-cleaner-without-etching",
+      "permanent": true
+    },
+    {
+      "source": "/blog/metal-passivation-after-descaling.html",
+      "destination": "/metal-passivation-after-descaling",
+      "permanent": true
+    },
+    {
+      "source": "/blog/optical-brightening-agents-textile.html",
+      "destination": "/optical-brightening-agents-textile",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pva-vs-starch-sizing-cost.html",
+      "destination": "/pva-vs-starch-sizing-cost",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ro-antiscalant-dosing-calculator.html",
+      "destination": "/ro-antiscalant-dosing-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ro-membrane-fouling-silica-vs-calcium.html",
+      "destination": "/ro-membrane-fouling-silica-vs-calcium",
+      "permanent": true
+    },
+    {
+      "source": "/blog/textile-chemical-dosing-calculator-gl-recipe.html",
+      "destination": "/textile-chemical-dosing-calculator-gl-recipe",
+      "permanent": true
+    },
+    {
+      "source": "/blog/textile-machine-cleaner-vs-degreaser.html",
+      "destination": "/textile-machine-cleaner-vs-degreaser",
+      "permanent": true
+    },
+    {
+      "source": "/blog/textile-mill-cleaning-schedule-template.html",
+      "destination": "/textile-mill-cleaning-schedule-template",
+      "permanent": true
+    },
+    {
+      "source": "/blog/textile-relative-humidity-chart.html",
+      "destination": "/textile-relative-humidity-chart",
+      "permanent": true
+    },
+    {
+      "source": "/blog/turnkey-plant-erection-timeline-pakistan.html",
+      "destination": "/turnkey-plant-erection-timeline-pakistan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/zero-liquid-discharge-textile-mills-pakistan.html",
+      "destination": "/zero-liquid-discharge-textile-mills-pakistan",
+      "permanent": true
+    }
   ],
   "rewrites": [
-    { "source": "/shopping-mall-cleaning-chemicals", "destination": "/blog/shopping-mall-cleaning-chemicals.html" },
-    { "source": "/hotel-cleaning-chemicals", "destination": "/blog/hotel-cleaning-chemicals.html" },
-    { "source": "/hospital-disinfectants-pakistan", "destination": "/blog/hospital-disinfectants-pakistan.html" },
-    { "source": "/washroom-hygiene-chemicals", "destination": "/blog/washroom-hygiene-chemicals.html" },
-    { "source": "/heavy-duty-degreasers-pakistan", "destination": "/blog/heavy-duty-degreasers-pakistan.html" },
-    { "source": "/boiler-descaler-chemicals", "destination": "/blog/boiler-descaler-chemicals.html" },
-    { "source": "/ro-antiscalant-chemicals", "destination": "/blog/ro-antiscalant-chemicals.html" },
-    { "source": "/cooling-tower-biocide", "destination": "/blog/cooling-tower-biocide.html" },
-    { "source": "/warp-sizing-chemicals", "destination": "/blog/warp-sizing-chemicals.html" },
-    { "source": "/textile-softeners-finishers", "destination": "/blog/textile-softeners-finishers.html" }
+    {
+      "source": "/shopping-mall-cleaning-chemicals",
+      "destination": "/blog/shopping-mall-cleaning-chemicals.html"
+    },
+    {
+      "source": "/hotel-cleaning-chemicals",
+      "destination": "/blog/hotel-cleaning-chemicals.html"
+    },
+    {
+      "source": "/hospital-disinfectants-pakistan",
+      "destination": "/blog/hospital-disinfectants-pakistan.html"
+    },
+    {
+      "source": "/washroom-hygiene-chemicals",
+      "destination": "/blog/washroom-hygiene-chemicals.html"
+    },
+    {
+      "source": "/heavy-duty-degreasers-pakistan",
+      "destination": "/blog/heavy-duty-degreasers-pakistan.html"
+    },
+    {
+      "source": "/boiler-descaler-chemicals",
+      "destination": "/blog/boiler-descaler-chemicals.html"
+    },
+    {
+      "source": "/ro-antiscalant-chemicals",
+      "destination": "/blog/ro-antiscalant-chemicals.html"
+    },
+    {
+      "source": "/cooling-tower-biocide",
+      "destination": "/blog/cooling-tower-biocide.html"
+    },
+    {
+      "source": "/warp-sizing-chemicals",
+      "destination": "/blog/warp-sizing-chemicals.html"
+    },
+    {
+      "source": "/textile-softeners-finishers",
+      "destination": "/blog/textile-softeners-finishers.html"
+    },
+    {
+      "source": "/24-7-technical-support-water-treatment",
+      "destination": "/blog/24-7-technical-support-water-treatment.html"
+    },
+    {
+      "source": "/alkaline-vs-acid-cip-cleaner",
+      "destination": "/blog/alkaline-vs-acid-cip-cleaner.html"
+    },
+    {
+      "source": "/amc-vs-pay-as-you-go-maintenance",
+      "destination": "/blog/amc-vs-pay-as-you-go-maintenance.html"
+    },
+    {
+      "source": "/anti-bacterial-textile-finish-hospital-linen",
+      "destination": "/blog/anti-bacterial-textile-finish-hospital-linen.html"
+    },
+    {
+      "source": "/boiler-blowdown-calculator-pakistan",
+      "destination": "/blog/boiler-blowdown-calculator-pakistan.html"
+    },
+    {
+      "source": "/boiler-erection-checklist-pakistan",
+      "destination": "/blog/boiler-erection-checklist-pakistan.html"
+    },
+    {
+      "source": "/chemical-dilution-ratio-chart",
+      "destination": "/blog/chemical-dilution-ratio-chart.html"
+    },
+    {
+      "source": "/chemical-supplier-trial-period-process",
+      "destination": "/blog/chemical-supplier-trial-period-process.html"
+    },
+    {
+      "source": "/chiller-descaling-without-shutdown",
+      "destination": "/blog/chiller-descaling-without-shutdown.html"
+    },
+    {
+      "source": "/conair-vs-luwa-humidification-system",
+      "destination": "/blog/conair-vs-luwa-humidification-system.html"
+    },
+    {
+      "source": "/cooling-tower-makeup-water-calculation",
+      "destination": "/blog/cooling-tower-makeup-water-calculation.html"
+    },
+    {
+      "source": "/custom-fabrication-textile-mills",
+      "destination": "/blog/custom-fabrication-textile-mills.html"
+    },
+    {
+      "source": "/dwr-water-repellent-finish-cost-pakistan",
+      "destination": "/blog/dwr-water-repellent-finish-cost-pakistan.html"
+    },
+    {
+      "source": "/ecosize-cxw-111-modified-starch-sizing",
+      "destination": "/blog/ecosize-cxw-111-modified-starch-sizing.html"
+    },
+    {
+      "source": "/ecosoftener-vs-silicone-softener",
+      "destination": "/blog/ecosoftener-vs-silicone-softener.html"
+    },
+    {
+      "source": "/enzymatic-vs-caustic-drain-cleaner",
+      "destination": "/blog/enzymatic-vs-caustic-drain-cleaner.html"
+    },
+    {
+      "source": "/enzyme-vs-acid-desizing-pakistan",
+      "destination": "/blog/enzyme-vs-acid-desizing-pakistan.html"
+    },
+    {
+      "source": "/fake-chemical-supplier-red-flags-pakistan",
+      "destination": "/blog/fake-chemical-supplier-red-flags-pakistan.html"
+    },
+    {
+      "source": "/fire-tube-vs-water-tube-boiler-treatment",
+      "destination": "/blog/fire-tube-vs-water-tube-boiler-treatment.html"
+    },
+    {
+      "source": "/fix-uneven-dye-uptake-levelling-agent",
+      "destination": "/blog/fix-uneven-dye-uptake-levelling-agent.html"
+    },
+    {
+      "source": "/flame-retardant-textile-finishing-standards",
+      "destination": "/blog/flame-retardant-textile-finishing-standards.html"
+    },
+    {
+      "source": "/food-grade-degreaser-meaning-pakistan",
+      "destination": "/blog/food-grade-degreaser-meaning-pakistan.html"
+    },
+    {
+      "source": "/formaldehyde-free-dye-fixing-agents",
+      "destination": "/blog/formaldehyde-free-dye-fixing-agents.html"
+    },
+    {
+      "source": "/genuine-vs-compatible-spare-parts-textile",
+      "destination": "/blog/genuine-vs-compatible-spare-parts-textile.html"
+    },
+    {
+      "source": "/how-to-choose-water-treatment-supplier-pakistan",
+      "destination": "/blog/how-to-choose-water-treatment-supplier-pakistan.html"
+    },
+    {
+      "source": "/hydrazine-vs-sodium-sulphite-scavenger",
+      "destination": "/blog/hydrazine-vs-sodium-sulphite-scavenger.html"
+    },
+    {
+      "source": "/hydrogen-peroxide-stabilizer-bleaching",
+      "destination": "/blog/hydrogen-peroxide-stabilizer-bleaching.html"
+    },
+    {
+      "source": "/iso-9001-chemical-supplier-checklist",
+      "destination": "/blog/iso-9001-chemical-supplier-checklist.html"
+    },
+    {
+      "source": "/legionella-control-cooling-tower-pakistan",
+      "destination": "/blog/legionella-control-cooling-tower-pakistan.html"
+    },
+    {
+      "source": "/local-vs-imported-industrial-chemicals-pakistan",
+      "destination": "/blog/local-vs-imported-industrial-chemicals-pakistan.html"
+    },
+    {
+      "source": "/marble-floor-cleaner-without-etching",
+      "destination": "/blog/marble-floor-cleaner-without-etching.html"
+    },
+    {
+      "source": "/metal-passivation-after-descaling",
+      "destination": "/blog/metal-passivation-after-descaling.html"
+    },
+    {
+      "source": "/optical-brightening-agents-textile",
+      "destination": "/blog/optical-brightening-agents-textile.html"
+    },
+    {
+      "source": "/pva-vs-starch-sizing-cost",
+      "destination": "/blog/pva-vs-starch-sizing-cost.html"
+    },
+    {
+      "source": "/ro-antiscalant-dosing-calculator",
+      "destination": "/blog/ro-antiscalant-dosing-calculator.html"
+    },
+    {
+      "source": "/ro-membrane-fouling-silica-vs-calcium",
+      "destination": "/blog/ro-membrane-fouling-silica-vs-calcium.html"
+    },
+    {
+      "source": "/textile-chemical-dosing-calculator-gl-recipe",
+      "destination": "/blog/textile-chemical-dosing-calculator-gl-recipe.html"
+    },
+    {
+      "source": "/textile-machine-cleaner-vs-degreaser",
+      "destination": "/blog/textile-machine-cleaner-vs-degreaser.html"
+    },
+    {
+      "source": "/textile-mill-cleaning-schedule-template",
+      "destination": "/blog/textile-mill-cleaning-schedule-template.html"
+    },
+    {
+      "source": "/textile-relative-humidity-chart",
+      "destination": "/blog/textile-relative-humidity-chart.html"
+    },
+    {
+      "source": "/turnkey-plant-erection-timeline-pakistan",
+      "destination": "/blog/turnkey-plant-erection-timeline-pakistan.html"
+    },
+    {
+      "source": "/zero-liquid-discharge-textile-mills-pakistan",
+      "destination": "/blog/zero-liquid-discharge-textile-mills-pakistan.html"
+    }
   ],
   "trailingSlash": false
 }
