@@ -100,25 +100,16 @@ All formulated and manufactured by Seamens in Pakistan using organic raw materia
 17. **EcoFix-FB** — formaldehyde-based fixer for enhanced wash fastness of reactive and direct dyes on cellulosic fibres.
 
 ### B. Boiler Water Treatment & Humidification
-Scale inhibitor blends, oxygen scavengers (sulphite/hydrazine series), pH/alkalinity conditioners, sludge dispersants, condensate corrosion inhibitors, Water Safe Boiler Series (pre-blended, small/medium boilers) — see updated Water Safe SKU list in Section C below (`WATER SAFE BR-111`, `BR-555`). Fire-tube boiler supply (0.5–10 ton/hr) and water-tube (5–25 ton/hr), erection & commissioning, AMC. Humidification: CONAIR/Luwa-certified chemistry (formulated by Seamens, not an agency/distribution relationship — see critical correction above) for high-pressure fogging & centrifugal systems, evaporative cooling integration, RH monitoring/automation. Also supplies **industrial exhaust belt-drive fans** (powder-coated and stainless-steel construction) for plant ventilation.
+Scale inhibitor blends, oxygen scavengers (sulphite/hydrazine series), pH/alkalinity conditioners, sludge dispersants, condensate corrosion inhibitors — all sold under the single website-listed name **Water Safe Boiler Treatment** (see the naming rule in Section C — do not split this into invented SKU codes). Fire-tube boiler supply (0.5–10 ton/hr) and water-tube (5–25 ton/hr), erection & commissioning, AMC. Humidification: CONAIR/Luwa-certified chemistry (formulated by Seamens, not an agency/distribution relationship — see critical correction above) for high-pressure fogging & centrifugal systems, evaporative cooling integration, RH monitoring/automation. Also supplies **industrial exhaust belt-drive fans** (powder-coated and stainless-steel construction) for plant ventilation.
 
 ### C. Cooling Tower / Chiller / RO Water Treatment — Water Safe Series
-> **⚠️ Naming gap — confirm before using in new posts:** the website currently only lists this line generically (`Water Safe-1020`, `Water Safe FC-70/90`, `Water Safe Boiler Series`) — the specific SKU codes below (BR-111, BR-555, RC-1030, etc.) come from the owner's internal notes and are **not yet shown anywhere on the live website**. Posts already published using these codes (WATER SAFE BR-111, WATER SAFE BR-555, WATER SAFE RC-1030) are technically accurate per the owner but currently ahead of the website's own listing. Before writing more posts with these specific codes, confirm with the owner whether the website's product section should be updated to list them too — until then, treat this as the same kind of naming gap as the CONAIR/Luwa correction, just not yet resolved.
+> **⚠️ Resolved naming decision — read before writing any Water Safe post:** the owner's internal notes used specific SKU codes (BR-111, BR-555, RC-1030, CT-9080, DC-1020, BC-1000, BR-999, RD-4050, FC-3020, FC-120Q) that **do not exist anywhere on the live website**. The owner has confirmed: **do not use these codes in blog content.** Three already-published posts that used them (covering boiler anti-scale, boiler oxygen scavenging, and RO antiscaling) have been renamed to the website's actual generic product names. Going forward, refer to this product line using only the names that appear on the site:
+> - **Water Safe Boiler Treatment** — covers scale inhibition, oxygen scavenging, pH conditioning, and sludge dispersal for fire-tube and water-tube boilers (this is one product/programme on the website, not separate named components — if two posts both need to cover it, differentiate by angle/subtitle, e.g. "...: Anti-Scale Protection" vs "...: Oxygen Scavenger", never by inventing a product code)
+> - **Water Safe-1020** — cooling tower dispersant
+> - **Water Safe FC-70/90** — A/C plant organic de-scaler (also certified by Luwa & Conair for their equipment — see Section B critical correction)
+> - **Water Safe RO Antiscalant** — RO membrane fouling prevention
 
-All formulated and manufactured by Seamens in Pakistan using organic raw materials sourced from Germany. Standard packing across the line: 60 KG / 250 KG / 1,000 KG.
-
-1. **WATER SAFE FC-3020** — for A/C plants' water re-circulating system.
-2. **WATER SAFE FC-120Q** — for A/C plants, anti-scale & corrosion inhibitor.
-3. **WATER SAFE BR-111** — for boilers, anti-scalent.
-4. **WATER SAFE BR-555** — for boilers, oxygen scavenger.
-5. **WATER SAFE CT-9080** — for cooling towers, scale inhibitor.
-6. **WATER SAFE DC-1020** — for cooling towers, dispersant.
-7. **WATER SAFE BC-1000** — for cooling towers, biocide.
-8. **WATER SAFE BR-999** — for closed circuits (chillers etc).
-9. **WATER SAFE RC-1030** — for RO plants, anti-scalent.
-10. **WATER SAFE RD-4050** — for RO plants, biocide.
-
-(Note: `WATER SAFE FC-30B` — A/C water softener — and `WATER SAFE FC-7090` — A/C organic de-scaler, matches the site's existing "FC-70/90" product — were also mentioned in owner notes; treat these as additional real SKUs in the A/C sub-line alongside FC-3020/FC-120Q above.)
+All formulated and manufactured by Seamens in Pakistan using organic raw materials sourced from Germany.
 
 ### D. Industrial & Institutional Cleaning Chemicals (15 products across verticals)
 Heavy Duty Degreaser, Textile Machine Cleaner, Metal Surface Cleaner & Passivator, Acid Descaler, alkaline/acid CIP cleaners, disinfectant cleaners, drain openers, washroom sanitiser/odour-control/floor-cleaner system, hospital-grade disinfectants (wards/OT/ICU/dietary), hotel housekeeping/kitchen/laundry chemicals, mall/commercial-complex zone cleaners (marble floors, food court degreasers, parking cleaners).
