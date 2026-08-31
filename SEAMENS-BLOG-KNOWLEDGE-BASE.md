@@ -43,6 +43,21 @@ This site **used to** claim Seamens was an "authorised agent/principal partner" 
 
 Seamens supplies/certifies **chemicals used inside** CONAIR/Luwa equipment. Seamens is **not** their distributor, dealer, or authorised agent. Never write "authorised agent," "authorised distributor," "principal partner," or similar for CONAIR or Luwa. This applies anywhere these two brand names appear in any of the 50 posts (Category B especially).
 
+### ⚠️ Critical correction — how to describe Seamens' own manufacturing (never call it "distributor")
+Confirmed directly by the owner: the raw ingredients used in the ECO-Series and Water Safe lines (PVA, wax, starch derivatives, organic polymers) are **imported from Germany**, but **Seamens formulates, blends, and packs the finished product itself in Pakistan**, under its own brand. This is real value-added manufacturing, not resale of a finished import. The only correct, safe description is:
+
+> "Seamens Enterprises formulates and manufactures [Product Name] in Pakistan, using premium organic raw materials sourced from Germany."
+
+- ✅ Say: "formulates / manufactures in Pakistan using German-sourced raw materials"
+- ❌ Never say: "distributor" or "reseller" of these products (inaccurate — undersells the real formulation work) — see [[project_website]] for the Luwa/Conair precedent this mirrors
+- ❌ Never say: "manufactured in Germany" or "German manufacturer" (inaccurate — the finished product is made in Pakistan)
+- This applies to every ECO-Series and Water Safe product mention, in every post.
+
+### ⚠️ House rule — one product per post, zero comparisons (strict, confirmed by owner)
+Every post covers **exactly one Seamens product or one single topic** — never two products side by side, never an "X vs Y" framing, even between two of Seamens' own products. Always stay positive; never frame content as tearing down an alternative (including a competitor's product) to make Seamens look better — let the product's own specs and benefits carry the post.
+
+**This means the following already-published posts conflict with this rule and need a decision on how to fix them** (see the assistant's message for the fix-options question): `pva-vs-starch-sizing-cost.html`, `ecosoftener-vs-silicone-softener.html`, `fire-tube-vs-water-tube-boiler-treatment.html`, `hydrazine-vs-sodium-sulphite-scavenger.html`, `conair-vs-luwa-humidification-system.html`, `ro-membrane-fouling-silica-vs-calcium.html`, `alkaline-vs-acid-cip-cleaner.html`, `enzymatic-vs-caustic-drain-cleaner.html`, `genuine-vs-compatible-spare-parts-textile.html`, `amc-vs-pay-as-you-go-maintenance.html`, `local-vs-imported-industrial-chemicals-pakistan.html`. Any *new* post written from Section 10 onward must follow the strict one-product rule from the start.
+
 ---
 
 ## 2. Brand Voice & House Style
@@ -51,6 +66,8 @@ Seamens supplies/certifies **chemicals used inside** CONAIR/Luwa equipment. Seam
 - **Always Pakistan-specific.** Cite Lahore groundwater TDS (800–1,500 ppm), PKR currency for costs, Pakistani industrial context (load-shedding, furnace oil/gas boilers, textile export compliance, hard water regions). Never write generic "industrial chemicals" content that could apply to any country.
 - **Lead with numbers.** Every post should contain at least 3–4 concrete stats (fuel-saving %, PKR cost ranges, RH percentages, dosing rates, ppm/TDS figures) — these are what get quoted in Google AI Overviews and ChatGPT/Perplexity answers (this is the whole point of the GEO/AEO strategy — see Section 9).
 - **Never overclaim certification/authorisation.** See the CONAIR/Luwa rule above. The same discipline applies to any other brand name mentioned (don't claim to be "authorised" for anyone unless it's explicitly true — when in doubt, describe what Seamens actually supplies/does, not a relationship status).
+- **Always positive, zero negative framing.** Never disparage a competitor, a competing chemistry, or even a different Seamens product to make another one look better. Describe what a product does and why it's good on its own merits — don't build the case by knocking something else down.
+- **One product/topic per post — see the critical correction above.** No "X vs Y" posts going forward.
 - **CTA style:** Every post ends with a WhatsApp-first call to action (`https://wa.me/923054444125?text=...`), phrased as a specific free offer relevant to that post's topic (free water analysis, free sample, free site survey) — not a generic "contact us."
 - **No em-dash overuse** — use it sparingly like the existing posts do (one or two per section, not one per sentence).
 
@@ -58,32 +75,56 @@ Seamens supplies/certifies **chemicals used inside** CONAIR/Luwa equipment. Seam
 
 ## 3. Complete Product & Service Catalog
 
-### A. Textile Auxiliaries — ECO-Series (17 SKUs)
-Sizing: `EcoSize-CXW-111` (modified starch, Made in Germany, Ne 6–40 cotton), `EcoPVA-GS` (PVA-based sizing glue, fine counts/synthetics)
-Pre-treatment: `EcoScour-SCA-30` (wetting/scouring agent), `EcoStab-HS` (hydrogen peroxide stabilizer), `EcoDesize-EZ` (enzymatic desizing), `EcoWet+Det` (wetting + detergent combo)
-Dyeing: `EcoDye-LEV Series` (levelling/dispersing), `EcoLevel-LV` (levelling/migration agent), `EcoFix-FB` (formaldehyde-based fixer)
-Softeners & Finishing: `EcoSoftener D-11`, `EcoSil-SS` (amino-silicone softener), `EcoShort-GS-777` (shortening agent), `EcoAcryllic-ACL-55` (acrylic coating), `Eco-Weight Enhancer WKL-121`
-Specialty finishes: `EcoFlame-FR Pro` (flame retardant), `EcoGuard-FP` (fire-proofing), `EcoShield-WP` (durable water repellent/DWR)
+> **Source note:** the product lists below (A and updated C) come directly from the owner's internal formulation records — treat these as the authoritative SKU names, codes and packaging. They differ in places from what's currently live on `seamensenterprises.com` (the live site has some product names — EcoScour-SCA-30, EcoStab-HS, EcoDye-LEV, EcoLevel-LV, EcoFix-FB, EcoPVA-GS, EcoGuard-FP — that don't appear in the owner's authoritative list). Don't try to reconcile or invent a merged list — write new blog content strictly from the lists below; the live site's product section is a separate, later cleanup task.
+
+### A. Textile Auxiliaries — ECO-Series (10 authoritative SKUs)
+All formulated and manufactured by Seamens in Pakistan using organic raw materials (PVA, wax, starch derivatives, polymers) sourced from Germany — see the manufacturing critical-correction note above for exact phrasing.
+
+1. **ECOSIZE CXW-111** — white granular powder, 25 KG bag. An all-in-one PVA-saver sizing powder: already contains size + lubricant + body-enhancer + friction reducer + penetration booster + static control + anti-foam system in one ready-to-use product, so starch/wax/polymers don't need to be dosed separately (a small top-up of these is occasionally used for specific counts/qualities). Benefits: ~30% less PVA consumption than plain PVA-based recipes, high adhesion on polyester blends, lower breakage %, high penetration, zero foam in the size box, no static problem, one-bag mixing (vs 3–5 separate chemicals with older recipes) — saves labour, gas, and time.
+2. **ECOSHORT GS-777** — white thick paste, 240 KG (also referenced as 225 KG drums in some notes — use 240 KG as the standard figure). A multi-polymer film-forming organic sizing agent that replaces all kinds of PVA powders — a size + lubricant + binder combo in one. Benefits for yarn: high strength, smooth surface, good adhesion, abrasion resistance. Benefits for production: easy desizing, low foam, stability, cost-effective. Benefits for fabric quality: fewer stains, better weavability, soft hand feel.
+3. **ECOSOFTNER D-11** — white thick paste, 240 KG. A lubricating softener available in 4 quality types (Simple, Cationic, Non-Ionic, Cationic+Non-Ionic) that replaces wax/tallow in sizing. Benefits for sizing: high lubrication (less yarn-to-heald/reed damage), less hairiness (fewer loom fluff issues), anti-static (especially on PC/poly blends), better weavability (2–3% loom efficiency gain, less breakage), soft hand feel after desizing. Benefits for finishing: super-soft hand feel (ideal for towel/bedding), hydrophilic (fast water absorption without hurting towel absorbency), low yellowing (neutralised paste, no staining on white fabric), economical vs imported silicone softener. Works well on cotton, denim, towel, canvas/drill, PC/PV blends, bedding/sheeting.
+4. **ECOACRYLLIC-ACL-55** — transparent thick liquid, 150/240/1,000 KG (plastic tanks for bulk). A modified polymer-based high-performance sizing agent for denim, towel, canvas/drill, tent/tarpaulin, bags/sacking, and low-count cotton. Benefits for denim/indigo yarn sizing: high abrasion-resistance technology, low size add-on, easy desizing, good penetration, no gumming. Benefits for towel (100% cotton/combed yarn): high strength, soft hand, low foam, more economical than PVA-based alternatives.
+5. **ECO-WEIGHT ENHANCER WKL-121** — 150/240/1,000 KG. Weight-enhancement and improved fabric body for finishing applications.
+6. **ECOFLAME-FR-PRO** — imported fire-proofing agent, 140/240/1,000 KG. Durable flame-retardant finish for cotton, blends, and technical/industrial textiles.
+7. **ECODESIZE-EZ** — 140/240/1,000 KG. Enzymatic desizing agent for fast, effective starch/size removal from woven fabric.
+8. **ECO-SIL SOFTENER (Non-Ionic)** — 150/240/1,000 KG. Silicone-based softener, non-ionic type, for smooth, neutral-charge hand-feel finishing.
+9. **ECO-SIL SOFTENER (Cationic)** — 150/240/1,000 KG. Silicone-based softener, cationic type, for enhanced substantivity and softness on cellulosic fibres.
+10. **ECOSHIELD-WP** — durable water-repellent (DWR) finish, 150/240/1,000 KG.
 
 ### B. Boiler Water Treatment & Humidification
-Scale inhibitor blends, oxygen scavengers (sulphite/hydrazine series), pH/alkalinity conditioners, sludge dispersants, condensate corrosion inhibitors, Water Safe Boiler Series (pre-blended, small/medium boilers). Fire-tube boiler supply (0.5–10 ton/hr) and water-tube (5–25 ton/hr), erection & commissioning, AMC. Humidification: CONAIR/Luwa-certified chemistry for high-pressure fogging & centrifugal systems, evaporative cooling integration, RH monitoring/automation.
+Scale inhibitor blends, oxygen scavengers (sulphite/hydrazine series), pH/alkalinity conditioners, sludge dispersants, condensate corrosion inhibitors, Water Safe Boiler Series (pre-blended, small/medium boilers) — see updated Water Safe SKU list in Section C below (`WATER SAFE BR-111`, `BR-555`). Fire-tube boiler supply (0.5–10 ton/hr) and water-tube (5–25 ton/hr), erection & commissioning, AMC. Humidification: CONAIR/Luwa-certified chemistry (formulated by Seamens, not an agency/distribution relationship — see critical correction above) for high-pressure fogging & centrifugal systems, evaporative cooling integration, RH monitoring/automation. Also supplies **industrial exhaust belt-drive fans** (powder-coated and stainless-steel construction) for plant ventilation.
 
-### C. Cooling Tower / Chiller / RO Water Treatment
-Water Safe-1020 (cooling tower dispersant), Water Safe FC-70/FC-90 (organic de-scaler for chillers/A/C plants — certified by Luwa & Conair for their equipment; also referenced elsewhere on-site as oxidising/non-oxidising cooling tower biocides — treat FC-70/90 as Seamens' two-way action product used across both applications), RO antiscalants, membrane CIP cleaners, ZLD system support.
+### C. Cooling Tower / Chiller / RO Water Treatment — Water Safe Series (10 authoritative SKUs)
+All formulated and manufactured by Seamens in Pakistan using organic raw materials sourced from Germany. Standard packing across the line: 60 KG / 250 KG / 1,000 KG.
+
+1. **WATER SAFE FC-3020** — for A/C plants' water re-circulating system.
+2. **WATER SAFE FC-120Q** — for A/C plants, anti-scale & corrosion inhibitor.
+3. **WATER SAFE BR-111** — for boilers, anti-scalent.
+4. **WATER SAFE BR-555** — for boilers, oxygen scavenger.
+5. **WATER SAFE CT-9080** — for cooling towers, scale inhibitor.
+6. **WATER SAFE DC-1020** — for cooling towers, dispersant.
+7. **WATER SAFE BC-1000** — for cooling towers, biocide.
+8. **WATER SAFE BR-999** — for closed circuits (chillers etc).
+9. **WATER SAFE RC-1030** — for RO plants, anti-scalent.
+10. **WATER SAFE RD-4050** — for RO plants, biocide.
+
+(Note: `WATER SAFE FC-30B` — A/C water softener — and `WATER SAFE FC-7090` — A/C organic de-scaler, matches the site's existing "FC-70/90" product — were also mentioned in owner notes; treat these as additional real SKUs in the A/C sub-line alongside FC-3020/FC-120Q above.)
 
 ### D. Industrial & Institutional Cleaning Chemicals (15 products across verticals)
 Heavy Duty Degreaser, Textile Machine Cleaner, Metal Surface Cleaner & Passivator, Acid Descaler, alkaline/acid CIP cleaners, disinfectant cleaners, drain openers, washroom sanitiser/odour-control/floor-cleaner system, hospital-grade disinfectants (wards/OT/ICU/dietary), hotel housekeeping/kitchen/laundry chemicals, mall/commercial-complex zone cleaners (marble floors, food court degreasers, parking cleaners).
 
 ### E. Parts, Machinery & Plant Services
-Genuine/compatible spare parts sourcing (Germany, Italy, China) for warp preparation, weaving, dyeing, finishing machinery. Turnkey plant erection, Annual Maintenance Contracts (AMC), custom fabrication.
+Genuine/compatible spare parts sourcing (Germany, Italy, China) for warp preparation, weaving, dyeing, finishing machinery. Turnkey plant erection, Annual Maintenance Contracts (AMC), custom fabrication. Industrial exhaust belt-drive fans (powder-coated / stainless steel) — see Section B.
 
 ---
 
-## 4. Existing 18 Blog Posts — Do Not Duplicate These Topics
+## 4. Existing Blog Posts — Do Not Duplicate These Topics
 
-`textile-auxiliaries.html` (ECO-Series overview) · `warp-sizing-chemicals.html` · `textile-softeners-finishers.html` · `boiler-humidification.html` · `boiler-descaler-chemicals.html` · `cooling-chiller-ro.html` · `ro-antiscalant-chemicals.html` · `cooling-tower-biocide.html` · `industrial-cleaning.html` · `heavy-duty-degreasers-pakistan.html` · `washroom-hygiene-chemicals.html` · `shopping-mall-cleaning-chemicals.html` · `hotel-cleaning-chemicals.html` · `hospital-disinfectants-pakistan.html` · `parts-machinery.html` · `iso-certification.html` · `eco-series.html` (noindex, redirects to textile-auxiliaries) · `water-safe-technology.html` (redirects to boiler-humidification)
+**Original 18 broad category guides:** `textile-auxiliaries.html` · `warp-sizing-chemicals.html` · `textile-softeners-finishers.html` · `boiler-humidification.html` · `boiler-descaler-chemicals.html` · `cooling-chiller-ro.html` · `ro-antiscalant-chemicals.html` · `cooling-tower-biocide.html` · `industrial-cleaning.html` · `heavy-duty-degreasers-pakistan.html` · `washroom-hygiene-chemicals.html` · `shopping-mall-cleaning-chemicals.html` · `hotel-cleaning-chemicals.html` · `hospital-disinfectants-pakistan.html` · `parts-machinery.html` · `iso-certification.html` · `eco-series.html` (noindex, redirects to textile-auxiliaries) · `water-safe-technology.html` (redirects to boiler-humidification)
 
-These are broad category guides. The 50 new posts (Section 10) go narrower/deeper on purpose — comparisons, calculators, troubleshooting, buyer-decision content, and city/vertical pages — so there is zero keyword cannibalisation.
+**Plus 42 posts from Section 10, Categories A–F, already written and published** (categories 1–42 — the slugs match the `## Slug` headers used per assignment below). Only Category G (43–50) remains to be written. Before writing any post, check the live `sitemap.xml` for the current full list, since this file may lag behind what's actually published.
+
+**Important:** several of the 42 already-published posts used an "X vs Y" comparison format that predates the strict one-product-per-post rule in Section 1 — see that section's list of posts flagged for a possible rewrite. Do not use that format again for anything new.
 
 ---
 
