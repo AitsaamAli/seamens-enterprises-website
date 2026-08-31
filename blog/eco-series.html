@@ -30,12 +30,6 @@
   .nav-cta::after{display:none!important}
   .hamburger{display:none;flex-direction:column;gap:6px;cursor:pointer;padding:8px;z-index:1001;position:relative}
   .hamburger span{display:block;width:26px;height:3px;background:white;transition:all 0.3s;border-radius:2px}
-  .theme-toggle{background:none;border:1px solid rgba(255,255,255,0.2);color:white;border-radius:50%;width:34px;height:34px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1rem;transition:border-color 0.2s;margin-left:0.5rem}
-  .theme-toggle:hover{border-color:var(--teal)}
-  body.light-theme{background:#f0f4f8;color:#0a1628}
-  body.light-theme nav{background:rgba(255,255,255,0.97)!important}
-  body.light-theme .nav-links a{color:#0a1628}
-  body.light-theme .hamburger span{background:#0a1628}
   /* WA FLOAT */
   .wa-float{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;background:#25d366;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.5);text-decoration:none;transition:transform 0.2s,box-shadow 0.2s}
   .wa-float:hover{transform:scale(1.12);box-shadow:0 6px 28px rgba(37,211,102,0.7)}
@@ -126,7 +120,6 @@
       <li><a href="/#about">About</a></li>
       <li><a href="/#contact" class="nav-cta">Contact</a></li>
     </ul>
-    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle Light/Dark Mode"><span class="theme-icon">☀️</span></button>
     <div class="hamburger" id="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
       <span></span><span></span><span></span>
     </div>
@@ -267,18 +260,5 @@
   <p>&copy; 2025 Seamens Enterprises &middot; All Rights Reserved &middot; Plot No. 51, Street No. 1, Main Sharqpur Road, Lahore &middot; <a href="https://wa.me/923054444125">WhatsApp</a></p>
 </footer>
 
-<script>
-function toggleTheme(){
-  document.body.classList.toggle('light-theme');
-  const icon = document.querySelector('.theme-icon');
-  if(icon) icon.textContent = document.body.classList.contains('light-theme') ? '🌙' : '☀️';
-  localStorage.setItem('theme', document.body.classList.contains('light-theme') ? 'light' : 'dark');
-}
-if(localStorage.getItem('theme') === 'light'){
-  document.body.classList.add('light-theme');
-  const icon = document.querySelector('.theme-icon');
-  if(icon) icon.textContent = '🌙';
-}
-</script>
 </body>
 </html>

@@ -65,37 +65,6 @@
   .nav-cta::after{display:none!important}
   .hamburger{display:none;flex-direction:column;gap:6px;cursor:pointer;padding:8px}
   .hamburger span{display:block;width:26px;height:3px;background:white;border-radius:2px}
-  .theme-toggle{background:none;border:1px solid rgba(255,255,255,0.2);color:white;border-radius:50%;width:34px;height:34px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1rem;margin-left:0.5rem}
-  body.light-theme{background:#f0f4f8;color:#0a1628}
-  body.light-theme nav{background:rgba(255,255,255,0.97)!important}
-  body.light-theme .nav-links a{color:#0a1628}
-  body.light-theme .hamburger span{background:#0a1628}
-  body.light-theme .blog-content p{color:#2a3a52}
-  body.light-theme .blog-content h2{color:#0a1628}
-  body.light-theme .blog-content h3{color:#00857a}
-  body.light-theme .toc{background:#e2e8f5;border-color:rgba(0,180,166,0.2)}
-  body.light-theme .toc ol li{color:#2a3a52}
-  body.light-theme .toc ol li a{color:#00857a}
-  body.light-theme .highlight-box{background:rgba(0,180,166,0.05)}
-  body.light-theme .highlight-box p{color:#1a2a3a}
-  body.light-theme .warning-box{background:rgba(201,168,76,0.06)}
-  body.light-theme .warning-box p{color:#1a2a3a}
-  body.light-theme .check-list li{color:#2a3a52;border-color:rgba(0,0,0,0.06)}
-  body.light-theme .check-list li strong{color:#0a1628}
-  body.light-theme .faq-q{background:#dce4ef;color:#0a1628;border-color:rgba(0,180,166,0.3)}
-  body.light-theme .faq-a{background:#eaf0f8;color:#2a3a52;border-color:rgba(0,0,0,0.08)}
-  body.light-theme .process-table td{color:#2a3a52}
-  body.light-theme .process-table td strong{color:#0a1628}
-  body.light-theme .process-table tr:nth-child(even) td{background:rgba(0,0,0,0.025)}
-  body.light-theme .product-card{background:#e2eaf5;border-color:rgba(0,180,166,0.2)}
-  body.light-theme .pc-name{color:#0a1628}
-  body.light-theme .pc-desc{color:#4a5a72}
-  body.light-theme .stat-box{background:rgba(0,180,166,0.06);border-color:rgba(0,180,166,0.18)}
-  body.light-theme .blog-cta{background:#dce4ef}
-  body.light-theme .blog-cta h3{color:#0a1628}
-  body.light-theme .blog-cta p{color:#4a5a72}
-  body.light-theme .related-card{background:#e2eaf5;border-color:rgba(0,180,166,0.15)}
-  body.light-theme .rc-title{color:#0a1628}
   .blog-hero{background:linear-gradient(135deg,#071222 0%,#0a1c3a 50%,#121820 100%);border-bottom:1px solid rgba(0,180,166,0.15);padding:5rem 2rem 3.5rem;margin-top:72px}
   .blog-hero-inner{max-width:860px;margin:0 auto}
   .blog-cat-badge{display:inline-block;background:var(--teal);color:white;font-family:'Barlow Condensed',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;padding:0.3rem 0.8rem;border-radius:2px;margin-bottom:1rem}
@@ -181,7 +150,6 @@
       <li><a href="/#about">About</a></li>
       <li><a href="/#contact" class="nav-cta">Contact</a></li>
     </ul>
-    <button class="theme-toggle" onclick="toggleTheme()"><span class="theme-icon">☀️</span></button>
     <div class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')"><span></span><span></span><span></span></div>
   </div>
 </nav>
@@ -351,9 +319,5 @@
   <p>&copy; 2026 Seamens Enterprises &middot; All Rights Reserved &middot; Plot No. 51, Street No. 1, Main Sharqpur Road, Lahore &middot; <a href="https://wa.me/923054444125">WhatsApp</a></p>
 </footer>
 
-<script>
-function toggleTheme(){document.body.classList.toggle('light-theme');const i=document.querySelector('.theme-icon');if(i)i.textContent=document.body.classList.contains('light-theme')?'🌙':'☀️';localStorage.setItem('theme',document.body.classList.contains('light-theme')?'light':'dark')}
-if(localStorage.getItem('theme')==='light'){document.body.classList.add('light-theme');const i=document.querySelector('.theme-icon');if(i)i.textContent='🌙'}
-</script>
 </body>
 </html>
