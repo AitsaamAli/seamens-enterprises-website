@@ -70,6 +70,7 @@ Every post covers **exactly one Seamens product or one single topic** — never 
 - **Always positive, zero negative framing.** Never disparage a competitor, a competing chemistry, or even a different Seamens product to make another one look better. Describe what a product does and why it's good on its own merits — don't build the case by knocking something else down.
 - **One product/topic per post — see the critical correction above.** No "X vs Y" posts going forward.
 - **Product names exactly as listed on the website, nothing else.** See the critical correction in Section 3 — never invent a product name, code, or variant that isn't already shown on `seamensenterprises.com`.
+- **Cross-check every factual product claim against Section 3 before writing — this is a legal-risk control, not a style preference.** A post was once published claiming EcoFix-FB was "formaldehyde-free" and "GOTS-compliant" when Section 3.A's own catalog entry says it's formaldehyde-based — a direct, false, regulatory-adjacent claim that could have exposed the owner to real legal risk if a certified mill relied on it. Before writing any claim about what a product is, does, is free of, or is compliant with, verify it against that product's actual catalog description in Section 3. If the assignment brief and the catalog disagree, the catalog wins — flag the conflict rather than writing the post as briefed. When a product's real properties conflict with a desirable-sounding angle (e.g., it contains something a certain buyer segment needs to avoid), write the honest version and redirect that buyer segment to ask directly, rather than misrepresenting the product to fit the angle.
 - **CTA style:** Every post ends with a WhatsApp-first call to action (`https://wa.me/923054444125?text=...`), phrased as a specific free offer relevant to that post's topic (free water analysis, free sample, free site survey) — not a generic "contact us."
 - **No em-dash overuse** — use it sparingly like the existing posts do (one or two per section, not one per sentence).
 
@@ -522,10 +523,10 @@ Keyword: hydrogen peroxide stabilizer textile bleaching · Intent: Informational
 FAQs: Why does bleaching weaken fabric? · What does a peroxide stabilizer actually do? · How much stabilizer is needed per bleaching bath? · What happens without a stabilizer?
 Stats: typical dosing g/L, pH range for stable bleaching bath.
 
-**10. `formaldehyde-free-dye-fixing-agents`** — *Reactive Dye Fixing Agents: Formaldehyde-Free Options for GOTS-Certified Mills*
-Keyword: formaldehyde free dye fixing agent · Intent: Mixed · Gap: compliance-first angle vs generic product listings.
-FAQs: Why avoid formaldehyde-based fixing agents? · Are formaldehyde-free fixers as effective? · What does GOTS require for dye fixing? · How is wash-fastness tested?
-Stats: wash-fastness rating comparison, dosing g/L.
+**10. `ecofix-fb-dye-fixing-agent`** — *EcoFix-FB: Reactive Dye Fixing Agent for Wash Fastness* — **corrected 2026-08-27: this assignment originally described EcoFix-FB as "formaldehyde-free," which contradicts the product catalog (Section 3.A #17) describing it as formaldehyde-based. The published post now describes it accurately — formaldehyde-based, not suitable for GOTS/eco-label-restricted production, with an honest note directing certified mills to check their own input requirements. Never resurrect the "formaldehyde-free" framing for this product.**
+Keyword: EcoFix-FB reactive dye fixing agent · Intent: Informational · Gap: no supplier explains wash-fastness testing or dosing for this product category.
+FAQs: What is EcoFix-FB used for? · Is EcoFix-FB suitable for GOTS-certified or eco-label production? · How is wash-fastness tested? · How should EcoFix-FB be dosed and handled?
+Stats: wash-fastness rating (grey scale), dosing g/L range.
 
 **11. `dwr-water-repellent-finish-cost-pakistan`** — *Water Repellent (DWR) Finishing Cost Per Meter: A Pakistani Mill's Budget Guide*
 Keyword: DWR finish cost per meter Pakistan · Intent: Commercial · Gap: no published cost-per-meter figures anywhere in this market.

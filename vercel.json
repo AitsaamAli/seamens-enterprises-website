@@ -250,7 +250,12 @@
     },
     {
       "source": "/blog/formaldehyde-free-dye-fixing-agents.html",
-      "destination": "/formaldehyde-free-dye-fixing-agents",
+      "destination": "/ecofix-fb-dye-fixing-agent",
+      "permanent": true
+    },
+    {
+      "source": "/formaldehyde-free-dye-fixing-agents",
+      "destination": "/ecofix-fb-dye-fixing-agent",
       "permanent": true
     },
     {
@@ -479,8 +484,8 @@
       "destination": "/blog/food-grade-degreaser-meaning-pakistan.html"
     },
     {
-      "source": "/formaldehyde-free-dye-fixing-agents",
-      "destination": "/blog/formaldehyde-free-dye-fixing-agents.html"
+      "source": "/ecofix-fb-dye-fixing-agent",
+      "destination": "/blog/ecofix-fb-dye-fixing-agent.html"
     },
     {
       "source": "/genuine-vs-compatible-spare-parts-textile",
