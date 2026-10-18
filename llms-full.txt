@@ -1328,3 +1328,22 @@ A: Seamens Enterprises supplies textile mills and groups, sugar mills, cement, o
 Q: Can I get references from Seamens Enterprises clients?
 A: Yes. Ask the Seamens team for references from plants similar to yours, in your industry and region, so you can speak to them directly before you decide.
 
+## Lahore Groundwater TDS: What 800 to 1,500 ppm Means for Your Boiler, Cooling Tower and RO Plant
+URL: https://www.seamensenterprises.com/lahore-groundwater-tds-industrial
+Lahore groundwater commonly runs 800 to 1,500 ppm TDS. What that means for boilers, cooling towers and RO plants, with worked examples. Seamens, Lahore.
+
+Q: What is the TDS of Lahore groundwater?
+A: Lahore groundwater commonly runs about 800 to 1,500 ppm TDS. This is a typical range, not a guarantee for any single borewell, so test your own water before designing a treatment programme.
+
+Q: Is 1,000 ppm TDS good or bad for a boiler?
+A: Raw water at 1,000 ppm TDS is high for boiler feed. With a 3,000 ppm boiler limit it allows only about 3 cycles of concentration, so a large share of heated water would be blown down. Boilers are normally fed with softened or treated water.
+
+Q: How do I calculate boiler blowdown from TDS?
+A: Cycles of concentration equal the boiler TDS limit divided by the feed water TDS, and blowdown as a share of feed water equals feed TDS divided by the boiler TDS limit. Confirm your boiler limit with the manufacturer.
+
+Q: What cycles of concentration should a cooling tower run at?
+A: Industrial cooling towers commonly target about 3 to 5 cycles of concentration. The achievable figure depends on make-up water quality and on how well the programme controls scale and corrosion.
+
+Q: Does Seamens Enterprises test water in Lahore?
+A: Yes. Seamens Enterprises water treatment programmes include on-site water analysis, custom dosing recommendations, regular monitoring visits and 24/7 emergency technical support.
+

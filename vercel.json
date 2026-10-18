@@ -436,6 +436,11 @@
       "source": "/clients.html",
       "destination": "/clients",
       "permanent": true
+    },
+    {
+      "source": "/blog/lahore-groundwater-tds-industrial.html",
+      "destination": "/lahore-groundwater-tds-industrial",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -718,6 +723,10 @@
     {
       "source": "/clients",
       "destination": "/clients.html"
+    },
+    {
+      "source": "/lahore-groundwater-tds-industrial",
+      "destination": "/blog/lahore-groundwater-tds-industrial.html"
     }
   ],
   "trailingSlash": false
