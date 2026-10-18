@@ -75,7 +75,7 @@
     },
     {
       "source": "/blog/index.html",
-      "destination": "/blog/",
+      "destination": "/blog",
       "permanent": true
     },
     {
@@ -352,6 +352,31 @@
       "source": "/blog/zero-liquid-discharge-textile-mills-pakistan.html",
       "destination": "/zero-liquid-discharge-textile-mills-pakistan",
       "permanent": true
+    },
+    {
+      "source": "/blog/best-textile-chemical-supplier-pakistan.html",
+      "destination": "/best-textile-chemical-supplier-pakistan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/reliable-boiler-chemical-supplier-lahore.html",
+      "destination": "/reliable-boiler-chemical-supplier-lahore",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cooling-tower-ro-chemical-supplier-pakistan.html",
+      "destination": "/cooling-tower-ro-chemical-supplier-pakistan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/industrial-cleaning-chemical-supplier-lahore.html",
+      "destination": "/industrial-cleaning-chemical-supplier-lahore",
+      "permanent": true
+    },
+    {
+      "source": "/blog/industrial-chemical-suppliers-lahore-guide.html",
+      "destination": "/industrial-chemical-suppliers-lahore-guide",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -570,6 +595,26 @@
     {
       "source": "/privacy-policy",
       "destination": "/privacy-policy.html"
+    },
+    {
+      "source": "/best-textile-chemical-supplier-pakistan",
+      "destination": "/blog/best-textile-chemical-supplier-pakistan.html"
+    },
+    {
+      "source": "/reliable-boiler-chemical-supplier-lahore",
+      "destination": "/blog/reliable-boiler-chemical-supplier-lahore.html"
+    },
+    {
+      "source": "/cooling-tower-ro-chemical-supplier-pakistan",
+      "destination": "/blog/cooling-tower-ro-chemical-supplier-pakistan.html"
+    },
+    {
+      "source": "/industrial-cleaning-chemical-supplier-lahore",
+      "destination": "/blog/industrial-cleaning-chemical-supplier-lahore.html"
+    },
+    {
+      "source": "/industrial-chemical-suppliers-lahore-guide",
+      "destination": "/blog/industrial-chemical-suppliers-lahore-guide.html"
     }
   ],
   "trailingSlash": false
