@@ -562,6 +562,14 @@
     {
       "source": "/zero-liquid-discharge-textile-mills-pakistan",
       "destination": "/blog/zero-liquid-discharge-textile-mills-pakistan.html"
+    },
+    {
+      "source": "/request-quote",
+      "destination": "/request-quote.html"
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/privacy-policy.html"
     }
   ],
   "trailingSlash": false
