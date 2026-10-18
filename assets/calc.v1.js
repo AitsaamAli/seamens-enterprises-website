@@ -57,6 +57,37 @@ var CALCS = {
       };
     }
   },
+  textilecost: {
+    title: 'Textile Chemical Cost-in-Use Calculator',
+    sub: 'Compare two chemical quotes as cost per kg of fabric, using price, dose (g/L) and liquor ratio.',
+    html: function (p) { return '<div class="calc-grid">' + field(p + 'w', 'Batch fabric weight (kg)', 500) + field(p + 'r', 'Liquor ratio (1 : x)', 10, 0.5, 1) + field(p + 'a', 'Quote A: price (Rs/kg)', 500) + field(p + 'x', 'Quote A: dose (g/L)', 2, 0.01) + field(p + 'b', 'Quote B: price (Rs/kg)', 650) + field(p + 'y', 'Quote B: dose (g/L)', 1.2, 0.01) + '</div>'; },
+    run: function (p) {
+      var W = num(p + 'w'), R = num(p + 'r'), A = num(p + 'a'), X = num(p + 'x'), B = num(p + 'b'), Y = num(p + 'y');
+      if (!(W > 0 && R > 0 && A > 0 && X > 0 && B > 0 && Y > 0)) return { err: 'Enter positive values in every field.' };
+      var ga = X * R, gb = Y * R, ca = A / 1000 * ga, cb = B / 1000 * gb, ba = ca * W, bb = cb * W;
+      var cheaper = ca <= cb ? 'Quote A' : 'Quote B', diff = Math.abs(ba - bb), pct = Math.abs(ca - cb) / Math.max(ca, cb) * 100;
+      return {
+        out: res('Quote A: chemical per kg fabric', fmt(ga, 1) + ' g') + res('Quote A: cost per kg fabric', 'Rs ' + fmt(ca, 2)) + res('Quote A: cost per batch', 'Rs ' + fmt(ba, 0)) + res('Quote B: chemical per kg fabric', fmt(gb, 1) + ' g') + res('Quote B: cost per kg fabric', 'Rs ' + fmt(cb, 2)) + res('Quote B: cost per batch', 'Rs ' + fmt(bb, 0)) + res('Lower cost-in-use', cheaper) + res('Difference per batch', 'Rs ' + fmt(diff, 0) + ' (' + fmt(pct, 0) + '%)'),
+        note: 'Formulas: grams per kg fabric = dose (g/L) x liquor ratio; cost per kg fabric = price per kg / 1000 x grams per kg fabric. Doses must come from your own trial. Prices here are your inputs, not Seamens prices.',
+        msg: 'Textile chemical cost-in-use: ' + W + ' kg batch at 1:' + R + '. Quote A Rs ' + fmt(ca, 2) + '/kg fabric, Quote B Rs ' + fmt(cb, 2) + '/kg fabric. Please advise on products and a trial.'
+      };
+    }
+  },
+  steamcost: {
+    title: 'Boiler Chemical Cost per Tonne of Steam Calculator',
+    sub: 'Convert daily chemical use, price and steam output into Rs per tonne of steam, with testing and service cost included.',
+    html: function (p) { return '<div class="calc-grid">' + field(p + 'k', 'Chemical used per day (kg)', 12, 0.1) + field(p + 'p', 'Price (Rs/kg)', 400) + field(p + 's', 'Steam output (tonne/h)', 5, 0.1) + field(p + 'h', 'Operating hours per day', 20, 1) + field(p + 'm', 'Service and testing cost per month (Rs)', 30000, 100, 0) + '</div>'; },
+    run: function (p) {
+      var K = num(p + 'k'), P = num(p + 'p'), S = num(p + 's'), H = num(p + 'h'), M = num(p + 'm');
+      if (!(K >= 0 && P > 0 && S > 0 && H > 0 && M >= 0)) return { err: 'Enter positive values (service cost may be zero).' };
+      var steam = S * H, daily = K * P, perT = daily / steam, svcT = M / (steam * 30), total = perT + svcT;
+      return {
+        out: res('Steam per day', fmt(steam, 1) + ' tonne') + res('Chemical cost per day', 'Rs ' + fmt(daily, 0)) + res('Chemical cost per tonne of steam', 'Rs ' + fmt(perT, 2)) + res('Service and testing per tonne', 'Rs ' + fmt(svcT, 2)) + res('Total per tonne of steam', 'Rs ' + fmt(total, 2)) + res('Chemical cost per 30 days', 'Rs ' + fmt(daily * 30, 0)),
+        note: 'Formulas: steam per day = tonne/h x hours; chemical cost per tonne = (kg per day x price) / steam per day; service per tonne = monthly cost / (steam per day x 30). Compare programmes on the total, and include blowdown losses separately. Prices are your inputs, not Seamens prices.',
+        msg: 'Boiler chemical cost: ' + fmt(steam, 1) + ' t steam/day, total Rs ' + fmt(total, 2) + ' per tonne. Please advise on a treatment programme.'
+      };
+    }
+  },
   recipe: {
     title: 'Textile Chemical Dosing Calculator (g/L and % owf)',
     sub: 'Fabric weight x liquor ratio = liquor volume; liquor volume x g/L = grams of chemical.',

@@ -441,6 +441,26 @@
       "source": "/blog/lahore-groundwater-tds-industrial.html",
       "destination": "/lahore-groundwater-tds-industrial",
       "permanent": true
+    },
+    {
+      "source": "/blog/textile-chemical-cost-calculator-pakistan.html",
+      "destination": "/textile-chemical-cost-calculator-pakistan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/boiler-chemical-cost-per-tonne-steam-calculator.html",
+      "destination": "/boiler-chemical-cost-per-tonne-steam-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/blog/faisalabad-textile-mill-water-treatment.html",
+      "destination": "/faisalabad-textile-mill-water-treatment",
+      "permanent": true
+    },
+    {
+      "source": "/blog/eco-series-sizing-agent-selection-cotton-warp.html",
+      "destination": "/eco-series-sizing-agent-selection-cotton-warp",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -727,6 +747,22 @@
     {
       "source": "/lahore-groundwater-tds-industrial",
       "destination": "/blog/lahore-groundwater-tds-industrial.html"
+    },
+    {
+      "source": "/textile-chemical-cost-calculator-pakistan",
+      "destination": "/blog/textile-chemical-cost-calculator-pakistan.html"
+    },
+    {
+      "source": "/boiler-chemical-cost-per-tonne-steam-calculator",
+      "destination": "/blog/boiler-chemical-cost-per-tonne-steam-calculator.html"
+    },
+    {
+      "source": "/faisalabad-textile-mill-water-treatment",
+      "destination": "/blog/faisalabad-textile-mill-water-treatment.html"
+    },
+    {
+      "source": "/eco-series-sizing-agent-selection-cotton-warp",
+      "destination": "/blog/eco-series-sizing-agent-selection-cotton-warp.html"
     }
   ],
   "trailingSlash": false

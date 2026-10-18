@@ -1347,3 +1347,79 @@ A: Industrial cooling towers commonly target about 3 to 5 cycles of concentratio
 Q: Does Seamens Enterprises test water in Lahore?
 A: Yes. Seamens Enterprises water treatment programmes include on-site water analysis, custom dosing recommendations, regular monitoring visits and 24/7 emergency technical support.
 
+## Textile Chemical Cost Calculator: Compare Quotes in Rs per kg of Fabric
+URL: https://www.seamensenterprises.com/textile-chemical-cost-calculator-pakistan
+Free textile chemical cost calculator: compare quotes as Rs per kg of fabric from price, dose (g/L) and liquor ratio. Worked example for Pakistani mills.
+
+Q: How do I calculate the cost of textile chemicals per kg of fabric?
+A: Divide the price per kilogram by 1,000, then multiply by the dose in grams per litre and by the liquor ratio. For example, Rs 500 per kg at 2.0 g/L and a 10:1 liquor ratio gives Rs 10 per kilogram of fabric.
+
+Q: Why is the cheapest chemical not always the cheapest to use?
+A: Price per kilogram ignores dose. A product that costs more per kilogram but needs a lower dose can cost less per kilogram of fabric, so quotes should be compared on cost-in-use.
+
+Q: What is liquor ratio and why does it matter for cost?
+A: Liquor ratio is litres of liquor per kilogram of fabric, such as 10:1. It multiplies the chemical used per kilogram of fabric, so a higher liquor ratio raises the cost of the same g/L dose.
+
+Q: Where should I get the dose to use in the calculation?
+A: Use the dose that reaches your quality target in your own lab-dip and bulk trial, on your own fabric and machine, not a brochure dose.
+
+Q: Does Seamens Enterprises provide free trial samples of textile chemicals?
+A: Yes. Seamens Enterprises offers free trial samples of its ECO-Series textile auxiliaries, evaluated on your own equipment under production conditions, with no obligation to buy.
+
+## Boiler Chemical Cost per Tonne of Steam: Free Calculator and Worked Example
+URL: https://www.seamensenterprises.com/boiler-chemical-cost-per-tonne-steam-calculator
+Free calculator: boiler chemical cost per tonne of steam from daily chemical use, price, steam output and service cost. Worked example for Pakistani plants.
+
+Q: How do I calculate boiler chemical cost per tonne of steam?
+A: Multiply daily chemical use in kilograms by the price per kilogram, then divide by the tonnes of steam produced per day. For example, 12 kg per day at Rs 400 per kg on 100 tonnes of steam a day is Rs 48 per tonne.
+
+Q: Should service and testing be included in the comparison?
+A: Yes. Divide the monthly service and testing cost by the steam produced in a month and add it to the chemical cost per tonne, because visits and testing are part of what you are buying.
+
+Q: Why is price per kilogram a poor way to compare boiler chemicals?
+A: Concentrated and dilute products are used in different quantities, so price per kilogram does not show the cost of treating the same amount of steam.
+
+Q: What is not included in the cost per tonne of steam?
+A: Blowdown losses, scale-related fuel use and downtime are separate costs that a good programme reduces, so they should be tracked alongside the chemical cost.
+
+Q: Does Seamens Enterprises provide boiler water treatment in Lahore?
+A: Yes. Seamens Enterprises supplies the Water Safe Boiler Treatment programme for fire-tube and water-tube boilers, with on-site water analysis, dosing recommendations and monitoring visits.
+
+## Faisalabad Textile Mill Water Treatment: Boilers, Cooling, Humidification and RO
+URL: https://www.seamensenterprises.com/faisalabad-textile-mill-water-treatment
+Water treatment for Faisalabad textile mills: boilers, humidification, cooling, chillers and RO. What to test and what to ask a supplier. Seamens.
+
+Q: What water treatment does a textile mill in Faisalabad need?
+A: A textile mill typically needs treatment for its steam boilers, air humidification, cooling towers and chillers, and RO or process water. Each system needs its own programme designed from your own water analysis.
+
+Q: Should I use a regional TDS figure for my mill?
+A: No. Groundwater quality varies by depth, location and season, so test your own water at each feed point and have a full analysis done before choosing a programme.
+
+Q: Does Seamens Enterprises serve mills in Faisalabad?
+A: Yes. Seamens Enterprises, based in Lahore, supports textile mills in Faisalabad and across Pakistan with water treatment chemicals, on-site analysis, monitoring visits and 24/7 technical support.
+
+Q: Which chemicals does Seamens supply for mill cooling and chillers?
+A: Seamens Enterprises supplies Water Safe-1020 for cooling towers and Water Safe FC-70/90, an organic de-scaler for chillers and A/C plants that does not require system shutdown for dosing.
+
+Q: Does Seamens Enterprises supply RO plants and ZLD systems?
+A: Yes. Seamens Enterprises supplies single and double-pass RO plants with ultra-filtration pre-treatment and Zero Liquid Discharge systems, plus RO chemicals including Water Safe RO Antiscalant.
+
+## How to Trial a Sizing Agent for Cotton Warp Yarn (Ne 6 to 40): A Step-by-Step Guide
+URL: https://www.seamensenterprises.com/eco-series-sizing-agent-selection-cotton-warp
+Step-by-step guide to trialling a sizing agent on cotton warp (Ne 6 to 40): set the goal, run the trial, measure, and decide. EcoSize-CXW-111, Seamens.
+
+Q: What is EcoSize-CXW-111?
+A: EcoSize-CXW-111 is a premium all-in-one sizing agent for warp yarn, supplied as a white granular powder in 25 kg bags. It is formulated and manufactured by Seamens Enterprises in Pakistan using imported premium raw materials, for cotton warp in the Ne 6 to Ne 40 range.
+
+Q: How do I trial a sizing agent on my looms?
+A: Agree the success measures first, run the trial beam alongside a control beam on the same yarn lot and looms, record all size box settings, measure warp breaks and efficiency at the loom, and repeat on a second beam before deciding.
+
+Q: What should I measure in a sizing trial?
+A: The primary measure is warp breaks per loom hour or weaving efficiency. Secondary measures include size add-on, hairiness, shedding, fabric quality and the desizing result.
+
+Q: Who decides the dose of EcoSize-CXW-111?
+A: The dose is confirmed by trial on your own yarn and looms with the Seamens technical team, rather than taken from a brochure.
+
+Q: Does Seamens Enterprises offer free trial samples of sizing agents?
+A: Yes. Seamens Enterprises offers free trial samples of its ECO-Series textile auxiliaries, evaluated on your own equipment under production conditions, with no obligation to buy.
+
