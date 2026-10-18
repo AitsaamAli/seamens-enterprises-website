@@ -67,6 +67,17 @@
         "areaServed": "PK",
         "availableLanguage": ["English", "Urdu"]
       }],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Seamens Enterprises products and services",
+        "itemListElement": [
+          {"@type": "OfferCatalog", "name": "Textile auxiliaries (ECO-Series)", "url": "https://www.seamensenterprises.com/products/textile-auxiliaries"},
+          {"@type": "OfferCatalog", "name": "Boiler water treatment, steam boilers and humidification", "url": "https://www.seamensenterprises.com/products/boiler-water-treatment-humidification"},
+          {"@type": "OfferCatalog", "name": "Cooling tower, chiller and RO water treatment", "url": "https://www.seamensenterprises.com/products/cooling-tower-chiller-ro"},
+          {"@type": "OfferCatalog", "name": "Industrial cleaning chemicals", "url": "https://www.seamensenterprises.com/products/industrial-cleaning-chemicals"},
+          {"@type": "OfferCatalog", "name": "Plant erection, machinery parts and maintenance", "url": "https://www.seamensenterprises.com/products/plant-erection-machinery-parts"}
+        ]
+      },
       "foundingDate": "1997",
       "founder": {
         "@type": "Person",
@@ -232,12 +243,13 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 30px rgba(0,0,0,0.5
 /* HERO */
 #home{position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;overflow:hidden;background:#071222}
 .hero-video-wrap{position:absolute;inset:0;width:100%;height:100%;overflow:hidden}
+.hero-video-wrap img.hero-bg{width:100%;height:100%;object-fit:cover;opacity:0.45}
 .hero-video-wrap video{width:100%;height:100%;object-fit:cover;opacity:0.45}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(7,18,34,0.72) 0%,rgba(0,30,60,0.45) 50%,rgba(7,18,34,0.88) 100%)}
 .hero-overlay2{position:absolute;bottom:0;left:0;right:0;height:35%;background:linear-gradient(to top,#071222,transparent)}
 .hero-content{position:relative;z-index:2;text-align:center;padding:2rem;max-width:960px}
 .hero-logo-big{margin:0 auto 1.5rem;display:flex;justify-content:center}
-.hero-logo-big img{height:100px;filter:drop-shadow(0 4px 24px rgba(0,180,166,0.6)) brightness(1.05)}
+.hero-logo-big img{height:100px;width:auto;filter:drop-shadow(0 4px 24px rgba(0,180,166,0.6)) brightness(1.05)}
 .hero-tag{display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:var(--teal);border:1px solid rgba(0,180,166,0.4);padding:0.35rem 1rem;border-radius:2px;margin-bottom:1.5rem}
 .hero-3p{display:flex;align-items:center;justify-content:center;gap:0.6rem;margin:1.4rem 0 0.6rem;flex-wrap:wrap}
 .hero-3p-item{display:flex;flex-direction:column;align-items:center;gap:0.18rem}
@@ -1356,16 +1368,16 @@ em .typing-cursor { background: var(--gold); box-shadow: 0 0 10px rgba(212,168,6
   <div class="nav-inner">
     <a class="logo-wrap" href="#home">
       <div class="logo-img-wrap">
-        <img src="images/seamens-logo-transparent.png" class="logo-img" alt="Seamens Enterprises" draggable="false">
+        <img width="600" height="161" src="images/seamens-logo-transparent.png" class="logo-img" alt="Seamens Enterprises" draggable="false">
       </div>
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#home">Home</a></li>
-      <li><a href="#products">Products</a></li>
+      <li><a href="/products">Products</a></li>
       <li><a href="#clients">Clients</a></li>
       <li><a href="#certifications">Certifications</a></li>
       <li><a href="/blog">Blog</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a href="/about">About</a></li>
       <li><a href="#contact" class="nav-cta">Contact</a></li>
     </ul>
     <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Open menu" aria-controls="navLinks" onclick="document.getElementById('navLinks').classList.toggle('open')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}">
@@ -1375,19 +1387,16 @@ em .typing-cursor { background: var(--gold); box-shadow: 0 0 10px rgba(212,168,6
 </nav>
 
 <!-- HERO -->
+<main id="main">
 <section id="home">
   <div class="hero-video-wrap">
-    <video id="heroVideo" muted loop playsinline preload="none" poster="https://images.unsplash.com/photo-1504309092620-4d0ec726efa4?w=1600&q=80">
-      <source data-src="https://videos.pexels.com/video-files/1409899/1409899-uhd_2560_1440_25fps.mp4" type="video/mp4">
-      <source data-src="https://videos.pexels.com/video-files/3571264/3571264-uhd_2560_1440_25fps.mp4" type="video/mp4">
-      <source data-src="https://videos.pexels.com/video-files/4763824/4763824-uhd_2560_1440_25fps.mp4" type="video/mp4">
-    </video>
+    <img class="hero-bg" src="images/Steam%20Boiler%20Supply%20%26%20Erection.jpg" alt="" width="1200" height="696" fetchpriority="high" decoding="async">
   </div>
   <div class="hero-overlay"></div>
   <div class="hero-overlay2"></div>
   <div class="hero-content">
     <div class="hero-logo-big" id="heroLogo">
-      <img src="images/seamens-logo-transparent.png" class="hero-logo-img" alt="Seamens Enterprises" draggable="false">
+      <img width="600" height="161" src="images/seamens-logo-transparent.png" class="hero-logo-img" alt="Seamens Enterprises" draggable="false">
     </div>
     <div class="hero-tag" id="heroTag">Industrial Chemical Technologies &middot; Since 1997</div>
     <h1 class="hero-h1" id="heroH1">Industrial Chemicals &amp; Water Treatment Supplier in Lahore, Pakistan</h1>
@@ -1419,11 +1428,11 @@ em .typing-cursor { background: var(--gold); box-shadow: 0 0 10px rgba(212,168,6
     <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Engineered Solutions for Industry</h2>
     <p class="section-lead" data-aos="fade-up" data-aos-delay="200">From textile auxiliaries to water treatment infrastructure, boilers, chillers, cleaning chemicals and industrial machinery &mdash; precision-engineered solutions across Pakistan.</p>
     <div class="products-tabs" data-aos="fade-up" data-aos-delay="300">
-      <button class="tab-btn active" onclick="switchTab('textile')"><img class="tab-icon" src="images/Dyeing%20Auxiliaries.jpg" alt="Textile Auxiliaries Chemicals Pakistan" loading="lazy" decoding="async"> Textile Auxiliaries</button>
-      <button class="tab-btn" onclick="switchTab('humidification')"><img class="tab-icon" src="images/Steam%20Boiler%20Supply%20%26%20Erection.jpg" alt="Industrial Air Humidification Boiler Systems Pakistan" loading="lazy" decoding="async"> Air Humidification / Boilers</button>
-      <button class="tab-btn" onclick="switchTab('cooling')"><img class="tab-icon" src="images/Reverse%20Osmosis%20(RO)%20Plants.jpg" alt="Reverse osmosis RO plant Pakistan" loading="lazy" decoding="async"> Cooling / Chillers / RO</button>
-      <button class="tab-btn" onclick="switchTab('machinery')"><img class="tab-icon" src="images/Textile%20Machinery%20Parts.jpg" alt="Textile Machinery Spare Parts Pakistan" loading="lazy" decoding="async"> Parts &amp; Machinery</button>
-      <button class="tab-btn" onclick="switchTab('cleaning')"><img class="tab-icon" src="images/Boiler%20Chemical%20Treatment.jpg" alt="Boiler water treatment chemicals Pakistan" loading="lazy" decoding="async"> Cleaning Chemicals</button>
+      <button class="tab-btn active" onclick="switchTab('textile')"><img width="1200" height="694" class="tab-icon" src="images/Dyeing%20Auxiliaries.jpg" alt="Textile Auxiliaries Chemicals Pakistan" loading="lazy" decoding="async"> Textile Auxiliaries</button>
+      <button class="tab-btn" onclick="switchTab('humidification')"><img width="1200" height="696" class="tab-icon" src="images/Steam%20Boiler%20Supply%20%26%20Erection.jpg" alt="Industrial Air Humidification Boiler Systems Pakistan" loading="lazy" decoding="async"> Air Humidification / Boilers</button>
+      <button class="tab-btn" onclick="switchTab('cooling')"><img width="1200" height="693" class="tab-icon" src="images/Reverse%20Osmosis%20(RO)%20Plants.jpg" alt="Reverse osmosis RO plant Pakistan" loading="lazy" decoding="async"> Cooling / Chillers / RO</button>
+      <button class="tab-btn" onclick="switchTab('machinery')"><img width="1200" height="697" class="tab-icon" src="images/Textile%20Machinery%20Parts.jpg" alt="Textile Machinery Spare Parts Pakistan" loading="lazy" decoding="async"> Parts &amp; Machinery</button>
+      <button class="tab-btn" onclick="switchTab('cleaning')"><img width="1200" height="694" class="tab-icon" src="images/Boiler%20Chemical%20Treatment.jpg" alt="Boiler water treatment chemicals Pakistan" loading="lazy" decoding="async"> Cleaning Chemicals</button>
     </div>
 
     <!-- TEXTILE TAB -->
@@ -1433,35 +1442,35 @@ em .typing-cursor { background: var(--gold); box-shadow: 0 0 10px rgba(212,168,6
           <div class="card-hover-tag">Sizing Agent</div>
           
           <div class="product-card-top"></div>
-          <div class="product-card-img"><img src="images/Sizing%20Agents.jpeg" alt="Sizing Agents" loading="lazy" decoding="async"></div>
+          <div class="product-card-img"><img width="966" height="559" src="images/Sizing%20Agents.jpeg" alt="Sizing Agents" loading="lazy" decoding="async"></div>
           <div class="product-card-body"><div class="product-icon">🇩🇪</div><h3>Sizing Agents</h3><p>German-formulated sizing chemicals for warp yarn preparation — reducing loom stops and improving weaving efficiency.</p><ul class="product-items"><li>EcoSize-CXW-111 (Made in Germany)</li><li>Modified starch &amp; PVA blends</li><li>Acrylic &amp; CMC-based sizes</li><li>Wax emulsions &amp; lubricants</li></ul></div>
         </div>
         <div class="product-card tilt-card" data-aos="fade-up" data-aos-delay="100">
           <div class="card-hover-tag">Dyeing</div>
           
           <div class="product-card-top"></div>
-          <div class="product-card-img"><img src="images/Dyeing%20Auxiliaries.jpg" alt="Dyeing Auxiliaries" loading="lazy" decoding="async"></div>
+          <div class="product-card-img"><img width="1200" height="694" src="images/Dyeing%20Auxiliaries.jpg" alt="Dyeing Auxiliaries" loading="lazy" decoding="async"></div>
           <div class="product-card-body"><div class="product-icon">🎨</div><h3>Dyeing Auxiliaries</h3><p>Levelling, dispersing and fixing agents for reactive, disperse and vat dyeing processes.</p><ul class="product-items"><li>Levelling &amp; dispersing agents</li><li>Dye fixing &amp; aftertreatment</li><li>Sequestering &amp; chelating agents</li><li>Anti-migration agents</li></ul></div>
         </div>
         <div class="product-card tilt-card" data-aos="fade-up" data-aos-delay="200">
           <div class="card-hover-tag">Finishing</div>
           
           <div class="product-card-top"></div>
-          <div class="product-card-img"><img src="images/Softeners%20%26%20Finishing.jpg" alt="Softeners & Finishing" loading="lazy" decoding="async"></div>
+          <div class="product-card-img"><img width="1200" height="702" src="images/Softeners%20%26%20Finishing.jpg" alt="Softeners & Finishing" loading="lazy" decoding="async"></div>
           <div class="product-card-body"><div class="product-icon">✨</div><h3>Softeners &amp; Finishing</h3><p>High-performance softeners and functional finishes delivering premium hand-feel and drapability.</p><ul class="product-items"><li>EcoShort-GS-777 &amp; EcoSoftener D-11</li><li>Silicone macro &amp; micro emulsions</li><li>Hydrophilic &amp; cationic softeners</li><li>EcoAcryllic-ACL-55</li></ul></div>
         </div>
         <div class="product-card tilt-card" data-aos="fade-up" data-aos-delay="300">
           <div class="card-hover-tag">Pre-treatment</div>
           
           <div class="product-card-top"></div>
-          <div class="product-card-img"><img src="images/Pre-treatment%20Auxiliaries.jpeg" alt="Pre-treatment Auxiliaries" loading="lazy" decoding="async"></div>
+          <div class="product-card-img"><img width="1513" height="872" src="images/Pre-treatment%20Auxiliaries.jpeg" alt="Pre-treatment Auxiliaries" loading="lazy" decoding="async"></div>
           <div class="product-card-body"><div class="product-icon">⚗</div><h3>Pre-treatment Auxiliaries</h3><p>Scouring, desizing and bleaching auxiliaries for preparing greige fabric before dyeing.</p><ul class="product-items"><li>Enzyme desizing agents</li><li>EcoScour-SCA-30 wetting agents</li><li>Hydrogen peroxide stabilisers</li><li>Optical brightening agents (OBA)</li></ul></div>
         </div>
         <div class="product-card tilt-card" data-aos="fade-up" data-aos-delay="400">
           <div class="card-hover-tag">Specialty</div>
 
           <div class="product-card-top"></div>
-          <div class="product-card-img"><img src="images/Specialty%20Finishes.jpg" alt="Specialty Finishes" loading="lazy" decoding="async"></div>
+          <div class="product-card-img"><img width="1200" height="707" src="images/Specialty%20Finishes.jpg" alt="Specialty Finishes" loading="lazy" decoding="async"></div>
           <div class="product-card-body"><div class="product-icon">🛡</div><h3>Specialty Finishes</h3><p>Value-added functional finishes for technical and high-end fashion applications.</p><ul class="product-items"><li>EcoFlame-FR Pro flame retardant</li><li>Water repellent (DWR) finishes</li><li>Anti-bacterial / Anti-microbial</li><li>UV protection finishes</li></ul></div>
         </div>
       </div>
@@ -1493,36 +1502,36 @@ em .typing-cursor { background: var(--gold); box-shadow: 0 0 10px rgba(212,168,6
     <!-- HUMIDIFICATION TAB -->
     <div class="tab-pane" id="tab-humidification">
       <div class="sys-grid">
-        <div class="sys-card tilt-card" data-aos="fade-up"><div class="sys-card-img"><img src="images/Industrial%20Air%20Humidification.jpg" alt="Industrial Air Humidification" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Industrial Air Humidification</h4><p>Complete humidity control for textile spinning and weaving halls. Maintains optimal RH% to prevent yarn breakage and static build-up.</p><ul><li>High-pressure fogging systems</li><li>Ultrasonic humidifiers</li><li>Evaporative cooling pads</li><li>Humidity sensors &amp; control panels</li></ul></div></div>
-        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="100"><div class="sys-card-img"><img src="images/Steam%20Boiler%20Supply%20%26%20Erection.jpg" alt="Steam Boiler Supply & Erection" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Steam Boiler Supply &amp; Erection</h4><p>Full-range steam boiler solutions for textile mills, food processing, hospitals and industrial plants.</p><ul><li>Fire-tube boilers (0.5–25 ton/hr)</li><li>Water-tube boilers for high pressure</li><li>Thermic fluid heaters</li><li>Boiler room erection &amp; piping</li></ul></div></div>
-        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="200"><div class="sys-card-img"><img src="images/Boiler%20Chemical%20Treatment.jpg" alt="Boiler Chemical Treatment" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Boiler Chemical Treatment</h4><p>Specialist chemical dosing programmes to prevent scale, corrosion and carryover in steam boilers.</p><ul><li>Oxygen scavengers</li><li>Scale &amp; corrosion inhibitors</li><li>pH conditioning agents</li><li>Condensate return treatment</li></ul></div></div>
-        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="300"><div class="sys-card-img"><img src="images/Plant%20Erection%20%26%20Installation.jpg" alt="Plant Upgrades & Maintenance" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Plant Upgrades &amp; Maintenance</h4><p>Comprehensive boiler and humidification plant maintenance, annual overhauling, and efficiency upgradation services.</p><ul><li>Annual boiler overhauling</li><li>Tube inspection &amp; replacement</li><li>Burner maintenance &amp; tuning</li><li>Thermal efficiency audits</li></ul></div></div>
-        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="400"><div class="sys-card-img"><img src="images/Captive%20Power%20Plant%20Support.jpg" alt="Captive Power Plant Support" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Captive Power Plant Support</h4><p>Water treatment and chemical support for industrial captive power installations including IPPs and co-gen plants.</p><ul><li>Feed water treatment chemicals</li><li>Cooling water programmes</li><li>Turbine deposit control</li></ul></div></div>
-        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="500"><div class="sys-card-img"><img src="images/Monitoring%20%26%20Controls.jpg" alt="Monitoring & Controls" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Monitoring &amp; Controls</h4><p>Automated monitoring, dosing and control systems for humidification and boiler operations.</p><ul><li>Automatic chemical dosing pumps</li><li>Online TDS &amp; pH monitoring</li><li>SCADA-compatible controllers</li></ul></div></div>
+        <div class="sys-card tilt-card" data-aos="fade-up"><div class="sys-card-img"><img width="1200" height="696" src="images/Industrial%20Air%20Humidification.jpg" alt="Industrial Air Humidification" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Industrial Air Humidification</h4><p>Complete humidity control for textile spinning and weaving halls. Maintains optimal RH% to prevent yarn breakage and static build-up.</p><ul><li>High-pressure fogging systems</li><li>Ultrasonic humidifiers</li><li>Evaporative cooling pads</li><li>Humidity sensors &amp; control panels</li></ul></div></div>
+        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="100"><div class="sys-card-img"><img width="1200" height="696" src="images/Steam%20Boiler%20Supply%20%26%20Erection.jpg" alt="Steam Boiler Supply & Erection" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Steam Boiler Supply &amp; Erection</h4><p>Full-range steam boiler solutions for textile mills, food processing, hospitals and industrial plants.</p><ul><li>Fire-tube boilers (0.5–25 ton/hr)</li><li>Water-tube boilers for high pressure</li><li>Thermic fluid heaters</li><li>Boiler room erection &amp; piping</li></ul></div></div>
+        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="200"><div class="sys-card-img"><img width="1200" height="694" src="images/Boiler%20Chemical%20Treatment.jpg" alt="Boiler Chemical Treatment" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Boiler Chemical Treatment</h4><p>Specialist chemical dosing programmes to prevent scale, corrosion and carryover in steam boilers.</p><ul><li>Oxygen scavengers</li><li>Scale &amp; corrosion inhibitors</li><li>pH conditioning agents</li><li>Condensate return treatment</li></ul></div></div>
+        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="300"><div class="sys-card-img"><img width="1200" height="703" src="images/Plant%20Erection%20%26%20Installation.jpg" alt="Plant Upgrades & Maintenance" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Plant Upgrades &amp; Maintenance</h4><p>Comprehensive boiler and humidification plant maintenance, annual overhauling, and efficiency upgradation services.</p><ul><li>Annual boiler overhauling</li><li>Tube inspection &amp; replacement</li><li>Burner maintenance &amp; tuning</li><li>Thermal efficiency audits</li></ul></div></div>
+        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="400"><div class="sys-card-img"><img width="1200" height="691" src="images/Captive%20Power%20Plant%20Support.jpg" alt="Captive Power Plant Support" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Captive Power Plant Support</h4><p>Water treatment and chemical support for industrial captive power installations including IPPs and co-gen plants.</p><ul><li>Feed water treatment chemicals</li><li>Cooling water programmes</li><li>Turbine deposit control</li></ul></div></div>
+        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="500"><div class="sys-card-img"><img width="1200" height="698" src="images/Monitoring%20%26%20Controls.jpg" alt="Monitoring & Controls" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Monitoring &amp; Controls</h4><p>Automated monitoring, dosing and control systems for humidification and boiler operations.</p><ul><li>Automatic chemical dosing pumps</li><li>Online TDS &amp; pH monitoring</li><li>SCADA-compatible controllers</li></ul></div></div>
       </div>
     </div>
 
     <!-- COOLING TAB -->
     <div class="tab-pane" id="tab-cooling">
       <div class="sys-grid">
-        <div class="sys-card tilt-card" data-aos="fade-up"><div class="sys-card-img"><img src="images/Cooling%20Tower%20Supply%20%26%20Erection.jpg" alt="Cooling Tower Supply & Erection" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Cooling Tower Supply &amp; Erection</h4><p>Counter-flow and cross-flow cooling towers for textile, cement, sugar and chemical industries.</p><ul><li>FRP counter-flow towers</li><li>Induced draft cooling towers</li><li>Cooling tower fill media &amp; nozzles</li><li>Drift eliminators</li></ul></div></div>
-        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="100"><div class="sys-card-img"><img src="images/Cooling%20Tower%20Water%20Treatment.jpg" alt="Cooling Tower Water Treatment" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Cooling Tower Water Treatment</h4><p>Chemical treatment programmes to prevent scale, corrosion, microbiological fouling and Legionella.</p><ul><li>Corrosion &amp; scale inhibitors</li><li>Biocides (oxidising &amp; non-oxidising)</li><li>Dispersants &amp; anti-foulants</li></ul></div></div>
-        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="200"><div class="sys-card-img"><img src="images/Industrial%20Chiller%20Systems.jpg" alt="Industrial Chiller Systems" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Industrial Chiller Systems</h4><p>Air-cooled and water-cooled industrial chillers for process cooling in textile, pharmaceutical, food &amp; beverage.</p><ul><li>Screw chillers (50–2000 TR)</li><li>Centrifugal chillers</li><li>Cold storage system design</li></ul></div></div>
-        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="300"><div class="sys-card-img"><img src="images/Reverse%20Osmosis%20(RO)%20Plants.jpg" alt="Reverse Osmosis (RO) Plants" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Reverse Osmosis (RO) Plants</h4><p>Industrial-grade RO systems for process water purification and boiler feed water compliance.</p><ul><li>Single &amp; double-pass RO systems</li><li>Ultra-filtration pre-treatment</li><li>Zero Liquid Discharge (ZLD) systems</li></ul></div></div>
-        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="400"><div class="sys-card-img"><img src="images/RO%20%26%20Membrane%20Chemicals.jpg" alt="RO & Membrane Chemicals" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>RO &amp; Membrane Chemicals</h4><p>Antiscalant, biocide and CIP cleaning formulations to maximise RO membrane life.</p><ul><li>Antiscalants for CaCO₃, CaSO₄, SiO₂</li><li>Membrane biocides (non-oxidising)</li><li>Alkaline CIP cleaners</li></ul></div></div>
-        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="500"><div class="sys-card-img"><img src="images/Erection%20%26%20Commissioning.jpg" alt="Erection & Commissioning" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Erection &amp; Commissioning</h4><p>End-to-end project management for cooling tower, chiller and RO plant installations.</p><ul><li>Turnkey project execution</li><li>Pipework &amp; instrumentation</li><li>Performance testing &amp; validation</li></ul></div></div>
+        <div class="sys-card tilt-card" data-aos="fade-up"><div class="sys-card-img"><img width="1200" height="710" src="images/Cooling%20Tower%20Supply%20%26%20Erection.jpg" alt="Cooling Tower Supply & Erection" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Cooling Tower Supply &amp; Erection</h4><p>Counter-flow and cross-flow cooling towers for textile, cement, sugar and chemical industries.</p><ul><li>FRP counter-flow towers</li><li>Induced draft cooling towers</li><li>Cooling tower fill media &amp; nozzles</li><li>Drift eliminators</li></ul></div></div>
+        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="100"><div class="sys-card-img"><img width="1200" height="702" src="images/Cooling%20Tower%20Water%20Treatment.jpg" alt="Cooling Tower Water Treatment" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Cooling Tower Water Treatment</h4><p>Chemical treatment programmes to prevent scale, corrosion, microbiological fouling and Legionella.</p><ul><li>Corrosion &amp; scale inhibitors</li><li>Biocides (oxidising &amp; non-oxidising)</li><li>Dispersants &amp; anti-foulants</li></ul></div></div>
+        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="200"><div class="sys-card-img"><img width="1200" height="704" src="images/Industrial%20Chiller%20Systems.jpg" alt="Industrial Chiller Systems" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Industrial Chiller Systems</h4><p>Air-cooled and water-cooled industrial chillers for process cooling in textile, pharmaceutical, food &amp; beverage.</p><ul><li>Screw chillers (50–2000 TR)</li><li>Centrifugal chillers</li><li>Cold storage system design</li></ul></div></div>
+        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="300"><div class="sys-card-img"><img width="1200" height="693" src="images/Reverse%20Osmosis%20(RO)%20Plants.jpg" alt="Reverse Osmosis (RO) Plants" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Reverse Osmosis (RO) Plants</h4><p>Industrial-grade RO systems for process water purification and boiler feed water compliance.</p><ul><li>Single &amp; double-pass RO systems</li><li>Ultra-filtration pre-treatment</li><li>Zero Liquid Discharge (ZLD) systems</li></ul></div></div>
+        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="400"><div class="sys-card-img"><img width="1200" height="706" src="images/RO%20%26%20Membrane%20Chemicals.jpg" alt="RO & Membrane Chemicals" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>RO &amp; Membrane Chemicals</h4><p>Antiscalant, biocide and CIP cleaning formulations to maximise RO membrane life.</p><ul><li>Antiscalants for CaCO₃, CaSO₄, SiO₂</li><li>Membrane biocides (non-oxidising)</li><li>Alkaline CIP cleaners</li></ul></div></div>
+        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="500"><div class="sys-card-img"><img width="1200" height="710" src="images/Erection%20%26%20Commissioning.jpg" alt="Erection & Commissioning" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Erection &amp; Commissioning</h4><p>End-to-end project management for cooling tower, chiller and RO plant installations.</p><ul><li>Turnkey project execution</li><li>Pipework &amp; instrumentation</li><li>Performance testing &amp; validation</li></ul></div></div>
       </div>
     </div>
 
     <!-- MACHINERY TAB -->
     <div class="tab-pane" id="tab-machinery">
       <div class="sys-grid">
-        <div class="sys-card tilt-card" data-aos="fade-up"><div class="sys-card-img"><img src="images/Plant%20Erection%20%26%20Installation.jpg" alt="Plant Erection & Installation" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Plant Erection &amp; Installation</h4><p>Turnkey erection services for new plant installations across textile, chemical, sugar, cement and process industries.</p><ul><li>Civil &amp; structural foundation work</li><li>Mechanical equipment installation</li><li>Pipework fabrication &amp; erection</li><li>Pre-commissioning checks</li></ul></div></div>
-        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="100"><div class="sys-card-img"><img src="images/Plant%20Erection%20%26%20Installation.jpg" alt="Industrial Plant Upgradation Services Pakistan" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Plant Upgradations</h4><p>Capacity expansion and process improvement upgradations for existing plants.</p><ul><li>Process line bottleneck analysis</li><li>Energy efficiency upgrades</li><li>Automation retrofitting</li><li>Safety system upgrades</li></ul></div></div>
-        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="200"><div class="sys-card-img"><img src="images/Textile%20Machinery%20Parts.jpg" alt="Textile Machinery Parts" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Textile Machinery Parts</h4><p>Comprehensive sourcing of spare parts for weaving, spinning, knitting and dyeing machinery.</p><ul><li>Loom parts (rapier, projectile, air-jet)</li><li>Spinning frame parts</li><li>Stenter &amp; dryer parts</li><li>Picker sticks, healds, reeds</li></ul></div></div>
-        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="300"><div class="sys-card-img"><img src="images/Plant%20Erection%20%26%20Installation.jpg" alt="Industrial Spare Parts" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Industrial Spare Parts</h4><p>Wide-range sourcing of spare parts for pumps, compressors, heat exchangers and valves.</p><ul><li>Pump impellers, seals &amp; bearings</li><li>Heat exchanger tubes &amp; plates</li><li>Industrial valves &amp; actuators</li></ul></div></div>
-        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="400"><div class="sys-card-img"><img src="images/Mechanical%20Maintenance%20Contracts.jpg" alt="Mechanical Maintenance Contracts" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Mechanical Maintenance Contracts</h4><p>Planned preventive maintenance (PPM) contracts for industrial plants, ensuring uptime and compliance.</p><ul><li>Monthly &amp; annual PPM schedules</li><li>Vibration &amp; thermography analysis</li><li>Emergency breakdown response</li></ul></div></div>
-        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="500"><div class="sys-card-img"><img src="images/Custom%20Fabrication.jpg" alt="Custom Fabrication" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Custom Fabrication</h4><p>On-demand fabrication of steel structures, vessels, tanks, ducting and non-standard components.</p><ul><li>Stainless &amp; mild steel fabrication</li><li>Storage tanks &amp; vessels</li><li>Ductwork &amp; exhaust systems</li></ul></div></div>
+        <div class="sys-card tilt-card" data-aos="fade-up"><div class="sys-card-img"><img width="1200" height="703" src="images/Plant%20Erection%20%26%20Installation.jpg" alt="Plant Erection & Installation" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Plant Erection &amp; Installation</h4><p>Turnkey erection services for new plant installations across textile, chemical, sugar, cement and process industries.</p><ul><li>Civil &amp; structural foundation work</li><li>Mechanical equipment installation</li><li>Pipework fabrication &amp; erection</li><li>Pre-commissioning checks</li></ul></div></div>
+        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="100"><div class="sys-card-img"><img width="1200" height="703" src="images/Plant%20Erection%20%26%20Installation.jpg" alt="Industrial Plant Upgradation Services Pakistan" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Plant Upgradations</h4><p>Capacity expansion and process improvement upgradations for existing plants.</p><ul><li>Process line bottleneck analysis</li><li>Energy efficiency upgrades</li><li>Automation retrofitting</li><li>Safety system upgrades</li></ul></div></div>
+        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="200"><div class="sys-card-img"><img width="1200" height="697" src="images/Textile%20Machinery%20Parts.jpg" alt="Textile Machinery Parts" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Textile Machinery Parts</h4><p>Comprehensive sourcing of spare parts for weaving, spinning, knitting and dyeing machinery.</p><ul><li>Loom parts (rapier, projectile, air-jet)</li><li>Spinning frame parts</li><li>Stenter &amp; dryer parts</li><li>Picker sticks, healds, reeds</li></ul></div></div>
+        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="300"><div class="sys-card-img"><img width="1200" height="703" src="images/Plant%20Erection%20%26%20Installation.jpg" alt="Industrial Spare Parts" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Industrial Spare Parts</h4><p>Wide-range sourcing of spare parts for pumps, compressors, heat exchangers and valves.</p><ul><li>Pump impellers, seals &amp; bearings</li><li>Heat exchanger tubes &amp; plates</li><li>Industrial valves &amp; actuators</li></ul></div></div>
+        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="400"><div class="sys-card-img"><img width="1200" height="704" src="images/Mechanical%20Maintenance%20Contracts.jpg" alt="Mechanical Maintenance Contracts" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Mechanical Maintenance Contracts</h4><p>Planned preventive maintenance (PPM) contracts for industrial plants, ensuring uptime and compliance.</p><ul><li>Monthly &amp; annual PPM schedules</li><li>Vibration &amp; thermography analysis</li><li>Emergency breakdown response</li></ul></div></div>
+        <div class="sys-card tilt-card" data-aos="fade-up" data-aos-delay="500"><div class="sys-card-img"><img width="1200" height="693" src="images/Custom%20Fabrication.jpg" alt="Custom Fabrication" loading="lazy" decoding="async"></div><div class="sys-card-body"><h4>Custom Fabrication</h4><p>On-demand fabrication of steel structures, vessels, tanks, ducting and non-standard components.</p><ul><li>Stainless &amp; mild steel fabrication</li><li>Storage tanks &amp; vessels</li><li>Ductwork &amp; exhaust systems</li></ul></div></div>
       </div>
     </div>
 
@@ -1625,15 +1634,15 @@ em .typing-cursor { background: var(--gold); box-shadow: 0 0 10px rgba(212,168,6
     <p class="section-lead" data-aos="fade-up" data-aos-delay="200">Seamens Enterprises holds internationally recognised quality certifications, and our water treatment chemicals are certified for use by world-leading industrial equipment manufacturers — ensuring the highest standards for our clients across Pakistan.</p>
     <div class="cert-section-header" data-aos="fade-up"><h3>Certifications</h3></div>
     <div class="cert-grid">
-      <div class="cert-card tilt-card" data-aos="zoom-in"><div class="cert-card-img"><img src="images/ISO 9001.jpeg" alt="ISO 9001:2015" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>ISO 9001:2015</h4><p>Certified Quality Management System — global standard for consistent product quality, customer satisfaction, and continuous process improvement across all operations.</p><div class="cert-tag">Quality</div></div></div>
-      <div class="cert-card tilt-card" data-aos="zoom-in" data-aos-delay="100"><div class="cert-card-img"><img src="images/ISO 45001.jpeg" alt="ISO 45001" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>ISO 45001 Certified</h4><p>Occupational Health &amp; Safety Management System — ensuring safe and healthy working environments for all staff across our production facilities and client sites.</p><div class="cert-tag">Safety</div></div></div>
-      <div class="cert-card tilt-card" data-aos="zoom-in" data-aos-delay="200"><div class="cert-card-img"><img src="images/IPO.jpeg" alt="IPO Pakistan" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>IPO Pakistan</h4><p>Registered with the Intellectual Property Organization of Pakistan — our formulations, trademarks, and chemical innovations are fully protected under national IP law.</p><div class="cert-tag">Registered</div></div></div>
+      <div class="cert-card tilt-card" data-aos="zoom-in"><div class="cert-card-img"><img width="1030" height="1024" src="images/ISO 9001.jpeg" alt="ISO 9001:2015" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>ISO 9001:2015</h4><p>Certified Quality Management System — global standard for consistent product quality, customer satisfaction, and continuous process improvement across all operations.</p><div class="cert-tag">Quality</div></div></div>
+      <div class="cert-card tilt-card" data-aos="zoom-in" data-aos-delay="100"><div class="cert-card-img"><img width="1025" height="918" src="images/ISO 45001.jpeg" alt="ISO 45001" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>ISO 45001 Certified</h4><p>Occupational Health &amp; Safety Management System — ensuring safe and healthy working environments for all staff across our production facilities and client sites.</p><div class="cert-tag">Safety</div></div></div>
+      <div class="cert-card tilt-card" data-aos="zoom-in" data-aos-delay="200"><div class="cert-card-img"><img width="985" height="893" src="images/IPO.jpeg" alt="IPO Pakistan" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>IPO Pakistan</h4><p>Registered with the Intellectual Property Organization of Pakistan — our formulations, trademarks, and chemical innovations are fully protected under national IP law.</p><div class="cert-tag">Registered</div></div></div>
     </div>
     <div class="cert-section-header" data-aos="fade-up" style="margin-top:2.5rem"><h3>Registrations &amp; Certifications</h3></div>
     <div class="cert-grid">
-      <div class="cert-card tilt-card" data-aos="zoom-in"><div class="cert-card-img"><img src="images/NTN.png" alt="FBR / Sales Tax Registration" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>FBR / Sales Tax Reg.</h4><p>Federal Board of Revenue — National Tax Number (NTN) and Sales Tax Registration, mandatory for all commercial entities operating in Pakistan's chemical and industrial sector.</p><div class="cert-tag">Registration</div></div></div>
-      <div class="cert-card tilt-card" data-aos="zoom-in" data-aos-delay="100"><div class="cert-card-img"><img src="images/CONAIR.jpeg" alt="CONAIR Group" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>CONAIR Group</h4><p>Seamens' water treatment chemicals are certified by CONAIR — world-leading manufacturer of precision industrial air humidification, yarn conditioning, and climate control systems — for use in their equipment across Pakistan's textile mills.</p><div class="cert-tag">Certified</div></div></div>
-      <div class="cert-card tilt-card" data-aos="zoom-in" data-aos-delay="200"><div class="cert-card-img"><img src="images/LUWA.jpeg" alt="Luwa Nederman Group" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>Luwa — Nederman Group</h4><p>Seamens' water treatment chemicals are certified by Luwa Air Engineering (Nederman Group) — global leader in industrial air handling, humidification, and dust extraction systems — for use in their equipment across the textile sector.</p><div class="cert-tag">Certified</div></div></div>
+      <div class="cert-card tilt-card" data-aos="zoom-in"><div class="cert-card-img"><img width="225" height="225" src="images/NTN.png" alt="FBR / Sales Tax Registration" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>FBR / Sales Tax Reg.</h4><p>Federal Board of Revenue — National Tax Number (NTN) and Sales Tax Registration, mandatory for all commercial entities operating in Pakistan's chemical and industrial sector.</p><div class="cert-tag">Registration</div></div></div>
+      <div class="cert-card tilt-card" data-aos="zoom-in" data-aos-delay="100"><div class="cert-card-img"><img width="1599" height="463" src="images/CONAIR.jpeg" alt="CONAIR Group" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>CONAIR Group</h4><p>Seamens' water treatment chemicals are certified by CONAIR — world-leading manufacturer of precision industrial air humidification, yarn conditioning, and climate control systems — for use in their equipment across Pakistan's textile mills.</p><div class="cert-tag">Certified</div></div></div>
+      <div class="cert-card tilt-card" data-aos="zoom-in" data-aos-delay="200"><div class="cert-card-img"><img width="923" height="311" src="images/LUWA.jpeg" alt="Luwa Nederman Group" loading="lazy" decoding="async"></div><div class="cert-card-body"><h4>Luwa — Nederman Group</h4><p>Seamens' water treatment chemicals are certified by Luwa Air Engineering (Nederman Group) — global leader in industrial air handling, humidification, and dust extraction systems — for use in their equipment across the textile sector.</p><div class="cert-tag">Certified</div></div></div>
     </div>
   </div>
 </section>
@@ -1807,21 +1816,23 @@ em .typing-cursor { background: var(--gold); box-shadow: 0 0 10px rgba(212,168,6
 </section>
 
 <!-- FOOTER -->
+</main>
 <footer>
   <div class="footer-inner">
     <div class="footer-col">
-      <img src="images/seamens-logo-transparent.png" class="footer-logo-img" alt="Seamens Enterprises" draggable="false">
+      <img width="600" height="161" src="images/seamens-logo-transparent.png" class="footer-logo-img" alt="Seamens Enterprises" draggable="false">
       <p>Industrial Chemical Technologies<br>Since 1997 · Lahore, Pakistan</p>
       <a href="https://wa.me/923054444125" target="_blank" rel="noopener">WhatsApp: +92-305-4444125</a>
       <a href="tel:+923026686354">Tel: +92-302-6686354</a>
     </div>
     <div class="footer-col">
       <h5>Products</h5>
-      <a href="#products" onclick="switchTab('textile');return false">Textile Auxiliaries</a>
-      <a href="#products" onclick="switchTab('humidification');return false">Air Humidification / Boilers</a>
-      <a href="#products" onclick="switchTab('cooling');return false">Cooling / Chillers / RO</a>
-      <a href="#products" onclick="switchTab('machinery');return false">Parts &amp; Machinery</a>
-      <a href="#products" onclick="switchTab('cleaning');return false">Cleaning Chemicals</a>
+      <a href="/products">All Products</a>
+      <a href="/products/textile-auxiliaries">Textile Auxiliaries</a>
+      <a href="/products/boiler-water-treatment-humidification">Air Humidification / Boilers</a>
+      <a href="/products/cooling-tower-chiller-ro">Cooling / Chillers / RO</a>
+      <a href="/products/plant-erection-machinery-parts">Parts &amp; Machinery</a>
+      <a href="/products/industrial-cleaning-chemicals">Cleaning Chemicals</a>
     </div>
     <div class="footer-col">
       <h5>Company</h5>
@@ -1829,14 +1840,17 @@ em .typing-cursor { background: var(--gold); box-shadow: 0 0 10px rgba(212,168,6
       <a href="#certifications">Certifications</a>
       <a href="#samples">Sample Programme</a>
       <a href="#blog">Blog &amp; Insights</a>
-      <a href="#about">About Us</a>
+      <a href="/about">About Us</a>
       <a href="#contact">Contact</a>
       <a href="/request-quote">Request a Quote</a>
+      <a href="/faq">FAQ</a>
+      <a href="/editorial-policy">Editorial Policy</a>
       <a href="/privacy-policy">Privacy Policy</a>
     </div>
   </div>
   <hr class="footer-divider">
   <p>© 2026 Seamens Enterprises · All Rights Reserved · Plot No. 51, Street No. 1, Awal Khair Stop, Al-Saeed Chowk, Main Sharqpur Road, Lahore · <a href="https://wa.me/923054444125">WhatsApp</a></p>
+  <p id="geo-summary" style="max-width:1100px;margin:1rem auto 0;padding:0 1rem;font-size:0.78rem;line-height:1.7;opacity:0.6">Seamens Enterprises is Lahore's trusted industrial chemical supplier, established in 1997. ISO 9001:2015 and ISO 45001 certified. Services: ECO-Series textile auxiliary chemicals, boiler water treatment, steam boiler supply (0.5-25 ton/hr), industrial air humidification, cooling tower chemicals, chiller descaling, RO plant chemicals, industrial cleaning chemicals, plant erection, textile machinery parts supply. Phone: +92-305-4444125 | Email: info@seamensenterprises.com | Address: Plot No. 51, Street No. 1, Awal Khair Stop, Al-Saeed Chowk, Main Sharqpur Road, Lahore, Punjab 54000, Pakistan.</p>
 </footer>
 
 <!-- BLOG MODALS -->
@@ -2777,27 +2791,9 @@ const TypingEngine = {
   targets.forEach(t => { if(t.el) observer.observe(t.el); });
 })();
 
-// ===== HERO VIDEO LAZY LOAD =====
-(function(){
-  const video = document.getElementById('heroVideo');
-  if(!video) return;
-  const sources = Array.from(video.querySelectorAll('source'));
-  const loadVideo = () => {
-    if(video.dataset.loaded) return;
-    sources.forEach(src => {
-      if(src.dataset.src) src.src = src.dataset.src;
-    });
-    video.load();
-    video.play().catch(() => {});
-    video.dataset.loaded = 'true';
-  };
-  window.addEventListener('scroll', loadVideo, {once:true});
-  window.addEventListener('mousemove', loadVideo, {once:true});
-  window.addEventListener('touchstart', loadVideo, {once:true});
-  setTimeout(loadVideo, 2500);
-})();
+
 </script>
-<p id="geo-summary" style="display:none">Seamens Enterprises is Lahore's trusted industrial chemical supplier, established in 1997. ISO 9001:2015 and ISO 45001 certified. Services: ECO-Series textile auxiliary chemicals, boiler water treatment, steam boiler supply (0.5-25 ton/hr), industrial air humidification, cooling tower chemicals, chiller descaling, RO plant chemicals, industrial cleaning chemicals, plant erection, textile machinery parts supply. Phone: +92-305-4444125 | Email: info@seamensenterprises.com | Address: Plot No. 51, Street No. 1, Awal Khair Stop, Al-Saeed Chowk, Main Sharqpur Road, Lahore, Punjab 54000, Pakistan.</p>
+
 
 </body>
 </html>

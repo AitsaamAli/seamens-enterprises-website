@@ -58,6 +58,10 @@
         {
           "key": "Permissions-Policy",
           "value": "camera=(), microphone=(), geolocation=()"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; media-src 'self'; frame-src https://www.google.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'"
         }
       ]
     }
@@ -377,6 +381,56 @@
       "source": "/blog/industrial-chemical-suppliers-lahore-guide.html",
       "destination": "/industrial-chemical-suppliers-lahore-guide",
       "permanent": true
+    },
+    {
+      "source": "/products/textile-auxiliaries.html",
+      "destination": "/products/textile-auxiliaries",
+      "permanent": true
+    },
+    {
+      "source": "/products/boiler-water-treatment-humidification.html",
+      "destination": "/products/boiler-water-treatment-humidification",
+      "permanent": true
+    },
+    {
+      "source": "/products/cooling-tower-chiller-ro.html",
+      "destination": "/products/cooling-tower-chiller-ro",
+      "permanent": true
+    },
+    {
+      "source": "/products/industrial-cleaning-chemicals.html",
+      "destination": "/products/industrial-cleaning-chemicals",
+      "permanent": true
+    },
+    {
+      "source": "/products/plant-erection-machinery-parts.html",
+      "destination": "/products/plant-erection-machinery-parts",
+      "permanent": true
+    },
+    {
+      "source": "/products/index.html",
+      "destination": "/products",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/editorial-policy.html",
+      "destination": "/editorial-policy",
+      "permanent": true
+    },
+    {
+      "source": "/authors/ghulam-muhammad-bahoo.html",
+      "destination": "/authors/ghulam-muhammad-bahoo",
+      "permanent": true
+    },
+    {
+      "source": "/faq.html",
+      "destination": "/faq",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -615,6 +669,46 @@
     {
       "source": "/industrial-chemical-suppliers-lahore-guide",
       "destination": "/blog/industrial-chemical-suppliers-lahore-guide.html"
+    },
+    {
+      "source": "/products/textile-auxiliaries",
+      "destination": "/products/textile-auxiliaries.html"
+    },
+    {
+      "source": "/products/boiler-water-treatment-humidification",
+      "destination": "/products/boiler-water-treatment-humidification.html"
+    },
+    {
+      "source": "/products/cooling-tower-chiller-ro",
+      "destination": "/products/cooling-tower-chiller-ro.html"
+    },
+    {
+      "source": "/products/industrial-cleaning-chemicals",
+      "destination": "/products/industrial-cleaning-chemicals.html"
+    },
+    {
+      "source": "/products/plant-erection-machinery-parts",
+      "destination": "/products/plant-erection-machinery-parts.html"
+    },
+    {
+      "source": "/products",
+      "destination": "/products/index.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/editorial-policy",
+      "destination": "/editorial-policy.html"
+    },
+    {
+      "source": "/authors/ghulam-muhammad-bahoo",
+      "destination": "/authors/ghulam-muhammad-bahoo.html"
+    },
+    {
+      "source": "/faq",
+      "destination": "/faq.html"
     }
   ],
   "trailingSlash": false
