@@ -18,7 +18,7 @@
 <meta property="og:image" content="https://www.seamensenterprises.com/images/seamens-logo-transparent.png">
 <meta property="og:locale" content="en_PK">
 <meta property="article:published_time" content="2026-10-31T00:00:00+05:00">
-<meta property="article:modified_time" content="2026-10-31T00:00:00+05:00">
+<meta property="article:modified_time" content="2026-10-18T00:00:00+05:00">
 <meta property="article:author" content="Mian Mehmood Ahmed">
 <meta property="article:section" content="Boiler Water Treatment">
 <meta name="twitter:card" content="summary_large_image">
@@ -36,7 +36,7 @@
 "headline":"Boiler TDS Blowdown Calculator: How Much Water (and Fuel) You're Wasting",
 "author":{"@type":"Person","name":"Mian Mehmood Ahmed","jobTitle":"Founder, Seamens Enterprises","description":"BSc Chemical Engineering; founder of Seamens Enterprises, Lahore (est. 1997).","url":"https://www.seamensenterprises.com/#about","worksFor":{"@id":"https://www.seamensenterprises.com/#organization"}},
 "publisher":{"@type":"Organization","name":"Seamens Enterprises","url":"https://www.seamensenterprises.com"},
-"datePublished":"2026-10-31","dateModified":"2026-10-31",
+"datePublished":"2026-10-31","dateModified":"2026-10-18",
 "description":"Boiler TDS blowdown calculator with worked formula — how much water and fuel excess blowdown wastes, and how often to blow down.",
 "url":"https://www.seamensenterprises.com/boiler-blowdown-calculator-pakistan"}
 </script>
@@ -48,6 +48,8 @@
 {"@type":"Question","name":"How often should blowdown be done?","acceptedAnswer":{"@type":"Answer","text":"Blowdown frequency should be set from actual boiler water TDS testing rather than a fixed schedule, since feed water quality, boiler load and treatment programme all affect how fast TDS concentrates. Many Pakistani mills benefit from a combination of continuous low-rate blowdown plus periodic bottom blowdown to remove settled sludge."}}
 ]}
 </script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Boiler Blowdown Calculator","url":"https://www.seamensenterprises.com/boiler-blowdown-calculator-pakistan","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"PKR"},"publisher":{"@id":"https://www.seamensenterprises.com/#organization"}}</script>
+<link rel="stylesheet" href="/assets/calc.v1.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@500;700&display=swap" rel="stylesheet">
 <style>
@@ -204,7 +206,8 @@
     <div class="stat-box"><div class="num">5–10%</div><div class="lbl">typical blowdown rate</div></div>
   </div>
 
-  <h2 id="formula">How Do I Calculate Boiler Blowdown Rate?</h2>
+  <div class="calc" data-calc="blowdown"><noscript><p>Enable JavaScript to use the Boiler Blowdown Calculator.</p></noscript></div>
+<h2 id="formula">How Do I Calculate Boiler Blowdown Rate?</h2>
   <p>Blowdown rate as a percentage of feed water is calculated as feed water TDS divided by the difference between maximum allowable boiler TDS and feed water TDS, multiplied by 100. A higher feed water TDS relative to the boiler's maximum limit means a higher required blowdown percentage is needed to keep dissolved solids in check.</p>
 
   <div class="highlight-box">
@@ -218,7 +221,7 @@
       <tr><td><strong>1. Feed water TDS</strong></td><td>1,200 ppm</td><td>Mid-range Lahore groundwater</td></tr>
       <tr><td><strong>2. Max boiler TDS</strong></td><td>3,000 ppm</td><td>Typical manufacturer limit, low-pressure boiler</td></tr>
       <tr><td><strong>3. Difference</strong></td><td>3,000 − 1,200 = 1,800 ppm</td><td>Max minus feed</td></tr>
-      <tr><td><strong>4. Blowdown %</strong></td><td>1,200 ÷ 1,800 × 100 = 66.7%... adjusted</td><td>See note below</td></tr>
+      <tr><td><strong>4. Blowdown %</strong></td><td>1,200 ÷ 1,800 × 100 = 66.7% of steam output</td><td>See note below</td></tr>
     </tbody>
   </table>
   <p>Note: real-world blowdown percentages are typically 5–10% because feed water is usually pre-treated (softened/RO) to reduce TDS well below raw groundwater levels before entering the boiler — the formula above uses the boiler's actual feed water TDS after any pre-treatment, not raw borewell TDS. This is why confirming your actual feed water TDS after treatment, not assuming raw groundwater figures, is essential before applying the formula.</p>
@@ -316,5 +319,6 @@
   <p>&copy; 2026 Seamens Enterprises &middot; All Rights Reserved &middot; Plot No. 51, Street No. 1, Main Sharqpur Road, Lahore &middot; <a href="https://wa.me/923054444125">WhatsApp</a></p>
 </footer>
 
+<script src="/assets/calc.v1.js" defer></script>
 </body>
 </html>
