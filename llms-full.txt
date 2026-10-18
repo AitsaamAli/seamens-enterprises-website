@@ -6,8 +6,11 @@ Source: https://www.seamensenterprises.com. Generated from the live site pages. 
 URL: https://www.seamensenterprises.com/
 Industrial chemical supplier since 1997 — textile auxiliaries, water treatment, RO plants & boiler solutions in Lahore Pakistan. Call +92-305-4444125.
 
+Q: Are Seamens Enterprises chemicals made in Pakistan, and are they organic?
+A: Yes. Seamens Enterprises formulates and manufactures its chemicals in Pakistan using imported premium raw materials, and most of its formulations are organic-based.
+
 Q: What textile chemicals does Seamens Enterprises supply?
-A: Seamens Enterprises supplies a complete ECO-series range of textile auxiliaries including sizing agents (EcoSize-CXW-111 — Made in Germany), dyeing auxiliaries, softeners, silicone softeners, pre-treatment chemicals, stabilizers, water repellent (EcoShield-WP), fire proof finish (EcoGuard-FP), levelling agents and dye fixers for textile mills across Pakistan.
+A: Seamens Enterprises supplies a complete ECO-series range of textile auxiliaries including sizing agents (EcoSize-CXW-111 — Made in Pakistan), dyeing auxiliaries, softeners, silicone softeners, pre-treatment chemicals, stabilizers, water repellent (EcoShield-WP), fire proof finish (EcoGuard-FP), levelling agents and dye fixers for textile mills across Pakistan.
 
 Q: Where is Seamens Enterprises located?
 A: Seamens Enterprises is located at Plot No. 51, Street No. 1, Awal Khair Stop, Al-Saeed Chowk, Main Sharqpur Road, Lahore, Pakistan. We provide nationwide service across Pakistan.
@@ -36,7 +39,7 @@ Q: Are ECO-Series chemicals safe for the environment?
 A: Seamens ECO-Series chemicals are formulated as environmentally responsible products with low ETP load, no heavy metal content, and biodegradable carrier systems, designed to support ZDHC- and RSL-aligned production. Exact compliance depends on the specific product — mills should confirm current test data and documentation against their buyer's requirements before use.
 
 Q: Which sizing agent is best for cotton warp yarn in Pakistan?
-A: EcoSize-CXW-111 (Made in Germany) and EcoPVA-GS are the recommended sizing agents for cotton warp yarn, offering excellent film formation, flexibility and easy enzymatic desizing — reducing loom stops by up to 25%.
+A: EcoSize-CXW-111 (Made in Pakistan) and EcoPVA-GS are the recommended sizing agents for cotton warp yarn, offering excellent film formation, flexibility and easy enzymatic desizing — reducing loom stops by up to 25%.
 
 Q: What is the difference between a softener and a silicone softener?
 A: Conventional softeners (like EcoSoftener D-11) provide smooth hand-feel without affecting absorbency — ideal for towels and home textiles. Silicone softeners (like EcoSil-SS) deliver an ultra-silky, luxurious finish typically used for premium fashion and sportswear fabrics.
@@ -542,7 +545,7 @@ URL: https://www.seamensenterprises.com/ecosize-cxw-111-modified-starch-sizing
 EcoSize-CXW-111 modified starch sizing agent for Ne 6-40 cotton yarn. Dosing rates by count, size pickup targets and storage guidance from Seamens, Lahore.
 
 Q: What is EcoSize-CXW-111 made from?
-A: EcoSize-CXW-111 is a chemically modified maize starch manufactured in Germany, supplied in Pakistan by Seamens Enterprises. The native starch granule is treated so it gelatinises at a lower temperature, holds a stable viscosity in the size box, and forms a flexible film on the yarn instead of the brittle film raw starch produces.
+A: EcoSize-CXW-111 is a chemically modified maize starch formulated and manufactured in Pakistan by Seamens Enterprises. The native starch granule is treated so it gelatinises at a lower temperature, holds a stable viscosity in the size box, and forms a flexible film on the yarn instead of the brittle film raw starch produces.
 
 Q: How much sizing agent per kg of yarn?
 A: For cotton warp on EcoSize-CXW-111, dosing runs from roughly 6-8 kg per 100 kg of yarn on coarse counts (Ne 6-14) up to 14-16 kg per 100 kg on fine counts (Ne 36-40). The figure that actually matters is size add-on percentage on the beam, not the kilograms mixed, so mills should verify add-on by weighing sized and unsized yarn rather than trusting the recipe alone.
@@ -1112,7 +1115,7 @@ Q: What textile auxiliary chemicals does Seamens Enterprises supply?
 A: Seamens Enterprises supplies the 17-product ECO-Series: sizing agents, pre-treatment auxiliaries, dyeing auxiliaries, softeners, finishing agents and specialty finishes including flame retardant, fire-proof and water repellent treatments.
 
 Q: Where are ECO-Series products made?
-A: ECO-Series products are formulated and manufactured by Seamens Enterprises in Pakistan, using premium organic raw materials sourced from Germany.
+A: ECO-Series products are formulated and manufactured by Seamens Enterprises in Pakistan, using imported premium raw materials.
 
 Q: Does Seamens Enterprises offer free trial samples of textile chemicals?
 A: Yes. Seamens Enterprises offers free trial samples of its textile auxiliaries, evaluated on your own equipment under production conditions, with no obligation to buy.
@@ -1252,6 +1255,9 @@ A: Seamens Enterprises has operated since 1997, is certified to ISO 9001:2015 an
 Q: Which certifications does Seamens Enterprises hold?
 A: ISO 9001:2015 (quality management), ISO 45001 (occupational health and safety), registration with the Intellectual Property Organization of Pakistan, and FBR NTN and sales tax registration. Its water treatment chemicals are certified by CONAIR and Luwa-Nederman for use in their equipment in Pakistan.
 
+Q: Are Seamens Enterprises chemicals made in Pakistan, and are they organic?
+A: Yes. Seamens Enterprises formulates and manufactures its chemicals in Pakistan using imported premium raw materials, and most of its formulations are organic-based.
+
 Q: Does Seamens Enterprises offer free samples?
 A: Yes. Seamens offers free trial samples of its textile auxiliaries, water treatment chemicals and cleaning chemicals, evaluated on your own equipment, with no obligation to buy.
 
@@ -1311,4 +1317,14 @@ A: Verify registration numbers, check the ISO 9001 certificate on IAF CertSearch
 
 Q: Who is the best chemical supplier in Pakistan?
 A: There is no single best supplier for every plant. The right supplier is the one that passes verifiable checks on your own process. Seamens Enterprises welcomes the same checks and offers free trials so you can judge results on your own equipment.
+
+## Our Clients: Mills and Industrial Groups We Supply
+URL: https://www.seamensenterprises.com/clients
+Clients of Seamens Enterprises, Lahore: textile mills, sugar mills, cement and industrial groups across Pakistan, shown with permission. Ask for references.
+
+Q: Which companies are clients of Seamens Enterprises?
+A: Seamens Enterprises supplies textile mills and groups, sugar mills, cement, oil and other industrial customers across Pakistan. A selection of clients who permitted their logos to be displayed is shown on the Seamens clients page.
+
+Q: Can I get references from Seamens Enterprises clients?
+A: Yes. Ask the Seamens team for references from plants similar to yours, in your industry and region, so you can speak to them directly before you decide.
 

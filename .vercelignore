@@ -1,0 +1,10 @@
+SEAMENS-BLOG-KNOWLEDGE-BASE.md
+check-image-refs.js
+map-image-refs.js
+fix-image-paths.js
+package.json
+package-lock.json
+node_modules
+*.zip
+.vscode
+SEO-AUDIT-REPORT.md

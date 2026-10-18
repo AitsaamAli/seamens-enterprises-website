@@ -431,6 +431,11 @@
       "source": "/faq.html",
       "destination": "/faq",
       "permanent": true
+    },
+    {
+      "source": "/clients.html",
+      "destination": "/clients",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -709,6 +714,10 @@
     {
       "source": "/faq",
       "destination": "/faq.html"
+    },
+    {
+      "source": "/clients",
+      "destination": "/clients.html"
     }
   ],
   "trailingSlash": false

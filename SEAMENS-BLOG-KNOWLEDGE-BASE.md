@@ -44,11 +44,11 @@ This site **used to** claim Seamens was an "authorised agent/principal partner" 
 Seamens supplies/certifies **chemicals used inside** CONAIR/Luwa equipment. Seamens is **not** their distributor, dealer, or authorised agent. Never write "authorised agent," "authorised distributor," "principal partner," or similar for CONAIR or Luwa. This applies anywhere these two brand names appear in any of the 50 posts (Category B especially).
 
 ### ⚠️ Critical correction — how to describe Seamens' own manufacturing (never call it "distributor")
-Confirmed directly by the owner: the raw ingredients used in the ECO-Series and Water Safe lines (PVA, wax, starch derivatives, organic polymers) are **imported from Germany**, but **Seamens formulates, blends, and packs the finished product itself in Pakistan**, under its own brand. This is real value-added manufacturing, not resale of a finished import. The only correct, safe description is:
+Confirmed directly by the owner: the raw ingredients used in the ECO-Series and Water Safe lines (PVA, wax, starch derivatives, organic polymers) are **imported**, but **Seamens formulates, blends, and packs the finished product itself in Pakistan**, under its own brand. This is real value-added manufacturing, not resale of a finished import. The only correct, safe description is:
 
-> "Seamens Enterprises formulates and manufactures [Product Name] in Pakistan, using premium organic raw materials sourced from Germany."
+> "Seamens Enterprises formulates and manufactures [Product Name] in Pakistan, using imported premium raw materials; most formulations are organic-based."
 
-- ✅ Say: "formulates / manufactures in Pakistan using German-sourced raw materials"
+- ✅ Say: "formulates / manufactures in Pakistan using imported premium raw materials"
 - ❌ Never say: "distributor" or "reseller" of these products (inaccurate — undersells the real formulation work) — see [[project_website]] for the Luwa/Conair precedent this mirrors
 - ❌ Never say: "manufactured in Germany" or "German manufacturer" (inaccurate — the finished product is made in Pakistan)
 - This applies to every ECO-Series and Water Safe product mention, in every post.
@@ -82,11 +82,11 @@ Every post covers **exactly one Seamens product or one single topic** — never 
 The **live website's product listing is the single source of truth for product names** — exact spelling, casing, and hyphenation. When a blog needs a product name, copy it character-for-character from the list below (which mirrors `index.html`'s aux-cards exactly). Never invent a variant spelling (e.g. "EcoSoftner" instead of "EcoSoftener", or "ECODESIZE-EZ" in caps instead of "EcoDesize-EZ") — this happened once already and had to be corrected across every post that used it. The owner's internal formulation notes (dosing rates, benefit claims, packaging) are a valid source for *technical detail*, but never for the *name itself* — always defer to the website's spelling.
 
 ### A. Textile Auxiliaries — ECO-Series (17 SKUs, exact names as listed on the website)
-All formulated and manufactured by Seamens in Pakistan using organic raw materials (PVA, wax, starch derivatives, polymers) sourced from Germany — see the manufacturing critical-correction note above for exact phrasing.
+All formulated and manufactured by Seamens in Pakistan using organic raw materials (PVA, wax, starch derivatives, polymers) imported — see the manufacturing critical-correction note above for exact phrasing.
 
 > **⚠️ Keep formulation talk general — owner instruction.** Write about what a product *does* and the *benefits* it delivers, never a breakdown of what's inside it (don't list internal components like "body-enhancer, friction reducer, penetration booster," don't name specific chemistry variants like "cationic vs non-ionic," don't publish exact dosing-by-count tables or head-to-head performance-number comparisons vs "old technology"). Speak in general, benefit-led terms — "an all-in-one formulation," "available in a few variants Seamens matches to your fabric," "dosing confirmed by trial" — rather than pinning down exact internal specifics. This keeps the site safe and positive without overexposing proprietary formulation detail. Two posts (`pva-vs-starch-sizing-cost`, `ecosoftener-vs-silicone-softener`) were rewritten to fix this — use their current wording as the template for how general to keep it.
 
-1. **EcoSize-CXW-111** — white granular powder, Made in Germany, 25 KG bag. Premium all-in-one sizing agent for warp yarn (Ne 6–40 cotton) — combines everything a sizing recipe typically needs into one ready-to-use product. Benefits: lower overall chemical cost than conventional multi-chemical recipes, high adhesion on polyester blends, minimal foam in the size box, one-bag mixing instead of several separate chemicals.
+1. **EcoSize-CXW-111** — white granular powder, Made in Pakistan, 25 KG bag. Premium all-in-one sizing agent for warp yarn (Ne 6–40 cotton) — combines everything a sizing recipe typically needs into one ready-to-use product. Benefits: lower overall chemical cost than conventional multi-chemical recipes, high adhesion on polyester blends, minimal foam in the size box, one-bag mixing instead of several separate chemicals.
 2. **EcoShort-GS-777** — white thick paste, 240 KG. High-performance shortening agent for improved fabric handle and an all-in-one sizing agent. Benefits: high strength, smooth surface, good adhesion, abrasion resistance, easy desizing, low foam, fewer stains, better weavability.
 3. **EcoSoftener D-11** — white thick paste, 240 KG. Superior hand-feel and drapability softener, available in a few formulation variants that Seamens matches to the fabric and process. Benefits for sizing: high lubrication, less hairiness, anti-static, improved weavability, soft hand after desizing. Benefits for finishing: super-soft hand feel (ideal for towel/bedding), hydrophilic, low yellowing on white fabric. Works well on cotton, denim, towel, canvas/drill, PC/PV blends, bedding/sheeting.
 4. **EcoAcryllic-ACL-55** — acrylic coating agent, 150/240/1,000 KG (plastic tanks for bulk). High-performance sizing agent for denim, towel, canvas/drill, tent/tarpaulin, bags/sacking, low-count cotton. Benefits for denim/indigo yarn: high abrasion resistance, low size add-on, easy desizing, no gumming. Benefits for towel: high strength, soft hand, low foam, economical.
@@ -114,7 +114,7 @@ Scale inhibitor blends, oxygen scavengers (sulphite/hydrazine series), pH/alkali
 > - **Water Safe FC-70/90** — A/C plant organic de-scaler (also certified by Luwa & Conair for their equipment — see Section B critical correction)
 > - **Water Safe RO Antiscalant** — RO membrane fouling prevention
 
-All formulated and manufactured by Seamens in Pakistan using organic raw materials sourced from Germany.
+All formulated and manufactured by Seamens in Pakistan using organic raw materials imported.
 
 ### D. Industrial & Institutional Cleaning Chemicals (15 products across verticals)
 Heavy Duty Degreaser, Textile Machine Cleaner, Metal Surface Cleaner & Passivator, Acid Descaler, alkaline/acid CIP cleaners, disinfectant cleaners, drain openers, washroom sanitiser/odour-control/floor-cleaner system, hospital-grade disinfectants (wards/OT/ICU/dietary), hotel housekeeping/kitchen/laundry chemicals, mall/commercial-complex zone cleaners (marble floors, food court degreasers, parking cleaners).
