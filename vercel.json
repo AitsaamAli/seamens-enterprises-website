@@ -423,11 +423,6 @@
       "permanent": true
     },
     {
-      "source": "/authors/ghulam-muhammad-bahoo.html",
-      "destination": "/authors/ghulam-muhammad-bahoo",
-      "permanent": true
-    },
-    {
       "source": "/faq.html",
       "destination": "/faq",
       "permanent": true
@@ -460,6 +455,11 @@
     {
       "source": "/blog/eco-series-sizing-agent-selection-cotton-warp.html",
       "destination": "/eco-series-sizing-agent-selection-cotton-warp",
+      "permanent": true
+    },
+    {
+      "source": "/authors/ghulam-muhammad-bahoo",
+      "destination": "/about",
       "permanent": true
     }
   ],
@@ -731,10 +731,6 @@
     {
       "source": "/editorial-policy",
       "destination": "/editorial-policy.html"
-    },
-    {
-      "source": "/authors/ghulam-muhammad-bahoo",
-      "destination": "/authors/ghulam-muhammad-bahoo.html"
     },
     {
       "source": "/faq",
