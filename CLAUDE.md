@@ -59,6 +59,7 @@ Still valid from the knowledge base:
   - a `sitemap.xml` entry
   - a blog card on `blog/index.html` and the homepage where relevant
   - an `llms.txt` / `llms-full.txt` update
+- **Images, CSS and JS are cached for 1 year (`immutable`).** Never change a file's content under the same name: give it a new versioned name (e.g. `-v5` → `-v6`) and update every reference, or returning visitors (and Usman's phone) keep seeing the old file.
 - The CSP allows scripts only from self and cdnjs, and fonts from Google. Don't add other CDNs without updating the CSP.
 - Before every push:
   - check internal links (no broken `href`/`src`)
