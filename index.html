@@ -259,6 +259,10 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 30px rgba(0,0,0,0.5
 .hero-slider .hs-slide img{width:100%;height:100%;object-fit:cover;object-position:var(--pd);transform:scale(1.04);will-change:transform}
 .hero-slider .hs-slide.is-on img,.hero-slider .hs-slide.is-out img{animation:hsKB calc(var(--dur) + 1.6s) cubic-bezier(.25,.1,.25,1) forwards}
 @keyframes hsKB{from{transform:scale(1.04) translate(0,0)}to{transform:scale(1.13) translate(var(--kx),var(--ky))}}
+.hs-gl{position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity .8s;transform:scale(1.04)}
+.hs-gl.ready{opacity:1}
+.hero-slider .hs-slide.is-on .hs-gl,.hero-slider .hs-slide.is-out .hs-gl{animation:hsKB calc(var(--dur) + 1.6s) cubic-bezier(.25,.1,.25,1) forwards}
+#home.hs-on0 .hero-overlay{background:radial-gradient(ellipse 55% 50% at 50% 50%,rgba(5,14,28,.5) 0%,rgba(5,14,28,.26) 60%,rgba(5,14,28,.08) 100%),linear-gradient(180deg,rgba(5,14,28,.5) 0%,transparent 20%)}
 .hs-water::after{content:"";position:absolute;inset:-10%;background:radial-gradient(ellipse 30% 22% at 38% 42%,rgba(167,243,208,.35),transparent 70%),radial-gradient(ellipse 22% 16% at 62% 30%,rgba(255,255,255,.18),transparent 70%);mix-blend-mode:screen;animation:hsShimmer 6s ease-in-out infinite alternate;pointer-events:none}
 @keyframes hsShimmer{0%{transform:translate(-3%,1%) scale(1);opacity:.6}100%{transform:translate(3%,-2%) scale(1.08);opacity:1}}
 #home .hero-overlay{background:radial-gradient(ellipse 60% 55% at 50% 50%,rgba(5,14,28,.6) 0%,rgba(5,14,28,.38) 60%,rgba(5,14,28,.2) 100%),linear-gradient(180deg,rgba(5,14,28,.55) 0%,transparent 22%)}
@@ -306,7 +310,7 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 30px rgba(0,0,0,0.5
 #home .hero-content{margin-top:.25rem;padding:0 16px}
 #home .hero-h1,#home .hero-sub,#home .hero-slogan{text-shadow:none}
 }
-@media(prefers-reduced-motion:reduce){.hero-slider .hs-slide img,.hs-water::after,.hs-tab.on .hs-track i{animation:none!important}.hs-tab.on .hs-track i{transform:scaleX(1)}}
+@media(prefers-reduced-motion:reduce){.hs-gl{display:none}.hero-slider .hs-slide img,.hs-water::after,.hs-tab.on .hs-track i{animation:none!important}.hs-tab.on .hs-track i{transform:scaleX(1)}}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(7,18,34,0.72) 0%,rgba(0,30,60,0.45) 50%,rgba(7,18,34,0.88) 100%)}
 .hero-overlay2{position:absolute;bottom:0;left:0;right:0;height:35%;background:linear-gradient(to top,#071222,transparent)}
 .hero-content{position:relative;z-index:2;text-align:center;padding:2rem;max-width:960px}
@@ -1496,9 +1500,9 @@ em .typing-cursor { background: var(--gold); box-shadow: 0 0 10px rgba(212,168,6
 
 <!-- HERO -->
 <main id="main">
-<section id="home">
+<section id="home" class="hs-on0">
   <div class="hero-video-wrap hero-slider" id="heroSlider" role="region" aria-roledescription="carousel" aria-label="Seamens services">
-    <figure class="hs-slide is-on hs-water" data-cap="Water Safe Water Treatment Technologies" data-href="/products/cooling-tower-chiller-ro" style="--pd:40% 50%;--pm:35% 50%;--kx:-2%;--ky:0" aria-roledescription="slide" aria-label="1 of 7: Water Treatment"><img src="images/hero/ocean-wave.webp" srcset="images/hero/ocean-wave-sm.webp 960w, images/hero/ocean-wave.webp 1920w" fetchpriority="high" sizes="100vw" width="1920" height="1080" alt="Powerful curling ocean wave in teal and emerald tones" decoding="async"></figure>
+    <figure class="hs-slide is-on hs-water" data-cap="Water Safe Water Treatment Technologies" data-href="/products/cooling-tower-chiller-ro" style="--pd:40% 50%;--pm:35% 50%;--kx:-2%;--ky:0" aria-roledescription="slide" aria-label="1 of 7: Water Treatment"><img src="images/hero/ocean-wave.webp" srcset="images/hero/ocean-wave-sm.webp 960w, images/hero/ocean-wave.webp 1920w" fetchpriority="high" sizes="100vw" width="1920" height="1080" alt="Powerful curling ocean wave in teal and emerald tones" decoding="async"><canvas class="hs-gl" aria-hidden="true"></canvas></figure>
     <figure class="hs-slide" data-cap="Steam Boiler Supply &amp; Water Treatment" data-href="/products/boiler-water-treatment-humidification" style="--pd:50% 60%;--pm:50% 62%;--kx:0;--ky:-1.5%" aria-roledescription="slide" aria-label="2 of 7: Boilers"><img data-src="images/hero/steam-boilers.webp" data-srcset="images/hero/steam-boilers-sm.webp 960w, images/hero/steam-boilers.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Twin fire-tube steam boilers with burners in a boiler house" decoding="async"></figure>
     <figure class="hs-slide" data-cap="ECO-Series Textile Auxiliaries" data-href="/products/textile-auxiliaries" style="--pd:45% 55%;--pm:30% 55%;--kx:2%;--ky:0" aria-roledescription="slide" aria-label="3 of 7: Textile"><img data-src="images/hero/textile-finishing-range.webp" data-srcset="images/hero/textile-finishing-range-sm.webp 960w, images/hero/textile-finishing-range.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Textile finishing range with fabric batching rolls" decoding="async"></figure>
     <figure class="hs-slide" data-cap="Cooling Tower Water Treatment" data-href="/products/cooling-tower-chiller-ro" style="--pd:50% 40%;--pm:40% 45%;--kx:-1.5%;--ky:1%" aria-roledescription="slide" aria-label="4 of 7: Cooling Towers"><img data-src="images/hero/cooling-tower.webp" data-srcset="images/hero/cooling-tower-sm.webp 960w, images/hero/cooling-tower.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Industrial cooling tower cells on a plant rooftop" decoding="async"></figure>
@@ -2983,7 +2987,7 @@ function load(){if(loaded)return;loaded=true;sl.forEach(function(s){var m=s.quer
 function show(n){if(n===i)return;load();var prev=sl[i];prev.classList.remove('is-on');prev.classList.add('is-out');setTimeout(function(){prev.classList.remove('is-out')},1400);
 tabs[i].classList.remove('on');tabs[i].removeAttribute('aria-current');
 tabs.forEach(function(b,k){b.classList.toggle('done',k<n)});
-i=n;var s=sl[i];s.classList.add('is-on');var im=s.querySelector('img');im.style.animation='none';void im.offsetWidth;im.style.animation='';
+i=n;var s=sl[i];s.classList.add('is-on');document.getElementById('home').classList.toggle('hs-on0',i===0);var im=s.querySelector('img');im.style.animation='none';void im.offsetWidth;im.style.animation='';
 tabs[i].classList.add('on');tabs[i].setAttribute('aria-current','true');var tr=tabs[i].querySelector('.hs-track i');tr.style.animation='none';void tr.offsetWidth;tr.style.animation='';
 cap.classList.add('swap');setTimeout(function(){num.textContent=(i<9?'0':'')+(i+1);txt.innerHTML=s.dataset.cap;cap.href=s.dataset.href;cap.classList.remove('swap')},300);go()}
 function next(){show((i+1)%sl.length)}function prev(){show((i-1+sl.length)%sl.length)}
@@ -2997,6 +3001,45 @@ var x0=null,y0=0;el.addEventListener('touchstart',function(e){x0=e.touches[0].cl
 el.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy)){dx<0?next():prev()}x0=null},{passive:true});
 document.addEventListener('visibilitychange',go);
 window.addEventListener('load',function(){load();go()});
+})();
+</script>
+<script>
+/* Living wave: WebGL flow-map animation of the hero wave photo (seamless 3.6s loop) */
+(function(){var fig=document.querySelector('.hs-water');if(!fig)return;var cv=fig.querySelector('.hs-gl'),img=fig.querySelector('img');
+if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+var gl=cv.getContext('webgl',{premultipliedAlpha:false,antialias:false});if(!gl)return;
+var vs='attribute vec2 p;varying vec2 v;void main(){v=vec2(p.x*.5+.5,.5-p.y*.5);gl_Position=vec4(p,0.,1.);}';
+var fs='precision mediump float;varying vec2 v;uniform sampler2D t;uniform float T;uniform vec2 S,O;'+
+'float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}'+
+'float n(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(h(i),h(i+vec2(1,0)),f.x),mix(h(i+vec2(0,1)),h(i+vec2(1,1)),f.x),f.y);}'+
+'void main(){vec2 uv=v*S+O;float P=3.6;'+
+'vec2 fl=vec2(-.030,.010)+.022*vec2(n(uv*4.+3.)-.5,n(uv*4.+9.)-.5);'+
+'float m=.35+.65*smoothstep(.25,.75,uv.y);fl*=m;'+
+'float a=fract(T/P),b=fract(T/P+.5);'+
+'vec2 r=.0018*vec2(sin(uv.y*60.+T*2.4),cos(uv.x*48.+T*2.))*m;'+
+'vec4 c0=texture2D(t,uv+fl*(a-.5)+r),c1=texture2D(t,uv+fl*(b-.5)+r);'+
+'float w=abs(a-.5)*2.;vec4 c=mix(c0,c1,w);'+
+'float g=.05*n(uv*vec2(6.,3.)+vec2(-T*.35,T*.1))*m;'+
+'gl_FragColor=vec4(c.rgb+g,1.);}';
+function sh(type,src){var o=gl.createShader(type);gl.shaderSource(o,src);gl.compileShader(o);return o}
+var pr=gl.createProgram();gl.attachShader(pr,sh(gl.VERTEX_SHADER,vs));gl.attachShader(pr,sh(gl.FRAGMENT_SHADER,fs));gl.linkProgram(pr);
+if(!gl.getProgramParameter(pr,gl.LINK_STATUS))return;gl.useProgram(pr);
+var buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);
+var lp=gl.getAttribLocation(pr,'p');gl.enableVertexAttribArray(lp);gl.vertexAttribPointer(lp,2,gl.FLOAT,false,0,0);
+var uT=gl.getUniformLocation(pr,'T'),uS=gl.getUniformLocation(pr,'S'),uO=gl.getUniformLocation(pr,'O');
+var tex=gl.createTexture(),ok=false,raf=0,t0=performance.now();
+function upload(){try{gl.bindTexture(gl.TEXTURE_2D,tex);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGB,gl.RGB,gl.UNSIGNED_BYTE,img);ok=true;size()}catch(e){ok=false}}
+function size(){var r=fig.getBoundingClientRect(),d=Math.min(window.devicePixelRatio||1,1.5),W=Math.max(1,Math.round(r.width*d)),H=Math.max(1,Math.round(r.height*d));
+if(cv.width!==W||cv.height!==H){cv.width=W;cv.height=H;gl.viewport(0,0,W,H)}
+var ia=img.naturalWidth/img.naturalHeight,ba=r.width/r.height,pos=getComputedStyle(img).objectPosition.split(' '),px=parseFloat(pos[0])/100,py=parseFloat(pos[1]||'50')/100,sx=1,sy=1;
+if(ba>ia){sy=ia/ba}else{sx=ba/ia}gl.uniform2f(uS,sx,sy);gl.uniform2f(uO,(1-sx)*px,(1-sy)*py)}
+function frame(now){raf=0;if(!ok)return;gl.uniform1f(uT,(now-t0)/1000);gl.drawArrays(gl.TRIANGLE_STRIP,0,4);if(!cv.classList.contains('ready'))cv.classList.add('ready');
+if(!document.hidden&&(fig.classList.contains('is-on')||fig.classList.contains('is-out')))raf=requestAnimationFrame(frame)}
+function kick(){if(!raf&&ok)raf=requestAnimationFrame(frame)}
+new MutationObserver(kick).observe(fig,{attributes:true,attributeFilter:['class']});
+document.addEventListener('visibilitychange',kick);window.addEventListener('resize',function(){if(ok){size();kick()}});
+function start(){upload();kick()}
+if(img.complete&&img.naturalWidth)start();else img.addEventListener('load',start);
 })();
 </script>
 </body>
