@@ -224,7 +224,8 @@
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--navy:#0a1628;--navy2:#0d1f3c;--teal:#00b4a6;--teal2:#007d73;--gold:#d4a843;--light:#f4f6f9;--white:#ffffff;--text:#1a2332;--muted:#5a6a7e;}
 html{scroll-behavior:smooth}
-body{font-family:'Barlow',sans-serif;background:var(--white);color:var(--text);overflow-x:hidden}
+html{overflow-x:hidden;overflow-x:clip}
+body{font-family:'Barlow',sans-serif;background:var(--white);color:var(--text);overflow-x:hidden;overflow-x:clip;max-width:100%}
 
 /* NAV */
 nav{position:fixed;top:0;left:0;width:100%;z-index:1000;transition:background 0.4s,box-shadow 0.4s;padding:0 2rem}
@@ -250,6 +251,66 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 30px rgba(0,0,0,0.5
 .hero-video-wrap{position:absolute;inset:0;width:100%;height:100%;overflow:hidden}
 .hero-video-wrap img.hero-bg{width:100%;height:100%;object-fit:cover;opacity:0.45}
 .hero-video-wrap video{width:100%;height:100%;object-fit:cover;opacity:0.45}
+/* HERO SLIDER: cinematic crossfade + Ken Burns, service navigator, swipe, 4.5s */
+.hero-slider{--dur:4.5s;z-index:0;isolation:isolate}
+.hero-slider .hs-slide{position:absolute;inset:0;margin:0;opacity:0;transition:opacity 1.3s ease,filter 1.3s ease;overflow:hidden}
+.hero-slider .hs-slide.is-on{opacity:1;z-index:1}
+.hero-slider .hs-slide.is-out{opacity:0;filter:blur(8px) brightness(1.1);z-index:2}
+.hero-slider .hs-slide img{width:100%;height:100%;object-fit:cover;object-position:var(--pd);transform:scale(1.04);will-change:transform}
+.hero-slider .hs-slide.is-on img,.hero-slider .hs-slide.is-out img{animation:hsKB calc(var(--dur) + 1.6s) cubic-bezier(.25,.1,.25,1) forwards}
+@keyframes hsKB{from{transform:scale(1.04) translate(0,0)}to{transform:scale(1.13) translate(var(--kx),var(--ky))}}
+.hs-vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--pd);opacity:0;transition:opacity .6s}
+.hs-vid.playing{opacity:1}
+.hs-video img,.hs-video .hs-vid{animation:none!important;transform:scale(1.02)!important}
+@media(max-width:768px){.hs-vid{object-position:var(--pm)}}
+#home.hs-on0 .hero-overlay{background:radial-gradient(ellipse 42% 36% at 50% 52%,rgba(5,14,28,.5) 0%,rgba(5,14,28,.22) 55%,transparent 100%),linear-gradient(180deg,rgba(5,14,28,.45) 0%,transparent 16%)}
+#home.hs-on0 .hero-overlay2{height:22%}
+#home .hero-overlay{background:radial-gradient(ellipse 60% 55% at 50% 50%,rgba(5,14,28,.6) 0%,rgba(5,14,28,.38) 60%,rgba(5,14,28,.2) 100%),linear-gradient(180deg,rgba(5,14,28,.55) 0%,transparent 22%)}
+#home .hero-overlay2{height:34%;background:linear-gradient(to top,#071222 0%,rgba(7,18,34,.75) 38%,transparent)}
+#home .hero-h1,#home .hero-sub,#home .hero-slogan{text-shadow:0 2px 18px rgba(0,0,0,.55)}
+#home .hero-scroll{display:none}
+.hs-ui{position:absolute;left:clamp(16px,4vw,56px);right:clamp(96px,8vw,120px);bottom:28px;z-index:3;display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.hs-cap{display:flex;align-items:center;gap:.75rem;font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.14em;color:#fff;text-decoration:none;background:rgba(7,18,34,.55);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(0,180,166,.35);border-left:3px solid var(--teal);padding:.55rem 1rem;border-radius:2px;max-width:100%;transition:background .3s,border-color .3s}
+.hs-cap:hover{background:rgba(0,180,166,.22);border-color:var(--teal)}
+.hs-num{font-weight:700;font-size:1.05rem;color:var(--teal)}
+.hs-bar{width:22px;height:1px;background:rgba(255,255,255,.45);flex:none}
+.hs-txt{font-weight:500;font-size:.86rem;line-height:1.2;transition:opacity .4s,transform .4s}
+.hs-cap.swap .hs-txt{opacity:0;transform:translateY(6px)}
+.hs-go{margin-left:.4rem;padding-left:.75rem;border-left:1px solid rgba(255,255,255,.25);color:var(--teal);font-weight:700;font-size:.78rem;white-space:nowrap}
+.hs-nav{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;width:100%}
+.hs-tab{all:unset;cursor:pointer;display:grid;grid-template-columns:auto 1fr;column-gap:.5rem;row-gap:.45rem;align-items:baseline;color:rgba(255,255,255,.55);font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.12em;transition:color .3s}
+.hs-tab:hover,.hs-tab.on{color:#fff}
+.hs-tab:focus-visible{outline:2px solid var(--teal);outline-offset:4px}
+.hs-track{grid-column:1/-1;height:3px;border-radius:2px;background:rgba(255,255,255,.2);overflow:hidden;position:relative}
+.hs-track i{position:absolute;inset:0;background:linear-gradient(90deg,var(--teal),#5eead4);transform:scaleX(0);transform-origin:left}
+.hs-tab.done .hs-track i{transform:scaleX(1);opacity:.45}
+.hs-tab.on .hs-track i{animation:hsFill var(--td,4.5s) linear forwards}
+.hero-slider.paused~.hs-ui .hs-tab.on .hs-track i{animation-play-state:paused}
+@keyframes hsFill{to{transform:scaleX(1)}}
+.hs-tn{font-weight:700;font-size:.85rem;color:var(--teal)}
+.hs-tab:not(.on) .hs-tn{color:inherit}
+.hs-tl{font-weight:500;font-size:.72rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media(max-width:1100px) and (min-width:769px){.hs-tl{display:none}.hs-nav{max-width:420px}}
+@media(max-width:768px){
+#home{justify-content:flex-start;min-height:auto;padding:72px 0 2.5rem}
+#home .hero-slider{position:relative;inset:auto;width:100%;height:auto;aspect-ratio:4/3;flex:none;touch-action:pan-y}
+#home .hero-slider::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,18,34,.3) 0%,transparent 28%,transparent 58%,#071222 100%);pointer-events:none;z-index:3}
+.hero-slider .hs-slide img{object-position:var(--pm)}
+#home .hero-overlay,#home .hero-overlay2,#home .hero-logo-big{display:none}
+.hs-ui{top:calc(72px + 75vw - 64px);bottom:auto;left:16px;right:16px;flex-direction:row;align-items:center;justify-content:space-between;gap:10px}
+.hs-cap{padding:.4rem .65rem;gap:.45rem;min-width:0;backdrop-filter:blur(6px)}
+.hs-txt{font-size:.68rem;letter-spacing:.08em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}.hs-num{font-size:.85rem}.hs-bar{display:none}
+.hs-go{font-size:.68rem;padding-left:.5rem;margin-left:.2rem}
+.hs-nav{display:flex;width:auto;gap:5px;flex:none}
+.hs-tab{display:block;padding:8px 0}
+.hs-tab .hs-tn,.hs-tab .hs-tl{display:none}
+.hs-track{display:block;width:7px;height:7px;border-radius:4px;transition:width .4s}
+.hs-tab.on .hs-track{width:24px}
+.hs-tab.done .hs-track i{opacity:0}
+#home .hero-content{margin-top:.25rem;padding:0 16px}
+#home .hero-h1,#home .hero-sub,#home .hero-slogan{text-shadow:none}
+}
+@media(prefers-reduced-motion:reduce){.hs-vid{display:none}.hero-slider .hs-slide img,.hs-tab.on .hs-track i{animation:none!important}.hs-tab.on .hs-track i{transform:scaleX(1)}}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(7,18,34,0.72) 0%,rgba(0,30,60,0.45) 50%,rgba(7,18,34,0.88) 100%)}
 .hero-overlay2{position:absolute;bottom:0;left:0;right:0;height:35%;background:linear-gradient(to top,#071222,transparent)}
 .hero-content{position:relative;z-index:2;text-align:center;padding:2rem;max-width:960px}
@@ -711,7 +772,7 @@ body:hover #cursor-dot { opacity: 1; }
   inset: -16px;
   border-radius: 50%;
   background: conic-gradient(from 0deg, var(--teal), #00ffd0, var(--gold), #0055ff, var(--teal));
-  opacity: 0.45;
+  opacity: 0.2;
   filter: blur(18px);
   z-index: -1;
   animation: logoSpin 6s linear infinite;
@@ -1125,7 +1186,7 @@ body::before {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
   pointer-events: none;
   z-index: 99990;
-  opacity: 0.4;
+  opacity: 0.12;
 }
 
 /* ============================
@@ -1439,9 +1500,19 @@ em .typing-cursor { background: var(--gold); box-shadow: 0 0 10px rgba(212,168,6
 
 <!-- HERO -->
 <main id="main">
-<section id="home">
-  <div class="hero-video-wrap">
-    <img class="hero-bg" src="images/Steam%20Boiler%20Supply%20%26%20Erection.jpg" alt="" width="1200" height="696" fetchpriority="high" decoding="async">
+<section id="home" class="hs-on0">
+  <div class="hero-video-wrap hero-slider" id="heroSlider" role="region" aria-roledescription="carousel" aria-label="Seamens services">
+    <figure class="hs-slide is-on hs-video" data-dur="8000" data-cap="Water Safe Water Treatment Technologies" data-href="/products/cooling-tower-chiller-ro" style="--pd:50% 50%;--pm:55% 50%;--kx:-1%;--ky:0" aria-roledescription="slide" aria-label="1 of 7: Water Treatment"><img src="images/hero/wave-v5-poster.webp" srcset="images/hero/wave-v5-poster-sm.webp 960w, images/hero/wave-v5-poster.webp 1280w" sizes="100vw" width="1280" height="720" alt="Turquoise ocean wave curling and breaking in slow motion" fetchpriority="high" decoding="async"><video class="hs-vid" muted playsinline loop preload="none" aria-hidden="true" data-desk="images/hero/wave-v5-1280.mp4" data-mob="images/hero/wave-v5-960.mp4"></video></figure>
+    <figure class="hs-slide" data-cap="Steam Boiler Supply &amp; Water Treatment" data-href="/products/boiler-water-treatment-humidification" style="--pd:50% 60%;--pm:50% 62%;--kx:0;--ky:-1.5%" aria-roledescription="slide" aria-label="2 of 7: Boilers"><img data-src="images/hero/steam-boilers-v5.webp" data-srcset="images/hero/steam-boilers-v5-sm.webp 960w, images/hero/steam-boilers-v5.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Twin fire-tube steam boilers with burners in a boiler house" decoding="async"></figure>
+    <figure class="hs-slide" data-cap="ECO-Series Textile Auxiliaries" data-href="/products/textile-auxiliaries" style="--pd:45% 55%;--pm:30% 55%;--kx:2%;--ky:0" aria-roledescription="slide" aria-label="3 of 7: Textile"><img data-src="images/hero/textile-finishing-range-v5.webp" data-srcset="images/hero/textile-finishing-range-v5-sm.webp 960w, images/hero/textile-finishing-range-v5.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Textile finishing range with fabric batching rolls" decoding="async"></figure>
+    <figure class="hs-slide" data-cap="Cooling Tower Water Treatment" data-href="/products/cooling-tower-chiller-ro" style="--pd:50% 40%;--pm:40% 45%;--kx:-1.5%;--ky:1%" aria-roledescription="slide" aria-label="4 of 7: Cooling Towers"><img data-src="images/hero/cooling-tower-v5.webp" data-srcset="images/hero/cooling-tower-v5-sm.webp 960w, images/hero/cooling-tower-v5.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Industrial cooling tower cells on a plant rooftop" decoding="async"></figure>
+    <figure class="hs-slide" data-cap="RO Plants &amp; Membrane Chemicals" data-href="/products/cooling-tower-chiller-ro" style="--pd:50% 50%;--pm:45% 50%;--kx:1.5%;--ky:-1%" aria-roledescription="slide" aria-label="5 of 7: RO Plants"><img data-src="images/hero/ro-plant-v5.webp" data-srcset="images/hero/ro-plant-v5-sm.webp 960w, images/hero/ro-plant-v5.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Industrial reverse osmosis plant with membrane pressure vessels" decoding="async"></figure>
+    <figure class="hs-slide" data-cap="Industrial Exhaust Fans" data-href="/products/plant-erection-machinery-parts" style="--pd:50% 45%;--pm:50% 45%;--kx:0;--ky:1.5%" aria-roledescription="slide" aria-label="6 of 7: Exhaust Fans"><img data-src="images/hero/industrial-exhaust-fan-v5.webp" data-srcset="images/hero/industrial-exhaust-fan-v5-sm.webp 960w, images/hero/industrial-exhaust-fan-v5.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Stainless steel industrial axial exhaust fan" decoding="async"></figure>
+    <figure class="hs-slide" data-cap="Industrial Cleaning Chemicals" data-href="/products/industrial-cleaning-chemicals" style="--pd:55% 40%;--pm:62% 40%;--kx:-2%;--ky:0" aria-roledescription="slide" aria-label="7 of 7: Cleaning"><img data-src="images/hero/industrial-cleaning-v5.webp" data-srcset="images/hero/industrial-cleaning-v5-sm.webp 960w, images/hero/industrial-cleaning-v5.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Technician applying industrial cleaner degreaser to process equipment" decoding="async"></figure>
+  </div>
+  <div class="hs-ui">
+    <a class="hs-cap" id="hsCap" href="/products/cooling-tower-chiller-ro"><span class="hs-num" id="hsNum">01</span><span class="hs-bar"></span><span class="hs-txt" id="hsTxt">Water Safe Water Treatment Technologies</span><span class="hs-go">View <span aria-hidden="true">&rarr;</span></span></a>
+    <div class="hs-nav" id="hsNav"><button type="button" class="hs-tab on" style="--td:8s" aria-label="Show slide 1: Water Treatment" aria-current="true"><span class="hs-track"><i></i></span><span class="hs-tn">01</span><span class="hs-tl">Water Treatment</span></button><button type="button" class="hs-tab" aria-label="Show slide 2: Boilers"><span class="hs-track"><i></i></span><span class="hs-tn">02</span><span class="hs-tl">Boilers</span></button><button type="button" class="hs-tab" aria-label="Show slide 3: Textile"><span class="hs-track"><i></i></span><span class="hs-tn">03</span><span class="hs-tl">Textile</span></button><button type="button" class="hs-tab" aria-label="Show slide 4: Cooling Towers"><span class="hs-track"><i></i></span><span class="hs-tn">04</span><span class="hs-tl">Cooling Towers</span></button><button type="button" class="hs-tab" aria-label="Show slide 5: RO Plants"><span class="hs-track"><i></i></span><span class="hs-tn">05</span><span class="hs-tl">RO Plants</span></button><button type="button" class="hs-tab" aria-label="Show slide 6: Exhaust Fans"><span class="hs-track"><i></i></span><span class="hs-tn">06</span><span class="hs-tl">Exhaust Fans</span></button><button type="button" class="hs-tab" aria-label="Show slide 7: Cleaning"><span class="hs-track"><i></i></span><span class="hs-tn">07</span><span class="hs-tl">Cleaning</span></button></div>
   </div>
   <div class="hero-overlay"></div>
   <div class="hero-overlay2"></div>
@@ -2908,5 +2979,32 @@ const TypingEngine = {
 
 <script>/* CLIENT_ALT */(function(){var A={"Gemini_Generated_Image_36rtkw36rtkw36rt.png": "Maqbool", "WhatsApp Image 2026-04-25 at 13.05.19 (1).jpeg": "Naveena Denim Limited", "WhatsApp Image 2026-04-25 at 13.05.19 (2).jpeg": "Khas Textile Mills (Pvt) Ltd.", "WhatsApp Image 2026-04-25 at 13.05.19.jpeg": "Naveena Developers", "WhatsApp Image 2026-04-25 at 13.05.20 (1).jpeg": "Alam", "WhatsApp Image 2026-04-25 at 13.05.20.jpeg": "DIN Group", "WhatsApp Image 2026-04-25 at 13.05.21 (1).jpeg": "Fazal Group", "WhatsApp Image 2026-04-25 at 13.05.21.jpeg": "Amir Textile Industries", "WhatsApp Image 2026-04-25 at 13.05.22.jpeg": "Hussain Mills Limited", "WhatsApp Image 2026-04-25 at 13.05.23 (1).jpeg": "Gul Ahmed Textile Mills Limited", "WhatsApp Image 2026-04-25 at 13.05.23.jpeg": "Kohinoor Textile Mills Ltd.", "WhatsApp Image 2026-04-25 at 13.05.24 (1).jpeg": "Ahmed Oriental Textile Mills Ltd.", "WhatsApp Image 2026-04-25 at 13.05.24.jpeg": "Alkaram", "WhatsApp Image 2026-04-25 at 13.05.25.jpeg": "Sapphire", "WhatsApp Image 2026-04-25 at 13.05.26 (1).jpeg": "Kohat Textile Mills Ltd. (Saif Group)", "WhatsApp Image 2026-04-25 at 13.05.26 (2).jpeg": "Suraj Cotton Mills Limited", "WhatsApp Image 2026-04-25 at 13.05.26.jpeg": "Colony Textile Mills Limited", "WhatsApp Image 2026-04-25 at 13.05.27 (1).jpeg": "Shams Textile", "WhatsApp Image 2026-04-25 at 13.05.27.jpeg": "Crescent Textile Mills Limited", "WhatsApp Image 2026-04-25 at 13.05.28 (1).jpeg": "ZARA", "WhatsApp Image 2026-04-25 at 13.05.28.jpeg": "Premium Textile Mills Limited", "WhatsApp Image 2026-04-25 at 13.05.29.jpeg": "Nagina Group", "WhatsApp Image 2026-04-25 at 13.05.30 (1).jpeg": "Idrees Textile Mills Ltd.", "WhatsApp Image 2026-04-25 at 13.05.30.jpeg": "Al Qadir Textile Ltd.", "WhatsApp Image 2026-04-25 at 13.05.31 (1).jpeg": "Gulshan Textiles", "WhatsApp Image 2026-04-25 at 13.05.31.jpeg": "Quetta Textile Mills Ltd.", "WhatsApp Image 2026-04-25 at 13.05.32.jpeg": "Shadman Cotton Mills Limited", "WhatsApp Image 2026-04-25 at 13.05.33 (1).jpeg": "Mekotex", "WhatsApp Image 2026-04-25 at 13.05.34 (1).jpeg": "MASCO Spinning Mills (Pvt) Ltd.", "WhatsApp Image 2026-04-25 at 13.05.34.jpeg": "Janana De Malucho Textile Mills Limited", "WhatsApp Image 2026-04-25 at 13.05.35.jpeg": "MIMA Group", "WhatsApp Image 2026-04-25 at 13.05.36 (1).jpeg": "Badsha Group of Industries", "WhatsApp Image 2026-04-25 at 13.05.37.jpeg": "Client logo", "WhatsApp Image 2026-04-25 at 13.05.38 (1).jpeg": "Rustam Textile", "WhatsApp Image 2026-04-25 at 13.05.38.jpeg": "Azgard-9", "WhatsApp Image 2026-04-25 at 13.05.39 (1).jpeg": "AGI Denim", "WhatsApp Image 2026-04-25 at 13.05.39.jpeg": "Fazal Cloth Mills Limited", "WhatsApp Image 2026-04-25 at 13.05.40.jpeg": "YBG", "WhatsApp Image 2026-04-26 at 10.04.06.jpeg": "Ahmad Hassan Textile Mills Limited", "WhatsApp Image 2026-04-26 at 10.50.49.jpeg": "Rizwan Textile Mills Ltd.", "WhatsApp Image 2026-04-26 at 10.56.31.jpeg": "H.A.R. Textile Mills Private Limited", "WhatsApp Image 2026-04-26 at 10.58.12.jpeg": "Hashir Textile", "WhatsApp Image 2026-05-30 at 04.12.08 (1)_11zon.jpeg": "Best Exports Private Limited", "WhatsApp Image 2026-05-30 at 04.12.08_11zon.jpeg": "Nishat", "WhatsApp Image 2026-05-30 at 04.12.09 (1)_11zon.jpeg": "Artistic Milliners", "WhatsApp Image 2026-05-30 at 04.12.09_11zon.jpeg": "Style Textile", "WhatsApp Image 2026-05-30 at 04.12.10 (1)_11zon.jpeg": "Mahmood Group", "WhatsApp Image 2026-05-30 at 04.12.10_11zon.jpeg": "Tata Pakistan", "WhatsApp Image 2026-05-30 at 04.12.11 (1)_11zon.jpeg": "Gadoon Textile Mills Limited", "WhatsApp Image 2026-05-30 at 04.12.11_11zon.jpeg": "ZA", "WhatsApp Image 2026-05-30 at 04.12.12_11zon.jpeg": "Saif Group", "WhatsApp Image 2026-05-30 at 04.12.15 (1)_11zon.jpeg": "Cola Next", "WhatsApp Image 2026-05-30 at 04.12.15 (2)_11zon.jpeg": "Madinah Sugar Mills", "WhatsApp Image 2026-05-30 at 04.12.15_11zon.jpeg": "Falcon Cement", "WhatsApp Image 2026-05-30 at 04.12.17 (1)_11zon.jpeg": "Client logo", "WhatsApp Image 2026-05-30 at 04.12.17 (2)_11zon (1).jpeg": "Client logo", "WhatsApp Image 2026-05-30 at 04.12.17_11zon.jpeg": "Fateh Textile Mills Ltd.", "WhatsApp Image 2026-05-30 at 04.12.18 (1)_11zon.jpeg": "Gulshan Group of Companies", "WhatsApp Image 2026-05-30 at 04.12.18_11zon.jpeg": "Client logo", "WhatsApp Image 2026-05-30 at 04.12.19 (1)_11zon.jpeg": "H. Nizam Din & Sons", "WhatsApp Image 2026-05-30 at 04.12.19 (2)_11zon.jpeg": "Pakistan Oil Mills (Pvt) Ltd.", "WhatsApp Image 2026-05-30 at 04.12.19_11zon.jpeg": "Equity Textiles", "WhatsApp Image 2026-05-30 at 04.12.20_11zon.jpeg": "Atlas Tires", "WhatsApp Image 2026-05-30 at 04.17.13_11zon.jpeg": "Ranipur Sugar Mills (Pvt) Ltd.", "WhatsApp Image 2026-05-30 at 04.17.16_11zon.jpeg": "M.K. Sons (Pvt) Ltd.", "WhatsApp Image 2026-05-30 at 04.17.18 (1)_11zon.jpeg": "Master Textile", "WhatsApp Image 2026-05-30 at 04.17.18 (2)_11zon.jpeg": "Sajjad Textiles", "WhatsApp Image 2026-05-30 at 04.17.18_11zon.jpeg": "Resham Textiles", "WhatsApp Image 2026-05-30 at 04.17.19_11zon.jpeg": "Paradise Fabrics", "WhatsApp Image 2026-05-30 at 04.17.20 (1)_11zon.jpeg": "Zephyr Textiles Limited", "WhatsApp Image 2026-05-30 at 04.17.20_11zon.jpeg": "Shahtaj Textile", "WhatsApp Image 2026-05-30 at 04.17.22_11zon.jpeg": "Popular Group of Industries", "WhatsApp Image 2026-05-30 at 04.17.23 (1)_11zon.jpeg": "Metco Textile (Pvt) Limited", "WhatsApp Image 2026-05-30 at 04.17.23 (2)_11zon.jpeg": "Client logo", "WhatsApp Image 2026-05-30 at 04.17.23_11zon.jpeg": "Client logo", "WhatsApp Image 2026-05-30 at 04.17.24_11zon.jpeg": "Apollo", "WhatsApp Image 2026-05-30 at 05.34.51 (1)_11zon.jpeg": "Ahmed Fine Textile Mills Ltd. (AFTML)", "WhatsApp Image 2026-05-30 at 05.34.51_11zon.jpeg": "Rana Textile Mills", "WhatsApp Image 2026-05-30 at 05.34.52_11zon.jpeg": "Jamal Fabrics (Pvt) Ltd.", "WhatsApp Image 2026-05-30 at 05.34.53 (1)_11zon.jpeg": "Rizwan Textile Mills Ltd.", "WhatsApp Image 2026-05-30 at 05.34.53_11zon.jpeg": "IFL"};function fix(){document.querySelectorAll(".client-logo-item img").forEach(function(i){var k=decodeURIComponent((i.getAttribute("src")||"").split("/").pop());if(A[k])i.alt=A[k]})}fix();setTimeout(fix,1500);window.addEventListener("load",fix)})();</script>
 <div class="sx-bar"><a href="tel:+923054444125">Call</a><a href="https://wa.me/923054444125" target="_blank" rel="noopener">WhatsApp</a><a href="/request-quote">Get a Quote</a></div>
+<script>
+(function(){var el=document.getElementById('heroSlider');if(!el)return;
+var sl=el.querySelectorAll('.hs-slide'),tabs=document.querySelectorAll('#hsNav .hs-tab'),cap=document.getElementById('hsCap'),num=document.getElementById('hsNum'),txt=document.getElementById('hsTxt'),
+vids=el.querySelectorAll('.hs-vid'),i=0,t=null,loaded=false,hover=false,DUR=4500,rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function load(){if(loaded)return;loaded=true;sl.forEach(function(s){var m=s.querySelector('img[data-src]');if(m){m.srcset=m.dataset.srcset;m.src=m.dataset.src;m.removeAttribute('data-src')}});if(!rm)vids.forEach(function(v){v.src=window.matchMedia('(max-width:768px)').matches?v.dataset.mob:v.dataset.desk;v.addEventListener('playing',function(){v.classList.add('playing')});play(sl[i])})}
+function dur(n){return +(sl[n].dataset.dur||DUR)}
+function play(s){var v=s.querySelector('.hs-vid');if(!v||!v.src)return;try{v.currentTime=0}catch(e){}var p=v.play();if(p&&p.catch)p.catch(function(){})}
+function stop(s){var v=s.querySelector('.hs-vid');if(v)setTimeout(function(){if(!s.classList.contains('is-on'))v.pause()},1400)}
+function show(n){if(n===i)return;load();var prev=sl[i];stop(prev);prev.classList.remove('is-on');prev.classList.add('is-out');setTimeout(function(){prev.classList.remove('is-out')},1400);
+tabs[i].classList.remove('on');tabs[i].removeAttribute('aria-current');
+tabs.forEach(function(b,k){b.classList.toggle('done',k<n)});
+i=n;var s=sl[i];s.classList.add('is-on');document.getElementById('home').classList.toggle('hs-on0',i===0);play(s);var im=s.querySelector('img');im.style.animation='none';void im.offsetWidth;im.style.animation='';
+tabs[i].classList.add('on');tabs[i].style.setProperty('--td',dur(i)/1000+'s');tabs[i].setAttribute('aria-current','true');var tr=tabs[i].querySelector('.hs-track i');tr.style.animation='none';void tr.offsetWidth;tr.style.animation='';
+cap.classList.add('swap');setTimeout(function(){num.textContent=(i<9?'0':'')+(i+1);txt.innerHTML=s.dataset.cap;cap.href=s.dataset.href;cap.classList.remove('swap')},300);go()}
+function next(){show((i+1)%sl.length)}function prev(){show((i-1+sl.length)%sl.length)}
+function go(){clearTimeout(t);if(rm||hover||document.hidden)return;t=setTimeout(next,dur(i))}
+tabs.forEach(function(b,k){b.addEventListener('click',function(){show(k)})});
+document.getElementById('hsNav').addEventListener('keydown',function(e){if(e.key==='ArrowRight'){next();tabs[i].focus()}else if(e.key==='ArrowLeft'){prev();tabs[i].focus()}});
+if(window.matchMedia('(hover:hover) and (pointer:fine)').matches){var home=document.getElementById('home');
+home.addEventListener('mouseenter',function(){hover=true;clearTimeout(t);el.classList.add('paused')});
+home.addEventListener('mouseleave',function(){hover=false;el.classList.remove('paused');go()})}
+var x0=null,y0=0;el.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});
+el.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy)){dx<0?next():prev()}x0=null},{passive:true});
+document.addEventListener('visibilitychange',go);
+window.addEventListener('load',function(){load();go()});
+})();
+</script>
 </body>
 </html>
