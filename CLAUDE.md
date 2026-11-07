@@ -32,7 +32,7 @@ From commits `378eb74`, `3b2088b` and `7eafc7d` (Oct 2026):
 
 - **Made in Germany:** the site now says "German based organic chemical technology, made in Germany" and uses an SVG German flag. Never use the Pakistani flag or the phrase "Made/manufactured in Pakistan". The knowledge base's "never say Germany" rule is **outdated**.
 - "Locally manufactured" is now worded as **locally stocked / supplied**.
-- **No personal author bylines.** Ghulam Muhammad Bahoo has been removed everywhere. Schema `author` is the Organization.
+- **No personal author bylines** and no "Head of Digital Presence" byline anywhere. The homepage "in numbers" facts section was removed on owner request. Schema `author` is the Organization.
 - **ECO-Series has 19 products.** EcoSil-SS was replaced by **Eco-SilSoftner Glazer / Hydrophobic / Hydrophilic**.
 - **Water Safe series** includes FC-30B and FC-7090 (FC-70/90). The product names on the live `index.html` are the single source of truth for spelling.
 - Product detail tables (EcoSize-CXW-111, EcoShort-GS-777, EcoAcryllic-ACL-55, D-11) come from the owner's sheets. Don't change figures unless the owner sends new ones.

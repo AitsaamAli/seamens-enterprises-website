@@ -456,11 +456,6 @@
       "source": "/blog/eco-series-sizing-agent-selection-cotton-warp.html",
       "destination": "/eco-series-sizing-agent-selection-cotton-warp",
       "permanent": true
-    },
-    {
-      "source": "/authors/ghulam-muhammad-bahoo",
-      "destination": "/about",
-      "permanent": true
     }
   ],
   "rewrites": [
