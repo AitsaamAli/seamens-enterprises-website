@@ -262,9 +262,8 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 30px rgba(0,0,0,0.5
 .hs-gl{position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity .8s;transform:scale(1.04)}
 .hs-gl.ready{opacity:1}
 .hero-slider .hs-slide.is-on .hs-gl,.hero-slider .hs-slide.is-out .hs-gl{animation:hsKB calc(var(--dur) + 1.6s) cubic-bezier(.25,.1,.25,1) forwards}
-#home.hs-on0 .hero-overlay{background:radial-gradient(ellipse 55% 50% at 50% 50%,rgba(5,14,28,.5) 0%,rgba(5,14,28,.26) 60%,rgba(5,14,28,.08) 100%),linear-gradient(180deg,rgba(5,14,28,.5) 0%,transparent 20%)}
-.hs-water::after{content:"";position:absolute;inset:-10%;background:radial-gradient(ellipse 30% 22% at 38% 42%,rgba(167,243,208,.35),transparent 70%),radial-gradient(ellipse 22% 16% at 62% 30%,rgba(255,255,255,.18),transparent 70%);mix-blend-mode:screen;animation:hsShimmer 6s ease-in-out infinite alternate;pointer-events:none}
-@keyframes hsShimmer{0%{transform:translate(-3%,1%) scale(1);opacity:.6}100%{transform:translate(3%,-2%) scale(1.08);opacity:1}}
+#home.hs-on0 .hero-overlay{background:radial-gradient(ellipse 42% 36% at 50% 52%,rgba(5,14,28,.5) 0%,rgba(5,14,28,.22) 55%,transparent 100%),linear-gradient(180deg,rgba(5,14,28,.45) 0%,transparent 16%)}
+#home.hs-on0 .hero-overlay2{height:22%}
 #home .hero-overlay{background:radial-gradient(ellipse 60% 55% at 50% 50%,rgba(5,14,28,.6) 0%,rgba(5,14,28,.38) 60%,rgba(5,14,28,.2) 100%),linear-gradient(180deg,rgba(5,14,28,.55) 0%,transparent 22%)}
 #home .hero-overlay2{height:34%;background:linear-gradient(to top,#071222 0%,rgba(7,18,34,.75) 38%,transparent)}
 #home .hero-h1,#home .hero-sub,#home .hero-slogan{text-shadow:0 2px 18px rgba(0,0,0,.55)}
@@ -310,7 +309,7 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 30px rgba(0,0,0,0.5
 #home .hero-content{margin-top:.25rem;padding:0 16px}
 #home .hero-h1,#home .hero-sub,#home .hero-slogan{text-shadow:none}
 }
-@media(prefers-reduced-motion:reduce){.hs-gl{display:none}.hero-slider .hs-slide img,.hs-water::after,.hs-tab.on .hs-track i{animation:none!important}.hs-tab.on .hs-track i{transform:scaleX(1)}}
+@media(prefers-reduced-motion:reduce){.hs-gl{display:none}.hero-slider .hs-slide img,.hs-tab.on .hs-track i{animation:none!important}.hs-tab.on .hs-track i{transform:scaleX(1)}}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(7,18,34,0.72) 0%,rgba(0,30,60,0.45) 50%,rgba(7,18,34,0.88) 100%)}
 .hero-overlay2{position:absolute;bottom:0;left:0;right:0;height:35%;background:linear-gradient(to top,#071222,transparent)}
 .hero-content{position:relative;z-index:2;text-align:center;padding:2rem;max-width:960px}
@@ -772,7 +771,7 @@ body:hover #cursor-dot { opacity: 1; }
   inset: -16px;
   border-radius: 50%;
   background: conic-gradient(from 0deg, var(--teal), #00ffd0, var(--gold), #0055ff, var(--teal));
-  opacity: 0.45;
+  opacity: 0.2;
   filter: blur(18px);
   z-index: -1;
   animation: logoSpin 6s linear infinite;
@@ -1186,7 +1185,7 @@ body::before {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
   pointer-events: none;
   z-index: 99990;
-  opacity: 0.4;
+  opacity: 0.12;
 }
 
 /* ============================
@@ -3009,17 +3008,17 @@ window.addEventListener('load',function(){load();go()});
 if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
 var gl=cv.getContext('webgl',{premultipliedAlpha:false,antialias:false});if(!gl)return;
 var vs='attribute vec2 p;varying vec2 v;void main(){v=vec2(p.x*.5+.5,.5-p.y*.5);gl_Position=vec4(p,0.,1.);}';
-var fs='precision mediump float;varying vec2 v;uniform sampler2D t;uniform float T;uniform vec2 S,O;'+
+var fs='#ifdef GL_FRAGMENT_PRECISION_HIGH\nprecision highp float;\n#else\nprecision mediump float;\n#endif\nvarying vec2 v;uniform sampler2D t;uniform float T;uniform vec2 S,O;'+
 'float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}'+
 'float n(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(h(i),h(i+vec2(1,0)),f.x),mix(h(i+vec2(0,1)),h(i+vec2(1,1)),f.x),f.y);}'+
 'void main(){vec2 uv=v*S+O;float P=3.6;'+
-'vec2 fl=vec2(-.030,.010)+.022*vec2(n(uv*4.+3.)-.5,n(uv*4.+9.)-.5);'+
+'vec2 fl=vec2(-.013,.0045)+.008*vec2(n(uv*4.+3.)-.5,n(uv*4.+9.)-.5);'+
 'float m=.35+.65*smoothstep(.25,.75,uv.y);fl*=m;'+
 'float a=fract(T/P),b=fract(T/P+.5);'+
-'vec2 r=.0018*vec2(sin(uv.y*60.+T*2.4),cos(uv.x*48.+T*2.))*m;'+
+'vec2 r=.0007*vec2(sin(uv.y*60.+T*2.4),cos(uv.x*48.+T*2.))*m;'+
 'vec4 c0=texture2D(t,uv+fl*(a-.5)+r),c1=texture2D(t,uv+fl*(b-.5)+r);'+
 'float w=abs(a-.5)*2.;vec4 c=mix(c0,c1,w);'+
-'float g=.05*n(uv*vec2(6.,3.)+vec2(-T*.35,T*.1))*m;'+
+'float g=.03*n(uv*vec2(6.,3.)+vec2(-T*.35,T*.1))*m;'+
 'gl_FragColor=vec4(c.rgb+g,1.);}';
 function sh(type,src){var o=gl.createShader(type);gl.shaderSource(o,src);gl.compileShader(o);return o}
 var pr=gl.createProgram();gl.attachShader(pr,sh(gl.VERTEX_SHADER,vs));gl.attachShader(pr,sh(gl.FRAGMENT_SHADER,fs));gl.linkProgram(pr);
@@ -3029,7 +3028,7 @@ var lp=gl.getAttribLocation(pr,'p');gl.enableVertexAttribArray(lp);gl.vertexAttr
 var uT=gl.getUniformLocation(pr,'T'),uS=gl.getUniformLocation(pr,'S'),uO=gl.getUniformLocation(pr,'O');
 var tex=gl.createTexture(),ok=false,raf=0,t0=performance.now();
 function upload(){try{gl.bindTexture(gl.TEXTURE_2D,tex);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGB,gl.RGB,gl.UNSIGNED_BYTE,img);ok=true;size()}catch(e){ok=false}}
-function size(){var r=fig.getBoundingClientRect(),d=Math.min(window.devicePixelRatio||1,1.5),W=Math.max(1,Math.round(r.width*d)),H=Math.max(1,Math.round(r.height*d));
+function size(){var r=fig.getBoundingClientRect(),d=Math.min(window.devicePixelRatio||1,2.5),W=Math.max(1,Math.round(r.width*d)),H=Math.max(1,Math.round(r.height*d));
 if(cv.width!==W||cv.height!==H){cv.width=W;cv.height=H;gl.viewport(0,0,W,H)}
 var ia=img.naturalWidth/img.naturalHeight,ba=r.width/r.height,pos=getComputedStyle(img).objectPosition.split(' '),px=parseFloat(pos[0])/100,py=parseFloat(pos[1]||'50')/100,sx=1,sy=1;
 if(ba>ia){sy=ia/ba}else{sx=ba/ia}gl.uniform2f(uS,sx,sy);gl.uniform2f(uO,(1-sx)*px,(1-sy)*py)}
