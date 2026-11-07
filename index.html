@@ -224,7 +224,8 @@
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--navy:#0a1628;--navy2:#0d1f3c;--teal:#00b4a6;--teal2:#007d73;--gold:#d4a843;--light:#f4f6f9;--white:#ffffff;--text:#1a2332;--muted:#5a6a7e;}
 html{scroll-behavior:smooth}
-body{font-family:'Barlow',sans-serif;background:var(--white);color:var(--text);overflow-x:hidden}
+html{overflow-x:hidden;overflow-x:clip}
+body{font-family:'Barlow',sans-serif;background:var(--white);color:var(--text);overflow-x:hidden;overflow-x:clip;max-width:100%}
 
 /* NAV */
 nav{position:fixed;top:0;left:0;width:100%;z-index:1000;transition:background 0.4s,box-shadow 0.4s;padding:0 2rem}
@@ -256,7 +257,7 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 30px rgba(0,0,0,0.5
 .hero-slider .hs-slide img{width:100%;height:100%;object-fit:cover;transform:scale(1.02)}
 .hero-slider .hs-slide.is-on img{animation:hsZoom 3.2s ease-out forwards}
 @keyframes hsZoom{from{transform:scale(1.02)}to{transform:scale(1.08)}}
-#home .hero-overlay{background:radial-gradient(ellipse 62% 58% at 50% 52%,rgba(5,14,28,.66) 0%,rgba(5,14,28,.42) 60%,rgba(5,14,28,.22) 100%),linear-gradient(180deg,rgba(5,14,28,.55) 0%,transparent 22%)}
+#home .hero-overlay{background:radial-gradient(ellipse 60% 55% at 50% 52%,rgba(5,14,28,.58) 0%,rgba(5,14,28,.36) 60%,rgba(5,14,28,.18) 100%),linear-gradient(180deg,rgba(5,14,28,.55) 0%,transparent 22%)}
 #home .hero-overlay2{height:28%;background:linear-gradient(to top,#071222 0%,rgba(7,18,34,.6) 45%,transparent)}
 #home .hero-h1,#home .hero-sub,#home .hero-slogan{text-shadow:0 2px 18px rgba(0,0,0,.55)}
 .hs-ui{position:absolute;left:clamp(16px,4vw,56px);right:clamp(96px,8vw,120px);bottom:clamp(84px,9vh,96px);z-index:3;display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;pointer-events:none}
@@ -268,7 +269,20 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 30px rgba(0,0,0,0.5
 .hs-prog i{display:block;width:26px;height:3px;border-radius:2px;background:rgba(255,255,255,.25);overflow:hidden;position:relative}
 .hs-prog i.on::after{content:"";position:absolute;inset:0;background:var(--teal);transform-origin:left;animation:hsFill 2s linear forwards}
 @keyframes hsFill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
-@media(max-width:768px){.hs-ui{left:0;right:0;bottom:104px;justify-content:center}.hs-cap{display:none}.hs-prog i{width:20px}#home .hero-scroll{display:none}#home .hero-overlay{background:linear-gradient(180deg,rgba(5,14,28,.6) 0%,rgba(5,14,28,.5) 40%,rgba(5,14,28,.6) 100%)}}
+@media(max-width:768px){
+#home{justify-content:flex-start;min-height:auto;padding:72px 0 2.5rem}
+#home .hero-slider{position:relative;inset:auto;width:100%;height:auto;aspect-ratio:4/3;flex:none}
+#home .hero-slider::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,18,34,.25) 0%,transparent 30%,transparent 62%,#071222 100%);pointer-events:none;z-index:1}
+.hero-slider .hs-slide.is-on img{animation-name:hsZoomM}
+@keyframes hsZoomM{from{transform:scale(1)}to{transform:scale(1.05)}}
+#home .hero-overlay,#home .hero-overlay2,#home .hero-scroll,#home .hero-logo-big{display:none}
+.hs-ui{top:calc(72px + 75vw - 52px);bottom:auto;left:16px;right:16px;align-items:center}
+.hs-cap{padding:.4rem .7rem;gap:.5rem;max-width:62vw;backdrop-filter:blur(6px)}
+.hs-txt{font-size:.7rem;letter-spacing:.1em}.hs-num{font-size:.85rem}.hs-bar{width:12px}
+.hs-prog{gap:4px}.hs-prog i{width:12px}
+#home .hero-content{margin-top:.25rem;padding:0 16px}
+#home .hero-h1,#home .hero-sub,#home .hero-slogan{text-shadow:none}
+}
 @media(prefers-reduced-motion:reduce){.hero-slider .hs-slide.is-on img,.hs-prog i.on::after{animation:none}}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(7,18,34,0.72) 0%,rgba(0,30,60,0.45) 50%,rgba(7,18,34,0.88) 100%)}
 .hero-overlay2{position:absolute;bottom:0;left:0;right:0;height:35%;background:linear-gradient(to top,#071222,transparent)}
@@ -1461,7 +1475,7 @@ em .typing-cursor { background: var(--gold); box-shadow: 0 0 10px rgba(212,168,6
 <main id="main">
 <section id="home">
   <div class="hero-video-wrap hero-slider" id="heroSlider">
-    <figure class="hs-slide is-on" data-cap="Water Safe Water Treatment Technologies"><img src="images/hero/ocean-wave.webp" srcset="images/hero/ocean-wave-sm.webp 960w, images/hero/ocean-wave.webp 1920w" fetchpriority="high" sizes="100vw" width="1920" height="1080" alt="Ocean wave in teal and green light" style="object-position:center 55%" decoding="async"></figure>
+    <figure class="hs-slide is-on" data-cap="Water Safe Water Treatment Technologies"><img src="images/hero/ocean-wave.webp" srcset="images/hero/ocean-wave-sm.webp 960w, images/hero/ocean-wave.webp 1920w" fetchpriority="high" sizes="100vw" width="1920" height="1080" alt="Powerful curling ocean wave in teal and emerald tones" style="object-position:42% 50%" decoding="async"></figure>
     <figure class="hs-slide" data-cap="Steam Boiler Supply & Erection"><img data-src="images/hero/steam-boilers.webp" data-srcset="images/hero/steam-boilers-sm.webp 960w, images/hero/steam-boilers.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Twin fire-tube steam boilers with burners in a boiler house" style="object-position:center" decoding="async"></figure>
     <figure class="hs-slide" data-cap="ECO-Series Textile Auxiliaries"><img data-src="images/hero/textile-finishing-range.webp" data-srcset="images/hero/textile-finishing-range-sm.webp 960w, images/hero/textile-finishing-range.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Textile finishing range with fabric batching rolls" style="object-position:center" decoding="async"></figure>
     <figure class="hs-slide" data-cap="Cooling Tower Water Treatment"><img data-src="images/hero/cooling-tower.webp" data-srcset="images/hero/cooling-tower-sm.webp 960w, images/hero/cooling-tower.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Industrial cooling tower cells on a plant rooftop" style="object-position:center 40%" decoding="async"></figure>
