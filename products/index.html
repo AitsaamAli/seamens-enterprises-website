@@ -14,12 +14,14 @@
 <meta property="og:description" content="Products and services from Seamens Enterprises, Lahore: textile auxiliaries, boiler and water treatment chemicals, cleaning chemicals, plant erection and parts.">
 <meta property="og:url" content="https://www.seamensenterprises.com/products">
 <meta property="og:site_name" content="Seamens Enterprises">
-<meta property="og:image" content="https://www.seamensenterprises.com/images/seamens-logo-transparent.png">
+<meta property="og:image" content="https://www.seamensenterprises.com/images/og/steam-boilers-v5.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_PK">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Industrial Chemical Products Lahore | Seamens">
 <meta name="twitter:description" content="Products and services from Seamens Enterprises, Lahore: textile auxiliaries, boiler and water treatment chemicals, cleaning chemicals, plant erection and parts.">
-<meta name="twitter:image" content="https://www.seamensenterprises.com/images/seamens-logo-transparent.png">
+<meta name="twitter:image" content="https://www.seamensenterprises.com/images/og/steam-boilers-v5.jpg">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.seamensenterprises.com"},{"@type":"ListItem","position":2,"name":"Products & Services: Industrial Chemicals and Engineering","item":"https://www.seamensenterprises.com/products"}]}
 </script>
@@ -97,6 +99,8 @@ footer{background:var(--navy2);padding:3rem 2rem 1rem;border-top:1px solid rgba(
 .footer-bottom{display:flex;justify-content:space-between;font-size:0.75rem;color:var(--muted);flex-wrap:wrap;gap:0.5rem;max-width:1300px;margin:0 auto}
 @media(max-width:768px){.nav-links{display:none;position:absolute;top:72px;left:0;width:100%;flex-direction:column;background:rgba(10,22,40,0.98);padding:1rem 2rem;gap:0.8rem}.nav-links.open{display:flex}.hamburger{display:flex}.blog-hero{padding:4rem 1.2rem 2rem}.blog-content,.faq,.related{padding-left:1.2rem;padding-right:1.2rem}.footer-inner{grid-template-columns:1fr}.product-table{font-size:0.8rem}}
 </style>
+<link rel="preload" as="image" href="/images/hero/steam-boilers-v5.webp" imagesrcset="/images/hero/steam-boilers-v5-sm.webp 960w, /images/hero/steam-boilers-v5.webp 1920w" imagesizes="100vw" fetchpriority="high">
+<link rel="stylesheet" href="/assets/page-hero.v1.css">
 </head>
 <body>
 <nav>
@@ -117,7 +121,10 @@ footer{background:var(--navy2);padding:3rem 2rem 1rem;border-top:1px solid rgba(
   </div>
 </nav>
 
-<div class="blog-hero">
+<div class="blog-hero ph">
+  <figure class="ph-media"><img class="on" src="/images/hero/steam-boilers-v5.webp" srcset="/images/hero/steam-boilers-v5-sm.webp 960w, /images/hero/steam-boilers-v5.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Twin fire-tube steam boilers with burners in a boiler house" style="--pd:50% 60%;--pm:50% 62%" data-cap="Steam Boilers" fetchpriority="high" decoding="async"><img data-src="/images/hero/textile-finishing-range-v5.webp" data-srcset="/images/hero/textile-finishing-range-v5-sm.webp 960w, /images/hero/textile-finishing-range-v5.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Textile finishing range with fabric batching rolls" style="--pd:55% 55%;--pm:30% 55%" data-cap="ECO-Series Textile Auxiliaries" decoding="async"><img data-src="/images/hero/cooling-tower-v5.webp" data-srcset="/images/hero/cooling-tower-v5-sm.webp 960w, /images/hero/cooling-tower-v5.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Industrial cooling tower cells on a plant rooftop" style="--pd:60% 40%;--pm:45% 45%" data-cap="Cooling Towers" decoding="async"><img data-src="/images/hero/ro-plant-v5.webp" data-srcset="/images/hero/ro-plant-v5-sm.webp 960w, /images/hero/ro-plant-v5.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Industrial reverse osmosis plant with membrane pressure vessels" style="--pd:60% 50%;--pm:45% 50%" data-cap="RO Plants" decoding="async"><img data-src="/images/hero/industrial-exhaust-fan-v5.webp" data-srcset="/images/hero/industrial-exhaust-fan-v5-sm.webp 960w, /images/hero/industrial-exhaust-fan-v5.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Stainless steel industrial axial exhaust fan" style="--pd:60% 45%;--pm:50% 45%" data-cap="Exhaust Fans" decoding="async"><img data-src="/images/hero/industrial-cleaning-v5.webp" data-srcset="/images/hero/industrial-cleaning-v5-sm.webp 960w, /images/hero/industrial-cleaning-v5.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Technician applying industrial cleaner degreaser to process equipment" style="--pd:62% 40%;--pm:62% 40%" data-cap="Industrial Cleaning Chemicals" decoding="async"></figure>
+  <div class="ph-shade"></div>
+  <div class="ph-cap" aria-hidden="true">Steam Boilers</div>
   <div class="blog-hero-inner">
     <div class="blog-cat-tag">Products</div>
     <h1>Products &amp; Services: Industrial Chemicals and Engineering</h1>
@@ -203,5 +210,10 @@ footer{background:var(--navy2);padding:3rem 2rem 1rem;border-top:1px solid rgba(
     <span>ISO 9001:2015 &middot; ISO 45001 Certified</span>
   </div>
 </footer>
+<script>
+(function(){var w=document.querySelector('.ph-media');if(!w)return;var im=w.querySelectorAll('img'),cap=document.querySelector('.ph-cap');if(im.length<2||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var i=0;
+window.addEventListener('load',function(){im.forEach(function(m){if(m.dataset.src){m.srcset=m.dataset.srcset;m.src=m.dataset.src}});
+setInterval(function(){if(document.hidden)return;im[i].classList.remove('on');i=(i+1)%im.length;var m=im[i];m.style.animation='none';void m.offsetWidth;m.style.animation='';m.classList.add('on');if(cap){cap.style.opacity=0;setTimeout(function(){cap.textContent=m.dataset.cap;cap.style.opacity=1},400)}},5000)})})();
+</script>
 </body>
 </html>
