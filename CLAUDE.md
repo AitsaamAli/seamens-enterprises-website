@@ -67,3 +67,17 @@ Still valid from the knowledge base:
   - make sure `vercel.json` is valid JSON
   - check the layout at 375px mobile width with Playwright
 - Never commit secrets. The quote form has no backend: `request-quote.html` sends the enquiry to WhatsApp.
+
+## 6. Adding a product poster (reusable pattern)
+
+First example: EcoShort-GS-777 on `products/textile-auxiliaries.html`.
+
+1. Save the poster as `images/products/{product-slug}-v1.webp`, about 1080px wide, plus a 720px `-sm` version.
+2. On the product's page, right after the product's `<h3 id="...-details">`, add a `<figure class="pshow" id="{slug}-poster">` block. Copy the GS-777 block and change:
+   - the image paths
+   - the alt text
+   - the product name
+   - the WhatsApp text
+3. Make sure the page links `assets/product-showcase.v1.css` in the head and `assets/product-showcase.v1.js` (deferred) before `</body>`.
+4. Add the image URL as `image` on that product's `Product` entry in the page's JSON-LD.
+5. Check the poster's facts (pack size, claims) against the site. Ask Usman when they differ. Example: GS-777 shows 250 KG on the poster and 225 KG on the site.

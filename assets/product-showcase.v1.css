@@ -1,0 +1,16 @@
+/* Product poster showcase: reusable card + full-screen viewer */
+.pshow{margin:1.2rem 0 1.6rem;background:linear-gradient(160deg,rgba(0,180,166,.10),rgba(7,18,34,.6));border:1px solid rgba(0,180,166,.28);border-radius:12px;padding:12px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.pshow-zoom{display:block;position:relative;border-radius:8px;overflow:hidden;cursor:zoom-in;line-height:0}
+.pshow-zoom img{width:100%;height:auto;display:block;transition:transform .5s ease}
+.pshow-zoom:hover img{transform:scale(1.02)}
+.pshow-zoom::after{content:"Tap to view full size";position:absolute;right:10px;bottom:10px;line-height:1;font-family:'Barlow Condensed',sans-serif;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:rgba(7,18,34,.7);border:1px solid rgba(255,255,255,.2);padding:.4rem .6rem;border-radius:3px}
+.pshow figcaption{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.7rem;padding:.8rem .2rem .1rem}
+.pshow-name{font-family:'Barlow Condensed',sans-serif;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.85)}
+.pshow-name b{color:#00b4a6;font-weight:700}
+.pshow-cta{display:inline-flex;align-items:center;gap:.45rem;background:#25d366;color:#fff!important;text-decoration:none!important;font-weight:600;font-size:.88rem;padding:.6rem 1rem;border-radius:6px;transition:filter .2s}
+.pshow-cta:hover{filter:brightness(1.08)}
+.pshow-dlg{border:0;padding:0;background:transparent;max-width:min(96vw,1200px);max-height:94vh}
+.pshow-dlg::backdrop{background:rgba(3,8,16,.88);backdrop-filter:blur(4px)}
+.pshow-dlg img{display:block;max-width:100%;max-height:90vh;width:auto;height:auto;border-radius:8px}
+.pshow-close{position:absolute;top:8px;right:8px;width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.35);background:rgba(7,18,34,.75);color:#fff;font-size:1.3rem;line-height:1;cursor:pointer}
+@media(max-width:600px){.pshow{padding:8px}.pshow figcaption{flex-direction:column;align-items:stretch}.pshow-cta{justify-content:center}}
