@@ -68,16 +68,26 @@ Still valid from the knowledge base:
   - check the layout at 375px mobile width with Playwright
 - Never commit secrets. The quote form has no backend: `request-quote.html` sends the enquiry to WhatsApp.
 
-## 6. Adding a product poster (reusable pattern)
+## 6. Dedicated product pages and posters
 
-First example: EcoShort-GS-777 on `products/textile-auxiliaries.html`.
-
-1. Save the poster as `images/products/{product-slug}-v1.webp`, about 1080px wide, plus a 720px `-sm` version.
-2. On the product's page, right after the product's `<h3 id="...-details">`, add a `<figure class="pshow" id="{slug}-poster">` block. Copy the GS-777 block and change:
-   - the image paths
-   - the alt text
-   - the product name
-   - the WhatsApp text
-3. Make sure the page links `assets/product-showcase.v1.css` in the head and `assets/product-showcase.v1.js` (deferred) before `</body>`.
-4. Add the image URL as `image` on that product's `Product` entry in the page's JSON-LD.
-5. Check the poster's facts (pack size, claims) against the site. Ask Usman when they differ. Example: GS-777 shows 250 KG on the poster and 225 KG on the site.
+- Every branded product has its own page (added Nov 2026):
+  - 19 ECO-Series pages at `/products/eco-series/{slug}`, files in `products/eco-series/`
+  - 12 Water Safe pages at `/products/water-safe/{slug}`, files in `products/water-safe/`
+  - Each new page needs a `vercel.json` rewrite (clean URL to `.html`), a `.html` to clean URL redirect and a `sitemap.xml` entry.
+- Each page has:
+  - unique copy
+  - a key-facts card
+  - benefits and applications
+  - technical tables from the owner sheets, where they exist
+  - FAQ
+  - related products and guides
+  - Product, BreadcrumbList and FAQPage JSON-LD
+  - shared styles from `assets/product-page.v1.css`
+- Never duplicate a product's full details on the category pages. Category pages link to the product pages.
+- Cleaning chemicals intentionally have no per-product pages: the names are generic and the pages would be thin.
+- **Adding a product poster:**
+  1. Save it as `images/products/{slug}-v1.webp` (about 1080px wide) plus a 720px `-sm` version.
+  2. In the product page hero, replace the `<figure class="pp-media">` block with a `<figure class="pshow">` block. Copy the one in `products/eco-series/ecoshort-gs-777.html`.
+  3. Link `assets/product-showcase.v1.css` and `.js` on that page.
+  4. Set the Product JSON-LD `image` to the poster.
+  5. Check the poster's facts against the site. GS-777's poster says 250 KG; the site says 125–240 KG (open question for Usman).

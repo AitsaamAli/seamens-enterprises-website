@@ -456,6 +456,171 @@
       "source": "/blog/eco-series-sizing-agent-selection-cotton-warp.html",
       "destination": "/eco-series-sizing-agent-selection-cotton-warp",
       "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecosize-cxw-111.html",
+      "destination": "/products/eco-series/ecosize-cxw-111",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecoshort-gs-777.html",
+      "destination": "/products/eco-series/ecoshort-gs-777",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecosoftener-d-11.html",
+      "destination": "/products/eco-series/ecosoftener-d-11",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecoacryllic-acl-55.html",
+      "destination": "/products/eco-series/ecoacryllic-acl-55",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/eco-weight-enhancer-wkl-121.html",
+      "destination": "/products/eco-series/eco-weight-enhancer-wkl-121",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecodye-lev-series.html",
+      "destination": "/products/eco-series/ecodye-lev-series",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecoscour-sca-30.html",
+      "destination": "/products/eco-series/ecoscour-sca-30",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecoflame-fr-pro.html",
+      "destination": "/products/eco-series/ecoflame-fr-pro",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecostab-hs.html",
+      "destination": "/products/eco-series/ecostab-hs",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecodesize-ez.html",
+      "destination": "/products/eco-series/ecodesize-ez",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecowet-det.html",
+      "destination": "/products/eco-series/ecowet-det",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecolevel-lv.html",
+      "destination": "/products/eco-series/ecolevel-lv",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecopva-gs.html",
+      "destination": "/products/eco-series/ecopva-gs",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecoshield-wp.html",
+      "destination": "/products/eco-series/ecoshield-wp",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecoguard-fp.html",
+      "destination": "/products/eco-series/ecoguard-fp",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/eco-silsoftner-glazer.html",
+      "destination": "/products/eco-series/eco-silsoftner-glazer",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/eco-silsoftner-hydrophobic.html",
+      "destination": "/products/eco-series/eco-silsoftner-hydrophobic",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/eco-silsoftner-hydrophilic.html",
+      "destination": "/products/eco-series/eco-silsoftner-hydrophilic",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecofix-fb.html",
+      "destination": "/products/eco-series/ecofix-fb",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/fc-3020.html",
+      "destination": "/products/water-safe/fc-3020",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/fc-120q.html",
+      "destination": "/products/water-safe/fc-120q",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/fc-30b.html",
+      "destination": "/products/water-safe/fc-30b",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/fc-7090.html",
+      "destination": "/products/water-safe/fc-7090",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/br-111.html",
+      "destination": "/products/water-safe/br-111",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/br-555.html",
+      "destination": "/products/water-safe/br-555",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/ct-9080.html",
+      "destination": "/products/water-safe/ct-9080",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/dc-1020.html",
+      "destination": "/products/water-safe/dc-1020",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/bc-1000.html",
+      "destination": "/products/water-safe/bc-1000",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/br-999.html",
+      "destination": "/products/water-safe/br-999",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/rc-1030.html",
+      "destination": "/products/water-safe/rc-1030",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/rd-4050.html",
+      "destination": "/products/water-safe/rd-4050",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series",
+      "destination": "/products/textile-auxiliaries",
+      "permanent": false
+    },
+    {
+      "source": "/products/water-safe",
+      "destination": "/products/cooling-tower-chiller-ro",
+      "permanent": false
     }
   ],
   "rewrites": [
@@ -754,6 +919,130 @@
     {
       "source": "/eco-series-sizing-agent-selection-cotton-warp",
       "destination": "/blog/eco-series-sizing-agent-selection-cotton-warp.html"
+    },
+    {
+      "source": "/products/eco-series/ecosize-cxw-111",
+      "destination": "/products/eco-series/ecosize-cxw-111.html"
+    },
+    {
+      "source": "/products/eco-series/ecoshort-gs-777",
+      "destination": "/products/eco-series/ecoshort-gs-777.html"
+    },
+    {
+      "source": "/products/eco-series/ecosoftener-d-11",
+      "destination": "/products/eco-series/ecosoftener-d-11.html"
+    },
+    {
+      "source": "/products/eco-series/ecoacryllic-acl-55",
+      "destination": "/products/eco-series/ecoacryllic-acl-55.html"
+    },
+    {
+      "source": "/products/eco-series/eco-weight-enhancer-wkl-121",
+      "destination": "/products/eco-series/eco-weight-enhancer-wkl-121.html"
+    },
+    {
+      "source": "/products/eco-series/ecodye-lev-series",
+      "destination": "/products/eco-series/ecodye-lev-series.html"
+    },
+    {
+      "source": "/products/eco-series/ecoscour-sca-30",
+      "destination": "/products/eco-series/ecoscour-sca-30.html"
+    },
+    {
+      "source": "/products/eco-series/ecoflame-fr-pro",
+      "destination": "/products/eco-series/ecoflame-fr-pro.html"
+    },
+    {
+      "source": "/products/eco-series/ecostab-hs",
+      "destination": "/products/eco-series/ecostab-hs.html"
+    },
+    {
+      "source": "/products/eco-series/ecodesize-ez",
+      "destination": "/products/eco-series/ecodesize-ez.html"
+    },
+    {
+      "source": "/products/eco-series/ecowet-det",
+      "destination": "/products/eco-series/ecowet-det.html"
+    },
+    {
+      "source": "/products/eco-series/ecolevel-lv",
+      "destination": "/products/eco-series/ecolevel-lv.html"
+    },
+    {
+      "source": "/products/eco-series/ecopva-gs",
+      "destination": "/products/eco-series/ecopva-gs.html"
+    },
+    {
+      "source": "/products/eco-series/ecoshield-wp",
+      "destination": "/products/eco-series/ecoshield-wp.html"
+    },
+    {
+      "source": "/products/eco-series/ecoguard-fp",
+      "destination": "/products/eco-series/ecoguard-fp.html"
+    },
+    {
+      "source": "/products/eco-series/eco-silsoftner-glazer",
+      "destination": "/products/eco-series/eco-silsoftner-glazer.html"
+    },
+    {
+      "source": "/products/eco-series/eco-silsoftner-hydrophobic",
+      "destination": "/products/eco-series/eco-silsoftner-hydrophobic.html"
+    },
+    {
+      "source": "/products/eco-series/eco-silsoftner-hydrophilic",
+      "destination": "/products/eco-series/eco-silsoftner-hydrophilic.html"
+    },
+    {
+      "source": "/products/eco-series/ecofix-fb",
+      "destination": "/products/eco-series/ecofix-fb.html"
+    },
+    {
+      "source": "/products/water-safe/fc-3020",
+      "destination": "/products/water-safe/fc-3020.html"
+    },
+    {
+      "source": "/products/water-safe/fc-120q",
+      "destination": "/products/water-safe/fc-120q.html"
+    },
+    {
+      "source": "/products/water-safe/fc-30b",
+      "destination": "/products/water-safe/fc-30b.html"
+    },
+    {
+      "source": "/products/water-safe/fc-7090",
+      "destination": "/products/water-safe/fc-7090.html"
+    },
+    {
+      "source": "/products/water-safe/br-111",
+      "destination": "/products/water-safe/br-111.html"
+    },
+    {
+      "source": "/products/water-safe/br-555",
+      "destination": "/products/water-safe/br-555.html"
+    },
+    {
+      "source": "/products/water-safe/ct-9080",
+      "destination": "/products/water-safe/ct-9080.html"
+    },
+    {
+      "source": "/products/water-safe/dc-1020",
+      "destination": "/products/water-safe/dc-1020.html"
+    },
+    {
+      "source": "/products/water-safe/bc-1000",
+      "destination": "/products/water-safe/bc-1000.html"
+    },
+    {
+      "source": "/products/water-safe/br-999",
+      "destination": "/products/water-safe/br-999.html"
+    },
+    {
+      "source": "/products/water-safe/rc-1030",
+      "destination": "/products/water-safe/rc-1030.html"
+    },
+    {
+      "source": "/products/water-safe/rd-4050",
+      "destination": "/products/water-safe/rd-4050.html"
     }
   ],
   "trailingSlash": false
