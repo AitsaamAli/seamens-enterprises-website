@@ -84,7 +84,10 @@ Still valid from the knowledge base:
   - Product, BreadcrumbList and FAQPage JSON-LD
   - shared styles from `assets/product-page.v1.css`
 - Never duplicate a product's full details on the category pages. Category pages link to the product pages.
-- Cleaning chemicals intentionally have no per-product pages: the names are generic and the pages would be thin.
+- Also on request (Nov 2026):
+  - 14 cleaning chemical pages at `/products/cleaning/{slug}` (Product schema)
+  - 15 engineering service pages at `/products/services/{slug}` (Service schema): boilers, humidification, cooling towers, chillers, RO plants, erection, parts, maintenance and fabrication
+  - The site now has 60 item pages in total. Keep every page's copy unique: pairwise 5-gram Jaccard is currently at most 0.26.
 - **Adding a product poster:**
   1. Save it as `images/products/{slug}-v1.webp` (about 1080px wide) plus a 720px `-sm` version.
   2. In the product page hero, replace the `<figure class="pp-media">` block with a `<figure class="pshow">` block. Copy the one in `products/eco-series/ecoshort-gs-777.html`.

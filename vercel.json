@@ -621,6 +621,161 @@
       "source": "/products/water-safe",
       "destination": "/products/cooling-tower-chiller-ro",
       "permanent": false
+    },
+    {
+      "source": "/products/cleaning/boiler-scale-remover.html",
+      "destination": "/products/cleaning/boiler-scale-remover",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/cooling-tower-descaler.html",
+      "destination": "/products/cleaning/cooling-tower-descaler",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/heavy-duty-degreaser.html",
+      "destination": "/products/cleaning/heavy-duty-degreaser",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/alkaline-cip-cleaner.html",
+      "destination": "/products/cleaning/alkaline-cip-cleaner",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/ro-membrane-cleaner.html",
+      "destination": "/products/cleaning/ro-membrane-cleaner",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/floor-surface-cleaner.html",
+      "destination": "/products/cleaning/floor-surface-cleaner",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/disinfectant-sanitiser.html",
+      "destination": "/products/cleaning/disinfectant-sanitiser",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/washroom-cleaner-descaler.html",
+      "destination": "/products/cleaning/washroom-cleaner-descaler",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/glass-surface-cleaner.html",
+      "destination": "/products/cleaning/glass-surface-cleaner",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/metal-passivator.html",
+      "destination": "/products/cleaning/metal-passivator",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/textile-machine-cleaner.html",
+      "destination": "/products/cleaning/textile-machine-cleaner",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/grease-oil-remover.html",
+      "destination": "/products/cleaning/grease-oil-remover",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/drain-pipe-unclogger.html",
+      "destination": "/products/cleaning/drain-pipe-unclogger",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/biofilm-remover.html",
+      "destination": "/products/cleaning/biofilm-remover",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/steam-boiler-supply-erection.html",
+      "destination": "/products/services/steam-boiler-supply-erection",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/boiler-upgrades-maintenance.html",
+      "destination": "/products/services/boiler-upgrades-maintenance",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/captive-power-plant-support.html",
+      "destination": "/products/services/captive-power-plant-support",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/monitoring-controls.html",
+      "destination": "/products/services/monitoring-controls",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/industrial-air-humidification.html",
+      "destination": "/products/services/industrial-air-humidification",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/cooling-tower-supply-erection.html",
+      "destination": "/products/services/cooling-tower-supply-erection",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/industrial-chiller-systems.html",
+      "destination": "/products/services/industrial-chiller-systems",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/reverse-osmosis-ro-plants.html",
+      "destination": "/products/services/reverse-osmosis-ro-plants",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/erection-commissioning.html",
+      "destination": "/products/services/erection-commissioning",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/plant-erection-installation.html",
+      "destination": "/products/services/plant-erection-installation",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/plant-upgradations.html",
+      "destination": "/products/services/plant-upgradations",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/textile-machinery-parts.html",
+      "destination": "/products/services/textile-machinery-parts",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/industrial-spare-parts.html",
+      "destination": "/products/services/industrial-spare-parts",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/mechanical-maintenance-contracts.html",
+      "destination": "/products/services/mechanical-maintenance-contracts",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/custom-fabrication.html",
+      "destination": "/products/services/custom-fabrication",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning",
+      "destination": "/products/industrial-cleaning-chemicals",
+      "permanent": false
+    },
+    {
+      "source": "/products/services",
+      "destination": "/products",
+      "permanent": false
     }
   ],
   "rewrites": [
@@ -1043,6 +1198,122 @@
     {
       "source": "/products/water-safe/rd-4050",
       "destination": "/products/water-safe/rd-4050.html"
+    },
+    {
+      "source": "/products/cleaning/boiler-scale-remover",
+      "destination": "/products/cleaning/boiler-scale-remover.html"
+    },
+    {
+      "source": "/products/cleaning/cooling-tower-descaler",
+      "destination": "/products/cleaning/cooling-tower-descaler.html"
+    },
+    {
+      "source": "/products/cleaning/heavy-duty-degreaser",
+      "destination": "/products/cleaning/heavy-duty-degreaser.html"
+    },
+    {
+      "source": "/products/cleaning/alkaline-cip-cleaner",
+      "destination": "/products/cleaning/alkaline-cip-cleaner.html"
+    },
+    {
+      "source": "/products/cleaning/ro-membrane-cleaner",
+      "destination": "/products/cleaning/ro-membrane-cleaner.html"
+    },
+    {
+      "source": "/products/cleaning/floor-surface-cleaner",
+      "destination": "/products/cleaning/floor-surface-cleaner.html"
+    },
+    {
+      "source": "/products/cleaning/disinfectant-sanitiser",
+      "destination": "/products/cleaning/disinfectant-sanitiser.html"
+    },
+    {
+      "source": "/products/cleaning/washroom-cleaner-descaler",
+      "destination": "/products/cleaning/washroom-cleaner-descaler.html"
+    },
+    {
+      "source": "/products/cleaning/glass-surface-cleaner",
+      "destination": "/products/cleaning/glass-surface-cleaner.html"
+    },
+    {
+      "source": "/products/cleaning/metal-passivator",
+      "destination": "/products/cleaning/metal-passivator.html"
+    },
+    {
+      "source": "/products/cleaning/textile-machine-cleaner",
+      "destination": "/products/cleaning/textile-machine-cleaner.html"
+    },
+    {
+      "source": "/products/cleaning/grease-oil-remover",
+      "destination": "/products/cleaning/grease-oil-remover.html"
+    },
+    {
+      "source": "/products/cleaning/drain-pipe-unclogger",
+      "destination": "/products/cleaning/drain-pipe-unclogger.html"
+    },
+    {
+      "source": "/products/cleaning/biofilm-remover",
+      "destination": "/products/cleaning/biofilm-remover.html"
+    },
+    {
+      "source": "/products/services/steam-boiler-supply-erection",
+      "destination": "/products/services/steam-boiler-supply-erection.html"
+    },
+    {
+      "source": "/products/services/boiler-upgrades-maintenance",
+      "destination": "/products/services/boiler-upgrades-maintenance.html"
+    },
+    {
+      "source": "/products/services/captive-power-plant-support",
+      "destination": "/products/services/captive-power-plant-support.html"
+    },
+    {
+      "source": "/products/services/monitoring-controls",
+      "destination": "/products/services/monitoring-controls.html"
+    },
+    {
+      "source": "/products/services/industrial-air-humidification",
+      "destination": "/products/services/industrial-air-humidification.html"
+    },
+    {
+      "source": "/products/services/cooling-tower-supply-erection",
+      "destination": "/products/services/cooling-tower-supply-erection.html"
+    },
+    {
+      "source": "/products/services/industrial-chiller-systems",
+      "destination": "/products/services/industrial-chiller-systems.html"
+    },
+    {
+      "source": "/products/services/reverse-osmosis-ro-plants",
+      "destination": "/products/services/reverse-osmosis-ro-plants.html"
+    },
+    {
+      "source": "/products/services/erection-commissioning",
+      "destination": "/products/services/erection-commissioning.html"
+    },
+    {
+      "source": "/products/services/plant-erection-installation",
+      "destination": "/products/services/plant-erection-installation.html"
+    },
+    {
+      "source": "/products/services/plant-upgradations",
+      "destination": "/products/services/plant-upgradations.html"
+    },
+    {
+      "source": "/products/services/textile-machinery-parts",
+      "destination": "/products/services/textile-machinery-parts.html"
+    },
+    {
+      "source": "/products/services/industrial-spare-parts",
+      "destination": "/products/services/industrial-spare-parts.html"
+    },
+    {
+      "source": "/products/services/mechanical-maintenance-contracts",
+      "destination": "/products/services/mechanical-maintenance-contracts.html"
+    },
+    {
+      "source": "/products/services/custom-fabrication",
+      "destination": "/products/services/custom-fabrication.html"
     }
   ],
   "trailingSlash": false
