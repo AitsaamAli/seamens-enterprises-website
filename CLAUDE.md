@@ -88,7 +88,10 @@ Still valid from the knowledge base:
   - 14 cleaning chemical pages at `/products/cleaning/{slug}` (Product schema)
   - 15 engineering service pages at `/products/services/{slug}` (Service schema): boilers, humidification, cooling towers, chillers, RO plants, erection, parts, maintenance and fabrication
   - The site now has 60 item pages in total. Keep every page's copy unique: pairwise 5-gram Jaccard is currently at most 0.15.
-  - Since Nov 14, every item page has at least 1,000 words of main content (owner rule: no thin pages). Sections: how it works, benefits in detail, problems it solves, how to measure results, where it delivers the most value, buyer's guide, Pakistan context, practical tips, FAQ (6-8), and references and standards (WebPage `citation` schema). Item pages use `assets/product-page.v2.css`.
+  - Since Nov 14, every item page has at least 1,000 words of main content (owner rule: no thin pages). Sections: how it works, benefits in detail, problems it solves, how to measure results, where it delivers the most value, buyer's guide, Pakistan context, practical tips, FAQ (6-8), and references and standards (WebPage `citation` schema). Item pages use `assets/product-page.v3.css`.
+  - **Reading layer (Nov 14):** all blog posts and item pages load `assets/reading.v1.css` and `assets/reading.v1.js`. These add an "On this page" TOC, a FAQ accordion, phone card layout for tables, a reading progress bar and a mobile WhatsApp/Call bar. New posts must include both files.
+  - **Cleaning chemical pack sizes:** not yet supplied by the owner. Pages show "Confirmed with your quote". When Usman sends the sizes, fill `CL_PACK` in the generator's `cl_pack.py` and regenerate.
+  - **Comparison ("X vs Y") posts:** owner said don't write new ones for now (Nov 14).
   - `llms-full.txt` has a section for each of the 60 pages, and blog posts link to product pages at the first mention of each product name.
 - **Adding a product poster:**
   1. Save it as `images/products/{slug}-v1.webp` (about 1080px wide) plus a 720px `-sm` version.
