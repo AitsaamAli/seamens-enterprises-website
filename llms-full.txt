@@ -7,10 +7,10 @@ URL: https://www.seamensenterprises.com/
 Industrial chemical supplier since 1997 — textile auxiliaries, water treatment, RO plants & boiler solutions in Lahore Pakistan. Call +92-305-4444125.
 
 Q: Where are Seamens Enterprises chemicals made, and are they organic?
-A: Seamens Enterprises chemicals are German based organic chemical technology, made in Germany, and most of the formulations are organic-based.
+A: Seamens Enterprises chemicals are German based organic chemical technology, and most of the formulations are organic-based.
 
 Q: What textile chemicals does Seamens Enterprises supply?
-A: Seamens Enterprises supplies a complete ECO-series range of textile auxiliaries including sizing agents (EcoSize-CXW-111 — Made in Germany), dyeing auxiliaries, softeners, silicone softeners, pre-treatment chemicals, stabilizers, water repellent (EcoShield-WP), fire proof finish (EcoGuard-FP), levelling agents and dye fixers for textile mills across Pakistan.
+A: Seamens Enterprises supplies a complete ECO-series range of textile auxiliaries including sizing agents (EcoSize-CXW-111), dyeing auxiliaries, softeners, silicone softeners, pre-treatment chemicals, stabilizers, water repellent (EcoShield-WP), fire proof finish (EcoGuard-FP), levelling agents and dye fixers for textile mills across Pakistan.
 
 Q: Where is Seamens Enterprises located?
 A: Seamens Enterprises is located at Plot No. 51, Street No. 1, Awal Khair Stop, Al-Saeed Chowk, Main Sharqpur Road, Lahore, Pakistan. We provide nationwide service across Pakistan.
@@ -36,7 +36,7 @@ Q: What are textile auxiliary chemicals?
 A: Textile auxiliary chemicals are specialty chemicals used at every stage of fabric processing: sizing, pre-treatment, dyeing, finishing and specialty finishes.
 
 Q: How many ECO-Series products does Seamens supply?
-A: The ECO-Series has 19 products covering sizing, pre-treatment, dyeing, softening and finishing, and specialty finishes. All are German based organic chemical technology, made in Germany.
+A: The ECO-Series has 19 products covering sizing, pre-treatment, dyeing, softening and finishing, and specialty finishes. All are German based organic chemical technology.
 
 Q: Which sizing products are available?
 A: EcoSize-CXW-111 (PVA saver sizing powder, 25 KG bag or 100 KG plastic drum), EcoShort-GS-777 (multi-polymers sizing agent paste), EcoAcryllic-ACL-55 (modified polymer sizing agent for denim and towel), EcoPVA-GS (PVA-based sizing glue) and the Eco-SilSoftner Glazer for glazing and strengthening yarn.
@@ -302,7 +302,7 @@ Q: What is warp sizing and why does it matter for weaving?
 A: Warp sizing applies a protective film to warp yarns before weaving. It strengthens the yarn and improves abrasion resistance so it withstands loom stress, which cuts breakages and stoppages.
 
 Q: What is EcoSize-CXW-111?
-A: EcoSize-CXW-111 is a white granular sizing powder (25 KG bag or 100 KG plastic drum): German based organic technology, made in Germany, with PVA saver polymers, body enhancer, friction reducer, penetration booster, static control and anti-foam in one powder. It replaces all kinds of PVAs and powder chemicals, and no starch or wax needs to be added.
+A: EcoSize-CXW-111 is a white granular sizing powder (25 KG bag or 100 KG plastic drum): German based organic technology, with PVA saver polymers, body enhancer, friction reducer, penetration booster, static control and anti-foam in one powder. It replaces all kinds of PVAs and powder chemicals, and no starch or wax needs to be added.
 
 Q: What is EcoShort-GS-777?
 A: EcoShort-GS-777 is a white thick paste (125–240 KG pack): a multi-polymers film forming organic sizing agent, a replacement of all kinds of PVA powders for dyeing and sizing. It works as size, lubricant and binder in one.
@@ -329,8 +329,8 @@ A: EcoFlame-FR Pro is a fire proof (imported) durable flame retardant finish for
 Q: Can I use EcoSoftener D-11 and EcoFix-FB in the same bath?
 A: Do not assume so. Fixers and softeners differ in ionic character, so run a compatibility trial first. Seamens technical team can advise the correct sequence for your dyeing and finishing process.
 
-Q: Are these products made in Germany?
-A: Yes. The ECO-Series is German based organic chemical technology, made in Germany, supplied in Pakistan by Seamens Enterprises, Lahore.
+Q: Are these products German based technology?
+A: Yes. The ECO-Series is German based organic chemical technology, supplied in Pakistan by Seamens Enterprises, Lahore.
 
 ## 24/7 Technical Support in Water Treatment: Why It Matters More Than Price
 URL: https://www.seamensenterprises.com/24-7-technical-support-water-treatment
@@ -542,10 +542,10 @@ A: Yes, DWR finish can be reapplied after it wears down from washing and use, ei
 
 ## EcoSize-CXW-111: PVA-Saver Sizing Powder for Cotton and Blends
 URL: https://www.seamensenterprises.com/ecosize-cxw-111-modified-starch-sizing
-EcoSize-CXW-111 is a German based organic sizing powder with PVA saver polymers, made in Germany. Comparison with PVA BP-317, dosing table and benefits from Seamens, Lahore.
+EcoSize-CXW-111 is a German based organic sizing powder with PVA saver polymers. Comparison with PVA BP-317, dosing table and benefits from Seamens, Lahore.
 
 Q: What is EcoSize-CXW-111?
-A: EcoSize-CXW-111 is a white granular sizing powder (25 KG bag or 100 KG plastic drum) from Seamens Enterprises: German based organic technology, made in Germany. It combines PVA (all kinds) saver polymers, body enhancer, friction reducer, penetration booster, static control and an anti-foam system, ready to use for sizing.
+A: EcoSize-CXW-111 is a white granular sizing powder (25 KG bag or 100 KG plastic drum) from Seamens Enterprises: German based organic technology. It combines PVA (all kinds) saver polymers, body enhancer, friction reducer, penetration booster, static control and an anti-foam system, ready to use for sizing.
 
 Q: Do I need to add starch, wax or polymers with EcoSize-CXW-111?
 A: No. EcoSize-CXW-111 replaces all kinds of PVAs and powder chemicals, and starch, wax and polymers are already included in the powder. For some quality counts, small quantities of these items can still be added.
@@ -1115,7 +1115,7 @@ Q: What textile auxiliary chemicals does Seamens Enterprises supply?
 A: Seamens Enterprises supplies the 19-product ECO-Series: sizing agents, pre-treatment auxiliaries, dyeing auxiliaries, softeners, finishing agents and specialty finishes including flame retardant, fire-proof and water repellent treatments.
 
 Q: Where are ECO-Series products made?
-A: ECO-Series products are German based organic chemical technology, made in Germany and supplied by Seamens Enterprises.
+A: ECO-Series products are German based organic chemical technology, supplied by Seamens Enterprises.
 
 Q: Does Seamens Enterprises offer free trial samples of textile chemicals?
 A: Yes. Seamens Enterprises offers free trial samples of its textile auxiliaries, evaluated on your own equipment under production conditions, with no obligation to buy.
@@ -1252,7 +1252,7 @@ Q: Which certifications does Seamens Enterprises hold?
 A: ISO 9001:2015 (quality management), ISO 45001 (occupational health and safety), registration with the Intellectual Property Organization of Pakistan, and FBR NTN and sales tax registration. Its water treatment chemicals are certified by CONAIR and Luwa-Nederman for use in their equipment in Pakistan.
 
 Q: Where are Seamens Enterprises chemicals made, and are they organic?
-A: Seamens Enterprises chemicals are German based organic chemical technology, made in Germany, and most of the formulations are organic-based.
+A: Seamens Enterprises chemicals are German based organic chemical technology, and most of the formulations are organic-based.
 
 Q: Does Seamens Enterprises offer free samples?
 A: Yes. Seamens offers free trial samples of its textile auxiliaries, water treatment chemicals and cleaning chemicals, evaluated on your own equipment, with no obligation to buy.
@@ -1405,7 +1405,7 @@ URL: https://www.seamensenterprises.com/eco-series-sizing-agent-selection-cotton
 Step-by-step guide to trialling a sizing agent on cotton warp (Ne 6 to 40): set the goal, run the trial, measure, and decide. EcoSize-CXW-111, Seamens.
 
 Q: What is EcoSize-CXW-111?
-A: EcoSize-CXW-111 is a premium all-in-one sizing agent for warp yarn, supplied as a white granular powder in 25 kg bags and 100 kg plastic drums. It is German based organic chemical technology, made in Germany and supplied by Seamens Enterprises, for cotton warp in the Ne 6 to Ne 40 range.
+A: EcoSize-CXW-111 is a premium all-in-one sizing agent for warp yarn, supplied as a white granular powder in 25 kg bags and 100 kg plastic drums. It is German based organic chemical technology, supplied by Seamens Enterprises, for cotton warp in the Ne 6 to Ne 40 range.
 
 Q: How do I trial a sizing agent on my looms?
 A: Agree the success measures first, run the trial beam alongside a control beam on the same yarn lot and looms, record all size box settings, measure warp breaks and efficiency at the loom, and repeat on a second beam before deciding.

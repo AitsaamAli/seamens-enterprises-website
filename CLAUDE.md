@@ -30,7 +30,7 @@ Vercel project: `aitsaamalis-projects/seamens-enterprises-website`. Production d
 
 From commits `378eb74`, `3b2088b` and `7eafc7d` (Oct 2026):
 
-- **Made in Germany:** the site now says "German based organic chemical technology, made in Germany" and uses an SVG German flag. Never use the Pakistani flag or the phrase "Made/manufactured in Pakistan". The knowledge base's "never say Germany" rule is **outdated**.
+- **German based technology (updated Nov 14, 2026):** describe the chemicals only as "German based organic chemical technology" (or "German based technology"), with the SVG German flag. **Never write "Made in Germany"** anywhere (owner instruction). Never use the Pakistani flag or the phrase "Made/manufactured in Pakistan". The knowledge base's "never say Germany" rule is outdated. Spare parts may still be described as sourced from Germany, Italy and China.
 - "Locally manufactured" is now worded as **locally stocked / supplied**.
 - **No personal author bylines** and no "Head of Digital Presence" byline anywhere. The homepage "in numbers" facts section was removed on owner request. Schema `author` is the Organization.
 - **ECO-Series has 19 products.** EcoSil-SS was replaced by **Eco-SilSoftner Glazer / Hydrophobic / Hydrophilic**.
