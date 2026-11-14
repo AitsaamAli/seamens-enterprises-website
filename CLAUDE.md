@@ -99,4 +99,12 @@ Still valid from the knowledge base:
   2. In the product page hero, replace the `<figure class="pp-media">` block with a `<figure class="pshow">` block. Copy the one in `products/eco-series/ecoshort-gs-777.html`.
   3. Link `assets/product-showcase.v1.css` and `.js` on that page.
   4. Set the Product JSON-LD `image` to the poster.
-  5. Check the poster's facts against the site. GS-777's poster says 250 KG; the site says 125–240 KG (open question for Usman).
+  5. Check the poster's facts against the site.
+- **Poster v2 (approved by Usman, Nov 14, 2026):** `images/products/ecoshort-gs-777-v2.webp` (1080), `-v2-sm` (720) and `-v2-full` (2048, opened by the zoom link; its QR scans). Design: the owner's reference poster, enhanced with the Canva AI image tool, then corrected in code:
+  - real Seamens logo and real certification marks
+  - textile-accurate benefit lines
+  - "Office & Warehouse" address heading
+  - no 24/7 badge
+  - NET WEIGHT box and certification strip wrapped around the drum
+  - QR card linking to the product page
+  A 125 KG version also exists. Next products follow the same recipe, one product at a time, each reviewed by Usman. Always check AI text for spelling, invented badges and wrong-industry wording before use.
