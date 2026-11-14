@@ -107,4 +107,4 @@ Still valid from the knowledge base:
   - no 24/7 badge
   - NET WEIGHT box and certification strip wrapped around the drum
   - QR card linking to the product page
-  A 125 KG version also exists. Next products follow the same recipe, one product at a time, each reviewed by Usman. Always check AI text for spelling, invented badges and wrong-industry wording before use.
+  A 125 KG version is live as `ecoshort-gs-777-125kg-v1(-sm|-full).webp`. The page shows a **pack-size switcher**: CSS-only radio tabs from `assets/pack-switch.v1.css`, up to 4 sizes, with one image per pack size; markup lives in the generator's `cat_orig.html` poster block. Use the same switcher for the next products. Next products follow the same recipe, one product at a time, each reviewed by Usman. Always check AI text for spelling, invented badges and wrong-industry wording before use.
