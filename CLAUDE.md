@@ -100,14 +100,14 @@ Still valid from the knowledge base:
   3. Link `assets/product-showcase.v1.css` and `.js` on that page.
   4. Set the Product JSON-LD `image` to the poster.
   5. Check the poster's facts against the site.
-- **Poster v2 (approved by Usman, Nov 14, 2026):** `images/products/ecoshort-gs-777-v2.webp` (1080), `-v2-sm` (720) and `-v2-full` (2048, opened by the zoom link; its QR scans). Design: the owner's reference poster, enhanced with the Canva AI image tool, then corrected in code:
+- **Poster v2 (approved by Usman, Nov 14, 2026):** now `images/products/ecoshort-gs-777-240kg-v3` and `ecoshort-gs-777-125kg-v3`, each in `.webp` (1080), `-sm.webp` (720), `-full.webp` (1600, opened by the zoom link; its QR scans) and JPG fallbacks (`.jpg`, `-sm.jpg`) served through `<picture>`. Design: the owner's reference poster, enhanced with the Canva AI image tool, then corrected in code:
   - real Seamens logo and real certification marks
   - textile-accurate benefit lines
   - "Office & Warehouse" address heading
   - no 24/7 badge
   - NET WEIGHT box and certification strip wrapped around the drum
   - QR card linking to the product page
-  A 125 KG version is live as `ecoshort-gs-777-125kg-v1(-sm|-full).webp`. The page shows a **pack-size slider** (`assets/pack-switch.v2.css` and `.js`):
+  Full-quality originals for the owner to copy and reuse are kept in `images/products/posters/` (3072×2048 JPG). The page shows a **pack-size slider** (`assets/pack-switch.v2.css` and `.js`):
   - swipeable posters, with the next one peeking in
   - pack-size tabs below, plus arrows on desktop
   - gentle autoplay until the visitor touches it
