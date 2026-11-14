@@ -1,0 +1,66 @@
+/* Products mega menu (all pages) and product directory blocks */
+.mm-li{position:static;display:flex;align-items:center;gap:.15rem}
+.mm-tog{background:none;border:0;padding:.35rem;cursor:pointer;display:inline-flex;align-items:center;color:rgba(255,255,255,.85)}
+.mm-tog span{display:block;width:.5rem;height:.5rem;border-right:1.6px solid currentColor;border-bottom:1.6px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .2s}
+.mm-li.open .mm-tog span{transform:translateY(2px) rotate(-135deg)}
+.mm{display:none;position:fixed;top:72px;left:0;right:0;z-index:1000;background:rgba(7,18,34,.98);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid rgba(0,180,166,.25);border-bottom:1px solid rgba(0,180,166,.25);box-shadow:0 24px 50px rgba(0,0,0,.45);max-height:calc(100vh - 72px);overflow-y:auto}
+html:not(.mm-mobile) .mm-li:hover .mm,html:not(.mm-mobile) .mm-li:focus-within .mm,.mm-li.open .mm{display:block}
+.mm-in{max-width:1240px;margin:0 auto;padding:1.6rem 2rem .6rem;display:grid;grid-template-columns:1.7fr repeat(2,1fr);gap:1.2rem 2rem}
+.mm-col summary{list-style:none;cursor:default;display:block;padding-bottom:.55rem;margin-bottom:.5rem;border-bottom:1px solid rgba(0,180,166,.25)}
+.mm-col summary::-webkit-details-marker{display:none}
+.mm-ct{display:block;font:700 .95rem 'Barlow',sans-serif;color:#fff;letter-spacing:.02em}
+.mm-cs{display:block;font:500 .72rem 'Barlow',sans-serif;color:var(--muted,#8a9ab5);margin-top:.15rem;letter-spacing:.02em}
+.mm-col ul{list-style:none;margin:0;padding:0}
+.mm-wide ul{columns:2;column-gap:1.5rem}
+.mm-col li{break-inside:avoid;margin:0}
+.nav-links .mm a{display:block;padding:.28rem 0;font-size:.84rem;font-weight:400;letter-spacing:0;text-transform:none;color:rgba(255,255,255,.8);line-height:1.35}
+.nav-links .mm a::after{display:none}
+.nav-links .mm a:hover{color:var(--teal,#00b4a6)}
+.nav-links .mm .mm-all a{color:var(--teal,#00b4a6);font-weight:600;margin-top:.2rem}
+.mm-foot{max-width:1240px;margin:0 auto;padding:.9rem 2rem 1.3rem;display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;border-top:1px solid rgba(255,255,255,.07)}
+.nav-links .mm-foot a{color:var(--teal,#00b4a6);font-weight:600;font-size:.82rem}
+
+/* Mobile: the menu sits inside the opened hamburger list */
+html.mm-mobile .nav-links.open{max-height:calc(100vh - 72px);overflow-y:auto;-webkit-overflow-scrolling:touch}
+html.mm-mobile .mm-li{flex-wrap:wrap;justify-content:space-between}
+html.mm-mobile .mm-tog{padding:.5rem .7rem;border:1px solid rgba(0,180,166,.4);border-radius:6px}
+html.mm-mobile .mm{position:static;flex-basis:100%;background:none;backdrop-filter:none;-webkit-backdrop-filter:none;border:0;box-shadow:none;max-height:none;overflow:visible}
+html.mm-mobile .mm-in{display:block;padding:.6rem 0 0}
+html.mm-mobile .mm-col{border:1px solid rgba(255,255,255,.09);border-radius:10px;margin-bottom:.55rem;background:rgba(255,255,255,.03)}
+html.mm-mobile .mm-col summary{cursor:pointer;border:0;margin:0;padding:.75rem .9rem;position:relative;padding-right:2.4rem}
+html.mm-mobile .mm-col summary::after{content:"+";position:absolute;right:.9rem;top:50%;transform:translateY(-50%);color:var(--teal,#00b4a6);font-size:1.3rem;font-weight:300}
+html.mm-mobile .mm-col[open] summary::after{content:"\2212"}
+html.mm-mobile .mm-col ul{columns:1;padding:0 .9rem .7rem}
+html.mm-mobile .nav-links .mm a{padding:.55rem 0;font-size:.95rem;border-top:1px solid rgba(255,255,255,.05)}
+html.mm-mobile .mm-foot{padding:.4rem 0 .2rem;border:0;flex-direction:column;gap:.2rem}
+html.mm-mobile .nav-links .mm-foot a{padding:.45rem 0;font-size:.9rem}
+
+/* Product directory (homepage and /products) */
+.pdir{padding:4.5rem 2rem;background:linear-gradient(180deg,rgba(0,180,166,.07),rgba(0,180,166,0) 60%),var(--navy,#0a1628);color:#fff}
+.pdir-in{max-width:1200px;margin:0 auto}
+.pdir-label{font:700 .78rem 'Barlow Condensed',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--teal,#00b4a6);margin-bottom:.6rem}
+.pdir h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.3rem);color:#fff;margin:0 0 .6rem}
+.pdir-lead{color:rgba(255,255,255,.75);max-width:62ch;margin:0 0 1.6rem;line-height:1.7}
+.pdir-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.pdir-card{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.1);border-top:3px solid var(--teal,#00b4a6);border-radius:12px;padding:1.2rem 1.25rem;display:flex;flex-direction:column}
+.pdir-card h3{font:700 1.08rem 'Barlow',sans-serif;margin:0;color:#fff;letter-spacing:0;text-transform:none}
+.pdir-card h3 a{color:#fff;text-decoration:none}
+.pdir-card h3 a:hover{color:var(--teal,#00b4a6)}
+.pdir-card>p{font-size:.8rem;color:var(--muted,#8a9ab5);margin:.2rem 0 .8rem}
+.pdir-card ul{list-style:none;margin:0 0 .8rem;padding:0;display:flex;flex-wrap:wrap;gap:.4rem}
+.pdir-card li{margin:0}
+.pdir-card li a{display:inline-block;padding:.38rem .65rem;border-radius:999px;background:rgba(0,180,166,.08);border:1px solid rgba(0,180,166,.22);color:rgba(255,255,255,.88);font-size:.8rem;text-decoration:none;line-height:1.25;transition:background .2s,border-color .2s}
+.pdir-card li a:hover{background:rgba(0,180,166,.2);border-color:var(--teal,#00b4a6)}
+.pdir-all{margin-top:auto;color:var(--teal,#00b4a6);font-weight:600;font-size:.88rem;text-decoration:none}
+@media(max-width:1000px){.pdir-grid{grid-template-columns:repeat(2,1fr)}.mm-in{grid-template-columns:1fr 1fr}.mm-wide{grid-column:1/-1}}
+@media(max-width:640px){.pdir{padding:3rem 16px}.pdir-grid{grid-template-columns:1fr}.pdir-card li a{font-size:.84rem;padding:.45rem .7rem}}
+
+/* Clickable industry badges and tab footers on the homepage */
+a.dept-badge{text-decoration:none;color:inherit;transition:transform .2s,border-color .2s}
+a.dept-badge:hover{transform:translateY(-3px)}
+.tab-more{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;margin:1.6rem 0 0}
+.tab-more a{display:inline-flex;align-items:center;gap:.4rem;padding:.75rem 1.3rem;border-radius:8px;border:1px solid rgba(0,180,166,.5);color:#fff;text-decoration:none;font-weight:600;font-size:.92rem;background:rgba(0,180,166,.1)}
+.tab-more a:hover{background:rgba(0,180,166,.22)}
+.tab-more a.alt{border-color:rgba(255,255,255,.25);background:none}
+html:not(.mm-mobile) .mm-li{padding:26px 0;margin:-26px 0}
+html.mm-mobile .nav-links.open{background:#0a1628}
