@@ -87,7 +87,9 @@ Still valid from the knowledge base:
 - Also on request (Nov 2026):
   - 14 cleaning chemical pages at `/products/cleaning/{slug}` (Product schema)
   - 15 engineering service pages at `/products/services/{slug}` (Service schema): boilers, humidification, cooling towers, chillers, RO plants, erection, parts, maintenance and fabrication
-  - The site now has 60 item pages in total. Keep every page's copy unique: pairwise 5-gram Jaccard is currently at most 0.26.
+  - The site now has 60 item pages in total. Keep every page's copy unique: pairwise 5-gram Jaccard is currently at most 0.15.
+  - Since Nov 14, every item page has at least 1,000 words of main content (owner rule: no thin pages). Sections: how it works, benefits in detail, problems it solves, how to measure results, where it delivers the most value, buyer's guide, Pakistan context, practical tips, FAQ (6-8), and references and standards (WebPage `citation` schema). Item pages use `assets/product-page.v2.css`.
+  - `llms-full.txt` has a section for each of the 60 pages, and blog posts link to product pages at the first mention of each product name.
 - **Adding a product poster:**
   1. Save it as `images/products/{slug}-v1.webp` (about 1080px wide) plus a 720px `-sm` version.
   2. In the product page hero, replace the `<figure class="pp-media">` block with a `<figure class="pshow">` block. Copy the one in `products/eco-series/ecoshort-gs-777.html`.

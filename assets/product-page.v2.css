@@ -1,0 +1,42 @@
+/* Dedicated product pages (ECO-Series, Water Safe) */
+.pp-hero{margin-top:72px;background:radial-gradient(ellipse 70% 90% at 85% 40%,rgba(0,180,166,.14),transparent 60%),linear-gradient(135deg,#071222 0%,#0a1c38 60%,#071a18 100%);border-bottom:1px solid rgba(0,180,166,.18);padding:2.2rem 2rem 3rem}
+.pp-hero-in{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:2.6rem;align-items:center}
+.pp-crumb{font-size:.78rem;color:var(--muted);margin-bottom:1.2rem;max-width:1140px;margin-left:auto;margin-right:auto}
+.pp-crumb a{color:var(--muted);text-decoration:none}
+.pp-crumb a:hover{color:var(--teal)}
+.pp-crumb span[aria-hidden]{margin:0 .4rem;opacity:.5}
+.pp-series{display:inline-flex;align-items:center;gap:.45rem;font-family:'Barlow Condensed',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);border:1px solid rgba(0,180,166,.4);padding:.3rem .75rem;border-radius:2px;margin-bottom:1rem}
+.pp-hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.65rem,3.4vw,2.5rem);line-height:1.2;margin-bottom:1rem}
+.pp-lead{color:rgba(255,255,255,.82);font-size:1.02rem;line-height:1.75;margin-bottom:1.5rem}
+.pp-btns{display:flex;flex-wrap:wrap;gap:.7rem}
+.pp-btn{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;padding:.75rem 1.2rem;border-radius:6px;font-weight:600;font-size:.92rem;text-decoration:none;transition:filter .2s,background .2s}
+.pp-btn.wa{background:#25d366;color:#fff}
+.pp-btn.ghost{border:1px solid rgba(255,255,255,.35);color:#fff}
+.pp-btn:hover{filter:brightness(1.08)}
+.pp-btn.ghost:hover{background:rgba(255,255,255,.06)}
+.pp-media{margin:0;border-radius:12px;overflow:hidden;border:1px solid rgba(0,180,166,.28);box-shadow:0 20px 50px rgba(0,0,0,.4);background:#0a1628}
+.pp-media img{display:block;width:100%;height:auto;aspect-ratio:800/420;object-fit:cover}
+.pp-media figcaption{font-size:.74rem;color:var(--muted);padding:.55rem .8rem}
+.pp-hero .pshow{margin:0}
+.pp-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.8rem;margin:0 0 2rem}
+.pp-fact{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-left:3px solid var(--teal);border-radius:6px;padding:.75rem .9rem}
+.pp-fact dt{font-family:'Barlow Condensed',sans-serif;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:.15rem}
+.pp-fact dd{font-size:.92rem;color:#fff;line-height:1.45}
+.pp-two{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin:1rem 0 1.5rem}
+.pp-box{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:8px;padding:1.1rem 1.2rem}
+.pp-box h2{margin-top:0!important;font-size:1.15rem!important}
+.pp-box ul{margin-bottom:0!important}
+.pp-tech{border-top:1px solid rgba(0,180,166,.2);margin-top:2rem;padding-top:.5rem}
+.pp-rel{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.9rem;margin:1rem 0 2rem}
+.pp-rel a{display:block;text-decoration:none;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:.9rem 1rem;transition:border-color .2s,transform .2s}
+.pp-rel a:hover{border-color:var(--teal);transform:translateY(-2px)}
+.pp-rel b{display:block;color:#fff;font-size:.98rem}
+.pp-rel span{display:block;color:var(--muted);font-size:.82rem;margin-top:.2rem}
+@media(max-width:860px){.pp-hero{padding:1.4rem 16px 2.2rem}.pp-hero-in{grid-template-columns:1fr;gap:1.4rem}.pp-media{order:-1}.pp-hero .pshow{order:-1}.pp-two{grid-template-columns:1fr}.pp-btn{flex:1 1 100%}}
+.pp-bens{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:.9rem;margin:1rem 0 1.6rem}
+.pp-ben{background:rgba(0,180,166,.06);border:1px solid rgba(0,180,166,.22);border-radius:8px;padding:1rem 1.1rem}
+.pp-ben h3{margin:0 0 .35rem!important;font-size:1rem!important;color:#fff!important}
+.pp-ben p{margin:0!important;font-size:.92rem!important}
+.pp-refs{margin-top:2rem;border-top:1px solid rgba(255,255,255,.1);padding-top:.5rem}
+.pp-refs ol{font-size:.88rem}
+.pp-refs a{color:var(--teal)}
