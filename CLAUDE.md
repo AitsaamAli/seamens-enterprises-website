@@ -43,7 +43,7 @@ Still valid from the knowledge base:
 - Never disclose formulation details.
 - Stay positive and never disparage competitors.
 - Every product claim must match the catalog. Example: EcoFix-FB is formaldehyde-based.
-- End each post with a WhatsApp CTA that makes a specific free offer.
+- End each post with a WhatsApp CTA. **Never offer free samples or free trials** (owner decision, Nov 14, 2026: people asked for free samples and did not order). Use wording like "Contact us for more details" and "Product details, pricing and trial terms are shared on request". Free water analysis offers on Water Safe pages are still live (not yet decided).
 
 ## 4. Open decisions (ask Usman before acting)
 

@@ -44,7 +44,7 @@ A: EcoSize-CXW-111 (PVA saver sizing powder, 25 KG bag or 100 KG plastic drum), 
 Q: What is the difference between EcoSoftener D-11 and the Eco-SilSoftner range?
 A: EcoSoftener D-11 is a replacement of tello for sizing and dyeing, available in 4 qualities (simple, cationic, non-ionic, cationic + non-ionic). The Eco-SilSoftner range are silicone softeners: Glazer for sizing and glazing, Hydrophobic and Hydrophilic for the finished feel.
 
-Q: Do you offer free trials of ECO-Series chemicals?
+Q: How do I get details of ECO-Series chemicals?
 A: Yes. Seamens Enterprises offers confidential, no-obligation product trials at your mill. Contact the team on WhatsApp or through the contact form.
 
 ## Boiler Water Treatment & Industrial Humidification Pakistan — Complete Guide
@@ -444,12 +444,12 @@ A: Over-diluted cleaning chemicals fail to achieve their intended cleaning or di
 Q: How should dilution be measured accurately?
 A: Dilution should be measured using a calibrated dilution control system, measuring cup, or dosing pump rather than estimation by eye, since even experienced staff consistently misjudge ratios without a measurement tool. Facilities with high cleaning chemical volume benefit from installed dilution control stations that automatically mix the correct ratio.
 
-## Free Sample to Full Contract: What Happens During a Chemical Supplier Trial Period
+## Sample to Full Contract: What Happens During a Chemical Supplier Trial Period
 URL: https://www.seamensenterprises.com/chemical-supplier-trial-period-process
-Free sample to full contract — what happens during a chemical supplier trial period, typical duration and obligations.
+Sample to Full Contract — what happens during a chemical supplier trial period, typical duration and obligations.
 
-Q: How does a free chemical sample trial work?
-A: A free chemical sample trial typically starts with the buyer describing their process and requirements, the supplier providing a sample sized for a meaningful test batch, and the buyer running the trial under normal production conditions to evaluate performance. Results are then compared against the buyer's current product or benchmark before any purchase decision.
+Q: How does a chemical supplier trial work?
+A: A chemical supplier trial typically starts with the buyer describing their process and requirements, the supplier providing a sample sized for a meaningful test batch, and the buyer running the trial under normal production conditions to evaluate performance. Results are then compared against the buyer's current product or benchmark before any purchase decision.
 
 Q: How long does a typical trial period last?
 A: Trial period duration varies by product and application, but typically spans enough production cycles to give a representative performance picture, rather than a single batch that might not reflect normal variation. Complex applications like boiler or cooling tower treatment may need a longer trial to observe results across changing conditions.
@@ -457,8 +457,8 @@ A: Trial period duration varies by product and application, but typically spans 
 Q: What happens after a successful trial?
 A: After a successful trial, the buyer and supplier typically move to discussing pricing, order quantities, and delivery terms for an ongoing supply arrangement. This is also the point to clarify any AMC, technical support or service terms that will apply to the ongoing relationship.
 
-Q: Is there an obligation after requesting a free sample?
-A: A free sample request generally carries no purchase obligation, since the trial's purpose is to let the buyer evaluate the product on its merits before any commitment. A reputable supplier should not pressure a buyer into a purchase decision before the trial has run its course.
+Q: Is there an obligation after requesting product details?
+A: A request for product details generally carries no purchase obligation, since the trial's purpose is to let the buyer evaluate the product on its merits before any commitment. A reputable supplier should not pressure a buyer into a purchase decision before the trial has run its course.
 
 ## Chiller Descaling Without Shutdown: Step-by-Step FC-7090 Dosing Guide
 URL: https://www.seamensenterprises.com/chiller-descaling-without-shutdown
@@ -721,13 +721,13 @@ URL: https://www.seamensenterprises.com/how-to-choose-water-treatment-supplier-p
 How to choose an industrial water treatment supplier in Pakistan — 12 questions to ask before signing, covering certification, trials and response time.
 
 Q: What questions should I ask a chemical supplier before signing?
-A: Key questions include certification status, whether a free trial or sample is available, response time guarantees, whether pricing is fixed or subject to change, and how technical support is provided. Asking these upfront, before any contract is signed, surfaces gaps that are much harder to address after a commitment is made.
+A: Key questions include certification status, whether trials are available and on what terms, response time guarantees, whether pricing is fixed or subject to change, and how technical support is provided. Asking these upfront, before any contract is signed, surfaces gaps that are much harder to address after a commitment is made.
 
 Q: Why does ISO certification matter for a chemical supplier?
 A: ISO 9001:2015 certification indicates a supplier has documented, audited quality management processes in place, which supports consistent product quality and traceability. It doesn't guarantee every batch is perfect, but it's a meaningful signal that quality is managed systematically rather than informally.
 
-Q: Should I ask for a free trial before committing?
-A: Yes, requesting a free trial or sample before committing to a full order lets a buyer verify the product performs as claimed under their specific conditions before financial commitment. A reputable supplier confident in their product should generally be willing to offer this.
+Q: Should I ask for a trial before committing?
+A: Yes, a trial before committing to a full order lets a buyer verify the product performs as claimed under their specific conditions before financial commitment. A reputable supplier confident in their product should generally be willing to offer this.
 
 Q: What response-time standard should a supplier guarantee?
 A: Response-time expectations vary by industry and urgency, but a supplier should be able to state a clear, specific commitment for both routine inquiries and urgent technical issues rather than a vague "as soon as possible." Getting this commitment in writing, where possible, protects the buyer if a critical issue arises.
@@ -1004,9 +1004,9 @@ A: ZLD system cost varies substantially with effluent volume, feed water charact
 Q: What chemicals are needed for ZLD pre-treatment?
 A: ZLD pre-treatment typically needs coagulants and flocculants for suspended solids removal, pH adjustment chemicals, and antiscalants to protect downstream membrane stages from scaling. The exact chemical programme depends on the specific effluent characteristics and the ZLD system's membrane and evaporation stage design.
 
-## Request a Quote or Free Trial Sample
+## Request a Quote or Product Details
 URL: https://www.seamensenterprises.com/request-quote
-Request a quote or free trial sample for textile auxiliaries, boiler, cooling tower and RO chemicals from Seamens Enterprises, Lahore. Reply on WhatsApp.
+Request a quote or product details for textile auxiliaries, boiler, cooling tower and RO chemicals from Seamens Enterprises, Lahore. Reply on WhatsApp.
 
 ## Privacy Policy
 URL: https://www.seamensenterprises.com/privacy-policy
@@ -1028,8 +1028,8 @@ A: At minimum a technical data sheet and a safety data sheet for every product, 
 Q: How do I compare textile chemical prices fairly?
 A: Convert every quote to cost per kilogram of fabric: price per kg multiplied by dose in g/L, multiplied by liquor ratio, divided by 1,000. A higher-priced product with a lower dose can cost less per batch.
 
-Q: Does Seamens Enterprises offer free trial samples for textile chemicals?
-A: Yes. Seamens Enterprises offers free trial samples of its textile auxiliaries, evaluated on your own equipment under real production conditions, with no obligation to buy.
+Q: How do I get product details for textile chemicals from Seamens Enterprises?
+A: Product details, pricing and trial terms are shared on request. Contact Seamens Enterprises on WhatsApp +92-305-4444125 for more details.
 
 ## Reliable Boiler Chemical Supplier in Lahore: 9 Checks Before You Sign
 URL: https://www.seamensenterprises.com/reliable-boiler-chemical-supplier-lahore
@@ -1083,10 +1083,10 @@ Q: Do I need a safety data sheet for cleaning chemicals?
 A: Yes. Every industrial cleaning chemical should come with a safety data sheet covering hazards, handling, first aid and storage, and your staff should be trained on it before use.
 
 Q: How much do industrial degreasers cost in Pakistan?
-A: Prices vary widely with chemistry, concentration and pack size, so a single figure can mislead. Ask for a quote at your required dilution and compare the cost per litre of use-solution. Seamens Enterprises provides quotes on request after a free trial.
+A: Prices vary widely with chemistry, concentration and pack size, so a single figure can mislead. Ask for a quote at your required dilution and compare the cost per litre of use-solution. Seamens Enterprises provides quotes on request; contact us for more details.
 
-Q: Does Seamens Enterprises offer free trial samples of cleaning chemicals?
-A: Yes. Seamens Enterprises offers free trial samples of its cleaning chemicals, evaluated on your own equipment or surfaces, with no obligation to buy.
+Q: How do I get product details for cleaning chemicals from Seamens Enterprises?
+A: Product details, pricing and trial terms are shared on request. Contact Seamens Enterprises on WhatsApp +92-305-4444125 for more details.
 
 ## Industrial Chemical Suppliers in Lahore: How to Shortlist and Verify
 URL: https://www.seamensenterprises.com/industrial-chemical-suppliers-lahore-guide
@@ -1105,11 +1105,11 @@ Q: What documents should an industrial chemical supplier provide?
 A: Registration numbers, an ISO 9001 certificate you can verify, a technical data sheet and a safety data sheet for each product, a test report or certificate of analysis on request, and customer references.
 
 Q: Does Seamens Enterprises supply industrial chemicals in Lahore?
-A: Yes. Seamens Enterprises, established in 1997 and located on Main Sharqpur Road, Lahore, supplies textile auxiliaries, boiler, cooling tower, chiller and RO water treatment chemicals and industrial cleaning chemicals, and offers free trial samples.
+A: Yes. Seamens Enterprises, established in 1997 and located on Main Sharqpur Road, Lahore, supplies textile auxiliaries, boiler, cooling tower, chiller and RO water treatment chemicals and industrial cleaning chemicals.
 
 ## Textile Auxiliary Chemicals in Lahore: The ECO-Series Range
 URL: https://www.seamensenterprises.com/products/textile-auxiliaries
-ECO-Series textile auxiliaries by Seamens Enterprises, Lahore: 19 sizing, pre-treatment, dyeing, softening and finishing products. Free trial samples.
+ECO-Series textile auxiliaries by Seamens Enterprises, Lahore: 19 sizing, pre-treatment, dyeing, softening and finishing products. Contact Seamens for details.
 
 Q: What textile auxiliary chemicals does Seamens Enterprises supply?
 A: Seamens Enterprises supplies the 19-product ECO-Series: sizing agents, pre-treatment auxiliaries, dyeing auxiliaries, softeners, finishing agents and specialty finishes including flame retardant, fire-proof and water repellent treatments.
@@ -1117,8 +1117,8 @@ A: Seamens Enterprises supplies the 19-product ECO-Series: sizing agents, pre-tr
 Q: Where are ECO-Series products made?
 A: ECO-Series products are German based organic chemical technology, supplied by Seamens Enterprises.
 
-Q: Does Seamens Enterprises offer free trial samples of textile chemicals?
-A: Yes. Seamens Enterprises offers free trial samples of its textile auxiliaries, evaluated on your own equipment under production conditions, with no obligation to buy.
+Q: How do I get product details for textile chemicals from Seamens Enterprises?
+A: Product details, pricing and trial terms are shared on request. Contact Seamens Enterprises on WhatsApp +92-305-4444125 for more details.
 
 Q: Which ECO-Series product is used for warp sizing?
 A: The ECO-Series sizing range includes EcoSize-CXW-111, EcoPVA-GS and EcoAcryllic-ACL-55. The right choice depends on your yarn, blend and weaving process, so it is confirmed by trial.
@@ -1171,8 +1171,8 @@ Degreasers, CIP cleaners, descalers, disinfectants, washroom and metal cleaners 
 Q: What cleaning chemicals does Seamens Enterprises supply?
 A: Seamens Enterprises supplies industrial and institutional cleaning chemicals including Heavy Duty Degreaser, Alkaline CIP Cleaner, Textile Machine Cleaner, Metal Passivator, Boiler Scale Remover, Cooling Tower Descaler, RO Membrane Cleaner, disinfectants, washroom, floor and glass cleaners and drain unclogger.
 
-Q: Does Seamens Enterprises offer free samples of cleaning chemicals?
-A: Yes. Seamens Enterprises offers free trial samples of its cleaning chemicals, evaluated on your own equipment or surfaces, with no obligation to buy.
+Q: How do I get product details for cleaning chemicals from Seamens Enterprises?
+A: Product details, pricing and trial terms are shared on request. Contact Seamens Enterprises on WhatsApp +92-305-4444125 for more details.
 
 Q: Which cleaner removes grease and oil from machinery?
 A: Heavy Duty Degreaser is used for industrial degreasing of machinery, floors and engine parts, and Grease & Oil Remover emulsifies grease deposits on mechanical parts.
@@ -1204,7 +1204,7 @@ Q: What products does Seamens Enterprises sell?
 A: Seamens Enterprises supplies ECO-Series textile auxiliaries, Water Safe boiler, cooling tower, chiller and RO water treatment chemicals, industrial cleaning chemicals, boilers and cooling plants, textile machinery parts, plant erection and maintenance services.
 
 Q: How do I request a quote or sample from Seamens Enterprises?
-A: Send your requirement on WhatsApp at +92-305-4444125 or use the request-a-quote page. Seamens offers free trial samples, evaluated on your own equipment.
+A: Send your requirement on WhatsApp at +92-305-4444125 or use the request-a-quote page. Product details, pricing and trial terms are shared on request. Contact Seamens Enterprises on WhatsApp +92-305-4444125 for more details.
 
 ## About Seamens Enterprises, Lahore
 URL: https://www.seamensenterprises.com/about
@@ -1254,8 +1254,8 @@ A: ISO 9001:2015 (quality management), ISO 45001 (occupational health and safety
 Q: Where are Seamens Enterprises chemicals made, and are they organic?
 A: Seamens Enterprises chemicals are German based organic chemical technology, and most of the formulations are organic-based.
 
-Q: Does Seamens Enterprises offer free samples?
-A: Yes. Seamens offers free trial samples of its textile auxiliaries, water treatment chemicals and cleaning chemicals, evaluated on your own equipment, with no obligation to buy.
+Q: How do I get product details from Seamens Enterprises?
+A: Product details, pricing and trial terms for textile auxiliaries, water treatment chemicals and cleaning chemicals are shared on request. Contact Seamens Enterprises on WhatsApp +92-305-4444125 for more details.
 
 Q: How do I contact Seamens Enterprises?
 A: Call or WhatsApp +92-305-4444125, call +92-302-6686354, or email info@seamensenterprises.com or sales@seamensenterprises.com. Hours are Monday to Saturday, 09:00 to 18:00.
@@ -1300,7 +1300,7 @@ Q: What chiller capacities does Seamens supply?
 A: Screw chillers from 50 to 2,000 TR and centrifugal chillers, air-cooled and water-cooled, plus cold storage system design.
 
 Q: Where can I buy industrial cleaning chemicals in Lahore?
-A: Seamens Enterprises supplies Heavy Duty Degreaser, Alkaline CIP Cleaner, Textile Machine Cleaner, Metal Passivator, disinfectants, washroom, floor and glass cleaners and drain unclogger, with free trial samples.
+A: Seamens Enterprises supplies Heavy Duty Degreaser, Alkaline CIP Cleaner, Textile Machine Cleaner, Metal Passivator, disinfectants, washroom, floor and glass cleaners and drain unclogger.
 
 Q: Does Seamens supply textile machinery spare parts?
 A: Yes. Spare parts for weaving, spinning, knitting and dyeing machinery, plus pump, compressor, heat exchanger and valve parts, sourced from Germany, Italy and China.
@@ -1312,7 +1312,7 @@ Q: How do I choose a reliable chemical supplier in Pakistan?
 A: Verify registration numbers, check the ISO 9001 certificate on IAF CertSearch, request data sheets, call references, run a trial on your own equipment and compare cost-in-use rather than price per kilogram. Our supplier guide and scorecard walk through each step.
 
 Q: Who is the best chemical supplier in Pakistan?
-A: There is no single best supplier for every plant. The right supplier is the one that passes verifiable checks on your own process. Seamens Enterprises welcomes the same checks and offers free trials so you can judge results on your own equipment.
+A: There is no single best supplier for every plant. The right supplier is the one that passes verifiable checks on your own process. Seamens Enterprises welcomes the same checks; contact us for more details.
 
 ## Our Clients: Mills and Industrial Groups We Supply
 URL: https://www.seamensenterprises.com/clients
@@ -1359,8 +1359,8 @@ A: Liquor ratio is litres of liquor per kilogram of fabric, such as 10:1. It mul
 Q: Where should I get the dose to use in the calculation?
 A: Use the dose that reaches your quality target in your own lab-dip and bulk trial, on your own fabric and machine, not a brochure dose.
 
-Q: Does Seamens Enterprises provide free trial samples of textile chemicals?
-A: Yes. Seamens Enterprises offers free trial samples of its ECO-Series textile auxiliaries, evaluated on your own equipment under production conditions, with no obligation to buy.
+Q: How do I get product details for textile chemicals from Seamens Enterprises?
+A: Product details, pricing and trial terms are shared on request. Contact Seamens Enterprises on WhatsApp +92-305-4444125 for more details.
 
 ## Boiler Chemical Cost per Tonne of Steam: Free Calculator and Worked Example
 URL: https://www.seamensenterprises.com/boiler-chemical-cost-per-tonne-steam-calculator
@@ -1416,8 +1416,8 @@ A: The primary measure is warp breaks per loom hour or weaving efficiency. Secon
 Q: Who decides the dose of EcoSize-CXW-111?
 A: The dose is confirmed by trial on your own yarn and looms with the Seamens technical team, rather than taken from a brochure.
 
-Q: Does Seamens Enterprises offer free trial samples of sizing agents?
-A: Yes. Seamens Enterprises offers free trial samples of its ECO-Series textile auxiliaries, evaluated on your own equipment under production conditions, with no obligation to buy.
+Q: How do I get product details for sizing agents from Seamens Enterprises?
+A: Product details, pricing and trial terms are shared on request. Contact Seamens Enterprises on WhatsApp +92-305-4444125 for more details.
 
 # Product and service pages (60 dedicated pages, updated 2026-11-14)
 
