@@ -30,7 +30,7 @@ Vercel project: `aitsaamalis-projects/seamens-enterprises-website`. Production d
 
 From commits `378eb74`, `3b2088b` and `7eafc7d` (Oct 2026):
 
-- **Made in Germany:** the site now says "German based organic chemical technology, made in Germany" and uses an SVG German flag. Never use the Pakistani flag or the phrase "Made/manufactured in Pakistan". The knowledge base's "never say Germany" rule is **outdated**.
+- **German based technology (updated Nov 14, 2026):** describe the chemicals only as "German based organic chemical technology" (or "German based technology"), with the SVG German flag. **Never write "Made in Germany"** anywhere (owner instruction). Never use the Pakistani flag or the phrase "Made/manufactured in Pakistan". The knowledge base's "never say Germany" rule is outdated. Spare parts may still be described as sourced from Germany, Italy and China.
 - "Locally manufactured" is now worded as **locally stocked / supplied**.
 - **No personal author bylines** and no "Head of Digital Presence" byline anywhere. The homepage "in numbers" facts section was removed on owner request. Schema `author` is the Organization.
 - **ECO-Series has 19 products.** EcoSil-SS was replaced by **Eco-SilSoftner Glazer / Hydrophobic / Hydrophilic**.
@@ -43,7 +43,7 @@ Still valid from the knowledge base:
 - Never disclose formulation details.
 - Stay positive and never disparage competitors.
 - Every product claim must match the catalog. Example: EcoFix-FB is formaldehyde-based.
-- End each post with a WhatsApp CTA that makes a specific free offer.
+- End each post with a WhatsApp CTA. **Never offer free samples or free trials** (owner decision, Nov 14, 2026: people asked for free samples and did not order). Use wording like "Contact us for more details" and "Product details, pricing and trial terms are shared on request". Free water analysis offers on Water Safe pages are still live (not yet decided).
 
 ## 4. Open decisions (ask Usman before acting)
 
@@ -68,16 +68,43 @@ Still valid from the knowledge base:
   - check the layout at 375px mobile width with Playwright
 - Never commit secrets. The quote form has no backend: `request-quote.html` sends the enquiry to WhatsApp.
 
-## 6. Adding a product poster (reusable pattern)
+## 6. Dedicated product pages and posters
 
-First example: EcoShort-GS-777 on `products/textile-auxiliaries.html`.
-
-1. Save the poster as `images/products/{product-slug}-v1.webp`, about 1080px wide, plus a 720px `-sm` version.
-2. On the product's page, right after the product's `<h3 id="...-details">`, add a `<figure class="pshow" id="{slug}-poster">` block. Copy the GS-777 block and change:
-   - the image paths
-   - the alt text
-   - the product name
-   - the WhatsApp text
-3. Make sure the page links `assets/product-showcase.v1.css` in the head and `assets/product-showcase.v1.js` (deferred) before `</body>`.
-4. Add the image URL as `image` on that product's `Product` entry in the page's JSON-LD.
-5. Check the poster's facts (pack size, claims) against the site. Ask Usman when they differ. Example: GS-777 shows 250 KG on the poster and 225 KG on the site.
+- Every branded product has its own page (added Nov 2026):
+  - 19 ECO-Series pages at `/products/eco-series/{slug}`, files in `products/eco-series/`
+  - 12 Water Safe pages at `/products/water-safe/{slug}`, files in `products/water-safe/`
+  - Each new page needs a `vercel.json` rewrite (clean URL to `.html`), a `.html` to clean URL redirect and a `sitemap.xml` entry.
+- Each page has:
+  - unique copy
+  - a key-facts card
+  - benefits and applications
+  - technical tables from the owner sheets, where they exist
+  - FAQ
+  - related products and guides
+  - Product, BreadcrumbList and FAQPage JSON-LD
+  - shared styles from `assets/product-page.v1.css`
+- Never duplicate a product's full details on the category pages. Category pages link to the product pages.
+- Also on request (Nov 2026):
+  - 14 cleaning chemical pages at `/products/cleaning/{slug}` (Product schema)
+  - 15 engineering service pages at `/products/services/{slug}` (Service schema): boilers, humidification, cooling towers, chillers, RO plants, erection, parts, maintenance and fabrication
+  - The site now has 60 item pages in total. Keep every page's copy unique: pairwise 5-gram Jaccard is currently at most 0.15.
+  - Since Nov 14, every item page has at least 1,000 words of main content (owner rule: no thin pages). Sections: how it works, benefits in detail, problems it solves, how to measure results, where it delivers the most value, buyer's guide, Pakistan context, practical tips, FAQ (6-8), and references and standards (WebPage `citation` schema). Item pages use `assets/product-page.v3.css`.
+  - **Reading layer (Nov 14):** all blog posts and item pages load `assets/reading.v1.css` and `assets/reading.v1.js`. These add an "On this page" TOC, a FAQ accordion, phone card layout for tables, a reading progress bar and a mobile WhatsApp/Call bar. New posts must include both files.
+  - **Cleaning chemical pack sizes:** not yet supplied by the owner. Pages show "Confirmed with your quote". When Usman sends the sizes, fill `CL_PACK` in the generator's `cl_pack.py` and regenerate.
+  - **Comparison ("X vs Y") posts:** owner said don't write new ones for now (Nov 14).
+  - `llms-full.txt` has a section for each of the 60 pages, and blog posts link to product pages at the first mention of each product name.
+- **Navigation and interlinking (Nov 14):** every page's nav has a Products mega menu listing all 6 groups and all 60 item pages (desktop hover/click; on mobile, an accordion inside the hamburger menu). It uses `assets/megamenu.v1.css` and `.js`. The homepage has a "Find any product or service in one tap" directory (`#all-products`), a "View all" link under each product tab, and clickable industry badges. `/products` has the same directory. The menu HTML is generated by the scratchpad generator's `menu.py` and inserted by `navpatch.py`; run it after `gen.py` / `gen2.py`, and add any new item to the menu.
+- **Adding a product poster:**
+  1. Save it as `images/products/{slug}-v1.webp` (about 1080px wide) plus a 720px `-sm` version.
+  2. In the product page hero, replace the `<figure class="pp-media">` block with a `<figure class="pshow">` block. Copy the one in `products/eco-series/ecoshort-gs-777.html`.
+  3. Link `assets/product-showcase.v1.css` and `.js` on that page.
+  4. Set the Product JSON-LD `image` to the poster.
+  5. Check the poster's facts against the site.
+- **Poster v2 (approved by Usman, Nov 14, 2026):** `images/products/ecoshort-gs-777-v2.webp` (1080), `-v2-sm` (720) and `-v2-full` (2048, opened by the zoom link; its QR scans). Design: the owner's reference poster, enhanced with the Canva AI image tool, then corrected in code:
+  - real Seamens logo and real certification marks
+  - textile-accurate benefit lines
+  - "Office & Warehouse" address heading
+  - no 24/7 badge
+  - NET WEIGHT box and certification strip wrapped around the drum
+  - QR card linking to the product page
+  A 125 KG version also exists. Next products follow the same recipe, one product at a time, each reviewed by Usman. Always check AI text for spelling, invented badges and wrong-industry wording before use.

@@ -456,6 +456,326 @@
       "source": "/blog/eco-series-sizing-agent-selection-cotton-warp.html",
       "destination": "/eco-series-sizing-agent-selection-cotton-warp",
       "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecosize-cxw-111.html",
+      "destination": "/products/eco-series/ecosize-cxw-111",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecoshort-gs-777.html",
+      "destination": "/products/eco-series/ecoshort-gs-777",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecosoftener-d-11.html",
+      "destination": "/products/eco-series/ecosoftener-d-11",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecoacryllic-acl-55.html",
+      "destination": "/products/eco-series/ecoacryllic-acl-55",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/eco-weight-enhancer-wkl-121.html",
+      "destination": "/products/eco-series/eco-weight-enhancer-wkl-121",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecodye-lev-series.html",
+      "destination": "/products/eco-series/ecodye-lev-series",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecoscour-sca-30.html",
+      "destination": "/products/eco-series/ecoscour-sca-30",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecoflame-fr-pro.html",
+      "destination": "/products/eco-series/ecoflame-fr-pro",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecostab-hs.html",
+      "destination": "/products/eco-series/ecostab-hs",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecodesize-ez.html",
+      "destination": "/products/eco-series/ecodesize-ez",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecowet-det.html",
+      "destination": "/products/eco-series/ecowet-det",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecolevel-lv.html",
+      "destination": "/products/eco-series/ecolevel-lv",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecopva-gs.html",
+      "destination": "/products/eco-series/ecopva-gs",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecoshield-wp.html",
+      "destination": "/products/eco-series/ecoshield-wp",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecoguard-fp.html",
+      "destination": "/products/eco-series/ecoguard-fp",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/eco-silsoftner-glazer.html",
+      "destination": "/products/eco-series/eco-silsoftner-glazer",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/eco-silsoftner-hydrophobic.html",
+      "destination": "/products/eco-series/eco-silsoftner-hydrophobic",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/eco-silsoftner-hydrophilic.html",
+      "destination": "/products/eco-series/eco-silsoftner-hydrophilic",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series/ecofix-fb.html",
+      "destination": "/products/eco-series/ecofix-fb",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/fc-3020.html",
+      "destination": "/products/water-safe/fc-3020",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/fc-120q.html",
+      "destination": "/products/water-safe/fc-120q",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/fc-30b.html",
+      "destination": "/products/water-safe/fc-30b",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/fc-7090.html",
+      "destination": "/products/water-safe/fc-7090",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/br-111.html",
+      "destination": "/products/water-safe/br-111",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/br-555.html",
+      "destination": "/products/water-safe/br-555",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/ct-9080.html",
+      "destination": "/products/water-safe/ct-9080",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/dc-1020.html",
+      "destination": "/products/water-safe/dc-1020",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/bc-1000.html",
+      "destination": "/products/water-safe/bc-1000",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/br-999.html",
+      "destination": "/products/water-safe/br-999",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/rc-1030.html",
+      "destination": "/products/water-safe/rc-1030",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/rd-4050.html",
+      "destination": "/products/water-safe/rd-4050",
+      "permanent": true
+    },
+    {
+      "source": "/products/eco-series",
+      "destination": "/products/textile-auxiliaries",
+      "permanent": false
+    },
+    {
+      "source": "/products/water-safe",
+      "destination": "/products/cooling-tower-chiller-ro",
+      "permanent": false
+    },
+    {
+      "source": "/products/cleaning/boiler-scale-remover.html",
+      "destination": "/products/cleaning/boiler-scale-remover",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/cooling-tower-descaler.html",
+      "destination": "/products/cleaning/cooling-tower-descaler",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/heavy-duty-degreaser.html",
+      "destination": "/products/cleaning/heavy-duty-degreaser",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/alkaline-cip-cleaner.html",
+      "destination": "/products/cleaning/alkaline-cip-cleaner",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/ro-membrane-cleaner.html",
+      "destination": "/products/cleaning/ro-membrane-cleaner",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/floor-surface-cleaner.html",
+      "destination": "/products/cleaning/floor-surface-cleaner",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/disinfectant-sanitiser.html",
+      "destination": "/products/cleaning/disinfectant-sanitiser",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/washroom-cleaner-descaler.html",
+      "destination": "/products/cleaning/washroom-cleaner-descaler",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/glass-surface-cleaner.html",
+      "destination": "/products/cleaning/glass-surface-cleaner",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/metal-passivator.html",
+      "destination": "/products/cleaning/metal-passivator",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/textile-machine-cleaner.html",
+      "destination": "/products/cleaning/textile-machine-cleaner",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/grease-oil-remover.html",
+      "destination": "/products/cleaning/grease-oil-remover",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/drain-pipe-unclogger.html",
+      "destination": "/products/cleaning/drain-pipe-unclogger",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning/biofilm-remover.html",
+      "destination": "/products/cleaning/biofilm-remover",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/steam-boiler-supply-erection.html",
+      "destination": "/products/services/steam-boiler-supply-erection",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/boiler-upgrades-maintenance.html",
+      "destination": "/products/services/boiler-upgrades-maintenance",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/captive-power-plant-support.html",
+      "destination": "/products/services/captive-power-plant-support",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/monitoring-controls.html",
+      "destination": "/products/services/monitoring-controls",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/industrial-air-humidification.html",
+      "destination": "/products/services/industrial-air-humidification",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/cooling-tower-supply-erection.html",
+      "destination": "/products/services/cooling-tower-supply-erection",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/industrial-chiller-systems.html",
+      "destination": "/products/services/industrial-chiller-systems",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/reverse-osmosis-ro-plants.html",
+      "destination": "/products/services/reverse-osmosis-ro-plants",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/erection-commissioning.html",
+      "destination": "/products/services/erection-commissioning",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/plant-erection-installation.html",
+      "destination": "/products/services/plant-erection-installation",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/plant-upgradations.html",
+      "destination": "/products/services/plant-upgradations",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/textile-machinery-parts.html",
+      "destination": "/products/services/textile-machinery-parts",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/industrial-spare-parts.html",
+      "destination": "/products/services/industrial-spare-parts",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/mechanical-maintenance-contracts.html",
+      "destination": "/products/services/mechanical-maintenance-contracts",
+      "permanent": true
+    },
+    {
+      "source": "/products/services/custom-fabrication.html",
+      "destination": "/products/services/custom-fabrication",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleaning",
+      "destination": "/products/industrial-cleaning-chemicals",
+      "permanent": false
+    },
+    {
+      "source": "/products/services",
+      "destination": "/products",
+      "permanent": false
     }
   ],
   "rewrites": [
@@ -754,6 +1074,246 @@
     {
       "source": "/eco-series-sizing-agent-selection-cotton-warp",
       "destination": "/blog/eco-series-sizing-agent-selection-cotton-warp.html"
+    },
+    {
+      "source": "/products/eco-series/ecosize-cxw-111",
+      "destination": "/products/eco-series/ecosize-cxw-111.html"
+    },
+    {
+      "source": "/products/eco-series/ecoshort-gs-777",
+      "destination": "/products/eco-series/ecoshort-gs-777.html"
+    },
+    {
+      "source": "/products/eco-series/ecosoftener-d-11",
+      "destination": "/products/eco-series/ecosoftener-d-11.html"
+    },
+    {
+      "source": "/products/eco-series/ecoacryllic-acl-55",
+      "destination": "/products/eco-series/ecoacryllic-acl-55.html"
+    },
+    {
+      "source": "/products/eco-series/eco-weight-enhancer-wkl-121",
+      "destination": "/products/eco-series/eco-weight-enhancer-wkl-121.html"
+    },
+    {
+      "source": "/products/eco-series/ecodye-lev-series",
+      "destination": "/products/eco-series/ecodye-lev-series.html"
+    },
+    {
+      "source": "/products/eco-series/ecoscour-sca-30",
+      "destination": "/products/eco-series/ecoscour-sca-30.html"
+    },
+    {
+      "source": "/products/eco-series/ecoflame-fr-pro",
+      "destination": "/products/eco-series/ecoflame-fr-pro.html"
+    },
+    {
+      "source": "/products/eco-series/ecostab-hs",
+      "destination": "/products/eco-series/ecostab-hs.html"
+    },
+    {
+      "source": "/products/eco-series/ecodesize-ez",
+      "destination": "/products/eco-series/ecodesize-ez.html"
+    },
+    {
+      "source": "/products/eco-series/ecowet-det",
+      "destination": "/products/eco-series/ecowet-det.html"
+    },
+    {
+      "source": "/products/eco-series/ecolevel-lv",
+      "destination": "/products/eco-series/ecolevel-lv.html"
+    },
+    {
+      "source": "/products/eco-series/ecopva-gs",
+      "destination": "/products/eco-series/ecopva-gs.html"
+    },
+    {
+      "source": "/products/eco-series/ecoshield-wp",
+      "destination": "/products/eco-series/ecoshield-wp.html"
+    },
+    {
+      "source": "/products/eco-series/ecoguard-fp",
+      "destination": "/products/eco-series/ecoguard-fp.html"
+    },
+    {
+      "source": "/products/eco-series/eco-silsoftner-glazer",
+      "destination": "/products/eco-series/eco-silsoftner-glazer.html"
+    },
+    {
+      "source": "/products/eco-series/eco-silsoftner-hydrophobic",
+      "destination": "/products/eco-series/eco-silsoftner-hydrophobic.html"
+    },
+    {
+      "source": "/products/eco-series/eco-silsoftner-hydrophilic",
+      "destination": "/products/eco-series/eco-silsoftner-hydrophilic.html"
+    },
+    {
+      "source": "/products/eco-series/ecofix-fb",
+      "destination": "/products/eco-series/ecofix-fb.html"
+    },
+    {
+      "source": "/products/water-safe/fc-3020",
+      "destination": "/products/water-safe/fc-3020.html"
+    },
+    {
+      "source": "/products/water-safe/fc-120q",
+      "destination": "/products/water-safe/fc-120q.html"
+    },
+    {
+      "source": "/products/water-safe/fc-30b",
+      "destination": "/products/water-safe/fc-30b.html"
+    },
+    {
+      "source": "/products/water-safe/fc-7090",
+      "destination": "/products/water-safe/fc-7090.html"
+    },
+    {
+      "source": "/products/water-safe/br-111",
+      "destination": "/products/water-safe/br-111.html"
+    },
+    {
+      "source": "/products/water-safe/br-555",
+      "destination": "/products/water-safe/br-555.html"
+    },
+    {
+      "source": "/products/water-safe/ct-9080",
+      "destination": "/products/water-safe/ct-9080.html"
+    },
+    {
+      "source": "/products/water-safe/dc-1020",
+      "destination": "/products/water-safe/dc-1020.html"
+    },
+    {
+      "source": "/products/water-safe/bc-1000",
+      "destination": "/products/water-safe/bc-1000.html"
+    },
+    {
+      "source": "/products/water-safe/br-999",
+      "destination": "/products/water-safe/br-999.html"
+    },
+    {
+      "source": "/products/water-safe/rc-1030",
+      "destination": "/products/water-safe/rc-1030.html"
+    },
+    {
+      "source": "/products/water-safe/rd-4050",
+      "destination": "/products/water-safe/rd-4050.html"
+    },
+    {
+      "source": "/products/cleaning/boiler-scale-remover",
+      "destination": "/products/cleaning/boiler-scale-remover.html"
+    },
+    {
+      "source": "/products/cleaning/cooling-tower-descaler",
+      "destination": "/products/cleaning/cooling-tower-descaler.html"
+    },
+    {
+      "source": "/products/cleaning/heavy-duty-degreaser",
+      "destination": "/products/cleaning/heavy-duty-degreaser.html"
+    },
+    {
+      "source": "/products/cleaning/alkaline-cip-cleaner",
+      "destination": "/products/cleaning/alkaline-cip-cleaner.html"
+    },
+    {
+      "source": "/products/cleaning/ro-membrane-cleaner",
+      "destination": "/products/cleaning/ro-membrane-cleaner.html"
+    },
+    {
+      "source": "/products/cleaning/floor-surface-cleaner",
+      "destination": "/products/cleaning/floor-surface-cleaner.html"
+    },
+    {
+      "source": "/products/cleaning/disinfectant-sanitiser",
+      "destination": "/products/cleaning/disinfectant-sanitiser.html"
+    },
+    {
+      "source": "/products/cleaning/washroom-cleaner-descaler",
+      "destination": "/products/cleaning/washroom-cleaner-descaler.html"
+    },
+    {
+      "source": "/products/cleaning/glass-surface-cleaner",
+      "destination": "/products/cleaning/glass-surface-cleaner.html"
+    },
+    {
+      "source": "/products/cleaning/metal-passivator",
+      "destination": "/products/cleaning/metal-passivator.html"
+    },
+    {
+      "source": "/products/cleaning/textile-machine-cleaner",
+      "destination": "/products/cleaning/textile-machine-cleaner.html"
+    },
+    {
+      "source": "/products/cleaning/grease-oil-remover",
+      "destination": "/products/cleaning/grease-oil-remover.html"
+    },
+    {
+      "source": "/products/cleaning/drain-pipe-unclogger",
+      "destination": "/products/cleaning/drain-pipe-unclogger.html"
+    },
+    {
+      "source": "/products/cleaning/biofilm-remover",
+      "destination": "/products/cleaning/biofilm-remover.html"
+    },
+    {
+      "source": "/products/services/steam-boiler-supply-erection",
+      "destination": "/products/services/steam-boiler-supply-erection.html"
+    },
+    {
+      "source": "/products/services/boiler-upgrades-maintenance",
+      "destination": "/products/services/boiler-upgrades-maintenance.html"
+    },
+    {
+      "source": "/products/services/captive-power-plant-support",
+      "destination": "/products/services/captive-power-plant-support.html"
+    },
+    {
+      "source": "/products/services/monitoring-controls",
+      "destination": "/products/services/monitoring-controls.html"
+    },
+    {
+      "source": "/products/services/industrial-air-humidification",
+      "destination": "/products/services/industrial-air-humidification.html"
+    },
+    {
+      "source": "/products/services/cooling-tower-supply-erection",
+      "destination": "/products/services/cooling-tower-supply-erection.html"
+    },
+    {
+      "source": "/products/services/industrial-chiller-systems",
+      "destination": "/products/services/industrial-chiller-systems.html"
+    },
+    {
+      "source": "/products/services/reverse-osmosis-ro-plants",
+      "destination": "/products/services/reverse-osmosis-ro-plants.html"
+    },
+    {
+      "source": "/products/services/erection-commissioning",
+      "destination": "/products/services/erection-commissioning.html"
+    },
+    {
+      "source": "/products/services/plant-erection-installation",
+      "destination": "/products/services/plant-erection-installation.html"
+    },
+    {
+      "source": "/products/services/plant-upgradations",
+      "destination": "/products/services/plant-upgradations.html"
+    },
+    {
+      "source": "/products/services/textile-machinery-parts",
+      "destination": "/products/services/textile-machinery-parts.html"
+    },
+    {
+      "source": "/products/services/industrial-spare-parts",
+      "destination": "/products/services/industrial-spare-parts.html"
+    },
+    {
+      "source": "/products/services/mechanical-maintenance-contracts",
+      "destination": "/products/services/mechanical-maintenance-contracts.html"
+    },
+    {
+      "source": "/products/services/custom-fabrication",
+      "destination": "/products/services/custom-fabrication.html"
     }
   ],
   "trailingSlash": false

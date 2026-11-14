@@ -1,0 +1,68 @@
+/* Shared reading layer for blog posts and product pages: TOC, FAQ accordion, mobile table cards, action bar */
+.rd-progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--teal),#5fe0d4);z-index:10001;transition:width .1s linear}
+.blog-content h2,.blog-content h3{scroll-margin-top:96px}
+.blog-content p{max-width:72ch}
+.blog-content ul:not([class]),.blog-content ol:not([class]){padding-left:0;list-style:none;margin:0 0 1.5rem}
+.blog-content ul:not([class])>li{position:relative;padding-left:1.7rem;margin-bottom:.6rem;line-height:1.7;color:rgba(255,255,255,.84)}
+.blog-content ul:not([class])>li::before{content:"";position:absolute;left:0;top:.5em;width:.75rem;height:.75rem;border-radius:50%;background:rgba(0,180,166,.18);border:2px solid var(--teal)}
+.blog-content ol:not([class]){counter-reset:rd}
+.blog-content ol:not([class])>li{counter-increment:rd;position:relative;padding-left:2.4rem;margin-bottom:.8rem;line-height:1.7;color:rgba(255,255,255,.84);min-height:1.8rem}
+.blog-content ol:not([class])>li::before{content:counter(rd);position:absolute;left:0;top:0;width:1.7rem;height:1.7rem;border-radius:50%;background:var(--teal);color:#fff;font:700 .85rem/1.7rem 'Barlow',sans-serif;text-align:center}
+
+/* On this page */
+.rd-toc{background:linear-gradient(135deg,rgba(0,180,166,.08),rgba(255,255,255,.02));border:1px solid rgba(0,180,166,.25);border-radius:12px;padding:1rem 1.1rem;margin:0 0 2.2rem}
+.rd-toc-t{font-family:'Barlow Condensed',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:.7rem;display:flex;align-items:center;gap:.5rem}
+.rd-toc ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:.45rem .9rem;counter-reset:t}
+.rd-toc li{counter-increment:t;margin:0}
+.rd-toc a{display:flex;gap:.55rem;align-items:baseline;color:rgba(255,255,255,.86);text-decoration:none;font-size:.9rem;line-height:1.35;padding:.25rem 0}
+.rd-toc a::before{content:counter(t,decimal-leading-zero);font:700 .72rem 'Barlow Condensed',sans-serif;color:var(--teal);min-width:1.3rem}
+.rd-toc a:hover{color:var(--teal)}
+
+/* Tables: scroll wrapper on desktop, cards on phones */
+.rd-tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1rem 0 2rem;border-radius:10px;border:1px solid rgba(255,255,255,.08)}
+.rd-tw table{margin:0!important}
+@media(max-width:640px){
+ .rd-tw{border:0;overflow:visible}
+ table.rd-cards,table.rd-cards tbody,table.rd-cards tr,table.rd-cards td{display:block;width:100%}
+ table.rd-cards thead{display:none}
+ table.rd-cards tr{background:rgba(255,255,255,.035);border:1px solid rgba(0,180,166,.2);border-radius:10px;margin:0 0 .8rem;padding:.35rem .9rem;overflow:hidden}
+ table.rd-cards tr:nth-child(even) td,table.rd-cards tr:hover td{background:none!important}
+ table.rd-cards td{border-bottom:1px solid rgba(255,255,255,.06)!important;padding:.6rem 0!important;font-size:.92rem}
+ table.rd-cards td:last-child{border-bottom:0!important}
+ table.rd-cards td::before{content:attr(data-label);display:block;font:700 .7rem 'Barlow Condensed',sans-serif;letter-spacing:.13em;text-transform:uppercase;color:var(--teal);margin-bottom:.2rem}
+ table.rd-cards td:first-child{font-size:1rem;color:#fff}
+ table.rd-cards td:first-child::before{display:none}
+}
+
+/* FAQ accordion */
+.faq .faq-q.rd-q{display:flex;justify-content:space-between;align-items:center;gap:1rem;width:100%;text-align:left;cursor:pointer;font:600 1rem/1.45 'Barlow',sans-serif;color:#fff;border-radius:10px;margin-top:.7rem;transition:border-color .2s,background .2s}
+.faq .faq-q.rd-q::after{content:"+";flex:none;width:1.7rem;height:1.7rem;border-radius:50%;border:1px solid rgba(0,180,166,.5);color:var(--teal);font:400 1.2rem/1.55rem 'Barlow',sans-serif;text-align:center;transition:transform .25s}
+.faq .faq-q.rd-q[aria-expanded="true"]{border-radius:10px 10px 0 0;border-color:rgba(0,180,166,.55)}
+.faq .faq-q.rd-q[aria-expanded="true"]::after{transform:rotate(45deg)}
+.faq .faq-q.rd-q:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.faq .faq-a.rd-a{display:grid;grid-template-rows:0fr;padding-top:0;padding-bottom:0;border-width:0 1px;transition:grid-template-rows .25s,padding .25s;margin-bottom:0;border-radius:0 0 10px 10px}
+.faq .faq-a.rd-a>div{overflow:hidden}
+.faq .faq-a.rd-a.open{grid-template-rows:1fr;padding-top:1rem;padding-bottom:1rem;border-width:0 1px 1px}
+
+/* Mobile action bar */
+.rd-bar{display:none}
+@media(max-width:860px){
+ .rd-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:9998;gap:.5rem;padding:.55rem 12px calc(.55rem + env(safe-area-inset-bottom));background:rgba(7,18,34,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid rgba(0,180,166,.25)}
+ .rd-bar a{flex:1;display:flex;align-items:center;justify-content:center;gap:.45rem;min-height:46px;border-radius:8px;font:600 .95rem 'Barlow',sans-serif;text-decoration:none;color:#fff}
+ .rd-bar .wa{background:#25d366}
+ .rd-bar .call{border:1px solid rgba(255,255,255,.3)}
+ .rd-bar svg{width:18px;height:18px;fill:currentColor}
+ body.rd-has-bar{padding-bottom:70px}
+ body.rd-has-bar .wa-float{display:none}
+ .blog-content{padding-left:16px!important;padding-right:16px!important}
+ .blog-content p{font-size:1.02rem;line-height:1.75}
+ .blog-content h2{font-size:1.38rem;margin-top:2.4rem}
+ .faq{padding-left:16px!important;padding-right:16px!important}
+ .rd-toc ol{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){.rd-progress,.faq .faq-a.rd-a,.faq .faq-q.rd-q::after{transition:none}}
+.rd-toc-more{display:none}
+@media(max-width:860px){
+ .rd-toc.rd-collapsed li:nth-child(n+7){display:none}
+ .rd-toc-more{display:block;width:100%;margin-top:.7rem;padding:.6rem;border-radius:8px;border:1px solid rgba(0,180,166,.4);background:transparent;color:var(--teal);font:600 .88rem 'Barlow',sans-serif;cursor:pointer}
+}
