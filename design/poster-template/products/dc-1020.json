@@ -1,0 +1,62 @@
+{
+  "slug": "dc-1020",
+  "name": "Water Safe DC-1020",
+  "subtitle": "Dispersant for Open Cooling Towers",
+  "form": "INDUSTRIAL WATER TREATMENT",
+  "headline": [
+    "KEEPS DEPOSITS",
+    "IN SUSPENSION"
+  ],
+  "headline_accent": "CLEAN TOWERS",
+  "benefits": [
+    [
+      "Disperses Deposits",
+      "Keeps silt and solids moving"
+    ],
+    [
+      "Controls Fouling",
+      "Less scale and biological fouling"
+    ],
+    [
+      "Clean Exchangers",
+      "Steady heat transfer"
+    ],
+    [
+      "Longer Fill Life",
+      "Protects tower fill from clogging"
+    ],
+    [
+      "Cleaner Basin",
+      "Less sludge settling"
+    ],
+    [
+      "Supports Biocides",
+      "Clean surfaces for better kill"
+    ],
+    [
+      "Fewer Shutdowns",
+      "Less manual cleaning"
+    ],
+    [
+      "Programme Ready",
+      "Works with CT-9080 and BC-1000"
+    ]
+  ],
+  "folder": "water-safe",
+  "version": 1,
+  "series": "WATER SAFE SERIES",
+  "accent": [
+    40,
+    205,
+    215
+  ],
+  "bg": "wave",
+  "packs": [
+    "250",
+    "60"
+  ],
+  "extra_packs": [
+    "1000"
+  ],
+  "redraw": true
+}

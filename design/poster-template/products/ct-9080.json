@@ -1,0 +1,62 @@
+{
+  "slug": "ct-9080",
+  "name": "Water Safe CT-9080",
+  "subtitle": "Scale Inhibitor for Cooling Towers",
+  "form": "INDUSTRIAL WATER TREATMENT",
+  "headline": [
+    "SCALE CONTROL FOR",
+    "COOLING"
+  ],
+  "headline_accent": "TOWERS",
+  "benefits": [
+    [
+      "Prevents Scale",
+      "Keeps fill and exchangers clean"
+    ],
+    [
+      "Better Heat Transfer",
+      "Steady approach temperatures"
+    ],
+    [
+      "Higher Cycles",
+      "Run more cycles of concentration"
+    ],
+    [
+      "Water Savings",
+      "Less make-up and blowdown"
+    ],
+    [
+      "Lower Energy Use",
+      "Clean condensers, lower chiller load"
+    ],
+    [
+      "Longer Fill Life",
+      "Less deposit build-up on fill"
+    ],
+    [
+      "Fewer Shutdowns",
+      "Less manual descaling"
+    ],
+    [
+      "Programme Ready",
+      "Works with DC-1020 and BC-1000"
+    ]
+  ],
+  "folder": "water-safe",
+  "version": 1,
+  "series": "WATER SAFE SERIES",
+  "accent": [
+    40,
+    205,
+    215
+  ],
+  "bg": "wave",
+  "packs": [
+    "250",
+    "60"
+  ],
+  "extra_packs": [
+    "1000"
+  ],
+  "redraw": true
+}

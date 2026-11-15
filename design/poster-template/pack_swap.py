@@ -17,6 +17,14 @@ def B(*v): return [int(round(x * S)) for x in v]
 src = f"{IMG}products/posters/{re.sub(r'[^A-Za-z0-9-]+', '', cfg['name'].replace(' ', '-').replace('+', '-'))}-{cfg['packs'][0]}KG-v{cfg['version']}.jpg"
 side = Image.open(src).convert('RGB')
 pk = Image.open(f'{HERE}/base-{kind}.png').convert('RGB').resize(side.size, Image.LANCZOS).filter(ImageFilter.UnsharpMask(2, 55, 2))
+if cfg.get('bg') == 'wave':      # Water Safe: put the package on the same ocean scene as the drum posters
+    import poster
+    scene, _ = poster.wave_scene(side.width, side.height)
+    tm = np.zeros((side.height, side.width), np.float32)
+    if kind == 'ibc': cv2.rectangle(tm, tuple(B(499, 60)), tuple(B(1088, 997)), 1, -1)
+    else: cv2.ellipse(tm, tuple(B(805, 560)), tuple(B(250, 420)), 0, 0, 360, 1, -1)
+    tm = cv2.GaussianBlur(tm, (0, 0), 1.2 * S)[..., None]
+    pk = Image.fromarray((np.array(pk).astype(np.float32) * tm + scene * (1 - tm)).clip(0, 255).astype(np.uint8))
 m = np.zeros((side.height, side.width), np.float32); m[:, B(522)[0]:B(1100)[0]] = 1
 m = cv2.GaussianBlur(m, (0, 0), 8 * S)[..., None]
 im = Image.fromarray((np.array(side) * (1 - m) + np.array(pk) * m).astype(np.uint8))

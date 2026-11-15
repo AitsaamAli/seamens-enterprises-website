@@ -1,0 +1,62 @@
+{
+  "slug": "bc-1000",
+  "name": "Water Safe BC-1000",
+  "subtitle": "Biocide for Cooling Towers",
+  "form": "INDUSTRIAL WATER TREATMENT",
+  "headline": [
+    "MICROBIAL CONTROL",
+    "FOR COOLING"
+  ],
+  "headline_accent": "TOWERS",
+  "benefits": [
+    [
+      "Controls Algae",
+      "Clean basin, deck and fill"
+    ],
+    [
+      "Stops Slime",
+      "Prevents biofilm on surfaces"
+    ],
+    [
+      "Bacteria Control",
+      "Lower counts in tower water"
+    ],
+    [
+      "Protects Heat Transfer",
+      "Clean exchangers, steady cooling"
+    ],
+    [
+      "Protects Fill",
+      "Less fouling and clogging"
+    ],
+    [
+      "Safer Tower",
+      "Supports a cleaner workplace"
+    ],
+    [
+      "Measurable Results",
+      "Dip-slide counts show control"
+    ],
+    [
+      "Programme Ready",
+      "Works with CT-9080 and DC-1020"
+    ]
+  ],
+  "folder": "water-safe",
+  "version": 1,
+  "series": "WATER SAFE SERIES",
+  "accent": [
+    40,
+    205,
+    215
+  ],
+  "bg": "wave",
+  "packs": [
+    "250",
+    "60"
+  ],
+  "extra_packs": [
+    "1000"
+  ],
+  "redraw": true
+}
