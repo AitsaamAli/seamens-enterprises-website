@@ -1,0 +1,53 @@
+{
+  "slug": "ecosoftener-d-11",
+  "name": "EcoSoftener D-11",
+  "subtitle": "Softening Paste for Sizing and Dyeing",
+  "form": "WHITE THICK PASTE",
+  "headline": [
+    "REPLACES TELLO",
+    "& WAX IN SIZING"
+  ],
+  "headline_accent": "SOFT HANDLE",
+  "packs": [
+    "240",
+    "125"
+  ],
+  "benefits": [
+    [
+      "Replaces Tello & Wax",
+      "Cleaner substitute in sizing and dyeing"
+    ],
+    [
+      "Four Qualities",
+      "Simple, cationic, non-ionic, combined"
+    ],
+    [
+      "Soft Finished Handle",
+      "Smooth, pleasing hand feel"
+    ],
+    [
+      "Smooth Yarn Running",
+      "Less friction on the loom"
+    ],
+    [
+      "Cost-Effective",
+      "Softening plus sizing benefits"
+    ],
+    [
+      "Process Matched",
+      "Quality chosen for your bath"
+    ],
+    [
+      "Easy Handling",
+      "Thick paste, simple to dose"
+    ],
+    [
+      "Consistent Results",
+      "Same handle, lot after lot"
+    ]
+  ],
+  "folder": "eco-series",
+  "version": 1,
+  "series": "ECO-SERIES",
+  "redraw": true
+}

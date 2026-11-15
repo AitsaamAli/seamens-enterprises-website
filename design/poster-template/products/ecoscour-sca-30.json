@@ -1,0 +1,54 @@
+{
+  "slug": "ecoscour-sca-30",
+  "name": "EcoScour-SCA-30",
+  "subtitle": "Heavy-Duty Scouring and Wetting Agent",
+  "form": "FOR GREIGE FABRIC PREPARATION",
+  "headline": [
+    "DEEP SCOURING",
+    "+ FAST WETTING"
+  ],
+  "headline_accent": "CLEAN BASE",
+  "packs": [
+    "240",
+    "150",
+    "60"
+  ],
+  "benefits": [
+    [
+      "Removes Impurities",
+      "Lifts waxes, oils and dirt"
+    ],
+    [
+      "Fast Wetting",
+      "Quick, even absorbency"
+    ],
+    [
+      "Even Absorbency",
+      "Uniform take-up of chemicals"
+    ],
+    [
+      "Clean Base",
+      "Ready for bleaching and dyeing"
+    ],
+    [
+      "Better Whiteness",
+      "Brighter base after bleaching"
+    ],
+    [
+      "Level Dyeing",
+      "Fewer patches later"
+    ],
+    [
+      "Heavy-Duty",
+      "Handles tough greige soiling"
+    ],
+    [
+      "Batch & Continuous",
+      "Suits both preparation routes"
+    ]
+  ],
+  "folder": "eco-series",
+  "version": 1,
+  "series": "ECO-SERIES",
+  "redraw": true
+}
