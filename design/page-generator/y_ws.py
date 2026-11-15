@@ -86,3 +86,6 @@ a('rd-4050',
  [('Plants with warm feed water','Warm water speeds bacterial growth; biocide control helps.'),
   ('Plants with rising pressure drop','Biofouling raises pressure; controlling it restores performance.'),
   ('Food and beverage RO','Hygiene is important where water touches product.')])
+
+from ws_new import Y_NEW as _YN, S_NEW as _SN
+Y.update(_YN); S.update(_SN)

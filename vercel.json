@@ -776,6 +776,16 @@
       "source": "/products/services",
       "destination": "/products",
       "permanent": false
+    },
+    {
+      "source": "/products/water-safe/dc-121.html",
+      "destination": "/products/water-safe/dc-121",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-safe/nu-905.html",
+      "destination": "/products/water-safe/nu-905",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -1314,6 +1324,14 @@
     {
       "source": "/products/services/custom-fabrication",
       "destination": "/products/services/custom-fabrication.html"
+    },
+    {
+      "source": "/products/water-safe/dc-121",
+      "destination": "/products/water-safe/dc-121.html"
+    },
+    {
+      "source": "/products/water-safe/nu-905",
+      "destination": "/products/water-safe/nu-905.html"
     }
   ],
   "trailingSlash": false

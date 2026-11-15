@@ -178,3 +178,6 @@ h('plant-upgradations',
  ('Energy management','ISO 50001 principles guide energy upgrades.'))
 h('steam-boiler-supply-erection',
  ('Safety and codes','Boilers are installed with safety valves and controls to recognised practice.'))
+
+from ws_new import H_NEW as _HN
+H.update(_HN)

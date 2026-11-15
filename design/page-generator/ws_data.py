@@ -147,3 +147,6 @@ dict(slug='rd-4050', name='Water Safe RD-4050', system='RO plants', role='RO bio
  faqs=[('What does Water Safe RD-4050 do?','It is a biocide used to control biological growth and biofouling in RO plants.'),('Is RD-4050 used with an anti-scalant?','Yes, RO programmes usually combine biological control with an anti-scalant such as Water Safe RC-1030.'),('What pack sizes are available?','60, 250 and 1,000 KG packs.')],
  related=['rc-1030','bc-1000','dc-1020'], guides=[('/ro-membrane-fouling-silica-vs-calcium','RO membrane fouling'),('/ro-antiscalant-chemicals','RO antiscalant guide')]),
 ]
+
+from ws_new import WS_NEW as _WSN
+WS += _WSN

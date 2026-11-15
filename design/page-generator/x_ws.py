@@ -166,3 +166,6 @@ X['rd-4050'] = dict(
  checks=[('Normalised performance','Normalised flow and differential pressure','astm4516'),('Feed water quality','SDI and microbial checks on feed','astm4189'),('Membrane autopsy (if needed)','Inspection of a membrane element','astm4516')],
  faq2=[('Is RD-4050 dosed continuously?','The dosing approach is planned for your plant and membrane type.'),('Can RD-4050 be used on all membranes?','Membrane compatibility is checked before use.'),('What else helps prevent biofouling?','Good pre-treatment, regular monitoring and timely cleaning.')],
  refs=['astm4516','astm4189'])
+
+from ws_new import X_NEW as _XN
+X.update(_XN)

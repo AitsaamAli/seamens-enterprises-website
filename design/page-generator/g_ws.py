@@ -47,3 +47,6 @@ G['br-111'] = [
  ('Blow-down','Blow-down removes concentrated solids.')]
 G['fc-120q'] = [
  ('Two problems, one product','Scale and corrosion are the two main threats to A/C plant water systems.')]
+
+from ws_new import G_NEW as _GN
+G.update(_GN)
