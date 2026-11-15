@@ -1,0 +1,25 @@
+{
+  "slug": "ctc-9090",
+  "folder": "water-safe",
+  "version": 1,
+  "series": "WATER SAFE SERIES",
+  "name": "Water Safe CTC-9090",
+  "subtitle": "Cooling Tower pH Controller",
+  "form": "INDUSTRIAL WATER TREATMENT",
+  "headline": ["pH CONTROL FOR", "COOLING"],
+  "headline_accent": "TOWERS",
+  "accent": [40, 205, 215],
+  "bg": "wave",
+  "benefits": [
+    ["Stable pH Band", "Keeps tower water in the target range"],
+    ["Less Carbonate Scale", "Cleaner condensers and fill"],
+    ["Higher Cycles", "Run more cycles of concentration"],
+    ["Water Savings", "Less blowdown and make-up water"],
+    ["Better Biocide Results", "Supports steady microbial control"],
+    ["Protects Metals", "Corrosion-safe pH for steel and copper"],
+    ["Programme Ready", "Works with CT-9080, DC-1020, BC-1000"],
+    ["Easy Monitoring", "Daily pH readings show control"]
+  ],
+  "packs": ["250", "60"],
+  "redraw": true
+}

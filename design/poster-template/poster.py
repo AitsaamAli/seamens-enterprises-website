@@ -173,17 +173,69 @@ def build(net):
     q.save(buf, kind='png', scale=20, border=2, dark='#0e2250', light='#ffffff')
     qi = Image.open(io.BytesIO(buf.getvalue())).convert('RGB').resize(B(100, 100), Image.NEAREST)
     im.paste(qi, tuple(B(1137, 950)))
+    if cfg.get('bg') == 'wave':
+        im = wave_bg(im)
     return im
+
+CREST = 0.80
+
+def wave_bg(im):
+    """Water Safe theme: swap the plain navy backdrop for the homepage ocean-wave photo.
+    Drum, cards and panels keep their original pixels; loose text is kept by brightness so it stays crisp."""
+    W, H = im.size; a = np.array(im).astype(np.float32)
+    wv = Image.open(os.path.join(ROOT, 'images/hero/wave-v5-poster.webp')).convert('RGB')
+    # scale so the breaking crest (rows ~16-38% of the photo) lands behind the lower drum; open sea above is
+    # extended with mirrored strips of the photo's own top rows
+    k = 1.25 * W / wv.width; wv = wv.resize((int(wv.width * k), int(wv.height * k)), Image.LANCZOS)
+    oy = int(wv.height * 0.27 - H * CREST)
+    if oy < 0:
+        t = wv.crop((0, 0, wv.width, int(wv.height * 0.14))); ext = Image.new('RGB', (wv.width, wv.height - oy)); y = -oy; f = True
+        ext.paste(wv, (0, y))
+        while y > 0:
+            t = t.transpose(Image.FLIP_TOP_BOTTOM); y -= t.height; ext.paste(t, (0, y))
+        wv, oy = ext, 0
+    ox = (wv.width - W) // 2; wv = wv.crop((ox, oy, ox + W, oy + H))
+    wv = np.array(wv.filter(ImageFilter.GaussianBlur(1.0 * S))).astype(np.float32)
+    # navy grade: deep under the text columns and the top, open behind the drum
+    xs = np.linspace(0, 1600, W)[None, :]; ys = np.linspace(0, 1066, H)[:, None]
+    side = np.clip(1 - np.exp(-((xs - 805) / 300) ** 2), 0, 1)
+    dark = np.clip(0.18 + 0.55 * side * (1 - 0.45 * np.clip((ys - 760) / 200, 0, 1)) + 0.25 * np.clip((260 - ys) / 260, 0, 1), 0, 0.88)[..., None]
+    navy = np.array([5, 18, 40], np.float32)
+    bg = wv * (1 - dark) + navy * dark
+    # keep-mask: brightness/colour above the old backdrop (text, icons), plus filled shapes for drum and cards
+    lum = a.mean(axis=2); sat = a.max(axis=2) - a.min(axis=2)
+    m = np.clip(np.maximum((lum - 52) / 40, (sat - 70) / 40), 0, 1)
+    shp = np.zeros((H, W), np.uint8)
+    def rr(x0, y0, x1, y1, r=16): cv2.rectangle(shp, tuple(B(x0 + r, y0)), tuple(B(x1 - r, y1)), 255, -1); cv2.rectangle(shp, tuple(B(x0, y0 + r)), tuple(B(x1, y1 - r)), 255, -1); [cv2.circle(shp, tuple(B(cx, cy)), B(r)[0], 255, -1) for cx in (x0 + r, x1 - r) for cy in (y0 + r, y1 - r)]
+    for r in [(40, 40, 422, 192), (1112, 212, 1568, 530), (1126, 612, 1553, 682), (1125, 941, 1562, 1056), (41, 931, 520, 1022)]: rr(*r)
+    drum = ((sat > 60) & (lum > 45)).astype(np.uint8) * 255
+    drum[:, :B(520)[0]] = 0; drum[:, B(1090)[0]:] = 0; drum[B(1010)[0]:, :] = 0
+    drum = cv2.morphologyEx(drum, cv2.MORPH_CLOSE, np.ones((25 * S, 25 * S), np.uint8))
+    cs, _ = cv2.findContours(drum, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    cv2.drawContours(shp, [max(cs, key=cv2.contourArea)], -1, 255, -1)
+    shp = cv2.GaussianBlur(shp.astype(np.float32) / 255, (0, 0), 1.5 * S)
+    # dark halo behind loose text so it stays readable over white foam
+    halo = cv2.GaussianBlur(cv2.dilate((m > 0.3).astype(np.uint8), np.ones((22 * S, 22 * S), np.uint8)).astype(np.float32), (0, 0), 14 * S)
+    halo = (np.clip(halo * 1.6, 0, 1) * (1 - shp) * 0.7)[..., None]
+    m = np.maximum(m, shp)[..., None]
+    # soft contact shadow under the drum so it sits in the scene, not floating
+    sh = np.zeros((H, W), np.float32); cv2.ellipse(sh, tuple(B(805, 1000)), tuple(B(300, 34)), 0, 0, 360, 1, -1)
+    sh = cv2.GaussianBlur(sh, (0, 0), 22 * S)[..., None] * 0.75
+    bg = bg * (1 - sh) + navy * sh
+    bg = bg * (1 - halo) + navy * halo
+    out = bg * (1 - m) + a * m
+    return Image.fromarray(out.clip(0, 255).astype(np.uint8))
 
 def redraw_product(im):
     """Wipe GS-777 wording and draw this product's wording (other products)."""
     for r, g in [((36, 194, 200, 216), 5), ((34, 222, 470, 382), 11), ((96, 452, 420, 896), 5)]:
         im = wipe(im, r, grow=g)
-    text(im, (40, 205), cfg['series'], font('Bold', 17), (110, 190, 60), 'lm', 3.2)
+    acc = tuple(cfg.get('accent', (122, 200, 30)))
+    text(im, (40, 205), cfg['series'], font('Bold', 17), acc if 'accent' in cfg else (110, 190, 60), 'lm', 3.2)
     hl = cfg['headline']; y = 248
     for line in hl:
         text(im, (37, y), line, fit('ExtraBold', 46, line, 420), WHITE, 'lm'); y += 47
-    text(im, (37, y + 2), cfg['headline_accent'], fit('ExtraBold', 46, cfg['headline_accent'], 420), (122, 200, 30), 'lm')
+    text(im, (37, y + 2), cfg['headline_accent'], fit('ExtraBold', 46, cfg['headline_accent'], 420), acc, 'lm')
     ys = [466, 522, 580, 635, 693, 750, 809, 865]
     for (t, s), y in zip(cfg['benefits'], ys):
         text(im, (100, y), t, font('SemiBold', 22.5), WHITE, 'lm')
