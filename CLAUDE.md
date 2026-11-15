@@ -114,12 +114,10 @@ Still valid from the knowledge base:
   - EcoSize-CXW-111 has only the 100 KG drum poster.
   - **1,000 KG IBC and 25 KG bag (Nov 15):** made by `pack_swap.py <slug> ibc|bag` from the Canva bases `base-ibc.png` / `base-bag.png`, keeping the side panels of the product's 240 KG (or 100 KG) poster. They are listed as `extra_packs` in each product JSON and appear in the page slider. GS-777 and D-11 have no 1,000 KG pack.
   - `drum_scale.py` (size-true 60 L / 150 L drums) exists. ACL-55 review posters are `*-s.jpg`; not used on the site until the owner approves.
-- **Homepage ECO section (Nov 15, v2, after owner feedback that 19 posters looked too busy):** a calm showcase (`assets/eco-home.v2.css` and `.js`).
-  - One large poster with the stage, description, pack sizes and a View details button.
-  - A list of all 19 products sits beside it; on phones the list becomes a chip row above the poster.
-  - Tapping a product swaps the poster. The links still work without JS.
-  - Original file names are sanitised to letters, digits and hyphens (e.g. `EcoWet-Det-240KG-v1.jpg`).
-  - The page generator (`design/page-generator/gen.py`) adds the pack-size slider automatically to any ECO page whose `design/poster-template/products/<slug>.json` exists and whose images are generated.
+- **Homepage ECO section (Nov 15, v3, after owner feedback; v1 cards were too busy and v2 had a list beside one poster):** a coverflow carousel of the 19 ECO posters (`assets/eco-home.v3.css` and `.js`).
+  - The centre poster is full size; its neighbours are scaled and faded.
+  - The stage, name and View details sit under the centre poster.
+  - It auto-advances every 3.5 s and pauses on touch, hover or when off-screen. Swipe, arrows and dots also work.
 - **GS-777 live posters:** `ecoshort-gs-777-240kg-v5` and `ecoshort-gs-777-125kg-v5` in a **pack-size slider** (`assets/pack-switch.v3.css` and `.js`):
   - swipeable, with the next poster peeking in
   - a one-line segmented pack-size control below, plus arrows on desktop

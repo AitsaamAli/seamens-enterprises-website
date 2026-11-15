@@ -1,0 +1,31 @@
+/* Homepage ECO-Series: coverflow carousel of product posters */
+.eco-cf{position:relative;margin:1.6rem -2rem 0;padding:0 0 .4rem}
+.cf-track{display:flex;gap:0;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:1.2rem calc(50% - 23%) 1.4rem;overscroll-behavior-x:contain}
+.cf-track::-webkit-scrollbar{display:none}
+.cf-slide{flex:0 0 46%;scroll-snap-align:center;display:block;position:relative;text-decoration:none;color:inherit;transform:scale(var(--s,.82));opacity:var(--o,.45);transition:transform .45s cubic-bezier(.23,1,.32,1),opacity .45s;will-change:transform}
+.cf-slide picture{display:block;border-radius:16px;overflow:hidden;box-shadow:0 22px 50px rgba(10,22,40,.32);background:#0a1628}
+.cf-slide img{display:block;width:100%;height:auto;aspect-ratio:3/2}
+.cf-cap{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.35rem .8rem;margin-top:.9rem;opacity:0;transition:opacity .35s;text-align:center}
+.cf-slide.on .cf-cap{opacity:1}
+.cf-cap em{font:700 .64rem 'Barlow Condensed',sans-serif;font-style:normal;letter-spacing:.14em;text-transform:uppercase;color:var(--teal,#00b4a6);border:1px solid rgba(0,180,166,.5);border-radius:999px;padding:.2rem .6rem}
+.cf-cap b{font:700 1.15rem 'Barlow',sans-serif;color:var(--navy,#0a1628)}
+.cf-cap u{text-decoration:none;font:700 .85rem 'Barlow',sans-serif;color:#fff;background:var(--teal,#00b4a6);border-radius:999px;padding:.4rem .85rem}
+.cf-nav{position:absolute;top:calc(50% - 40px);transform:translateY(-50%);z-index:3;width:46px;height:46px;border-radius:50%;border:0;background:#0a1628;color:#fff;font-size:1.6rem;line-height:1;cursor:pointer;box-shadow:0 8px 20px rgba(10,22,40,.3);display:grid;place-items:center;transition:background .2s}
+.cf-nav:hover{background:var(--teal,#00b4a6)}
+.cf-nav.prev{left:calc(27% - 23px)}.cf-nav.next{right:calc(27% - 23px)}
+.cf-dots{display:flex;justify-content:center;gap:.4rem;margin-top:.3rem}
+.cf-dots i{width:7px;height:7px;border-radius:999px;background:rgba(10,22,40,.2);transition:width .3s,background .3s}
+.cf-dots i.on{width:22px;background:var(--teal,#00b4a6)}
+@media(max-width:820px){
+ .eco-cf{margin:1.2rem 0 0}
+ .cf-track{padding:1rem 9% 1.2rem}
+ .cf-slide{flex-basis:82%}
+ .cf-nav{display:none}
+ .cf-cap b{font-size:1.02rem}
+ .cf-dots i{width:6px;height:6px}.cf-dots i.on{width:16px}
+}
+@media (prefers-reduced-motion:reduce){.cf-slide{transition:none}.cf-track{scroll-behavior:auto}}
+/* Buttons under the product tabs sit on a light section: navy text for contrast */
+#products .tab-more a{color:var(--navy,#0a1628);background:rgba(0,180,166,.12);border-color:var(--teal,#00b4a6)}
+#products .tab-more a.alt{color:var(--navy,#0a1628);border-color:rgba(10,22,40,.25);background:#fff}
+#products .tab-more a:hover{background:var(--teal,#00b4a6);color:#fff}
