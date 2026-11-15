@@ -72,7 +72,7 @@ Still valid from the knowledge base:
 
 - Every branded product has its own page (added Nov 2026):
   - 19 ECO-Series pages at `/products/eco-series/{slug}`, files in `products/eco-series/`
-  - 12 Water Safe pages at `/products/water-safe/{slug}`, files in `products/water-safe/`
+  - 14 Water Safe pages at `/products/water-safe/{slug}`, files in `products/water-safe/`. DC-121 (boiler organic de-scaler) and NU-905 (boiler neutralization) were added Nov 15 from the owner's list; their data is in `design/page-generator/ws_new.py`. Every Water Safe pack is 60 / 250 / 1,000 KG (owner list, Nov 15).
   - Each new page needs a `vercel.json` rewrite (clean URL to `.html`), a `.html` to clean URL redirect and a `sitemap.xml` entry.
 - Each page has:
   - unique copy
@@ -87,7 +87,7 @@ Still valid from the knowledge base:
 - Also on request (Nov 2026):
   - 14 cleaning chemical pages at `/products/cleaning/{slug}` (Product schema)
   - 15 engineering service pages at `/products/services/{slug}` (Service schema): boilers, humidification, cooling towers, chillers, RO plants, erection, parts, maintenance and fabrication
-  - The site now has 60 item pages in total. Keep every page's copy unique: pairwise 5-gram Jaccard is currently at most 0.15.
+  - The site now has 62 item pages in total. Keep every page's copy unique: pairwise 5-gram Jaccard is currently at most 0.15.
   - Since Nov 14, every item page has at least 1,000 words of main content (owner rule: no thin pages). Sections: how it works, benefits in detail, problems it solves, how to measure results, where it delivers the most value, buyer's guide, Pakistan context, practical tips, FAQ (6-8), and references and standards (WebPage `citation` schema). Item pages use `assets/product-page.v3.css`.
   - **Reading layer (Nov 14):** all blog posts and item pages load `assets/reading.v1.css` and `assets/reading.v1.js`. These add an "On this page" TOC, a FAQ accordion, phone card layout for tables, a reading progress bar and a mobile WhatsApp/Call bar. New posts must include both files.
   - **Cleaning chemical pack sizes:** not yet supplied by the owner. Pages show "Confirmed with your quote". When Usman sends the sizes, fill `CL_PACK` in the generator's `cl_pack.py` and regenerate.

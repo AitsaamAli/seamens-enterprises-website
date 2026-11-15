@@ -44,3 +44,6 @@ Q = {
 'ecowet-det': ('What a successful result looks like','Good absorbency with fewer products.'),
 'alkaline-cip-cleaner': ('What a successful clean looks like','Clean, verified surfaces.'),
 }
+
+from ws_new import Q_NEW as _QN
+Q.update(_QN)

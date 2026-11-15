@@ -3098,3 +3098,58 @@ A: Parts are supplied for rapier, projectile and air-jet looms, as well as spinn
 Q: Does Seamens supply stenter and dryer parts?
 A: Yes. Stenter and dryer parts are supplied alongside loom and spinning parts.
 
+## Water Safe DC-121: Organic De-scaler for Steam Boilers
+URL: https://www.seamensenterprises.com/products/water-safe/dc-121
+Water Safe DC-121 is an organic de-scaler for steam boilers. It is used during planned cleaning to remove hardness scale from the waterside, so heat passes through the tubes freely again and fuel is not wasted heating a layer of scale.
+
+Q: What does Water Safe DC-121 do?
+A: It is an organic de-scaler that removes hardness scale from the waterside of steam boilers during planned cleaning.
+
+Q: Is DC-121 used while the boiler is running?
+A: No. Descaling is done during a planned shutdown with a procedure Seamens sets for your boiler.
+
+Q: What pack sizes are available?
+A: 60, 250 and 1,000 KG packs.
+
+Q: How long does descaling take?
+A: It depends on scale thickness and boiler size; Seamens plans it to fit your shutdown window.
+
+Q: Is passivation needed after descaling?
+A: Cleaned metal is protected before restart as part of the procedure Seamens sets.
+
+Q: Will scale come back?
+A: Not if feed water treatment and blowdown are kept right after cleaning.
+
+Q: Can DC-121 be used on water-tube boilers?
+A: Fire-tube and water-tube boilers can both be cleaned; the procedure is set for your boiler type.
+
+Q: Does Seamens supervise the cleaning?
+A: Seamens sets the procedure and supports the work during your shutdown.
+
+## Water Safe NU-905: Neutralization Treatment for Boilers
+URL: https://www.seamensenterprises.com/products/water-safe/nu-905
+Water Safe NU-905 is a neutralization treatment for steam boilers. It helps keep boiler water and returning condensate at the right pH, so acidic conditions do not eat into steel pipework, heat exchangers and the boiler itself.
+
+Q: What does Water Safe NU-905 do?
+A: It is a neutralization treatment that helps control pH in boiler water and condensate to reduce acidic corrosion.
+
+Q: Where is NU-905 used?
+A: In steam boiler systems, especially where condensate is returned to the boiler.
+
+Q: What pack sizes are available?
+A: 60, 250 and 1,000 KG packs.
+
+Q: Why is condensate acidic?
+A: Carbon dioxide released in the boiler dissolves back into the condensate and lowers its pH.
+
+Q: Is NU-905 used with an oxygen scavenger?
+A: Often yes; oxygen and acidity are separate causes of corrosion, so both are controlled.
+
+Q: How is the dose set?
+A: From boiler water and condensate pH readings taken by Seamens.
+
+Q: Does NU-905 replace other boiler chemicals?
+A: No. It is one part of the boiler programme, alongside anti-scalant and oxygen scavenger treatment.
+
+Q: Is NU-905 suitable for heating systems?
+A: Steam heating and process steam systems with condensate return are typical uses.
