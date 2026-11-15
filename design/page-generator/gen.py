@@ -78,7 +78,7 @@ def page(p, series):
         {"@type": "ListItem", "position": 2, "name": "Products", "item": f"{SITE}/products"},
         {"@type": "ListItem", "position": 3, "name": parent[1], "item": SITE + parent[0]},
         {"@type": "ListItem", "position": 4, "name": p['name'], "item": url}]}
-    prod_img = f'{SITE}/images/products/ecoshort-gs-777-240kg-v4.webp' if poster else SITE + img
+    prod_img = f'{SITE}/images/products/ecoshort-gs-777-240kg-v5.webp' if poster else SITE + img
     schema_p = {"@context": "https://schema.org", "@type": "Product", "@id": url + "#product", "name": p['name'], "description": p['lead'],
                 "brand": {"@type": "Brand", "name": brand}, "manufacturer": {"@id": f"{SITE}/#organization"},
                 "category": "Textile auxiliary chemicals" if eco else "Water treatment chemicals", "url": url, "image": prod_img,

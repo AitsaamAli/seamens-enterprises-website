@@ -144,9 +144,19 @@ def build(net):
     text(im, (971, 573), 'INDUSTRIAL', font('Bold', 8.2), NAVY, 'mm', 0.2, angle=3.5)
     text(im, (971.5, 582), 'GRADE', font('Bold', 8.2), NAVY, 'mm', 0.2, angle=3.5)
 
-    # 5. Bigger CONAIR-PAK tick badge in the side panel
-    cb = badge_cut(im, 1506, 271, 44); cb = cb.resize((int(cb.width * 1.16), int(cb.height * 1.16)), Image.LANCZOS)
-    im.paste(cb, (B(1506)[0] - cb.width // 2, B(267)[0] - cb.height // 2), cb)
+    # 5. Side panel: logos only (no captions), enlarged and spread over the panel; CONAIR-PAK tick badge largest
+    old = [(1176, 271), (1286, 271), (1396, 271), (1506, 271), (1211, 413), (1341, 413), (1471, 413)]
+    cuts = [badge_cut(im, x, y, 44) for x, y in old]
+    im, _ = col_fill(im, (1122, 222, 1558, 522), (498, 520), 'dark')
+    new = [(1176, 296, 1.18), (1286, 296, 1.18), (1396, 296, 1.18), (1506, 296, 1.32),
+           (1221, 446, 1.18), (1341, 446, 1.18), (1461, 446, 1.18)]
+    for c, (x, y, k) in zip(cuts, new):
+        c = c.resize((int(c.width * k), int(c.height * k)), Image.LANCZOS)
+        sh = Image.new('RGBA', (c.width + 24 * S, c.height + 24 * S), (0, 0, 0, 0))
+        ImageDraw.Draw(sh).ellipse([12 * S, 16 * S, 12 * S + c.width, 16 * S + c.height], fill=(0, 0, 0, 110))
+        sh = sh.filter(ImageFilter.GaussianBlur(6 * S))
+        im.paste(sh, (B(x)[0] - sh.width // 2, B(y)[0] - sh.height // 2), sh)
+        im.paste(c, (B(x)[0] - c.width // 2, B(y)[0] - c.height // 2), c)
 
     # 6. QR card always points at this product's page
     q = segno.make(URL, error='m'); buf = io.BytesIO()
