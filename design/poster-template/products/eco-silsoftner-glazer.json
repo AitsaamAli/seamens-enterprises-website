@@ -1,0 +1,54 @@
+{
+  "slug": "eco-silsoftner-glazer",
+  "name": "Eco-SilSoftner Glazer",
+  "subtitle": "Silicone Softener for Sizing and Glazing",
+  "form": "SILICONE SOFTENER",
+  "packs": [
+    "240",
+    "150",
+    "60"
+  ],
+  "headline": [
+    "SMOOTH,",
+    "STRONG YARN"
+  ],
+  "headline_accent": "CLEAN WEAVING",
+  "benefits": [
+    [
+      "Sizing & Glazing",
+      "Excellent results in both"
+    ],
+    [
+      "Stronger Yarn",
+      "Better weaving performance"
+    ],
+    [
+      "Smooth Surface",
+      "Less friction on the loom"
+    ],
+    [
+      "Less Fly",
+      "Hairs laid down on the yarn"
+    ],
+    [
+      "Clean Sheds",
+      "Yarns separate easily"
+    ],
+    [
+      "Fewer Breaks",
+      "Higher loom efficiency"
+    ],
+    [
+      "Silicone Glaze",
+      "Smooth, uniform coating"
+    ],
+    [
+      "Better Fabric",
+      "Cleaner finished cloth"
+    ]
+  ],
+  "folder": "eco-series",
+  "version": 1,
+  "series": "ECO-SERIES",
+  "redraw": true
+}

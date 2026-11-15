@@ -7,7 +7,7 @@ Reads products/<slug>.json, draws one poster per pack size on top of base.jpg an
 base.jpg is the approved EcoShort-GS-777 poster. For another product set "redraw": true in its JSON:
 the GS-777 wording (headline, benefits, label name/subtitle/form) is wiped and redrawn from the JSON.
 """
-import sys, os, io, json, math
+import sys, os, io, json, math, re
 import numpy as np, cv2, segno
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
@@ -202,7 +202,7 @@ def save(im, net):
         r.save(base + suf + '.webp', quality=q, method=6)
         if suf != '-full': r.save(base + suf + '.jpg', quality=82, optimize=True, progressive=True)
     os.makedirs(IMG + 'products/posters', exist_ok=True)
-    im.convert('RGB').save(f"{IMG}products/posters/{cfg["name"].replace(' ', '-')}-{net}KG-v{v}.jpg", quality=90, optimize=True, progressive=True)
+    im.convert('RGB').save(f"{IMG}products/posters/{re.sub(r'[^A-Za-z0-9-]+', '', cfg['name'].replace(' ', '-').replace('+', '-'))}-{net}KG-v{v}.jpg", quality=90, optimize=True, progressive=True)
     print('saved', base)
 
 if __name__ == '__main__':

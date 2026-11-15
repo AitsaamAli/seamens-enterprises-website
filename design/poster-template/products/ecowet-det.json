@@ -1,0 +1,54 @@
+{
+  "slug": "ecowet-det",
+  "name": "EcoWet+Det",
+  "subtitle": "Wetting and Detergent Agent",
+  "form": "FOR FABRIC PREPARATION",
+  "packs": [
+    "240",
+    "150",
+    "60"
+  ],
+  "headline": [
+    "WETTING",
+    "+ DETERGENT"
+  ],
+  "headline_accent": "TWO IN ONE",
+  "benefits": [
+    [
+      "Fast Wetting",
+      "Quick, even penetration"
+    ],
+    [
+      "Strong Detergency",
+      "Lifts soils and oils"
+    ],
+    [
+      "Two in One",
+      "Replaces two products"
+    ],
+    [
+      "Deep Scouring",
+      "Thorough preparation"
+    ],
+    [
+      "Simpler Recipes",
+      "Fewer additions per batch"
+    ],
+    [
+      "Even Absorbency",
+      "Uniform chemical take-up"
+    ],
+    [
+      "Clean Rinsing",
+      "Soils stay suspended"
+    ],
+    [
+      "Store Savings",
+      "Fewer drums to stock"
+    ]
+  ],
+  "folder": "eco-series",
+  "version": 1,
+  "series": "ECO-SERIES",
+  "redraw": true
+}

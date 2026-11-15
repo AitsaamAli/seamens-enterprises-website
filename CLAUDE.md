@@ -109,9 +109,11 @@ Still valid from the knowledge base:
     - a QR card
   - `poster.py <slug>` reads `products/<slug>.json` (wording, 8 benefits, pack sizes, version; `"redraw": true` for products other than GS-777) and writes the website images (`images/products/<slug>-<kg>kg-v<N>.webp/-sm/-full/.jpg`) plus 3200px originals for the owner in `images/products/posters/<Name>-<kg>KG-v<N>.jpg`.
   - Bump `version` whenever an image changes.
-- **ECO posters done (Nov 15, 2026):** GS-777 (v5), D-11, ACL-55, WKL-121, EcoDye-LEV and SCA-30 (v1), made with the template.
+- **ECO posters done (Nov 15, 2026): all 19 ECO-Series products**, made with the template; every ECO page has the pack-size slider.
   - Packs below 1,000 KG all use the same drum image; only the NET WEIGHT changes.
-  - **1,000 KG packs are still to do:** they need a different package (IBC tank) on the template.
+  - EcoSize-CXW-111 has only the 100 KG drum poster.
+  - **Still to do:** the 1,000 KG packs (IBC tank) and the CXW-111 25 KG bag need a different package on the template.
+  - Original file names are sanitised to letters, digits and hyphens (e.g. `EcoWet-Det-240KG-v1.jpg`).
   - The page generator (`design/page-generator/gen.py`) adds the pack-size slider automatically to any ECO page whose `design/poster-template/products/<slug>.json` exists and whose images are generated.
 - **GS-777 live posters:** `ecoshort-gs-777-240kg-v5` and `ecoshort-gs-777-125kg-v5` in a **pack-size slider** (`assets/pack-switch.v3.css` and `.js`):
   - swipeable, with the next poster peeking in

@@ -1,0 +1,54 @@
+{
+  "slug": "ecostab-hs",
+  "name": "EcoStab-HS",
+  "subtitle": "Hydrogen Peroxide Stabilizer",
+  "form": "FOR CONTROLLED BLEACHING",
+  "packs": [
+    "240",
+    "150",
+    "60"
+  ],
+  "headline": [
+    "CONTROLLED",
+    "BLEACHING"
+  ],
+  "headline_accent": "EVEN WHITENESS",
+  "benefits": [
+    [
+      "Stable Peroxide",
+      "Steady, controlled reaction"
+    ],
+    [
+      "Even Whiteness",
+      "Uniform across the lot"
+    ],
+    [
+      "Fabric Protection",
+      "Helps prevent damage"
+    ],
+    [
+      "Fewer Pinholes",
+      "Less catalytic damage"
+    ],
+    [
+      "Strength Retained",
+      "Gentler on fibres"
+    ],
+    [
+      "Scour-Bleach",
+      "Suits combined processes"
+    ],
+    [
+      "Consistent Results",
+      "Lot-to-lot repeatability"
+    ],
+    [
+      "Better Efficiency",
+      "Less wasted peroxide"
+    ]
+  ],
+  "folder": "eco-series",
+  "version": 1,
+  "series": "ECO-SERIES",
+  "redraw": true
+}

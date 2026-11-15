@@ -1,0 +1,54 @@
+{
+  "slug": "eco-silsoftner-hydrophilic",
+  "name": "Eco-SilSoftner (Hydrophilic)",
+  "subtitle": "Silicone Softener, Hydrophilic Feel",
+  "form": "SILICONE FINISHING SOFTENER",
+  "packs": [
+    "240",
+    "150",
+    "60"
+  ],
+  "headline": [
+    "SOFT +",
+    "ABSORBENT"
+  ],
+  "headline_accent": "TOWEL READY",
+  "benefits": [
+    [
+      "Soft Handle",
+      "Silicone softness"
+    ],
+    [
+      "Stays Absorbent",
+      "Hydrophilic, water-loving"
+    ],
+    [
+      "Towels",
+      "Soft towels that still absorb"
+    ],
+    [
+      "Bed Linen",
+      "Soft, breathable sheets"
+    ],
+    [
+      "Home Textiles",
+      "Comfort for daily use"
+    ],
+    [
+      "Next-to-Skin",
+      "Comfortable garments"
+    ],
+    [
+      "Premium Feel",
+      "Value-added finish"
+    ],
+    [
+      "Export Ready",
+      "Meets buyer handle specs"
+    ]
+  ],
+  "folder": "eco-series",
+  "version": 1,
+  "series": "ECO-SERIES",
+  "redraw": true
+}

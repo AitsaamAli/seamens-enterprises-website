@@ -1,0 +1,52 @@
+{
+  "slug": "ecosize-cxw-111",
+  "name": "EcoSize-CXW-111",
+  "subtitle": "Ready-to-Use Warp Sizing Powder",
+  "form": "WHITE GRANULAR POWDER",
+  "packs": [
+    "100"
+  ],
+  "headline": [
+    "REPLACES PVA",
+    "& POWDERS"
+  ],
+  "headline_accent": "ONE-BAG SIZING",
+  "benefits": [
+    [
+      "Replaces PVA",
+      "All kinds of PVA and powder chemicals"
+    ],
+    [
+      "All-in-One",
+      "Starch, wax and polymers included"
+    ],
+    [
+      "Simple Size Kitchen",
+      "One-bag, repeatable mixing"
+    ],
+    [
+      "Good Adhesion",
+      "Strong on polyester blends"
+    ],
+    [
+      "Low Foam",
+      "Stable, clean size box"
+    ],
+    [
+      "Fewer Breaks",
+      "Better weaving efficiency"
+    ],
+    [
+      "Easy Desizing",
+      "Clean removal before dyeing"
+    ],
+    [
+      "Lower Cost",
+      "Fewer separate ingredients"
+    ]
+  ],
+  "folder": "eco-series",
+  "version": 1,
+  "series": "ECO-SERIES",
+  "redraw": true
+}

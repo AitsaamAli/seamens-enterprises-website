@@ -1,0 +1,54 @@
+{
+  "slug": "ecopva-gs",
+  "name": "EcoPVA-GS",
+  "subtitle": "PVA-Based Sizing Glue",
+  "form": "FOR FINE COUNTS & SYNTHETICS",
+  "packs": [
+    "240",
+    "150",
+    "60"
+  ],
+  "headline": [
+    "STRONG,",
+    "FLEXIBLE FILM"
+  ],
+  "headline_accent": "TOP ADHESION",
+  "benefits": [
+    [
+      "Strong Coating",
+      "Tough film on the yarn"
+    ],
+    [
+      "Flexible Film",
+      "Elastic, not brittle"
+    ],
+    [
+      "Excellent Adhesion",
+      "Bonds well to synthetics"
+    ],
+    [
+      "Fine Counts",
+      "Protects delicate yarns"
+    ],
+    [
+      "Fewer Breaks",
+      "Higher loom efficiency"
+    ],
+    [
+      "Abrasion Guard",
+      "Withstands heald and reed"
+    ],
+    [
+      "Water Soluble",
+      "Clean removal in desizing"
+    ],
+    [
+      "Consistent Sizing",
+      "Steady add-on"
+    ]
+  ],
+  "folder": "eco-series",
+  "version": 1,
+  "series": "ECO-SERIES",
+  "redraw": true
+}

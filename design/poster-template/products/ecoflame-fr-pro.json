@@ -1,0 +1,54 @@
+{
+  "slug": "ecoflame-fr-pro",
+  "name": "EcoFlame-FR Pro",
+  "subtitle": "Durable Flame Retardant Finish",
+  "form": "IMPORTED SPECIALTY FINISH",
+  "packs": [
+    "240",
+    "150",
+    "60"
+  ],
+  "headline": [
+    "DURABLE FLAME",
+    "RETARDANCY"
+  ],
+  "headline_accent": "SAFER FABRICS",
+  "benefits": [
+    [
+      "Flame Retardant",
+      "Resists ignition, slows spread"
+    ],
+    [
+      "Durable Finish",
+      "Long-lasting performance"
+    ],
+    [
+      "Cotton & Blends",
+      "Suits natural and blended fabrics"
+    ],
+    [
+      "Technical Textiles",
+      "For industrial fabrics"
+    ],
+    [
+      "Workwear",
+      "Protective clothing finishing"
+    ],
+    [
+      "Furnishings",
+      "Curtains and upholstery"
+    ],
+    [
+      "Imported Specialty",
+      "Premium flame retardant"
+    ],
+    [
+      "Export Ready",
+      "Helps meet buyer specs"
+    ]
+  ],
+  "folder": "eco-series",
+  "version": 1,
+  "series": "ECO-SERIES",
+  "redraw": true
+}
