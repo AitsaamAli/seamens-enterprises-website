@@ -1,4 +1,4 @@
-"""Water Safe DC-121 and NU-905 (added Nov 15, 2026 from the owner's list). Merged into the generator data modules."""
+"""Water Safe DC-121, NU-905 and CTC-9090 (added Nov 15, 2026 from the owner's list). Merged into the generator data modules."""
 WS_NEW = [
  dict(slug='dc-121', name='Water Safe DC-121', system='Boilers', role='Organic de-scaler',
   parent=['/products/boiler-water-treatment-humidification', 'Boiler Water Treatment'],
@@ -111,3 +111,55 @@ Q_NEW = {
  'dc-121': ('What a successful clean looks like', 'Clean metal at inspection, lower stack temperature at the same load and reduced fuel use per tonne of steam show that descaling has worked.'),
  'nu-905': ('What good pH control looks like', 'Condensate pH in the target band, falling iron levels and fewer line repairs show the neutralization treatment is working.'),
 }
+
+# Water Safe CTC-9090 (added Nov 15, 2026 from the owner's list: cooling tower pH controller, 60/250/1,000 KG)
+WS_NEW.append(dict(slug='ctc-9090', name='Water Safe CTC-9090', system='Cooling towers', role='pH controller',
+  parent=['/products/cooling-tower-chiller-ro', 'Cooling Tower, Chiller & RO'],
+  img='cooling-tower-water-treatment-v5', imgalt='Industrial cooling tower with recirculating water',
+  title='Water Safe CTC-9090 | Cooling Tower pH Controller',
+  meta='Water Safe CTC-9090: pH controller for cooling towers that keeps recirculating water in the target pH band for steady scale and corrosion control. 60, 250 and 1,000 KG.',
+  h1='Water Safe CTC-9090: pH Controller for Cooling Towers',
+  lead='Water Safe CTC-9090 is a pH controller for open recirculating cooling towers. It keeps the circulating water inside the pH band your treatment programme is designed for, so scale inhibitors, dispersants and biocides can each do their job properly.',
+  body=[('Why tower pH drifts', ['As water evaporates from a cooling tower, dissolved salts and alkalinity concentrate in what is left behind. With every extra cycle of concentration the pH tends to climb, and at high pH calcium carbonate drops out as scale on exchangers and fill.', 'Air scrubbed through the tower, process leaks and changes in make-up water can push pH the other way too. Either drift moves the water away from the conditions the programme was set for.']),
+        ('Holding the right band', ['CTC-9090 is dosed to bring pH back into the agreed range and hold it there. Seamens sets the target band from your make-up water analysis, metals and cycles of concentration, and tunes the dose from readings taken on follow-up visits.'])],
+  benefits=['Keeps recirculating water in the target pH band', 'Supports scale and corrosion control', 'Lets towers run at higher cycles with less make-up'],
+  apps=['Open recirculating cooling towers', 'HVAC and process cooling circuits', 'Towers on hard or high-alkalinity make-up water'],
+  faqs=[('What does Water Safe CTC-9090 do?', 'It is a pH controller for cooling towers that keeps the recirculating water inside the target pH band.'),
+        ('Why does cooling tower pH need controlling?', 'Evaporation concentrates alkalinity and salts, which pushes pH up and raises the risk of scale; drift either way weakens the treatment programme.'),
+        ('What pack sizes are available?', '60, 250 and 1,000 KG packs.')],
+  related=['ct-9080', 'dc-1020', 'bc-1000'],
+  guides=[('/cooling-tower-makeup-water-calculation', 'Make-up water calculation'), ('/cooling-tower-biocide', 'Cooling tower biocide guide')]))
+
+X_NEW['ctc-9090'] = dict(
+  how=['A cooling tower rejects heat by evaporating part of the water flowing over its fill. Pure water leaves as vapour, while hardness, alkalinity and other dissolved solids stay behind and build up. The ratio between circulating water and make-up water is the cycle of concentration, and as it rises the water becomes more scale-forming, mainly because pH and alkalinity climb together.',
+       'Water Safe CTC-9090 is fed into the basin or circulating line to correct that drift. Seamens agrees a pH band for your tower, sets an initial dose and adjusts it from pH and alkalinity readings, so the water stays where the scale inhibitor and corrosion inhibitor perform best.'],
+  bens=[('Stable water chemistry', 'Holding pH in one band stops the swings that make other chemicals less effective.'),
+        ('Less carbonate scale', 'Controlled pH keeps calcium carbonate in solution instead of on exchanger tubes and fill.'),
+        ('Higher cycles, less make-up', 'With pH under control the tower can run at higher concentration, saving water and blowdown.'),
+        ('Better biocide performance', 'Many oxidising biocides work best within a defined pH range, so pH control supports microbial control.'),
+        ('Protected metals', 'Avoiding very low or very high pH reduces attack on steel, copper and galvanised parts.'),
+        ('Clear, measurable control', 'Daily pH readings show at a glance whether the tower is inside its target band.')],
+  probs=[('Scale on condensers and exchangers', 'pH and alkalinity rising with cycles', 'pH held in the target band'),
+         ('High blowdown and water use', 'Tower run at low cycles to avoid scale', 'Higher cycles with controlled pH'),
+         ('Biocide not holding the count down', 'pH outside the range the biocide suits', 'Stable pH for better kill'),
+         ('Pitting or white rust on metals', 'Water too acidic or too alkaline', 'Corrosion-safe pH range')],
+  checks=[('Circulating water pH', 'pH of basin water against the agreed band at each visit', 'cti105'),
+          ('Cycles of concentration', 'Conductivity of circulating water compared with make-up', 'cti105'),
+          ('Microbial control', 'Dip-slide or plate counts alongside pH records', 'ashrae188')],
+  faq2=[('Can pH be controlled automatically?', 'Yes. A pH sensor linked to a dosing pump keeps the band steady; Seamens can advise on the set-up.'),
+        ('Is CTC-9090 used on its own?', 'No. It works with the scale inhibitor, dispersant and biocide in the tower programme.'),
+        ('How often should pH be checked?', 'Daily by plant staff, with full analysis on Seamens follow-up visits.')],
+  refs=['cti105', 'ashrae188', 'ashrae12'])
+
+Y_NEW['ctc-9090'] = dict(tips=['Record basin pH every day at the same time.', 'Calibrate the pH meter or sensor regularly.', 'Feed into a well-mixed point, away from the make-up inlet.', 'Review the target band when make-up water source changes.', 'Increase cycles step by step while watching pH and conductivity.'],
+  pk='Many Pakistani plants feed cooling towers from hard, alkaline borehole water, and summer heat in Punjab and Sindh drives heavy evaporation. pH climbs fast under those conditions. Holding pH steady lets textile mills, food plants and commercial buildings cut blowdown and save water at a time when water is getting scarcer and more costly.',
+  faq3=[('Does CTC-9090 suit HVAC cooling towers?', 'Yes. Commercial building towers and process towers both benefit from steady pH control.'), ('What if make-up water quality changes in summer?', 'Seamens reviews the dose and target band from fresh water analysis.')])
+S_NEW['ctc-9090'] = [('Textile mill process cooling', 'Mills on hard borehole water see pH climb as cycles rise; pH control lets them run higher cycles without scaling heat exchangers.'),
+            ('Commercial building HVAC towers', 'Steady pH helps keep chiller condensers clean and supports reliable biocide control in shopping malls, hospitals and offices.'),
+            ('Peak summer load', 'When evaporation is highest, pH control keeps the programme on track instead of letting chemistry swing.')]
+G_NEW['ctc-9090'] = [('What pH tells you about a tower', 'pH is the quickest single reading of where cooling tower water stands. A climbing pH usually means alkalinity is concentrating and scale risk is rising; a falling pH can point to process contamination or over-feeding. Logging it daily gives early warning before deposits or corrosion appear.'),
+            ('Setting the target band', 'There is no single correct pH for every tower. The band depends on make-up water hardness and alkalinity, the metals in the system, the cycles you want to run and the inhibitors in use. Seamens sets it from a water analysis and confirms it in the first weeks of dosing.'),
+            ('Manual or automatic dosing', 'Small towers can be controlled with a steady dosing pump and daily checks. Larger or variable-load towers benefit from a pH sensor linked to the pump, which reacts to changes in load and make-up quality without waiting for the next manual reading.'),
+            ('Handling and storage', 'pH control chemicals are stored and handled with the protective equipment stated on the label and safety data sheet, in a bunded area away from incompatible chemicals.')]
+H_NEW['ctc-9090'] = [('Working with the full programme', 'CTC-9090 sits alongside Water Safe CT-9080 for scale, DC-1020 for dispersion and BC-1000 for microbial control, so the tower is protected on every front.')]
+Q_NEW['ctc-9090'] = ('What good pH control looks like', 'Basin pH staying inside the agreed band, clean exchangers at inspection, stable conductivity at higher cycles and steady microbial counts show the pH programme is working.')

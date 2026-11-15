@@ -786,6 +786,11 @@
       "source": "/products/water-safe/nu-905.html",
       "destination": "/products/water-safe/nu-905",
       "permanent": true
+    },
+    {
+      "source": "/products/water-safe/ctc-9090.html",
+      "destination": "/products/water-safe/ctc-9090",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -1332,6 +1337,10 @@
     {
       "source": "/products/water-safe/nu-905",
       "destination": "/products/water-safe/nu-905.html"
+    },
+    {
+      "source": "/products/water-safe/ctc-9090",
+      "destination": "/products/water-safe/ctc-9090.html"
     }
   ],
   "trailingSlash": false

@@ -3153,3 +3153,31 @@ A: No. It is one part of the boiler programme, alongside anti-scalant and oxygen
 
 Q: Is NU-905 suitable for heating systems?
 A: Steam heating and process steam systems with condensate return are typical uses.
+
+## Water Safe CTC-9090: pH Controller for Cooling Towers
+URL: https://www.seamensenterprises.com/products/water-safe/ctc-9090
+Water Safe CTC-9090 is a pH controller for open recirculating cooling towers. It keeps the circulating water inside the pH band your treatment programme is designed for, so scale inhibitors, dispersants and biocides can each do their job properly.
+
+Q: What does Water Safe CTC-9090 do?
+A: It is a pH controller for cooling towers that keeps the recirculating water inside the target pH band.
+
+Q: Why does cooling tower pH need controlling?
+A: Evaporation concentrates alkalinity and salts, which pushes pH up and raises the risk of scale; drift either way weakens the treatment programme.
+
+Q: What pack sizes are available?
+A: 60, 250 and 1,000 KG packs.
+
+Q: Can pH be controlled automatically?
+A: Yes. A pH sensor linked to a dosing pump keeps the band steady; Seamens can advise on the set-up.
+
+Q: Is CTC-9090 used on its own?
+A: No. It works with the scale inhibitor, dispersant and biocide in the tower programme.
+
+Q: How often should pH be checked?
+A: Daily by plant staff, with full analysis on Seamens follow-up visits.
+
+Q: Does CTC-9090 suit HVAC cooling towers?
+A: Yes. Commercial building towers and process towers both benefit from steady pH control.
+
+Q: What if make-up water quality changes in summer?
+A: Seamens reviews the dose and target band from fresh water analysis.
