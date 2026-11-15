@@ -1,0 +1,16 @@
+/* Homepage stats strip as glass cards with icons; tighter Product Series intro on phones */
+.stats-bar{background:linear-gradient(180deg,var(--navy2,#0f1f3a),#0a1628);padding:2.4rem 1rem 2.6rem;border-bottom:0;position:relative}
+.stats-bar::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg,transparent,var(--teal,#00b4a6),transparent)}
+.stats-bar .stats-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}
+.stats-bar .stat-item{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:1.1rem .6rem 1rem;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid rgba(0,180,166,.22);box-shadow:0 10px 26px rgba(0,0,0,.22);min-width:0}
+.stats-bar .stat-ic{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:rgba(0,180,166,.15);font-size:1.15rem;margin-bottom:.55rem}
+.stats-bar .stat-num{font-family:'Barlow Condensed',sans-serif;font-size:1.9rem;font-weight:700;color:var(--teal,#00b4a6);line-height:1}
+.stats-bar .stat-label{margin-top:.35rem;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.62);line-height:1.35}
+@media(min-width:720px){.stats-bar .stats-inner{grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}}
+@media(min-width:1100px){.stats-bar .stats-inner{grid-template-columns:repeat(6,minmax(0,1fr))}.stats-bar .stat-num{font-size:2.2rem}}
+@media(max-width:600px){
+ #series{padding-top:3rem}
+ #series .section-title{font-size:1.75rem;margin-bottom:.8rem}
+ #series .section-lead{font-size:.98rem;line-height:1.6;margin-bottom:0}
+ .sx-block{margin-top:2rem}
+}
