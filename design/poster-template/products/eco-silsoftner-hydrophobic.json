@@ -1,0 +1,54 @@
+{
+  "slug": "eco-silsoftner-hydrophobic",
+  "name": "Eco-SilSoftner (Hydrophobic)",
+  "subtitle": "Silicone Softener, Hydrophobic Feel",
+  "form": "SILICONE FINISHING SOFTENER",
+  "packs": [
+    "240",
+    "150",
+    "60"
+  ],
+  "headline": [
+    "SILKY,",
+    "PREMIUM HANDLE"
+  ],
+  "headline_accent": "WATER REPELLENT FEEL",
+  "benefits": [
+    [
+      "Silky Handle",
+      "Smooth, luxurious feel"
+    ],
+    [
+      "Hydrophobic Feel",
+      "Water-repellent touch"
+    ],
+    [
+      "Premium Finish",
+      "Value-added fabrics"
+    ],
+    [
+      "Soft & Smooth",
+      "Silicone softness"
+    ],
+    [
+      "Apparel Fabrics",
+      "Bottom-weights and jackets"
+    ],
+    [
+      "Fashion Fabrics",
+      "Distinctive hand feel"
+    ],
+    [
+      "Consistent Handle",
+      "Matches the approved sample"
+    ],
+    [
+      "Buyer Appeal",
+      "Fabric that sells"
+    ]
+  ],
+  "folder": "eco-series",
+  "version": 1,
+  "series": "ECO-SERIES",
+  "redraw": true
+}

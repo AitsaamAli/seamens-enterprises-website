@@ -1,0 +1,54 @@
+{
+  "slug": "ecolevel-lv",
+  "name": "EcoLevel-LV",
+  "subtitle": "Levelling and Migration Agent",
+  "form": "FOR REACTIVE & DIRECT DYEING",
+  "packs": [
+    "240",
+    "150",
+    "60"
+  ],
+  "headline": [
+    "UNIFORM",
+    "DYE UPTAKE"
+  ],
+  "headline_accent": "FEWER RE-DYES",
+  "benefits": [
+    [
+      "Uniform Uptake",
+      "Even colour across the lot"
+    ],
+    [
+      "Good Migration",
+      "Evens out shade differences"
+    ],
+    [
+      "Fewer Streaks",
+      "Less patchy dyeing"
+    ],
+    [
+      "Shade Consistency",
+      "Lot-to-lot repeatability"
+    ],
+    [
+      "Reactive Dyeing",
+      "Levelling for reactive dyes"
+    ],
+    [
+      "Direct Dyeing",
+      "Levelling for direct dyes"
+    ],
+    [
+      "Right First Time",
+      "Fewer corrections"
+    ],
+    [
+      "Lower Cost",
+      "Saves water, steam and time"
+    ]
+  ],
+  "folder": "eco-series",
+  "version": 1,
+  "series": "ECO-SERIES",
+  "redraw": true
+}

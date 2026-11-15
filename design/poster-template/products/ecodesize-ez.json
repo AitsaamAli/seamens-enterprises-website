@@ -1,0 +1,54 @@
+{
+  "slug": "ecodesize-ez",
+  "name": "EcoDesize-EZ",
+  "subtitle": "Enzymatic Desizing Agent",
+  "form": "FOR WOVEN FABRIC PREPARATION",
+  "packs": [
+    "240",
+    "150",
+    "60"
+  ],
+  "headline": [
+    "FAST, CLEAN",
+    "DESIZING"
+  ],
+  "headline_accent": "BETTER BASE",
+  "benefits": [
+    [
+      "Fast Removal",
+      "Starch and synthetic sizes"
+    ],
+    [
+      "Enzymatic Action",
+      "Targeted, effective desizing"
+    ],
+    [
+      "Mild on Fibre",
+      "Gentler than harsh chemicals"
+    ],
+    [
+      "Strength Retained",
+      "Protects fabric quality"
+    ],
+    [
+      "Even Preparation",
+      "Uniform base for next steps"
+    ],
+    [
+      "Better Scouring",
+      "Cleaner, more absorbent fabric"
+    ],
+    [
+      "Level Dyeing",
+      "Fewer patches later"
+    ],
+    [
+      "Water Efficient",
+      "Fewer rinses needed"
+    ]
+  ],
+  "folder": "eco-series",
+  "version": 1,
+  "series": "ECO-SERIES",
+  "redraw": true
+}

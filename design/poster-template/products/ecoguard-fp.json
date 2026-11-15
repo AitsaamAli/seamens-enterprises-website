@@ -1,0 +1,54 @@
+{
+  "slug": "ecoguard-fp",
+  "name": "EcoGuard-FP",
+  "subtitle": "Fire Proof Chemical Treatment",
+  "form": "FOR COTTON, BLENDS & INDUSTRIAL TEXTILES",
+  "packs": [
+    "240",
+    "150",
+    "60"
+  ],
+  "headline": [
+    "FIRE PROOF",
+    "PROTECTION"
+  ],
+  "headline_accent": "DURABLE SAFETY",
+  "benefits": [
+    [
+      "Flame Resistant",
+      "Resists catching fire"
+    ],
+    [
+      "Durable Protection",
+      "Long-lasting treatment"
+    ],
+    [
+      "Cotton & Blends",
+      "Natural and blended fabrics"
+    ],
+    [
+      "Industrial Textiles",
+      "Covers and partitions"
+    ],
+    [
+      "Curtains & Drapes",
+      "Safer furnishings"
+    ],
+    [
+      "Workplace Safety",
+      "For factories and warehouses"
+    ],
+    [
+      "Public Buildings",
+      "Halls, schools, hospitals"
+    ],
+    [
+      "Handle Retained",
+      "Fabric stays usable"
+    ]
+  ],
+  "folder": "eco-series",
+  "version": 1,
+  "series": "ECO-SERIES",
+  "redraw": true
+}

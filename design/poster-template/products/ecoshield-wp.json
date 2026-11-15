@@ -1,0 +1,54 @@
+{
+  "slug": "ecoshield-wp",
+  "name": "EcoShield-WP",
+  "subtitle": "Durable Water Repellent (DWR) Finish",
+  "form": "FOR TECHNICAL & OUTDOOR FABRICS",
+  "packs": [
+    "240",
+    "150",
+    "60"
+  ],
+  "headline": [
+    "WATER BEADS",
+    "& ROLLS OFF"
+  ],
+  "headline_accent": "STAYS BREATHABLE",
+  "benefits": [
+    [
+      "Water Repellent",
+      "Water beads and rolls off"
+    ],
+    [
+      "Durable Finish",
+      "Lasts through washing"
+    ],
+    [
+      "Breathable",
+      "Fabric still breathes"
+    ],
+    [
+      "Outdoor Fabrics",
+      "Jackets, tents and bags"
+    ],
+    [
+      "Technical Textiles",
+      "Industrial applications"
+    ],
+    [
+      "Soft Handle",
+      "Comfortable finish"
+    ],
+    [
+      "Stain Resistant",
+      "Water-based spills bead up"
+    ],
+    [
+      "Export Ready",
+      "Helps meet spray ratings"
+    ]
+  ],
+  "folder": "eco-series",
+  "version": 1,
+  "series": "ECO-SERIES",
+  "redraw": true
+}

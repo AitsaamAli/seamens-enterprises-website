@@ -1,0 +1,54 @@
+{
+  "slug": "ecofix-fb",
+  "name": "EcoFix-FB",
+  "subtitle": "Dye Fixing Agent (Formaldehyde-Based)",
+  "form": "FOR REACTIVE & DIRECT DYES",
+  "packs": [
+    "240",
+    "150",
+    "60"
+  ],
+  "headline": [
+    "BETTER",
+    "WASH FASTNESS"
+  ],
+  "headline_accent": "LESS BLEEDING",
+  "benefits": [
+    [
+      "Wash Fastness",
+      "Enhanced fastness to washing"
+    ],
+    [
+      "Less Bleeding",
+      "Colour stays in the fabric"
+    ],
+    [
+      "Reactive Dyes",
+      "After-treatment for reactive"
+    ],
+    [
+      "Direct Dyes",
+      "After-treatment for direct"
+    ],
+    [
+      "Cellulosic Fibres",
+      "Cotton and viscose"
+    ],
+    [
+      "Dark Shades",
+      "Helps deep shades meet specs"
+    ],
+    [
+      "Simple Application",
+      "Applied after dyeing"
+    ],
+    [
+      "Fewer Complaints",
+      "Better wet fastness"
+    ]
+  ],
+  "folder": "eco-series",
+  "version": 1,
+  "series": "ECO-SERIES",
+  "redraw": true
+}
