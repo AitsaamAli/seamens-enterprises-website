@@ -97,8 +97,8 @@ footer{background:var(--navy2);padding:3rem 2rem 1rem;border-top:1px solid rgba(
 <link rel="preload" as="image" href="/images/hero/cooling-tower-v5.webp" imagesrcset="/images/hero/cooling-tower-v5-sm.webp 960w, /images/hero/cooling-tower-v5.webp 1920w" imagesizes="100vw" fetchpriority="high">
 <link rel="stylesheet" href="/assets/page-hero.v1.css">
 <link rel="stylesheet" href="/assets/megamenu.v1.css">
-<link rel="stylesheet" href="/assets/eco-home.v3.css">
-<link rel="stylesheet" href="/assets/cf-page.v1.css">
+<link rel="stylesheet" href="/assets/eco-home.v4.css">
+<link rel="stylesheet" href="/assets/cf-page.v2.css">
 </head>
 <body>
 <nav>
@@ -245,6 +245,6 @@ window.addEventListener('load',function(){im.forEach(function(m){if(m.dataset.sr
 setInterval(function(){if(document.hidden)return;im[i].classList.remove('on');i=(i+1)%im.length;var m=im[i];m.style.animation='none';void m.offsetWidth;m.style.animation='';m.classList.add('on');if(cap){cap.style.opacity=0;setTimeout(function(){cap.textContent=m.dataset.cap;cap.style.opacity=1},400)}},5000)})})();
 </script>
 <script src="/assets/megamenu.v1.js" defer></script>
-<script src="/assets/eco-home.v4.js" defer></script>
+<script src="/assets/eco-home.v5.js" defer></script>
 </body>
 </html>
