@@ -1,0 +1,11 @@
+/* Poster coverflow on dark category pages: wider than the text column, light captions, glass arrows */
+.eco-cf.cf-page{width:min(1180px,calc(100vw - 32px));margin:1.4rem 0 1.2rem calc(50% - min(590px,calc(50vw - 16px)))}
+.cf-page .cf-slide picture{box-shadow:0 24px 54px rgba(0,0,0,.5);outline:1px solid rgba(0,180,166,.28);outline-offset:-1px}
+.cf-page .cf-cap b{color:#fff}
+.cf-page .cf-cap em{color:#5fe0d4}
+.cf-page .cf-nav{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.cf-page .cf-nav:hover{background:var(--teal,#00b4a6)}
+.cf-page .cf-dots i{background:rgba(255,255,255,.25)}
+.cf-page .cf-dots i.on{background:var(--teal,#00b4a6)}
+@media(min-width:821px){.cf-page .cf-track{padding:1.2rem calc(50% - min(300px,23vw)) 1.4rem}.cf-page .cf-slide{flex:0 0 min(600px,46vw)}.cf-page .cf-nav.prev{left:calc(50% - min(300px,23vw) - 23px)}.cf-page .cf-nav.next{right:calc(50% - min(300px,23vw) - 23px)}}
+@media(max-width:820px){.eco-cf.cf-page{width:100vw;margin-left:calc(50% - 50vw)}}
