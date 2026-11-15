@@ -1,0 +1,20 @@
+/* Textile auxiliaries page: product cards and process-stage cards instead of wide tables */
+.ecards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:.9rem;margin:1.2rem 0 1.4rem}
+.ecard{display:flex;flex-direction:column;gap:.45rem;text-decoration:none;color:inherit;background:linear-gradient(160deg,rgba(0,180,166,.09),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:1rem 1.05rem;transition:transform .2s,border-color .2s;scroll-margin-top:96px}
+.ecard:hover{transform:translateY(-3px);border-color:var(--teal,#00b4a6)}
+.ecard-top{display:flex;justify-content:space-between;align-items:flex-start;gap:.6rem}
+.ecard-top b{font:700 1.05rem/1.25 'Barlow',sans-serif;color:#fff}
+.ecard-top em{flex:none;font:700 .62rem 'Barlow Condensed',sans-serif;letter-spacing:.12em;text-transform:uppercase;font-style:normal;color:var(--teal,#00b4a6);border:1px solid rgba(0,180,166,.45);border-radius:999px;padding:.22rem .55rem;white-space:nowrap}
+.ecard-form{font:600 .78rem 'Barlow',sans-serif;color:#f5b52e;letter-spacing:.02em}
+.ecard-job{font-size:.9rem;line-height:1.55;color:rgba(255,255,255,.78)}
+.ecard-foot{display:flex;justify-content:space-between;align-items:center;gap:.5rem;margin-top:auto;padding-top:.55rem;border-top:1px solid rgba(255,255,255,.08)}
+.ecard-foot i{font:600 .78rem 'Barlow',sans-serif;font-style:normal;color:rgba(255,255,255,.7)}
+.ecard-foot u{text-decoration:none;font:700 .82rem 'Barlow',sans-serif;color:var(--teal,#00b4a6);white-space:nowrap}
+.scards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.9rem;margin:1.2rem 0 1.4rem}
+.scard{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.1);border-left:3px solid var(--teal,#00b4a6);border-radius:12px;padding:1rem 1.05rem}
+.scard h3{margin:0 0 .3rem!important;font:700 1.02rem 'Barlow',sans-serif!important;color:#fff!important;letter-spacing:0!important;text-transform:none!important}
+.scard p{margin:0 0 .7rem!important;font-size:.9rem!important;color:rgba(255,255,255,.72)!important}
+.schips{display:flex;flex-wrap:wrap;gap:.4rem}
+.schips a{font:600 .78rem 'Barlow',sans-serif;text-decoration:none;color:#fff;background:rgba(0,180,166,.12);border:1px solid rgba(0,180,166,.3);border-radius:999px;padding:.32rem .65rem}
+.schips a:hover{background:rgba(0,180,166,.28)}
+@media(max-width:640px){.ecards,.scards{grid-template-columns:1fr}}
