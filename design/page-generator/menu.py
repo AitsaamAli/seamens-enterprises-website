@@ -26,11 +26,13 @@ def mega():
             f'<div class="mm" id="mm-panel"><div class="mm-in">{cols}</div>'
             '<div class="mm-foot"><a href="/products">All products and services</a><a href="/request-quote">Request a quote</a><a href="https://wa.me/923054444125" target="_blank" rel="noopener">WhatsApp +92-305-4444125</a></div></div></li>')
 def directory(hid='all-products', title='Browse every product and service', lead=''):
+    """Product directory: one <details> per category (accordion on phones, all open on desktop via pdir.v2.js)."""
     cards = ''
-    for t, sub, url, its in GROUPS:
-        lis = ''.join(f'<li><a href="{u}">{esc(n)}</a></li>' for n, u in its)
-        head = f'<a href="{url}">{esc(t)}</a>' if url else esc(t)
-        cards += (f'<div class="pdir-card"><h3>{head}</h3><p>{esc(sub)} &middot; {len(its)} pages</p><ul>{lis}</ul>'
-                  + (f'<a class="pdir-all" href="{url}">Open category &rarr;</a>' if url else '') + '</div>')
+    icons = ['&#x1F9EA;', '&#x1F4A7;', '&#x2728;', '&#x1F525;', '&#x2744;', '&#x2699;']
+    for k, (t, sub, url, its) in enumerate(GROUPS):
+        lis = ''.join(f'<li><a href="{u}"><span>{esc(n)}</span><i aria-hidden="true">&rsaquo;</i></a></li>' for n, u in its)
+        cards += (f'<details class="pdir-card"{" open" if k == 0 else ""}><summary><span class="pdir-ic" aria-hidden="true">{icons[k % len(icons)]}</span>'
+                  f'<span class="pdir-t"><b>{esc(t)}</b><small>{esc(sub)}</small></span><span class="pdir-n">{len(its)}</span></summary>'
+                  f'<ul>{lis}</ul>' + (f'<a class="pdir-all" href="{url}">Open {esc(t)} &rarr;</a>' if url else '') + '</details>')
     return (f'<section class="pdir" id="{hid}" aria-labelledby="{hid}-h"><div class="pdir-in"><div class="pdir-label">Quick access</div><h2 id="{hid}-h">{esc(title)}</h2>'
             + (f'<p class="pdir-lead">{esc(lead)}</p>' if lead else '') + f'<div class="pdir-grid">{cards}</div></div></section>')
