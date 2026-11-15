@@ -177,7 +177,7 @@ def build(net):
         im = wave_bg(im)
     return im
 
-CREST = 0.80
+CREST = 0.76
 
 def wave_bg(im):
     """Water Safe theme: swap the plain navy backdrop for the homepage ocean-wave photo.
@@ -199,11 +199,55 @@ def wave_bg(im):
     # navy grade: deep under the text columns and the top, open behind the drum
     xs = np.linspace(0, 1600, W)[None, :]; ys = np.linspace(0, 1066, H)[:, None]
     side = np.clip(1 - np.exp(-((xs - 805) / 300) ** 2), 0, 1)
-    dark = np.clip(0.18 + 0.55 * side * (1 - 0.45 * np.clip((ys - 760) / 200, 0, 1)) + 0.25 * np.clip((260 - ys) / 260, 0, 1), 0, 0.88)[..., None]
-    navy = np.array([5, 18, 40], np.float32)
+    dark = np.clip(0.10 + 0.50 * side * (1 - 0.40 * np.clip((ys - 720) / 220, 0, 1)) + 0.30 * np.clip((300 - ys) / 300, 0, 1), 0, 0.85)[..., None]
+    navy = np.array([10, 22, 40], np.float32)              # site navy #0a1628
+    teal = np.array([0, 180, 166], np.float32)             # site teal #00b4a6
+    # website grade: teal shadows, lifted cyan highlights
+    l = wv.mean(axis=2, keepdims=True) / 255
+    wv = wv * 0.75 + (teal * (1 - l) * 0.55 + np.array([200, 245, 245], np.float32) * l * 0.45) * 0.25
     bg = wv * (1 - dark) + navy * dark
+    # upper scene: deep-water gradient with soft underwater caustics, fading into the real wave below
+    YY, XX = np.mgrid[0:H, 0:W].astype(np.float32) / S
+    t = np.clip(YY / 760, 0, 1)[..., None]
+    deep = navy * (1 - t) + np.array([6, 62, 72], np.float32) * t
+    u, v = XX / 95.0, YY / 95.0
+    c = (np.sin(u * 2.1 + np.sin(v * 1.7) * 1.6) + np.sin(v * 2.3 + np.sin(u * 1.3) * 1.8) + np.sin((u + v) * 1.4 + np.sin(u - v) * 1.2)) / 3
+    caus = np.clip(1 - np.abs(c) * 4.5, 0, 1) ** 3
+    caus = cv2.GaussianBlur(caus, (0, 0), 1.2 * S) * np.clip(1 - YY / 700, 0, 1) * (0.35 + 0.65 * np.exp(-((XX - 805) / 520) ** 2))
+    deep = deep + np.array([90, 220, 215], np.float32) * caus[..., None] * 0.16
+    sd = np.broadcast_to(side, (H, W))[..., None]
+    deep = deep * (1 - 0.45 * sd) + navy * 0.45 * sd
+    w = np.clip((YY - 600) / 260, 0, 1)[..., None]
+    bg = deep * (1 - w) + bg * w
+    # teal glow behind the drum
+    gx = np.exp(-(((XX - 805) / 400) ** 2 + ((YY - 500) / 440) ** 2))[..., None]
+    bg = bg + teal * gx * 0.28
+    # light rays from the surface
+    ang = np.arctan2(XX - 805, YY + 420)
+    rng = np.random.default_rng(7); n = rng.normal(size=720); n = cv2.GaussianBlur(n[None].astype(np.float32), (0, 0), 5)[0]; n = (n - n.min()) / (n.max() - n.min())
+    ray = n[((ang + np.pi) / (2 * np.pi) * 719).astype(int)] ** 2.0
+    ray = ray * np.clip(1 - (YY / 820), 0, 1) ** 1.4 * np.exp(-((XX - 805) / 560) ** 2)
+    bg = bg + np.array([150, 235, 235], np.float32) * ray[..., None] * 0.30
+    # a few out-of-focus bubbles rising beside the drum
+    bub = np.zeros((H, W), np.float32); rng = np.random.default_rng(11)
+    for _ in range(26):
+        x = rng.uniform(470, 532) if rng.random() < 0.55 else rng.uniform(1078, 1106); y = rng.uniform(150, 880); r = rng.uniform(2.5, 7)
+        cv2.circle(bub, tuple(B(x, y)), B(r)[0], 1.0, max(1, int(0.9 * S)), cv2.LINE_AA)
+        cv2.circle(bub, tuple(B(x - r * 0.35, y - r * 0.35)), max(1, B(r * 0.25)[0]), 1.0, -1, cv2.LINE_AA)
+    bub = cv2.GaussianBlur(bub, (0, 0), 0.6 * S)
+    bg = bg + np.array([200, 245, 245], np.float32) * bub[..., None] * 0.55
     # keep-mask: brightness/colour above the old backdrop (text, icons), plus filled shapes for drum and cards
     lum = a.mean(axis=2); sat = a.max(axis=2) - a.min(axis=2)
+    if cfg.get('teal_accents'):
+        hsv = cv2.cvtColor(a.clip(0, 255).astype(np.uint8), cv2.COLOR_RGB2HSV)
+        green = ((hsv[..., 0] >= 33) & (hsv[..., 0] <= 80) & (hsv[..., 1] > 60)).astype(np.float32)
+        keep = np.zeros((H, W), np.uint8)
+        for r in [(530, 60, 1085, 1010), (1112, 212, 1568, 530), (40, 40, 422, 192)]: cv2.rectangle(keep, tuple(B(r[0], r[1])), tuple(B(r[2], r[3])), 1, -1)
+        green *= (1 - keep)
+        h2 = hsv.copy(); h2[..., 0] = 86; h2[..., 1] = np.clip(hsv[..., 1].astype(int) * 1.05, 0, 255).astype(np.uint8)
+        rec = cv2.cvtColor(h2, cv2.COLOR_HSV2RGB).astype(np.float32)
+        g = cv2.GaussianBlur(green, (0, 0), 0.8 * S)[..., None]
+        a = a * (1 - g) + rec * g
     m = np.clip(np.maximum((lum - 52) / 40, (sat - 70) / 40), 0, 1)
     shp = np.zeros((H, W), np.uint8)
     def rr(x0, y0, x1, y1, r=16): cv2.rectangle(shp, tuple(B(x0 + r, y0)), tuple(B(x1 - r, y1)), 255, -1); cv2.rectangle(shp, tuple(B(x0, y0 + r)), tuple(B(x1, y1 - r)), 255, -1); [cv2.circle(shp, tuple(B(cx, cy)), B(r)[0], 255, -1) for cx in (x0 + r, x1 - r) for cy in (y0 + r, y1 - r)]
@@ -215,8 +259,8 @@ def wave_bg(im):
     cv2.drawContours(shp, [max(cs, key=cv2.contourArea)], -1, 255, -1)
     shp = cv2.GaussianBlur(shp.astype(np.float32) / 255, (0, 0), 1.5 * S)
     # dark halo behind loose text so it stays readable over white foam
-    halo = cv2.GaussianBlur(cv2.dilate((m > 0.3).astype(np.uint8), np.ones((22 * S, 22 * S), np.uint8)).astype(np.float32), (0, 0), 14 * S)
-    halo = (np.clip(halo * 1.6, 0, 1) * (1 - shp) * 0.7)[..., None]
+    halo = cv2.GaussianBlur(cv2.dilate((m > 0.3).astype(np.uint8), np.ones((30 * S, 30 * S), np.uint8)).astype(np.float32), (0, 0), 26 * S)
+    halo = (np.clip(halo * 1.3, 0, 1) * (1 - shp) * 0.6)[..., None]
     m = np.maximum(m, shp)[..., None]
     # soft contact shadow under the drum so it sits in the scene, not floating
     sh = np.zeros((H, W), np.float32); cv2.ellipse(sh, tuple(B(805, 1000)), tuple(B(300, 34)), 0, 0, 360, 1, -1)
@@ -244,7 +288,7 @@ def redraw_product(im):
     L, d = flat_layer(130)
     ftext(d, 0, 376 - 346, cfg['name'], fit('ExtraBold', 54, cfg['name'], 430), WHITE, -0.4)
     ftext(d, 0, 428 - 346, cfg['subtitle'], fit('Medium', 17, cfg['subtitle'], 400), (232, 238, 248))
-    ftext(d, 0, 457 - 346, cfg['form'], font('SemiBold', 14.5), (150, 210, 90), 2.2)
+    ftext(d, 0, 457 - 346, cfg['form'], font('SemiBold', 14.5), tuple(cfg.get('form_color', (150, 210, 90))), 2.2)
     return warp_paste(im, L, 346)
 
 def save(im, net):
