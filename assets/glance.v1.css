@@ -1,0 +1,18 @@
+/* "ECO-Series at a glance": one card per process stage with product chips (replaces a 3-column table that broke on phones) */
+.gl-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem;margin-top:1.6rem}
+.gl-card{position:relative;min-width:0;padding:1.3rem 1.3rem 1.2rem;border-radius:18px;background:linear-gradient(160deg,rgba(0,180,166,.10),rgba(255,255,255,.03) 55%);border:1px solid rgba(0,180,166,.28);box-shadow:0 14px 34px rgba(0,0,0,.25);transition:transform .25s,border-color .25s}
+.gl-card:hover{transform:translateY(-3px);border-color:rgba(0,180,166,.6)}
+.gl-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:.7rem}
+.gl-ic{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:rgba(0,180,166,.16);font-size:1.35rem}
+.gl-n{font:700 1.7rem 'Barlow Condensed',sans-serif;color:rgba(0,180,166,.45);letter-spacing:.04em}
+.gl-card h3{margin:0 0 .45rem;font:700 1.3rem 'Playfair Display',serif;color:#fff}
+.gl-goal{margin:0 0 1rem;color:#b9c6da;font-size:.95rem;line-height:1.55}
+.gl-goal b{color:#5fe0d4;font-weight:700}
+.gl-chips{display:flex;flex-wrap:wrap;gap:.45rem}
+.gl-chips a{display:inline-block;padding:.38rem .75rem;border-radius:999px;border:1px solid rgba(0,180,166,.45);background:rgba(10,22,40,.55);color:#e8f4f3;font:600 .85rem 'Barlow',sans-serif;text-decoration:none;transition:background .2s,color .2s}
+.gl-chips a:hover{background:var(--teal,#00b4a6);color:#fff}
+@media(min-width:720px){.gl-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1100px){.gl-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.gl-cta{display:flex;flex-direction:column;justify-content:center;text-decoration:none;background:linear-gradient(160deg,rgba(37,211,102,.14),rgba(0,180,166,.06));border-color:rgba(37,211,102,.4)}
+.gl-cta .gl-ic{margin-bottom:.8rem;background:rgba(37,211,102,.18)}
+.gl-btn{align-self:flex-start;padding:.6rem 1.1rem;border-radius:999px;background:#25d366;color:#fff;font:700 .92rem 'Barlow',sans-serif}
