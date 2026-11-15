@@ -221,9 +221,13 @@ def wave_bg(im):
     cs, _ = cv2.findContours(drum, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     cv2.drawContours(shp, [max(cs, key=cv2.contourArea)], -1, 255, -1)
     shp = cv2.GaussianBlur(shp.astype(np.float32) / 255, (0, 0), 1.5 * S)
-    # dark halo behind loose text so it stays readable over white foam
-    halo = cv2.GaussianBlur(cv2.dilate((m > 0.3).astype(np.uint8), np.ones((22 * S, 22 * S), np.uint8)).astype(np.float32), (0, 0), 14 * S)
-    halo = (np.clip(halo * 1.6, 0, 1) * (1 - shp) * 0.7)[..., None]
+    # smooth dark panels behind the two text columns (soft rectangles, no glyph-shaped edges) so text stays readable
+    halo = np.zeros((H, W), np.float32)
+    for r in [(20, 185, 480, 930), (1105, 540, 1580, 945), (1150, 40, 1580, 110), (1150, 160, 1580, 200)]: cv2.rectangle(halo, tuple(B(r[0], r[1])), tuple(B(r[2], r[3])), 1, -1)
+    halo = (cv2.GaussianBlur(halo, (0, 0), 45 * S) * (1 - shp) * 0.75)[..., None]
+    # around the package keep only the package itself: the old backdrop's blue glow must not survive as dark blotches
+    zone = np.zeros((H, W), np.float32); cv2.rectangle(zone, tuple(B(490, 40)), tuple(B(1108, 1066)), 1, -1)
+    m = m * (1 - zone)
     m = np.maximum(m, shp)[..., None]
     bg = bg * (1 - halo) + navy * halo
     out = bg * (1 - m) + a * m

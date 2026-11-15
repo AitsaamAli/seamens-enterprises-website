@@ -1,0 +1,62 @@
+{
+  "slug": "rd-4050",
+  "name": "Water Safe RD-4050",
+  "subtitle": "Biocide for RO Plants",
+  "headline": [
+    "BIOFOULING",
+    "CONTROL FOR"
+  ],
+  "headline_accent": "RO PLANTS",
+  "benefits": [
+    [
+      "Controls Growth",
+      "Biological control in RO systems"
+    ],
+    [
+      "Reduces Biofouling",
+      "Less slime on membranes"
+    ],
+    [
+      "Longer Cleaning Intervals",
+      "Fewer CIP cleanings"
+    ],
+    [
+      "Steady Permeate Flow",
+      "Maintains plant output"
+    ],
+    [
+      "Protects Membranes",
+      "Longer membrane life"
+    ],
+    [
+      "Stable Pressure",
+      "Less differential pressure rise"
+    ],
+    [
+      "Cleaner System",
+      "Pipework and housings"
+    ],
+    [
+      "Programme Ready",
+      "Works with RC-1030 anti-scalant"
+    ]
+  ],
+  "folder": "water-safe",
+  "version": 1,
+  "series": "WATER SAFE SERIES",
+  "accent": [
+    40,
+    205,
+    215
+  ],
+  "bg": "wave",
+  "packs": [
+    "250",
+    "60"
+  ],
+  "extra_packs": [
+    "1000"
+  ],
+  "redraw": true,
+  "form": "INDUSTRIAL WATER TREATMENT"
+}

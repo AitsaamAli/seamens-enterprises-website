@@ -1,0 +1,62 @@
+{
+  "slug": "dc-121",
+  "name": "Water Safe DC-121",
+  "subtitle": "Organic De-scaler for Steam Boilers",
+  "headline": [
+    "ORGANIC",
+    "DE-SCALER FOR"
+  ],
+  "headline_accent": "BOILERS",
+  "benefits": [
+    [
+      "Removes Scale",
+      "Dissolves hardness scale"
+    ],
+    [
+      "Organic-Based",
+      "Controlled planned cleaning"
+    ],
+    [
+      "Restores Efficiency",
+      "Clean tubes transfer heat freely"
+    ],
+    [
+      "Saves Fuel",
+      "Lower fuel per tonne of steam"
+    ],
+    [
+      "Cooler Tubes",
+      "Less risk of overheating"
+    ],
+    [
+      "Planned Cleaning",
+      "Fits your shutdown window"
+    ],
+    [
+      "Clean Restart",
+      "Fresh start for treatment"
+    ],
+    [
+      "Fire & Water Tube",
+      "Suits both boiler types"
+    ]
+  ],
+  "folder": "water-safe",
+  "version": 1,
+  "series": "WATER SAFE SERIES",
+  "accent": [
+    40,
+    205,
+    215
+  ],
+  "bg": "wave",
+  "packs": [
+    "250",
+    "60"
+  ],
+  "extra_packs": [
+    "1000"
+  ],
+  "redraw": true,
+  "form": "INDUSTRIAL WATER TREATMENT"
+}

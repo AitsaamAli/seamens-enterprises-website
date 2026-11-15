@@ -1,0 +1,62 @@
+{
+  "slug": "fc-7090",
+  "name": "Water Safe FC-7090",
+  "subtitle": "Organic De-scaler for A/C Plants & Chillers",
+  "headline": [
+    "ORGANIC",
+    "DE-SCALER FOR"
+  ],
+  "headline_accent": "CHILLERS",
+  "benefits": [
+    [
+      "Two-Way Action",
+      "Removes and controls scale"
+    ],
+    [
+      "Organic De-scaler",
+      "Organic-based scale removal"
+    ],
+    [
+      "Copper Safe",
+      "Safe for copper heat exchangers"
+    ],
+    [
+      "Aluminium Safe",
+      "Safe for aluminium exchangers"
+    ],
+    [
+      "No Shutdown Needed",
+      "Dosed while the system runs"
+    ],
+    [
+      "Restores Efficiency",
+      "Clean tubes, better cooling"
+    ],
+    [
+      "Lower Energy Use",
+      "Less load on chillers"
+    ],
+    [
+      "For A/C Plants",
+      "Chillers and A/C water circuits"
+    ]
+  ],
+  "folder": "water-safe",
+  "version": 1,
+  "series": "WATER SAFE SERIES",
+  "accent": [
+    40,
+    205,
+    215
+  ],
+  "bg": "wave",
+  "packs": [
+    "250",
+    "60"
+  ],
+  "extra_packs": [
+    "1000"
+  ],
+  "redraw": true,
+  "form": "INDUSTRIAL WATER TREATMENT"
+}

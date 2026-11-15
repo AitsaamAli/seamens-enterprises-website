@@ -1,0 +1,62 @@
+{
+  "slug": "fc-120q",
+  "name": "Water Safe FC-120Q",
+  "subtitle": "Anti-Scale & Corrosion Inhibitor for A/C Plants",
+  "headline": [
+    "SCALE + CORROSION",
+    "CONTROL FOR"
+  ],
+  "headline_accent": "A/C PLANTS",
+  "benefits": [
+    [
+      "Inhibits Scale",
+      "Clean heat transfer surfaces"
+    ],
+    [
+      "Inhibits Corrosion",
+      "Protects tubes and pipework"
+    ],
+    [
+      "Dual Action",
+      "Scale and corrosion in one product"
+    ],
+    [
+      "Plant Efficiency",
+      "Steady cooling performance"
+    ],
+    [
+      "Lower Energy Use",
+      "Clean tubes, lower chiller load"
+    ],
+    [
+      "Longer Equipment Life",
+      "Less wear on metal surfaces"
+    ],
+    [
+      "Fewer Shutdowns",
+      "Less descaling and repair"
+    ],
+    [
+      "Programme Ready",
+      "Works with FC-30B and FC-3020"
+    ]
+  ],
+  "folder": "water-safe",
+  "version": 1,
+  "series": "WATER SAFE SERIES",
+  "accent": [
+    40,
+    205,
+    215
+  ],
+  "bg": "wave",
+  "packs": [
+    "250",
+    "60"
+  ],
+  "extra_packs": [
+    "1000"
+  ],
+  "redraw": true,
+  "form": "INDUSTRIAL WATER TREATMENT"
+}

@@ -1,0 +1,62 @@
+{
+  "slug": "br-999",
+  "name": "Water Safe BR-999",
+  "subtitle": "Closed-Circuit Water Treatment",
+  "headline": [
+    "PROTECTION FOR",
+    "CLOSED"
+  ],
+  "headline_accent": "CIRCUITS",
+  "benefits": [
+    [
+      "Closed Loop Treatment",
+      "For chilled and hot water loops"
+    ],
+    [
+      "Long-Lasting",
+      "Stays effective in low-loss systems"
+    ],
+    [
+      "Corrosion Control",
+      "Protects pipework and coils"
+    ],
+    [
+      "Scale Control",
+      "Clean heat transfer surfaces"
+    ],
+    [
+      "Clean Water",
+      "Less sludge and rust in the loop"
+    ],
+    [
+      "Protects Pumps",
+      "Less wear on seals and impellers"
+    ],
+    [
+      "Periodic Checks",
+      "Tests keep the loop in range"
+    ],
+    [
+      "Low Top-Up",
+      "Minimal dosing once set"
+    ]
+  ],
+  "folder": "water-safe",
+  "version": 1,
+  "series": "WATER SAFE SERIES",
+  "accent": [
+    40,
+    205,
+    215
+  ],
+  "bg": "wave",
+  "packs": [
+    "250",
+    "60"
+  ],
+  "extra_packs": [
+    "1000"
+  ],
+  "redraw": true,
+  "form": "INDUSTRIAL WATER TREATMENT"
+}
