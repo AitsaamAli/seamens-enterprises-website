@@ -1,0 +1,54 @@
+{
+  "slug": "eco-weight-enhancer-wkl-121",
+  "name": "Eco-Weight Enhancer WKL-121",
+  "subtitle": "Finishing Agent for Fabric Weight and Body",
+  "form": "TRANSPARENT VISCOUS LIQUID",
+  "headline": [
+    "ADDS WEIGHT",
+    "+ BODY"
+  ],
+  "headline_accent": "FULLER HANDLE",
+  "packs": [
+    "240",
+    "150",
+    "60"
+  ],
+  "benefits": [
+    [
+      "Adds Fabric Weight",
+      "Helps reach the target GSM"
+    ],
+    [
+      "Better Body",
+      "Fuller, richer fabric feel"
+    ],
+    [
+      "Fuller Handle",
+      "The hand buyers expect"
+    ],
+    [
+      "Liquid Form",
+      "Easy on finishing equipment"
+    ],
+    [
+      "Easy to Apply",
+      "Mixes into finishing baths"
+    ],
+    [
+      "Uniform Finish",
+      "Even effect across the lot"
+    ],
+    [
+      "Buyer-Ready Fabric",
+      "Finished cloth that meets spec"
+    ],
+    [
+      "Value Added",
+      "More weight in one step"
+    ]
+  ],
+  "folder": "eco-series",
+  "version": 1,
+  "series": "ECO-SERIES",
+  "redraw": true
+}

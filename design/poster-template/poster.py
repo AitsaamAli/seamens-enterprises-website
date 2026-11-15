@@ -30,15 +30,25 @@ def load_base():
     im = src.resize((src.width * S, src.height * S), Image.LANCZOS)
     return im.filter(ImageFilter.UnsharpMask(radius=2, percent=55, threshold=2))
 
-def wipe(im, rect, thr=150, grow=3):
-    """Inpaint bright text inside rect (text on a dark background)."""
-    a = cv2.cvtColor(np.array(im), cv2.COLOR_RGB2BGR); x0, y0, x1, y1 = B(*rect)
-    sub = a[y0:y1, x0:x1]; m = np.zeros(a.shape[:2], np.uint8)
-    hsv = cv2.cvtColor(sub, cv2.COLOR_BGR2HSV)
-    mm = ((sub.max(axis=2) > thr) | ((hsv[..., 1] > 90) & (hsv[..., 2] > 110))).astype(np.uint8) * 255
-    m[y0:y1, x0:x1] = cv2.dilate(mm, np.ones((grow * S, grow * S), np.uint8))
-    a = cv2.inpaint(a, m, 5 * S, cv2.INPAINT_TELEA)
-    return Image.fromarray(cv2.cvtColor(a, cv2.COLOR_BGR2RGB))
+def wipe(im, rect, thr=88, grow=5):
+    """Remove light text inside rect (on a dark, smooth background): mask the text, then refill the holes
+    by normalised blur of the untouched background, so no smears or ghosts remain."""
+    a = np.array(im).astype(np.float32); x0, y0, x1, y1 = B(*rect)
+    sub = a[y0:y1, x0:x1]
+    hsv = cv2.cvtColor(sub.astype(np.uint8), cv2.COLOR_RGB2HSV)
+    mm = ((sub.max(axis=2) > thr) | ((hsv[..., 1] > 80) & (hsv[..., 2] > 70))).astype(np.uint8)
+    mm = cv2.dilate(mm, np.ones((grow * S, grow * S), np.uint8)).astype(np.float32)
+    pad = 40 * S; X0, Y0 = max(0, x0 - pad), max(0, y0 - pad); X1, Y1 = min(a.shape[1], x1 + pad), min(a.shape[0], y1 + pad)
+    region = a[Y0:Y1, X0:X1]; M = np.zeros(region.shape[:2], np.float32); M[y0 - Y0:y1 - Y0, x0 - X0:x1 - X0] = mm
+    valid = 1 - M; out = region.copy()
+    for sg in (60, 24, 10):
+        num = cv2.GaussianBlur(out * valid[..., None], (0, 0), sg * S); den = cv2.GaussianBlur(valid, (0, 0), sg * S)[..., None]
+        ok = (den > 0.02) & (M[..., None] > 0)
+        out = np.where(ok, num / np.maximum(den, 1e-6), out)
+        valid = np.maximum(valid, ok[..., 0].astype(np.float32) * 0.999)
+    soft = cv2.GaussianBlur(M, (0, 0), 1.5 * S)[..., None].clip(0, 1)
+    a[Y0:Y1, X0:X1] = region * (1 - soft) + out * soft
+    return Image.fromarray(a.clip(0, 255).astype(np.uint8))
 
 def wipe_dark(im, rect, thr=175, grow=3):
     """Inpaint dark text inside rect (text on light paper)."""
@@ -167,8 +177,8 @@ def build(net):
 
 def redraw_product(im):
     """Wipe GS-777 wording and draw this product's wording (other products)."""
-    for r in [(36, 194, 200, 216), (34, 222, 465, 378), (96, 452, 420, 896)]:
-        im = wipe(im, r)
+    for r, g in [((36, 194, 200, 216), 5), ((34, 222, 470, 382), 11), ((96, 452, 420, 896), 5)]:
+        im = wipe(im, r, grow=g)
     text(im, (40, 205), cfg['series'], font('Bold', 17), (110, 190, 60), 'lm', 3.2)
     hl = cfg['headline']; y = 248
     for line in hl:
@@ -176,8 +186,8 @@ def redraw_product(im):
     text(im, (37, y + 2), cfg['headline_accent'], fit('ExtraBold', 46, cfg['headline_accent'], 420), (122, 200, 30), 'lm')
     ys = [466, 522, 580, 635, 693, 750, 809, 865]
     for (t, s), y in zip(cfg['benefits'], ys):
-        text(im, (100, y), t, font('SemiBold', 21), WHITE, 'lm')
-        text(im, (100, y + 21), s, font('Regular', 15), (200, 210, 226), 'lm')
+        text(im, (100, y), t, font('SemiBold', 22.5), WHITE, 'lm')
+        text(im, (100, y + 21.5), s, font('Regular', 15.5), (200, 210, 226), 'lm')
     im, _ = col_fill(im, (566, 346, 1046, 470), (349, 352), 'dark')
     L, d = flat_layer(130)
     ftext(d, 0, 376 - 346, cfg['name'], fit('ExtraBold', 54, cfg['name'], 430), WHITE, -0.4)
@@ -192,7 +202,7 @@ def save(im, net):
         r.save(base + suf + '.webp', quality=q, method=6)
         if suf != '-full': r.save(base + suf + '.jpg', quality=82, optimize=True, progressive=True)
     os.makedirs(IMG + 'products/posters', exist_ok=True)
-    im.convert('RGB').save(f"{IMG}products/posters/{cfg["name"]}-{net}KG-v{v}.jpg", quality=90, optimize=True, progressive=True)
+    im.convert('RGB').save(f"{IMG}products/posters/{cfg["name"].replace(' ', '-')}-{net}KG-v{v}.jpg", quality=90, optimize=True, progressive=True)
     print('saved', base)
 
 if __name__ == '__main__':

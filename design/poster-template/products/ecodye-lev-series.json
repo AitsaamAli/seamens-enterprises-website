@@ -1,0 +1,54 @@
+{
+  "slug": "ecodye-lev-series",
+  "name": "EcoDye-LEV Series",
+  "subtitle": "Levelling and Dispersing Agents for Dyeing",
+  "form": "FOR REACTIVE & DISPERSE DYEING",
+  "headline": [
+    "EVEN SHADES",
+    "+ STABLE BATHS"
+  ],
+  "headline_accent": "FEWER RE-DYES",
+  "packs": [
+    "240",
+    "150",
+    "60"
+  ],
+  "benefits": [
+    [
+      "Even Shade",
+      "Uniform colour across the lot"
+    ],
+    [
+      "Stable Dispersion",
+      "Disperse dye stays well spread"
+    ],
+    [
+      "Fewer Streaks",
+      "Less specking and patchiness"
+    ],
+    [
+      "Fewer Re-Dyes",
+      "Right first time, more often"
+    ],
+    [
+      "Reactive Dyeing",
+      "Levelling for reactive processes"
+    ],
+    [
+      "Disperse Dyeing",
+      "Dispersing for disperse processes"
+    ],
+    [
+      "No Clumping",
+      "Dye particles stay in suspension"
+    ],
+    [
+      "Lower Cost",
+      "Saves water, steam and time"
+    ]
+  ],
+  "folder": "eco-series",
+  "version": 1,
+  "series": "ECO-SERIES",
+  "redraw": true
+}

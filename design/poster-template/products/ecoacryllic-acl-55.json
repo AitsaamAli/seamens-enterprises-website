@@ -1,0 +1,54 @@
+{
+  "slug": "ecoacryllic-acl-55",
+  "name": "EcoAcryllic-ACL-55",
+  "subtitle": "Modified Polymer High Performance Sizing Agent",
+  "form": "TRANSPARENT THICK LIQUID",
+  "headline": [
+    "MAXIMUM",
+    "ABRASION GUARD"
+  ],
+  "headline_accent": "LOW ADD-ON",
+  "packs": [
+    "240",
+    "150",
+    "60"
+  ],
+  "benefits": [
+    [
+      "High Abrasion Resistance",
+      "Tough film on coarse, heavy warps"
+    ],
+    [
+      "Low Size Add-On",
+      "Protection with less chemical"
+    ],
+    [
+      "No Gumming",
+      "Clean running on indigo yarn"
+    ],
+    [
+      "Easy Desizing",
+      "Clean removal before washing"
+    ],
+    [
+      "High Strength",
+      "Fewer breaks on heavy looms"
+    ],
+    [
+      "Soft Towel Handle",
+      "Strength without a harsh feel"
+    ],
+    [
+      "Low Foam",
+      "Stable, clean size box"
+    ],
+    [
+      "Economical",
+      "Lower cost per beam"
+    ]
+  ],
+  "folder": "eco-series",
+  "version": 1,
+  "series": "ECO-SERIES",
+  "redraw": true
+}

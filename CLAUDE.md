@@ -109,10 +109,14 @@ Still valid from the knowledge base:
     - a QR card
   - `poster.py <slug>` reads `products/<slug>.json` (wording, 8 benefits, pack sizes, version; `"redraw": true` for products other than GS-777) and writes the website images (`images/products/<slug>-<kg>kg-v<N>.webp/-sm/-full/.jpg`) plus 3200px originals for the owner in `images/products/posters/<Name>-<kg>KG-v<N>.jpg`.
   - Bump `version` whenever an image changes.
-- **GS-777 live posters:** `ecoshort-gs-777-240kg-v5` and `ecoshort-gs-777-125kg-v5` in a **pack-size slider** (`assets/pack-switch.v2.css` and `.js`):
+- **ECO posters done (Nov 15, 2026):** GS-777 (v5), D-11, ACL-55, WKL-121, EcoDye-LEV and SCA-30 (v1), made with the template.
+  - Packs below 1,000 KG all use the same drum image; only the NET WEIGHT changes.
+  - **1,000 KG packs are still to do:** they need a different package (IBC tank) on the template.
+  - The page generator (`design/page-generator/gen.py`) adds the pack-size slider automatically to any ECO page whose `design/poster-template/products/<slug>.json` exists and whose images are generated.
+- **GS-777 live posters:** `ecoshort-gs-777-240kg-v5` and `ecoshort-gs-777-125kg-v5` in a **pack-size slider** (`assets/pack-switch.v3.css` and `.js`):
   - swipeable, with the next poster peeking in
-  - tabs below, plus arrows on desktop
-  - autoplay until the visitor touches it
+  - a one-line segmented pack-size control below, plus arrows on desktop
+  - auto-rotates every 4 s in a loop, with a progress line on the active tab; it pauses on touch (resumes after 6 s), mouse hover, off-screen or a hidden tab
   - the zoom opens the selected size
   - images served through `<picture>` with JPG fallback
 - **Product page generator:** a copy of the scratchpad generator (`gen.py`, `gen2.py`, `extra.py`, data files, `menu.py`, `navpatch.py`, `cat_orig.html` with the poster/slider block) is saved in `design/page-generator/`. Run it from there if the scratchpad is gone.
