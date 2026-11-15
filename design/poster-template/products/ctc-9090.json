@@ -1,8 +1,5 @@
 {
   "slug": "ctc-9090",
-  "folder": "water-safe",
-  "version": 1,
-  "series": "WATER SAFE SERIES",
   "name": "Water Safe CTC-9090",
   "subtitle": "Cooling Tower pH Controller",
   "form": "INDUSTRIAL WATER TREATMENT",
@@ -11,12 +8,6 @@
     "COOLING"
   ],
   "headline_accent": "TOWERS",
-  "accent": [
-    0,
-    200,
-    185
-  ],
-  "bg": "wave",
   "benefits": [
     [
       "Stable pH Band",
@@ -51,15 +42,21 @@
       "Daily pH readings show control"
     ]
   ],
+  "folder": "water-safe",
+  "version": 1,
+  "series": "WATER SAFE SERIES",
+  "accent": [
+    40,
+    205,
+    215
+  ],
+  "bg": "wave",
   "packs": [
     "250",
     "60"
   ],
-  "redraw": true,
-  "teal_accents": true,
-  "form_color": [
-    110,
-    225,
-    215
-  ]
+  "extra_packs": [
+    "1000"
+  ],
+  "redraw": true
 }

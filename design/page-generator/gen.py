@@ -26,7 +26,8 @@ def slider_html(p, c, wa):
     allp = c['packs'] + c.get('extra_packs', [])
     for i, kg in enumerate(allp):
         b = f"/images/products/{p['slug']}-{kg}kg-v{c['version']}"
-        alt = esc(f"{p['name']} {c['series'].title().replace('Eco-Series', 'ECO-Series')} {p['stage'].lower()} drum by Seamens Enterprises ({kg} KG pack)")
+        pack = 'IBC tank' if kg == '1000' else ('bag' if kg == '25' else 'drum')
+        alt = esc(f"{p['name']} {c['series'].title().replace('Eco-Series', 'ECO-Series')} {(p.get('stage') or p['role']).lower()} {pack} by Seamens Enterprises ({kg} KG pack)")
         slides += (f'<a class="pshow-zoom pk-slide" id="{p["slug"]}-{kg}" aria-label="{esc(p["name"])} poster, {kg} KG pack" href="{b}-full.webp"><picture>'
                    f'<source type="image/webp" srcset="{b}-sm.webp 720w, {b}.webp 1080w" sizes="(max-width:820px) 90vw, 780px">'
                    f'<img src="{b}-sm.jpg" srcset="{b}-sm.jpg 720w, {b}.jpg 1080w" sizes="(max-width:820px) 90vw, 780px" width="1080" height="720" loading="eager" decoding="async"{" fetchpriority=\"high\"" if i == 0 else ""} alt="{alt}"></picture></a>')
@@ -34,7 +35,7 @@ def slider_html(p, c, wa):
     nav = ('<button type="button" class="pk-nav prev" aria-label="Previous pack size">&#8249;</button><button type="button" class="pk-nav next" aria-label="Next pack size">&#8250;</button>' if len(allp) > 1 else '')
     return (f'<figure class="pshow pk-car" id="{p["slug"]}-poster">\n<div class="pk-track" tabindex="0" aria-label="Pack sizes, swipe to see each">{slides}</div>{nav}'
             f'\n<div class="pk-tabs" role="group" aria-label="Pack size"><span>Pack size</span><div class="pk-seg">{tabs}</div></div>\n'
-            f'<figcaption><span class="pshow-name"><b>{esc(p["name"])}</b> &middot; ECO-Series {esc(p["stage"].lower())}</span><a class="pshow-cta" href="{wa}" target="_blank" rel="noopener">Price &amp; details</a></figcaption>\n</figure>')
+            f'<figcaption><span class="pshow-name"><b>{esc(p["name"])}</b> &middot; {'ECO-Series' if 'stage' in p else 'Water Safe'} {esc((p.get('stage') or p['role']).lower())}</span><a class="pshow-cta" href="{wa}" target="_blank" rel="noopener">Price &amp; details</a></figcaption>\n</figure>')
 
 def detail_block(did):
     global POSTER

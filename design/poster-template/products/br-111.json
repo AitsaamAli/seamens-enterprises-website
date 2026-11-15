@@ -1,0 +1,62 @@
+{
+  "slug": "br-111",
+  "name": "Water Safe BR-111",
+  "subtitle": "Anti-Scalant for Steam Boilers",
+  "form": "INDUSTRIAL WATER TREATMENT",
+  "headline": [
+    "SCALE-FREE",
+    "STEAM"
+  ],
+  "headline_accent": "BOILERS",
+  "benefits": [
+    [
+      "Prevents Scale",
+      "Protects boiler tubes from hardness"
+    ],
+    [
+      "Fuel Efficiency",
+      "Clean tubes transfer heat freely"
+    ],
+    [
+      "Protects Tubes",
+      "Less risk of overheating"
+    ],
+    [
+      "Steady Steam",
+      "Reliable output at full load"
+    ],
+    [
+      "Longer Boiler Life",
+      "Less deposit-related damage"
+    ],
+    [
+      "Fewer Shutdowns",
+      "Less descaling downtime"
+    ],
+    [
+      "Fire & Water Tube",
+      "Suits both boiler types"
+    ],
+    [
+      "Programme Ready",
+      "Works with BR-555 oxygen scavenger"
+    ]
+  ],
+  "folder": "water-safe",
+  "version": 1,
+  "series": "WATER SAFE SERIES",
+  "accent": [
+    40,
+    205,
+    215
+  ],
+  "bg": "wave",
+  "packs": [
+    "250",
+    "60"
+  ],
+  "extra_packs": [
+    "1000"
+  ],
+  "redraw": true
+}
