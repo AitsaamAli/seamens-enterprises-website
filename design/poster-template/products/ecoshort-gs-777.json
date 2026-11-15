@@ -1,0 +1,22 @@
+{
+  "slug": "ecoshort-gs-777",
+  "folder": "eco-series",
+  "version": 4,
+  "series": "ECO-SERIES",
+  "name": "EcoShort-GS-777",
+  "subtitle": "Multi-Polymer Film Forming Organic Sizing Agent",
+  "form": "WHITE THICK PASTE",
+  "headline": ["SIZE + LUBRICANT", "+ BINDER"],
+  "headline_accent": "IN ONE",
+  "benefits": [
+    ["High Strength", "Stronger warp yarn, fewer breaks"],
+    ["Superior Lubrication", "Lower friction at heald and reed"],
+    ["Excellent Adhesion", "Binds fibres firmly to the yarn"],
+    ["Abrasion Resistant", "Protects yarn on high-speed looms"],
+    ["Easy Desizing", "Quick, clean removal before dyeing"],
+    ["Low Foam", "Stable, clean size box"],
+    ["Fewer Stains", "Cleaner fabric, fewer seconds"],
+    ["Improved Weavability", "Higher loom efficiency"]
+  ],
+  "packs": ["240", "125"]
+}

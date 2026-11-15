@@ -100,16 +100,20 @@ Still valid from the knowledge base:
   3. Link `assets/product-showcase.v1.css` and `.js` on that page.
   4. Set the Product JSON-LD `image` to the poster.
   5. Check the poster's facts against the site.
-- **Poster v2 (approved by Usman, Nov 14, 2026):** now `images/products/ecoshort-gs-777-240kg-v3` and `ecoshort-gs-777-125kg-v3`, each in `.webp` (1080), `-sm.webp` (720), `-full.webp` (1600, opened by the zoom link; its QR scans) and JPG fallbacks (`.jpg`, `-sm.jpg`) served through `<picture>`. Design: the owner's reference poster, enhanced with the Canva AI image tool, then corrected in code:
-  - real Seamens logo and real certification marks
-  - textile-accurate benefit lines
-  - "Office & Warehouse" address heading
-  - no 24/7 badge
-  - NET WEIGHT box and certification strip wrapped around the drum
-  - QR card linking to the product page
-  Full-quality originals for the owner to copy and reuse are kept in `images/products/posters/` (3072×2048 JPG). The page shows a **pack-size slider** (`assets/pack-switch.v2.css` and `.js`):
-  - swipeable posters, with the next one peeking in
-  - pack-size tabs below, plus arrows on desktop
-  - gentle autoplay until the visitor touches it
+- **Poster template (approved by Usman, Nov 15, 2026): `design/poster-template/`** (excluded from deploy). Use it for every product poster instead of designing from scratch.
+  - `base.jpg` is the approved GS-777 poster. It has:
+    - a bigger Seamens logo card and a bigger drum-label logo
+    - on the label: ISO 9001, ISO 45001 and Industrial Grade marks
+    - in the side panel: ISO 9001, Eco Friendly, Luwa, a bigger CONAIR-PAK tick badge, IPO, Industrial Grade and Premium
+    - an Office & Warehouse address
+    - a QR card
+  - `poster.py <slug>` reads `products/<slug>.json` (wording, 8 benefits, pack sizes, version; `"redraw": true` for products other than GS-777) and writes the website images (`images/products/<slug>-<kg>kg-v<N>.webp/-sm/-full/.jpg`) plus 3200px originals for the owner in `images/products/posters/<Name>-<kg>KG-v<N>.jpg`.
+  - Bump `version` whenever an image changes.
+- **GS-777 live posters:** `ecoshort-gs-777-240kg-v4` and `ecoshort-gs-777-125kg-v4` in a **pack-size slider** (`assets/pack-switch.v2.css` and `.js`):
+  - swipeable, with the next poster peeking in
+  - tabs below, plus arrows on desktop
+  - autoplay until the visitor touches it
   - the zoom opens the selected size
-  Its markup lives in the generator's `cat_orig.html` poster block (`figure.pshow.pk-car`). Use the same slider for the next products. Next products follow the same recipe, one product at a time, each reviewed by Usman. Always check AI text for spelling, invented badges and wrong-industry wording before use.
+  - images served through `<picture>` with JPG fallback
+- **Product page generator:** a copy of the scratchpad generator (`gen.py`, `gen2.py`, `extra.py`, data files, `menu.py`, `navpatch.py`, `cat_orig.html` with the poster/slider block) is saved in `design/page-generator/`. Run it from there if the scratchpad is gone.
+- Always check AI-generated text for spelling, invented badges and wrong-industry wording before use.

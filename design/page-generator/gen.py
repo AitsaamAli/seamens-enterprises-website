@@ -1,0 +1,174 @@
+import extra, re, json, html, urllib.parse, os, sys
+sys.path.insert(0, os.path.dirname(__file__))
+from eco_data import ECO
+from ws_data import WS
+ROOT = '/home/user/seamens-enterprises-website'
+SITE = 'https://www.seamensenterprises.com'
+cat = open(os.path.join(os.path.dirname(__file__), 'cat_orig.html'), encoding='utf-8').read()
+STYLE = cat[cat.index('<style>'):cat.index('</style>') + 8]
+NAV = cat[cat.index('<nav>'):cat.index('</nav>') + 6]
+TAIL = cat[cat.index('<a href="https://wa.me/923054444125" target="_blank" rel="noopener" class="wa-float"'):cat.index('</footer>') + 9]
+FLAG = '<svg class="flag-de" viewBox="0 0 5 3" width="22" height="13" role="img" aria-label="Germany" style="vertical-align:-2px;margin-right:2px;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.25)"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#D00"/><rect y="2" width="5" height="1" fill="#FFCE00"/></svg>'
+POSTER = None
+
+def detail_block(did):
+    global POSTER
+    i = cat.index(f'<h3 id="{did}">')
+    j = cat.index('</h3>', i) + 5
+    m = re.search(r'\n<h3 id=|\n<h2', cat[j:])
+    blk = cat[j:j + m.start()].strip()
+    fig = re.search(r'<figure class="pshow[^"]*"[^>]*>.*?</figure>', blk, re.S)
+    if fig:
+        POSTER = fig.group(0)
+        blk = blk.replace(fig.group(0), '').strip()
+    return blk
+
+esc = lambda s: html.escape(s, quote=True)
+
+def page(p, series):
+    eco = series == 'eco'
+    folder = 'eco-series' if eco else 'water-safe'
+    url = f'{SITE}/products/{folder}/{p["slug"]}'
+    parent = ('/products/textile-auxiliaries', 'Textile Auxiliaries') if eco else p['parent']
+    brand = 'ECO-Series' if eco else 'Water Safe'
+    img = f'/images/cards/{p["img"]}.webp'
+    wa_txt = (f'Assalam o Alaikum, please share the price and details of {p["name"]}.' if eco
+              else f'Assalam o Alaikum, please share the price of {p["name"]} and arrange a free water analysis.')
+    wa = 'https://wa.me/923054444125?text=' + urllib.parse.quote(wa_txt)
+    poster = None
+    tech = ''
+    if eco and p.get('detail'):
+        global POSTER
+        POSTER = None
+        tech = detail_block(p['detail'])
+        poster = POSTER
+    if poster:
+        poster = poster.replace('Get price &amp; free sample on WhatsApp', 'Price &amp; details').replace('Get price &amp; details on WhatsApp', 'Price &amp; details')
+    og_img = f'{SITE}/images/og/' + ('textile-finishing-range-v5.jpg' if eco else ('steam-boilers-v5.jpg' if parent[0].endswith('humidification') else ('ro-plant-v5.jpg' if 'RO' in p.get('system', '') else 'cooling-tower-v5.jpg')))
+    facts = [('Product', p['name']), ('Series', brand)]
+    if eco:
+        facts += [('Form', p['form']), ('Process stage', p['stage']), ('Pack sizes', p['pack'])]
+    else:
+        facts += [('Used in', p['system']), ('Function', p['role']), ('Pack sizes', '60 / 250 / 1,000 KG')]
+    facts.append(('Technology', 'German based organic chemical technology'))
+    facts_html = ''.join(f'<div class="pp-fact"><dt>{esc(k)}</dt><dd>{esc(v)}</dd></div>' for k, v in facts)
+    body_html = ''.join(f'<h2>{esc(h)}</h2>' + ''.join(f'<p>{esc(x)}</p>' for x in paras) for h, paras in p['body'])
+    two = (f'<div class="pp-two"><div class="pp-box"><h2>Key benefits</h2><ul>' + ''.join(f'<li>{esc(b)}</li>' for b in p['benefits']) +
+           f'</ul></div><div class="pp-box"><h2>{"Applications" if eco else "Where it is used"}</h2><ul>' + ''.join(f'<li>{esc(a)}</li>' for a in p['apps']) + '</ul></div></div>')
+    tech_html = (f'<section class="pp-tech"><h2>Technical details from the Seamens product sheet</h2>{tech}</section>' if tech else '')
+    steps = (['Share your fabric, process, machine and current recipe.', 'Seamens recommends the product and quantity and shares price, pack sizes and trial terms.', 'Where a trial is agreed, it runs on your own equipment under production conditions.', 'After a successful trial, supply, pack size and lead time are agreed.'] if eco else
+             ['Send a water sample or book a site visit in Lahore or nearby.', 'Seamens analyses the water and reviews your system.', 'You receive a written programme with the product and dose.', 'Follow-up visits check the water and adjust the programme.'])
+    steps_html = f'<h2>{"How to get started" if eco else "How a Water Safe programme starts"}</h2><ol class="pp-steps">' + ''.join(f'<li>{esc(s)}</li>' for s in steps) + '</ol>'
+    allp = {x['slug']: x for x in (ECO if eco else WS)}
+    rel_html = '<h2>Related products</h2><div class="pp-rel">' + ''.join(
+        f'<a href="/products/{folder}/{r}"><b>{esc(allp[r]["name"])}</b><span>{esc(allp[r]["stage"] if eco else allp[r]["role"])}</span></a>' for r in p['related']) + '</div>'
+    KIND = ('eco' if series=='eco' else 'ws')
+    ALLFAQ = extra.faqs(KIND, p['slug'], p['faqs'])
+    EX = extra.sections(KIND, p['slug'], p['name'])
+    REFH, RKEYS = extra.refs_html(KIND, p['slug'])
+    faq_html = '<div class="faq"><h2>Frequently Asked Questions</h2>' + ''.join(f'<div class="faq-q">{esc(q)}</div><div class="faq-a">{esc(a)}</div>' for q, a in ALLFAQ) + '</div>'
+    cta = (f'<div class="cta-box"><h3>{"Get details for " if eco else "Free water analysis for "}{esc(p["name"])}</h3><p>{"Tell us your fabric, process and machine. Contact us for more details on price, pack sizes and trial terms." if eco else "Send us a water sample or book a visit, and we will recommend a programme for your system."}</p>'
+           f'<a href="{wa}" target="_blank" rel="noopener" class="cta-btn">WhatsApp +92-305-4444125</a></div>')
+    guides_html = '<div class="related"><h3>Related Guides</h3><div class="related-grid">' + ''.join(
+        f'<a href="{u}" class="related-card"><div class="rc-cat">{"Textile Auxiliaries" if eco else "Water Treatment"}</div><div class="rc-title">{esc(t)}</div></a>' for u, t in p['guides']) + f'<a href="{parent[0]}" class="related-card"><div class="rc-cat">Products</div><div class="rc-title">All {esc(parent[1])} products</div></a></div></div>'
+    media = (f'<div>{poster}</div>' if poster else
+             f'<figure class="pp-media"><img src="{img}" width="800" height="420" alt="{esc(p["imgalt"])}" fetchpriority="high" decoding="async"><figcaption>{"Application: " + esc(p["stage"] if eco else p["system"])}</figcaption></figure>')
+    schema_bc = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE},
+        {"@type": "ListItem", "position": 2, "name": "Products", "item": f"{SITE}/products"},
+        {"@type": "ListItem", "position": 3, "name": parent[1], "item": SITE + parent[0]},
+        {"@type": "ListItem", "position": 4, "name": p['name'], "item": url}]}
+    prod_img = f'{SITE}/images/products/ecoshort-gs-777-240kg-v4.webp' if poster else SITE + img
+    schema_p = {"@context": "https://schema.org", "@type": "Product", "@id": url + "#product", "name": p['name'], "description": p['lead'],
+                "brand": {"@type": "Brand", "name": brand}, "manufacturer": {"@id": f"{SITE}/#organization"},
+                "category": "Textile auxiliary chemicals" if eco else "Water treatment chemicals", "url": url, "image": prod_img,
+                "additionalProperty": [{"@type": "PropertyValue", "name": k, "value": v} for k, v in facts[2:]]}
+    schema_f = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in ALLFAQ]}
+    schema_w = {"@context": "https://schema.org", "@type": "WebPage", "@id": url + "#webpage", "url": url, "name": p['title'], "inLanguage": "en-PK", "datePublished": "2026-11-13", "dateModified": "2026-11-14", "isPartOf": {"@id": SITE + "/#website"}, "publisher": {"@id": SITE + "/#organization"}, "citation": extra.citations(RKEYS)}
+    js = lambda d: '<script type="application/ld+json">' + json.dumps(d, ensure_ascii=False, separators=(',', ':')) + '</script>'
+    extra_css = '<link rel="stylesheet" href="/assets/product-showcase.v1.css">\n<link rel="stylesheet" href="/assets/pack-switch.v2.css">\n' if poster else ''
+    extra_js = '<script src="/assets/product-showcase.v1.js" defer></script>\n<script src="/assets/pack-switch.v2.js" defer></script>\n' if poster else ''
+    out = f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{esc(p["title"])}</title>
+<meta name="description" content="{esc(p["meta"])}">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="{url}">
+<link rel="icon" type="image/png" href="/images/seamens-logo-transparent.png">
+<link rel="apple-touch-icon" href="/images/seamens-logo-transparent.png">
+<meta property="og:type" content="product">
+<meta property="og:title" content="{esc(p["h1"])}">
+<meta property="og:description" content="{esc(p["meta"])}">
+<meta property="og:url" content="{url}">
+<meta property="og:site_name" content="Seamens Enterprises">
+<meta property="og:image" content="{og_img}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_PK">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{esc(p["title"])}">
+<meta name="twitter:description" content="{esc(p["meta"])}">
+<meta name="twitter:image" content="{og_img}">
+{js(schema_bc)}
+{js(schema_p)}
+{js(schema_f)}
+{js(schema_w)}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@500;700&display=swap" rel="stylesheet">
+{STYLE}
+<link rel="stylesheet" href="/assets/product-page.v3.css">
+<link rel="stylesheet" href="/assets/reading.v1.css">
+{extra_css}</head>
+<body>
+{NAV}
+
+<header class="pp-hero">
+  <div class="pp-crumb" role="navigation" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/products">Products</a><span aria-hidden="true">/</span><a href="{parent[0]}">{esc(parent[1])}</a><span aria-hidden="true">/</span><span>{esc(p["name"])}</span></div>
+  <div class="pp-hero-in">
+    <div>
+      <div class="pp-series">{FLAG}{brand}</div>
+      <h1>{esc(p["h1"])}</h1>
+      <p class="pp-lead">{esc(p["lead"])}</p>
+      <div class="pp-btns"><a class="pp-btn wa" href="{wa}" target="_blank" rel="noopener">{"Get price &amp; details" if eco else "Get price &amp; free water test"}</a><a class="pp-btn ghost" href="/request-quote">Request a quote</a></div>
+    </div>
+    {media}
+  </div>
+</header>
+
+<main>
+<article class="blog-content">
+<dl class="pp-facts">{facts_html}</dl>
+{body_html}
+{EX}
+{two}
+{tech_html}
+{steps_html}
+{rel_html}
+{REFH}
+<p style="font-size:.85rem;opacity:.75">Seamens Enterprises, Lahore. Updated November 2026. Product information is confirmed with the Seamens technical team; final recommendations follow a trial or water analysis.</p>
+</article>
+{faq_html}
+<article class="blog-content" style="padding-top:0">{cta}</article>
+{guides_html}
+</main>
+
+{TAIL}
+{extra_js}<script src="/assets/reading.v1.js" defer></script>
+</body>
+</html>
+'''
+    os.makedirs(f'{ROOT}/products/{folder}', exist_ok=True)
+    open(f'{ROOT}/products/{folder}/{p["slug"]}.html', 'w', encoding='utf-8').write(out)
+    return p['title'], p['meta']
+
+for p in ECO:
+    t, m = page(p, 'eco')
+    if len(t) > 62 or len(m) > 160: print('LEN', p['slug'], len(t), len(m))
+for p in WS:
+    t, m = page(p, 'ws')
+    if len(t) > 62 or len(m) > 160: print('LEN', p['slug'], len(t), len(m))
+print('done', len(ECO), len(WS))
