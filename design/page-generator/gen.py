@@ -29,10 +29,10 @@ def slider_html(p, c, wa):
         slides += (f'<a class="pshow-zoom pk-slide" id="{p["slug"]}-{kg}" aria-label="{esc(p["name"])} poster, {kg} KG pack" href="{b}-full.webp"><picture>'
                    f'<source type="image/webp" srcset="{b}-sm.webp 720w, {b}.webp 1080w" sizes="(max-width:820px) 90vw, 780px">'
                    f'<img src="{b}-sm.jpg" srcset="{b}-sm.jpg 720w, {b}.jpg 1080w" sizes="(max-width:820px) 90vw, 780px" width="1080" height="720" loading="eager" decoding="async"{" fetchpriority=\"high\"" if i == 0 else ""} alt="{alt}"></picture></a>')
-        tabs += f'<button type="button" aria-pressed="{"true" if i == 0 else "false"}">{kg} KG</button>'
+        tabs += f'<button type="button" aria-pressed="{"true" if i == 0 else "false"}">{kg} KG<i aria-hidden="true"></i></button>'
     nav = ('<button type="button" class="pk-nav prev" aria-label="Previous pack size">&#8249;</button><button type="button" class="pk-nav next" aria-label="Next pack size">&#8250;</button>' if len(c['packs']) > 1 else '')
     return (f'<figure class="pshow pk-car" id="{p["slug"]}-poster">\n<div class="pk-track" tabindex="0" aria-label="Pack sizes, swipe to see each">{slides}</div>{nav}'
-            f'\n<div class="pk-tabs" role="group" aria-label="Pack size"><span>Pack size</span>{tabs}<em class="pk-hint">Swipe for each pack &middot; tap poster to zoom</em></div>\n'
+            f'\n<div class="pk-tabs" role="group" aria-label="Pack size"><span>Pack size</span><div class="pk-seg">{tabs}</div></div>\n'
             f'<figcaption><span class="pshow-name"><b>{esc(p["name"])}</b> &middot; ECO-Series {esc(p["stage"].lower())}</span><a class="pshow-cta" href="{wa}" target="_blank" rel="noopener">Price &amp; details</a></figcaption>\n</figure>')
 
 def detail_block(did):
@@ -113,8 +113,8 @@ def page(p, series):
     schema_f = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in ALLFAQ]}
     schema_w = {"@context": "https://schema.org", "@type": "WebPage", "@id": url + "#webpage", "url": url, "name": p['title'], "inLanguage": "en-PK", "datePublished": "2026-11-13", "dateModified": "2026-11-14", "isPartOf": {"@id": SITE + "/#website"}, "publisher": {"@id": SITE + "/#organization"}, "citation": extra.citations(RKEYS)}
     js = lambda d: '<script type="application/ld+json">' + json.dumps(d, ensure_ascii=False, separators=(',', ':')) + '</script>'
-    extra_css = '<link rel="stylesheet" href="/assets/product-showcase.v1.css">\n<link rel="stylesheet" href="/assets/pack-switch.v2.css">\n' if poster else ''
-    extra_js = '<script src="/assets/product-showcase.v1.js" defer></script>\n<script src="/assets/pack-switch.v2.js" defer></script>\n' if poster else ''
+    extra_css = '<link rel="stylesheet" href="/assets/product-showcase.v1.css">\n<link rel="stylesheet" href="/assets/pack-switch.v3.css">\n' if poster else ''
+    extra_js = '<script src="/assets/product-showcase.v1.js" defer></script>\n<script src="/assets/pack-switch.v3.js" defer></script>\n' if poster else ''
     out = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
