@@ -1,0 +1,22 @@
+/* Homepage ECO-Series: poster cards (image on top, details below); swipe row on phones, grid on desktop */
+.aux-grid.eco-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem;margin-top:1.25rem}
+.eco-card{position:relative;display:flex;flex-direction:column;background:linear-gradient(170deg,#0f1f3a,#0a1628);border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden;color:#fff;box-shadow:0 10px 28px rgba(10,22,40,.18);transition:transform .35s cubic-bezier(.23,1,.32,1),box-shadow .35s,border-color .35s}
+.eco-card:hover{transform:translateY(-6px);box-shadow:0 22px 46px rgba(10,22,40,.32);border-color:rgba(0,180,166,.55)}
+.eco-img{position:relative;display:block;aspect-ratio:3/2;overflow:hidden;background:#0a1628}
+.eco-img img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.eco-card:hover .eco-img img{transform:scale(1.04)}
+.eco-num{position:absolute;right:.6rem;top:.55rem;font:700 .78rem 'Barlow Condensed',sans-serif;letter-spacing:.08em;color:#fff;background:rgba(7,18,34,.72);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:.2rem .55rem}
+.eco-body{display:flex;flex-direction:column;gap:.45rem;padding:1rem 1.1rem 1.1rem;flex:1}
+.eco-stage{align-self:flex-start;font:700 .66rem 'Barlow Condensed',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--teal,#00b4a6);border:1px solid rgba(0,180,166,.45);border-radius:999px;padding:.2rem .6rem}
+.eco-body h4{margin:0;font:700 1.12rem/1.25 'Barlow',sans-serif;letter-spacing:0;text-transform:none;color:#fff}
+.eco-body h4 .aux-link{color:#fff}
+.eco-body p{margin:0;font-size:.86rem;line-height:1.6;color:rgba(255,255,255,.68);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.eco-packs{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.15rem}
+.eco-packs i{font:600 .74rem 'Barlow',sans-serif;font-style:normal;color:#f5b52e;background:rgba(245,181,46,.1);border:1px solid rgba(245,181,46,.35);border-radius:6px;padding:.18rem .45rem}
+.eco-more{margin-top:auto;padding-top:.6rem;border-top:1px solid rgba(255,255,255,.08);font:700 .85rem 'Barlow',sans-serif;color:var(--teal,#00b4a6)}
+.eco-card:hover .aux-link{color:var(--teal,#00b4a6)}
+@media(max-width:640px){
+ .aux-grid.eco-grid{display:flex;grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:.8rem;margin:1rem -16px 0;padding:0 16px .9rem;scrollbar-width:none}
+ .aux-grid.eco-grid::-webkit-scrollbar{display:none}
+ .eco-card{flex:0 0 84%;scroll-snap-align:center}
+}

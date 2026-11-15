@@ -112,7 +112,9 @@ Still valid from the knowledge base:
 - **ECO posters done (Nov 15, 2026): all 19 ECO-Series products**, made with the template; every ECO page has the pack-size slider.
   - Packs below 1,000 KG all use the same drum image; only the NET WEIGHT changes.
   - EcoSize-CXW-111 has only the 100 KG drum poster.
-  - **Still to do:** the 1,000 KG packs (IBC tank) and the CXW-111 25 KG bag need a different package on the template.
+  - **1,000 KG IBC and 25 KG bag (Nov 15):** made by `pack_swap.py <slug> ibc|bag` from the Canva bases `base-ibc.png` / `base-bag.png`, keeping the side panels of the product's 240 KG (or 100 KG) poster. They are listed as `extra_packs` in each product JSON and appear in the page slider. GS-777 and D-11 have no 1,000 KG pack.
+  - `drum_scale.py` (size-true 60 L / 150 L drums) exists. ACL-55 review posters are `*-s.jpg`; not used on the site until the owner approves.
+- **Homepage ECO section (Nov 15):** 19 `eco-card`s, each with the product poster on top and the stage, description and pack chips below (`assets/eco-home.v1.css`). On phones it is a swipe row; on desktop a grid.
   - Original file names are sanitised to letters, digits and hyphens (e.g. `EcoWet-Det-240KG-v1.jpg`).
   - The page generator (`design/page-generator/gen.py`) adds the pack-size slider automatically to any ECO page whose `design/poster-template/products/<slug>.json` exists and whose images are generated.
 - **GS-777 live posters:** `ecoshort-gs-777-240kg-v5` and `ecoshort-gs-777-125kg-v5` in a **pack-size slider** (`assets/pack-switch.v3.css` and `.js`):

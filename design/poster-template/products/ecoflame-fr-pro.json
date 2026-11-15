@@ -50,5 +50,8 @@
   "folder": "eco-series",
   "version": 1,
   "series": "ECO-SERIES",
-  "redraw": true
+  "redraw": true,
+  "extra_packs": [
+    "1000"
+  ]
 }
