@@ -1,0 +1,62 @@
+{
+  "slug": "fc-30b",
+  "name": "Water Safe FC-30B",
+  "subtitle": "Water Softener for A/C Plants",
+  "headline": [
+    "SOFTER WATER FOR",
+    "A/C"
+  ],
+  "headline_accent": "PLANTS",
+  "benefits": [
+    [
+      "Reduces Hardness",
+      "Lower calcium and magnesium load"
+    ],
+    [
+      "Less Scale Formation",
+      "Lower scale-forming load"
+    ],
+    [
+      "Cleaner Tubes",
+      "Better heat transfer"
+    ],
+    [
+      "Supports Programme",
+      "Works with the A/C plant treatment"
+    ],
+    [
+      "Protects Equipment",
+      "Less deposit on coils and pipes"
+    ],
+    [
+      "Lower Energy Use",
+      "Efficient cooling surfaces"
+    ],
+    [
+      "Fewer Cleanings",
+      "Longer intervals between descaling"
+    ],
+    [
+      "Hard Water Ready",
+      "Suits hard borehole water"
+    ]
+  ],
+  "folder": "water-safe",
+  "version": 1,
+  "series": "WATER SAFE SERIES",
+  "accent": [
+    40,
+    205,
+    215
+  ],
+  "bg": "wave",
+  "packs": [
+    "250",
+    "60"
+  ],
+  "extra_packs": [
+    "1000"
+  ],
+  "redraw": true,
+  "form": "INDUSTRIAL WATER TREATMENT"
+}

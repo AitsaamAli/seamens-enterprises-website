@@ -1,0 +1,62 @@
+{
+  "slug": "fc-3020",
+  "name": "Water Safe FC-3020",
+  "subtitle": "A/C Plant Recirculating Water Treatment",
+  "headline": [
+    "CLEAN WATER FOR",
+    "A/C PLANT"
+  ],
+  "headline_accent": "CIRCUITS",
+  "benefits": [
+    [
+      "Recirculating Treatment",
+      "Made for A/C plant water circuits"
+    ],
+    [
+      "Tailored Programme",
+      "Set from your own water analysis"
+    ],
+    [
+      "Clean Heat Transfer",
+      "Clean condensers and coils"
+    ],
+    [
+      "Scale Control",
+      "Less deposit on tube surfaces"
+    ],
+    [
+      "Corrosion Protection",
+      "Protects tubes and pipework"
+    ],
+    [
+      "Lower Energy Use",
+      "Efficient chillers, lower load"
+    ],
+    [
+      "Fewer Breakdowns",
+      "Less fouling-related downtime"
+    ],
+    [
+      "Regular Monitoring",
+      "Follow-up tests keep control"
+    ]
+  ],
+  "folder": "water-safe",
+  "version": 1,
+  "series": "WATER SAFE SERIES",
+  "accent": [
+    40,
+    205,
+    215
+  ],
+  "bg": "wave",
+  "packs": [
+    "250",
+    "60"
+  ],
+  "extra_packs": [
+    "1000"
+  ],
+  "redraw": true,
+  "form": "INDUSTRIAL WATER TREATMENT"
+}

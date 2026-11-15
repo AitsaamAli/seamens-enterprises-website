@@ -1,0 +1,62 @@
+{
+  "slug": "rc-1030",
+  "name": "Water Safe RC-1030",
+  "subtitle": "Anti-Scalant for RO Plants",
+  "headline": [
+    "MEMBRANE",
+    "PROTECTION FOR"
+  ],
+  "headline_accent": "RO PLANTS",
+  "benefits": [
+    [
+      "Prevents Scaling",
+      "Keeps membranes free of scale"
+    ],
+    [
+      "Stops Fouling",
+      "Less membrane fouling"
+    ],
+    [
+      "Longer Membrane Life",
+      "Fewer membrane replacements"
+    ],
+    [
+      "Steady Permeate Flow",
+      "Maintains plant output"
+    ],
+    [
+      "Lower Pressure",
+      "Less feed pressure needed"
+    ],
+    [
+      "Fewer Cleanings",
+      "Longer intervals between CIP"
+    ],
+    [
+      "Higher Recovery",
+      "More product water per feed"
+    ],
+    [
+      "Programme Ready",
+      "Works with RD-4050 biocide"
+    ]
+  ],
+  "folder": "water-safe",
+  "version": 1,
+  "series": "WATER SAFE SERIES",
+  "accent": [
+    40,
+    205,
+    215
+  ],
+  "bg": "wave",
+  "packs": [
+    "250",
+    "60"
+  ],
+  "extra_packs": [
+    "1000"
+  ],
+  "redraw": true,
+  "form": "INDUSTRIAL WATER TREATMENT"
+}

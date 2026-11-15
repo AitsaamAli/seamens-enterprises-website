@@ -1,0 +1,62 @@
+{
+  "slug": "br-555",
+  "name": "Water Safe BR-555",
+  "subtitle": "Oxygen Scavenger for Steam Boilers",
+  "headline": [
+    "OXYGEN",
+    "SCAVENGER FOR"
+  ],
+  "headline_accent": "BOILERS",
+  "benefits": [
+    [
+      "Removes Oxygen",
+      "Scavenges residual dissolved oxygen"
+    ],
+    [
+      "Stops Pitting",
+      "Helps prevent pitting corrosion"
+    ],
+    [
+      "Protects Boiler",
+      "Shell, tubes and drums"
+    ],
+    [
+      "Protects Feed System",
+      "Feed lines and economisers"
+    ],
+    [
+      "Longer Boiler Life",
+      "Less corrosion damage"
+    ],
+    [
+      "Fewer Leaks",
+      "Less tube and pipe failure"
+    ],
+    [
+      "Fire & Water Tube",
+      "Suits both boiler types"
+    ],
+    [
+      "Programme Ready",
+      "Works with BR-111 anti-scalant"
+    ]
+  ],
+  "folder": "water-safe",
+  "version": 1,
+  "series": "WATER SAFE SERIES",
+  "accent": [
+    40,
+    205,
+    215
+  ],
+  "bg": "wave",
+  "packs": [
+    "250",
+    "60"
+  ],
+  "extra_packs": [
+    "1000"
+  ],
+  "redraw": true,
+  "form": "INDUSTRIAL WATER TREATMENT"
+}

@@ -1,0 +1,62 @@
+{
+  "slug": "nu-905",
+  "name": "Water Safe NU-905",
+  "subtitle": "Neutralization Treatment for Boilers",
+  "headline": [
+    "pH NEUTRALIZATION",
+    "FOR STEAM"
+  ],
+  "headline_accent": "BOILERS",
+  "benefits": [
+    [
+      "Neutralizes Acidity",
+      "Controls pH in condensate"
+    ],
+    [
+      "Stable Boiler pH",
+      "Keeps boiler water in range"
+    ],
+    [
+      "Protects Condensate Lines",
+      "Less internal corrosion"
+    ],
+    [
+      "Fewer Leaks",
+      "Longer life for pipes and traps"
+    ],
+    [
+      "Cleaner Condensate",
+      "Less iron carried back"
+    ],
+    [
+      "More Condensate Return",
+      "Saves fuel and treated water"
+    ],
+    [
+      "Measurable Results",
+      "pH readings show control"
+    ],
+    [
+      "Programme Ready",
+      "Works with BR-111 and BR-555"
+    ]
+  ],
+  "folder": "water-safe",
+  "version": 1,
+  "series": "WATER SAFE SERIES",
+  "accent": [
+    40,
+    205,
+    215
+  ],
+  "bg": "wave",
+  "packs": [
+    "250",
+    "60"
+  ],
+  "extra_packs": [
+    "1000"
+  ],
+  "redraw": true,
+  "form": "INDUSTRIAL WATER TREATMENT"
+}
