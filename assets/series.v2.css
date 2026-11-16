@@ -1,7 +1,9 @@
-/* Homepage "Product Series": per series a poster carousel, then a button that opens every product of that series */
-#series{background:var(--light,#f4f7fb)}
-#series .section-title{color:var(--navy,#0a1628)}
-#series .section-lead{color:#4a5a75;max-width:760px}
+/* Homepage series sections (ECO-Series, then Water Safe, each its own section): per series a poster carousel, then a button that opens every product of that series */
+.sx-series{background:var(--light,#f4f7fb)}
+.sx-series .section-title{color:var(--navy,#0a1628)}
+.sx-series .section-lead{color:#4a5a75;max-width:760px}
+.sx-ws{background:linear-gradient(180deg,#e9f5f5,#f4f7fb);border-top:3px solid var(--teal,#00b4a6)}
+.sx-series .sx-block{margin-top:1.6rem}
 .sx-block{margin-top:3rem}
 .sx-block+.sx-block{margin-top:4rem;padding-top:3rem;border-top:1px solid rgba(10,22,40,.08)}
 .sx-head{display:flex;align-items:baseline;flex-wrap:wrap;gap:.3rem 1rem}

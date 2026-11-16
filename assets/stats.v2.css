@@ -9,8 +9,8 @@
 @media(min-width:720px){.stats-bar .stats-inner{grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}}
 @media(min-width:1100px){.stats-bar .stats-inner{grid-template-columns:repeat(6,minmax(0,1fr))}.stats-bar .stat-num{font-size:2.2rem}}
 @media(max-width:600px){
- #series{padding-top:3rem}
- #series .section-title{font-size:1.75rem;margin-bottom:.8rem}
- #series .section-lead{font-size:.98rem;line-height:1.6;margin-bottom:0}
+ .sx-series{padding-top:3rem;padding-bottom:3rem}
+ .sx-series .section-title{font-size:1.75rem;margin-bottom:.8rem}
+ .sx-series .section-lead{font-size:.98rem;line-height:1.6;margin-bottom:0}
  .sx-block{margin-top:2rem}
 }
