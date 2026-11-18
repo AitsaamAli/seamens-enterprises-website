@@ -1,5 +1,5 @@
 """Owner update (Nov 18, 2026): Water Safe FC-120Q is an anti-scale and corrosion inhibitor for air humidification plants,
-also used for de-scaling and cleaning of eliminator plates, nozzles, SS caps, tiles, showering pipes, SS clamps and intake grills,
+that de-scales and cleans eliminator plates, nozzles, SS caps, tiles, showering pipes, SS clamps and intake grills,
 for the long life of A/C plants against scaling, sludge, algae, micro short cotton dust and industrial problems.
 Imported at the end of each data module; replaces the earlier FC-120Q wording."""
 
@@ -7,14 +7,14 @@ WS_FIX = {'fc-120q': dict(
   system='Air humidification and A/C plants', role='Anti-scale and corrosion inhibitor, de-scaler and cleaner',
   imgalt='Air humidification plant in a textile mill',
   title='Water Safe FC-120Q | Air Humidification Plant Anti-Scale & Cleaner',
-  meta='Water Safe FC-120Q: anti-scale and corrosion inhibitor for air humidification plants, also used to de-scale and clean eliminators, nozzles and grills. 60, 250, 1,000 KG.',
+  meta='Water Safe FC-120Q: anti-scale, corrosion inhibitor and de-scaling cleaner for air humidification plants: eliminators, nozzles, SS caps and grills. 60, 250, 1,000 KG.',
   h1='Water Safe FC-120Q: Anti-Scale and Corrosion Inhibitor for Air Humidification Plants',
-  lead='Water Safe FC-120Q is an anti-scale and corrosion inhibitor for air humidification plants. It is also used for de-scaling and cleaning eliminator plates, nozzles, SS caps, tiles, showering pipes, SS clamps and intake grills, so A/C plants last longer and stay free of scaling, sludge, algae, micro short cotton dust and other industrial problems.',
-  body=[('Why humidification plants need protection', ['An air washer or humidification plant sprays recirculating water through nozzles and draws air across wet eliminator plates. Hardness in the water leaves scale on nozzles and plates, sludge collects in the tank and on the tiles, and warm, wet surfaces encourage algae.', 'In textile mills the plant also pulls in fine cotton fly and micro short cotton dust. That lint sticks to wet scale and sludge, blocks nozzles and intake grills, and cuts both airflow and humidity control.']),
-        ('Protection plus cleaning', ['FC-120Q is dosed into the recirculating water to inhibit scale and corrosion, and it is also used during cleaning to de-scale eliminator plates, nozzles, SS caps, tiles, showering pipes, SS clamps and intake grills. Seamens sets the dose and the cleaning routine for your plant.'])],
+  lead='Water Safe FC-120Q is an anti-scale, corrosion inhibitor and de-scaling cleaner for air humidification plants. It de-scales and cleans eliminator plates, nozzles, SS caps, tiles, showering pipes, SS clamps and intake grills, so A/C plants last longer and stay free of scaling, sludge, algae, micro short cotton dust and other industrial problems.',
+  body=[('Why humidification plants need protection', ['An air washer or humidification plant sprays recirculating water through nozzles and draws air across wet eliminator plates. Hardness in the water leaves scale on nozzles and plates, sludge collects in the tank and on the tiles, and warm, wet surfaces encourage algae.', 'In textile mills the plant pulls in fine cotton fly and micro short cotton dust. That lint sticks to wet scale and sludge, blocks nozzles and intake grills, and cuts both airflow and humidity control.']),
+        ('Protection plus cleaning', ['FC-120Q has one combined function: it inhibits scale and corrosion in the recirculating water and de-scales and cleans eliminator plates, nozzles, SS caps, tiles, showering pipes, SS clamps and intake grills. Seamens sets the dose and the cleaning routine for your plant.'])],
   benefits=['Inhibits scale and corrosion in air humidification water', 'De-scales and cleans eliminators, nozzles, grills and pipes', 'Fights sludge, algae and micro short cotton dust build-up'],
   apps=['Air washers and humidification plants in textile mills', 'Eliminator plates, nozzles, SS caps and showering pipes', 'Tiles, SS clamps and intake grills of A/C plants'],
-  faqs=[('What does Water Safe FC-120Q do?', 'It is an anti-scale and corrosion inhibitor for air humidification plants, and it is also used to de-scale and clean eliminator plates, nozzles, SS caps, tiles, showering pipes, SS clamps and intake grills.'),
+  faqs=[('What does Water Safe FC-120Q do?', 'It is an anti-scale, corrosion inhibitor and de-scaling cleaner for air humidification plants that de-scales and cleans eliminator plates, nozzles, SS caps, tiles, showering pipes, SS clamps and intake grills.'),
         ('Which problems does FC-120Q help control?', 'Scaling, sludge, algae, micro short cotton dust build-up and the general fouling that shortens the life of A/C and humidification plants.'),
         ('What pack sizes are available?', '60, 250 and 1,000 KG packs.')],
   related=['fc-3020', 'fc-7090', 'fc-30b'])}
