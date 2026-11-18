@@ -2121,33 +2121,33 @@ A: Yes, dispersants and biocides work together.
 Q: Does it help with dust?
 A: It keeps particles dispersed so they do not settle.
 
-## Water Safe FC-120Q: Anti-Scale and Corrosion Inhibitor for A/C Plants
+## Water Safe FC-120Q: Anti-Scale and Corrosion Inhibitor for Air Humidification Plants
 URL: https://www.seamensenterprises.com/products/water-safe/fc-120q
-Water Safe FC-120Q is an anti-scale and corrosion inhibitor for A/C plant water. It addresses the two problems that most often shorten the life and efficiency of chiller and A/C heat exchangers: mineral scale and metal corrosion.
+Water Safe FC-120Q is an anti-scale and corrosion inhibitor for air humidification plants. It is also used for de-scaling and cleaning eliminator plates, nozzles, SS caps, tiles, showering pipes, SS clamps and intake grills, so A/C plants last longer and stay free of scaling, sludge, algae, micro short cotton dust and other industrial problems.
 
 Q: What does Water Safe FC-120Q do?
-A: It is an anti-scale and corrosion inhibitor for A/C plant water.
+A: It is an anti-scale and corrosion inhibitor for air humidification plants, and it is also used to de-scale and clean eliminator plates, nozzles, SS caps, tiles, showering pipes, SS clamps and intake grills.
 
-Q: How is FC-120Q dosed?
-A: The dose is set from your water analysis and checked on follow-up visits so the inhibitor stays in range.
+Q: Which problems does FC-120Q help control?
+A: Scaling, sludge, algae, micro short cotton dust build-up and the general fouling that shortens the life of A/C and humidification plants.
 
 Q: What pack sizes are available?
 A: 60, 250 and 1,000 KG packs.
 
-Q: Is FC-120Q safe for copper?
-A: It is used in A/C plant circuits with copper and steel; suitability is confirmed for your system.
+Q: Can FC-120Q clean eliminator plates?
+A: Yes. It is used for de-scaling and cleaning eliminator plates along with nozzles, SS caps, tiles, showering pipes, SS clamps and intake grills.
 
-Q: How is protection verified?
-A: With water analysis, inhibitor residual checks and corrosion coupons where installed.
+Q: Is FC-120Q only for textile mills?
+A: Textile humidification plants are the main use, but any air washer or A/C plant with the same scaling and fouling problems can use it.
 
-Q: Can FC-120Q be used in closed loops?
-A: Closed loops normally use Water Safe BR-999; Seamens recommends per system.
+Q: How often should a humidification plant be cleaned?
+A: Seamens sets a routine from your water quality, running hours and lint load, usually reviewed season by season.
 
-Q: Does FC-120Q protect copper tubes?
-A: It is a corrosion inhibitor for A/C plant water; metallurgy is reviewed when the programme is set.
+Q: Does FC-120Q help with algae?
+A: Keeping surfaces clean and free of scale and sludge gives algae less to grow on; Seamens adds biocide control where a plant needs it.
 
-Q: How is corrosion checked?
-A: Corrosion coupons measured by weight loss show the actual rate.
+Q: Can it be used on stainless steel parts?
+A: Yes. SS caps, SS clamps and showering pipes are among the parts it is used to clean; the routine is confirmed for your plant.
 
 ## Water Safe FC-3020: Treatment for A/C Plant Recirculating Water
 URL: https://www.seamensenterprises.com/products/water-safe/fc-3020

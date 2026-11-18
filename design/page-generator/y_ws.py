@@ -89,3 +89,6 @@ a('rd-4050',
 
 from ws_new import Y_NEW as _YN, S_NEW as _SN
 Y.update(_YN); S.update(_SN)
+
+from ws_fix import Y_FIX as _YF, S_FIX as _SF
+Y.update(_YF); S.update(_SF)

@@ -150,3 +150,6 @@ dict(slug='rd-4050', name='Water Safe RD-4050', system='RO plants', role='RO bio
 
 from ws_new import WS_NEW as _WSN
 WS += _WSN
+from ws_fix import WS_FIX as _WF
+for _w in WS:
+    if _w['slug'] in _WF: _w.update(_WF[_w['slug']])

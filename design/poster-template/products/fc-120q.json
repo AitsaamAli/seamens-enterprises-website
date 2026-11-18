@@ -1,48 +1,48 @@
 {
   "slug": "fc-120q",
   "name": "Water Safe FC-120Q",
-  "subtitle": "Anti-Scale & Corrosion Inhibitor for A/C Plants",
+  "subtitle": "Air Humidification Anti-Scale, Corrosion Inhibitor & Cleaner",
   "headline": [
-    "SCALE + CORROSION",
-    "CONTROL FOR"
+    "ANTI-SCALE + CLEANER",
+    "FOR AIR"
   ],
-  "headline_accent": "A/C PLANTS",
+  "headline_accent": "HUMIDIFICATION",
   "benefits": [
     [
       "Inhibits Scale",
-      "Clean heat transfer surfaces"
+      "Keeps humidification water scale-free"
     ],
     [
-      "Inhibits Corrosion",
-      "Protects tubes and pipework"
+      "Corrosion Inhibitor",
+      "Protects SS clamps, pipes and parts"
     ],
     [
-      "Dual Action",
-      "Scale and corrosion in one product"
+      "Cleans Eliminators",
+      "De-scales eliminator plates"
     ],
     [
-      "Plant Efficiency",
-      "Steady cooling performance"
+      "Open Nozzles",
+      "Clean nozzles and SS caps, even spray"
     ],
     [
-      "Lower Energy Use",
-      "Clean tubes, lower chiller load"
+      "Clean Tanks & Tiles",
+      "Removes sludge from tiles and tanks"
     ],
     [
-      "Longer Equipment Life",
-      "Less wear on metal surfaces"
+      "Clear Intake Grills",
+      "Stops cotton dust caking"
     ],
     [
-      "Fewer Shutdowns",
-      "Less descaling and repair"
+      "Fights Algae & Sludge",
+      "Cleaner surfaces, less fouling"
     ],
     [
-      "Programme Ready",
-      "Works with FC-30B and FC-3020"
+      "Longer Plant Life",
+      "Protects A/C plants for years"
     ]
   ],
   "folder": "water-safe",
-  "version": 1,
+  "version": 2,
   "series": "WATER SAFE SERIES",
   "accent": [
     40,

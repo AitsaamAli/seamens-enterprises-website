@@ -47,3 +47,6 @@ Q = {
 
 from ws_new import Q_NEW as _QN
 Q.update(_QN)
+
+from ws_fix import Q_FIX as _QF
+Q.update(_QF)

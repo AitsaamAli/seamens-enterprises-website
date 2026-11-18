@@ -181,3 +181,6 @@ h('steam-boiler-supply-erection',
 
 from ws_new import H_NEW as _HN
 H.update(_HN)
+
+from ws_fix import H_FIX as _HF
+H.update(_HF)

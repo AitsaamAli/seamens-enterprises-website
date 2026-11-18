@@ -97,3 +97,6 @@ z('metal-passivator',
  ('Advice','Seamens confirms method for your metal.'))
 z('drain-pipe-unclogger',
  ('Advice','Seamens advises for your drains.'))
+
+from ws_fix import Z_FIX as _ZF
+Z.update(_ZF)
