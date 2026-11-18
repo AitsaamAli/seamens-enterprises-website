@@ -50,3 +50,6 @@ G['fc-120q'] = [
 
 from ws_new import G_NEW as _GN
 G.update(_GN)
+
+from ws_fix import G_FIX as _GF
+G.update(_GF)

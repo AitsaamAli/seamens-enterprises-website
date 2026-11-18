@@ -169,3 +169,6 @@ X['rd-4050'] = dict(
 
 from ws_new import X_NEW as _XN
 X.update(_XN)
+
+from ws_fix import X_FIX as _XF
+X.update(_XF)
