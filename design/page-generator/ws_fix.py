@@ -6,8 +6,8 @@ Imported at the end of each data module; replaces the earlier FC-120Q wording.""
 WS_FIX = {'fc-120q': dict(
   system='Air humidification and A/C plants', role='Anti-scale and corrosion inhibitor, de-scaler and cleaner',
   imgalt='Air humidification plant in a textile mill',
-  title='Water Safe FC-120Q | Air Humidification Plant Anti-Scale & Cleaner',
-  meta='Water Safe FC-120Q: anti-scale, corrosion inhibitor and de-scaling cleaner for air humidification plants: eliminators, nozzles, SS caps and grills. 60, 250, 1,000 KG.',
+  title='Water Safe FC-120Q | Air Washer Anti-Scale & Cleaner',
+  meta='Water Safe FC-120Q: anti-scale, corrosion inhibitor and de-scaling cleaner for air humidification plants, eliminators, nozzles and grills. 60, 250, 1,000 KG.',
   h1='Water Safe FC-120Q: Anti-Scale and Corrosion Inhibitor for Air Humidification Plants',
   lead='Water Safe FC-120Q is an anti-scale, corrosion inhibitor and de-scaling cleaner for air humidification plants. It de-scales and cleans eliminator plates, nozzles, SS caps, tiles, showering pipes, SS clamps and intake grills, so A/C plants last longer and stay free of scaling, sludge, algae, micro short cotton dust and other industrial problems.',
   body=[('Why humidification plants need protection', ['An air washer or humidification plant sprays recirculating water through nozzles and draws air across wet eliminator plates. Hardness in the water leaves scale on nozzles and plates, sludge collects in the tank and on the tiles, and warm, wet surfaces encourage algae.', 'In textile mills the plant pulls in fine cotton fly and micro short cotton dust. That lint sticks to wet scale and sludge, blocks nozzles and intake grills, and cuts both airflow and humidity control.']),

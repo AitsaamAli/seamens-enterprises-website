@@ -117,7 +117,7 @@ WS_NEW.append(dict(slug='ctc-9090', name='Water Safe CTC-9090', system='Cooling 
   parent=['/products/cooling-tower-chiller-ro', 'Cooling Tower, Chiller & RO'],
   img='cooling-tower-water-treatment-v5', imgalt='Industrial cooling tower with recirculating water',
   title='Water Safe CTC-9090 | Cooling Tower pH Controller',
-  meta='Water Safe CTC-9090: pH controller for cooling towers that keeps recirculating water in the target pH band for steady scale and corrosion control. 60, 250 and 1,000 KG.',
+  meta='Water Safe CTC-9090: pH controller for cooling towers that keeps recirculating water in the target pH band for scale and corrosion control. 60, 250, 1,000 KG.',
   h1='Water Safe CTC-9090: pH Controller for Cooling Towers',
   lead='Water Safe CTC-9090 is a pH controller for open recirculating cooling towers. It keeps the circulating water inside the pH band your treatment programme is designed for, so scale inhibitors, dispersants and biocides can each do their job properly.',
   body=[('Why tower pH drifts', ['As water evaporates from a cooling tower, dissolved salts and alkalinity concentrate in what is left behind. With every extra cycle of concentration the pH tends to climb, and at high pH calcium carbonate drops out as scale on exchangers and fill.', 'Air scrubbed through the tower, process leaks and changes in make-up water can push pH the other way too. Either drift moves the water away from the conditions the programme was set for.']),

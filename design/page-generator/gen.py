@@ -108,9 +108,12 @@ def page(p, series):
         {"@type": "ListItem", "position": 3, "name": parent[1], "item": SITE + parent[0]},
         {"@type": "ListItem", "position": 4, "name": p['name'], "item": url}]}
     prod_img = (f'{SITE}/images/products/{p["slug"]}-{pcfg["packs"][0]}kg-v{pcfg["version"]}.webp' if pcfg else SITE + img) if poster else SITE + img
+    if pcfg and poster:   # every pack poster, so image search and AI answers can show each pack size
+        prod_img = [f'{SITE}/images/products/{p["slug"]}-{kg}kg-v{pcfg["version"]}.webp' for kg in pcfg['packs'] + pcfg.get('extra_packs', [])]
     schema_p = {"@context": "https://schema.org", "@type": "Product", "@id": url + "#product", "name": p['name'], "description": p['lead'],
                 "brand": {"@type": "Brand", "name": brand}, "manufacturer": {"@id": f"{SITE}/#organization"},
                 "category": "Textile auxiliary chemicals" if eco else "Water treatment chemicals", "url": url, "image": prod_img,
+                "sku": p['name'].replace('Water Safe ', ''), "mpn": p['name'].replace('Water Safe ', ''),
                 "additionalProperty": [{"@type": "PropertyValue", "name": k, "value": v} for k, v in facts[2:]]}
     schema_f = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in ALLFAQ]}
     schema_w = {"@context": "https://schema.org", "@type": "WebPage", "@id": url + "#webpage", "url": url, "name": p['title'], "inLanguage": "en-PK", "datePublished": "2026-11-13", "dateModified": "2026-11-14", "isPartOf": {"@id": SITE + "/#website"}, "publisher": {"@id": SITE + "/#organization"}, "citation": extra.citations(RKEYS)}
